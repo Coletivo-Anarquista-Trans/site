@@ -1,0 +1,5 @@
+{
+  "/api/dinosaurs/[dinosaur]/route": "app/api/dinosaurs/[dinosaur]/route.js",
+  "/page": "app/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js"
+}
