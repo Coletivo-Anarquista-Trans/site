@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 52, "column": 0}, "map": {"version":3,"sources":["file:///home/sara/WebstormProjects/site/src/app/api/dinosaurs/%5Bdinosaur%5D/route.ts"],"sourcesContent":["import { NextRequest } from \"next/server\";\nimport data from \"../data.json\" with { type: \"json\" };\n\ntype RouteParams = { params: Promise<{ dinosaur: string }> };\n\nexport const GET = async (request: NextRequest, { params }: RouteParams) => {\n    const { dinosaur } = await params;\n\n    if (!dinosaur) {\n        return Response.json(\"No dinosaur name provided.\");\n    }\n\n    const dinosaurData = data.find((item) =>\n        item.name.toLowerCase() === dinosaur.toLowerCase()\n    );\n\n    return Response.json(dinosaurData ? dinosaurData : \"No dinosaur found.\");\n};\n"],"names":[],"mappings":";;;AACA;;AAIO,MAAM,MAAM,OAAO,SAAsB,EAAE,MAAM,EAAe;IACnE,MAAM,EAAE,QAAQ,EAAE,GAAG,MAAM;IAE3B,IAAI,CAAC,UAAU;QACX,OAAO,SAAS,IAAI,CAAC;IACzB;IAEA,MAAM,eAAe,8GAAA,CAAA,UAAI,CAAC,IAAI,CAAC,CAAC,OAC5B,KAAK,IAAI,CAAC,WAAW,OAAO,SAAS,WAAW;IAGpD,OAAO,SAAS,IAAI,CAAC,eAAe,eAAe;AACvD"}},
-    {"offset": {"line": 65, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}
