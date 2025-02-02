@@ -36,9 +36,11 @@ export default function RootLayout({
       >
         <ThemeProvider>
           <ErrorBoundary fallback={<div>Something went wrong!</div>}>
-            <Header />
+            
+              
 
-            {children}
+              {children}
+            
           </ErrorBoundary>
         </ThemeProvider>
       </body>
