@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import twGlow from "twglow";
 
 export default {
   content: [
@@ -6,6 +7,7 @@ export default {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+
   theme: {
     extend: {
       colors: {
@@ -18,10 +20,19 @@ export default {
         accent5: "var(--accent-5)",
         accent6: "var(--accent-6)",
       },
+      boxShadow: {
+        focus: "0 0 0 2px var(--accent-2)",
+      },
+      dropShadow: {
+        glow: [
+          "0 0px 20px rgba(255,255, 255, 0.35)",
+          "0 0px 65px rgba(255, 255,255, 0.2)",
+        ],
+      },
     },
   },
   darkMode: "class", // Enables manual theme toggling
   mode: "jit",
-  plugins: [],
+  plugins: [twGlow],
 } satisfies Config;
 

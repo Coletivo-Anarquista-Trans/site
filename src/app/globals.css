@@ -1,4 +1,3 @@
-/* styles/globals.css */
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
 
 @tailwind base;
@@ -11,18 +10,18 @@
 
 /* Default Theme */
 .default-theme {
-  --background: #23232b; /* Solid color */
-  --foreground: #2d1b5a;
-  --accent-1: #a064ee;
-  --accent-2: #7c4dff;
-  --accent-3: #6a1b9a;
-  --accent-4: #4a148c;
+  --background: #000; /* Darker solid color */
+  --foreground: #a064ee; /* Brighter foreground for contrast */
+  --accent-1: #7c4dff;
+  --accent-2: #6a1b9a;
+  --accent-3: #4a148c;
+  --accent-4: #2d1b5a;
 }
 
 /* New Theme based on the provided palette */
 .new-theme {
-  --background: #23232b; /* Solid color */
-  --foreground: #ececed;
+  --background: #000; /* Darker solid color */
+  --foreground: #06cfce; /* Brighter foreground for contrast */
   --accent-1: #292a50;
   --accent-2: #285b77;
   --accent-3: #0b959f;
@@ -33,8 +32,8 @@
 
 /* Cyberpunk Purple and Black Theme */
 .cyberpunk-purple-theme {
-  --background: #1a1a1a; /* Solid color */
-  --foreground: #e0aaff;
+  --background: #000; /* Even darker solid color */
+  --foreground: #e0aaff; /* Brighter purple for contrast */
   --accent-1: #6a1b9a;
   --accent-2: #9c27b0;
   --accent-3: #ce93d8;
@@ -43,8 +42,8 @@
 
 /* Cyberpunk Red and Black Theme */
 .cyberpunk-red-theme {
-  --background: #1a1a1a; /* Solid color */
-  --foreground: #ff6b6b;
+  --background: #000; /* Even darker solid color */
+  --foreground: #ff6b6b; /* Brighter red for contrast */
   --accent-1: #d32f2f;
   --accent-2: #b71c1c;
   --accent-3: #ff5252;
@@ -68,7 +67,7 @@ body::before {
   width: 100vw;
   height: 100vh;
   pointer-events: none;
-  /* background-image: url("https://grainy-gradients.vercel.app/noise.svg"); */
+  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
   opacity: 1;
   mix-blend-mode: overlay;
   z-index: 1;
@@ -93,3 +92,12 @@ body::after {
   z-index: 2;
   opacity: 0.5; /* Adjust opacity to make it subtle or more pronounced */
 }
+
+/* Global Focus Styles */
+@layer utilities {
+  .focus-custom {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--accent-2);
+  }
+}
+
