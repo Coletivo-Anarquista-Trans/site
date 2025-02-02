@@ -7,11 +7,11 @@ export default function Header() {
     
     return (
       <header
-        className={`${theme} w-full bg-background flex flex-row justify-between`}
+        className={`${theme} w-full bg-background flex flex-row justify-center gap-2 items-center p-4`}
       >
-        
-          <span className="text-accent1">a</span>
-        
+        <span className="text-accent1">a</span>{" "}
+        <span className="text-accent1">a</span>{" "}
+        <span className="text-accent1">a</span>
       </header>
     );
 }
