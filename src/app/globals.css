@@ -1,21 +1,95 @@
+/* styles/globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-family: 'Chakra Petch', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Default Theme */
+.default-theme {
+  --background: #23232b; /* Solid color */
+  --foreground: #2d1b5a;
+  --accent-1: #a064ee;
+  --accent-2: #7c4dff;
+  --accent-3: #6a1b9a;
+  --accent-4: #4a148c;
+}
+
+/* New Theme based on the provided palette */
+.new-theme {
+  --background: #23232b; /* Solid color */
+  --foreground: #ececed;
+  --accent-1: #292a50;
+  --accent-2: #285b77;
+  --accent-3: #0b959f;
+  --accent-4: #06cfce;
+  --accent-5: #d3167c;
+  --accent-6: #8d155e;
+}
+
+/* Cyberpunk Purple and Black Theme */
+.cyberpunk-purple-theme {
+  --background: #1a1a1a; /* Solid color */
+  --foreground: #e0aaff;
+  --accent-1: #6a1b9a;
+  --accent-2: #9c27b0;
+  --accent-3: #ce93d8;
+  --accent-4: #ffffff;
+}
+
+/* Cyberpunk Red and Black Theme */
+.cyberpunk-red-theme {
+  --background: #1a1a1a; /* Solid color */
+  --foreground: #ff6b6b;
+  --accent-1: #d32f2f;
+  --accent-2: #b71c1c;
+  --accent-3: #ff5252;
+  --accent-4: #ffffff;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-attachment: fixed;
+  font-family: var(--font-family);
+  transition: background 0.5s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Granular Noise Effect */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  /* background-image: url("https://grainy-gradients.vercel.app/noise.svg"); */
+  opacity: 1;
+  mix-blend-mode: overlay;
+  z-index: 1;
+}
+
+/* Add this after your existing body::before styles */
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 2px,
+    rgba(255, 255, 255, 0.05) 2px,
+    rgba(255, 255, 255, 0.05) 4px
+  );
+  z-index: 2;
+  opacity: 0.5; /* Adjust opacity to make it subtle or more pronounced */
 }
