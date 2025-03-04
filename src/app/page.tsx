@@ -5,7 +5,8 @@ import AnimatedBackground from "@/components/AnimatedBackground";
 import Header from "@/components/Header";
 import OctagonBox from "@/components/OctagonBox";
 import MatrixBackground from "@/components/MatrixBackground";
-import Button from "@/components/Button"
+import CyberButton from "@/components/CyberButton"
+import CyberContainer from "@/components/CyberContainer"
 
 export default function Home() {
   const { theme, toggleTheme } = useTheme();
@@ -19,63 +20,63 @@ export default function Home() {
         <Header />
 
         <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-          <Button
+          <CyberButton
             onClick={toggleTheme}
             unevenBorders
           >
             Toggle Theme
-          </Button>
-          <Button
+          </CyberButton>
+          <CyberButton
             onClick={toggleTheme}
             normalBorders
             textGlow
           >
             Toggle Theme
-          </Button>
-          <Button
+          </CyberButton>
+          <CyberButton
             onClick={toggleTheme}
             unevenBorders
             glowingBorders
           >
             Toggle Theme
-          </Button>
-          <Button
+          </CyberButton>
+          <CyberButton
             onClick={toggleTheme}
             normalBorders
             glowingBorders
           >
             Toggle Theme
-          </Button>
-          <Button
+          </CyberButton>
+          <CyberButton
             onClick={toggleTheme}
             unevenBorders
             clearBorders
           >
             Toggle Theme
-          </Button>
-          <Button
+          </CyberButton>
+          <CyberButton
             onClick={toggleTheme}
             normalBorders
             clearBorders
           >
             Toggle Theme
-          </Button>
-          <Button
+          </CyberButton>
+          <CyberButton
             onClick={toggleTheme}
             unevenBorders
             clearBorders
             secondaryTextGlow
           >
             Toggle Theme
-          </Button>
-          <Button
+          </CyberButton>
+          <CyberButton
             onClick={toggleTheme}
             normalBorders
             clearBorders
             secondaryTextGlow
           >
             Toggle Theme
-          </Button>
+          </CyberButton>
           <div className="flex gap-4 items-center flex-col sm:flex-row">
             <div className="flex gap-2">
               <div className="w-4 h-4 rounded-sm border bg-background"></div>
