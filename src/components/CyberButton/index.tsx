@@ -18,7 +18,7 @@ type CyberButtonProps = {
   icon?: React.ReactNode;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
-const CyberButton: React.FC<CyberButtonProps> = ({
+export const CyberButton: React.FC<CyberButtonProps> = ({
   children,
   className,
   unevenBorders,
@@ -77,4 +77,3 @@ const borderStyles = classnames({
   );
 };
 
-export default CyberButton;

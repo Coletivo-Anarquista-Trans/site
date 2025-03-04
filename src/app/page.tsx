@@ -2,8 +2,8 @@
 
 import {useTheme} from "@/context/ThemeContext";
 import Header from "@/components/Header";
-import CyberButton from "@/components/CyberButton"
-import CyberContainer from "@/components/CyberContainer"
+import {CyberButton} from "@/components/CyberButton"
+import {CyberContainer} from "@/components/CyberContainer"
 import classnames from "classnames";
 
 export default function Home() {

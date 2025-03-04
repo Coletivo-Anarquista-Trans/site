@@ -20,8 +20,11 @@ coverage
 # Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
 
-# node-waf configuration
-.lock-wscript
+# .lock
+deno.lock
+
+#idea
+.idea
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
