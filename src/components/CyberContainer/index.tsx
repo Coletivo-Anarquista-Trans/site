@@ -1,5 +1,7 @@
 import React from "react";
+import { useTheme } from "@/context/ThemeContext";
 import classnames from "classnames";
+
 
 type CyberContainerProps = {
   children: React.ReactNode;
@@ -24,26 +26,27 @@ const CyberContainer: React.FC<CyberContainerProps> = ({
   ...rest
 }) => {
 
-const baseStyles = "px-4 py-2 transition-colors border-2 focus:focus-custom flex items-center justify-center";
-const themeStyles = "bg-accent1";
+const { theme } = useTheme();
+const baseStyles = "flex flex-col items-center justify-items-center bg-background min-h-screen font-[family-name:var(--font-geist-sans)] text-foreground";
 const sizeStyles = large ? "w-8 h-8 text-lg" : slim ? "w-4 h-4 text-sm" : "";
 
 const borderStyles = classnames({
     "rounded-tl-[10px] rounded-br-[10px] rounded-bl-[0px] rounded-tr-[0px]": unevenBorders,
-    "rounded-none border-accent2": normalBorders,
-    "shadow-[0_0_10px_2px_var(--accent-1)] border-2 border-accent2": glowingBorders,
-    "border-glow-accent2 border-accent2": clearBorders,
+    "rounded-none": normalBorders,
+    "shadow-[0_0_10px_2px] border-2": glowingBorders,
+    "border-glow": clearBorders,
   });
 
   return (
     <div
       className={classnames(
+        theme,
         baseStyles,
-        themeStyles,
         borderStyles,
         sizeStyles,
         className
       )}>
+      {children}
     </div>
   );
 };

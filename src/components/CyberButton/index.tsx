@@ -36,14 +36,13 @@ const CyberButton: React.FC<CyberButtonProps> = ({
 }) => {
 
 const baseStyles = "px-4 py-2 transition-colors border-2 focus:focus-custom flex items-center justify-center";
-const themeStyles = "bg-accent1";
 const sizeStyles = large ? "py-3 px-6 text-lg" : slim ? "py-1 px-3 text-sm" : "";
 
 const borderStyles = classnames({
-    "rounded-tl-[10px] rounded-br-[10px] rounded-bl-[0px] rounded-tr-[0px]": unevenBorders,
-    "rounded-none border-accent2": normalBorders,
-    "shadow-[0_0_10px_2px_var(--accent-1)] border-2 border-accent2": glowingBorders,
-    "border-glow-accent2 border-accent2": clearBorders,
+    "rounded-tl-[10px] rounded-br-[10px] rounded-bl-[0px] rounded-tr-[0px] border-accent1": unevenBorders,
+    "rounded-none border-accent1": normalBorders,
+    "shadow-[0_0_10px_2px] border-1": glowingBorders,
+    "border-glow-accent1": clearBorders,
   });
 
   const textStyles = classnames({
@@ -54,8 +53,8 @@ const borderStyles = classnames({
   return (
     <button
       className={classnames(
+        theme,
         baseStyles,
-        themeStyles,
         borderStyles,
         sizeStyles,
         textStyles,
