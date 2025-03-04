@@ -4,12 +4,14 @@ import { useTheme } from "@/context/ThemeContext";
 import AnimatedBackground from "@/components/AnimatedBackground";
 import Header from "@/components/Header";
 import OctagonBox from "@/components/OctagonBox";
+import MatrixBackground from "@/components/MatrixBackground";
 
 export default function Home() {
   const { theme, toggleTheme } = useTheme();
 
   return (
     <>
+      <MatrixBackground />
       <div
         className={`${theme} flex flex-col items-center justify-items-center bg-background min-h-screen font-[family-name:var(--font-geist-sans)] text-foreground`}
       >
