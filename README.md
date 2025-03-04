@@ -1,8 +1,16 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app)
 
 ## Getting Started
 
-First, run the development server:
+First, make sure your machine has deno 2 and use the command
+
+```bash
+deno install
+```
+
+must be deno instead of npm install as deno makes our packages compatible. (todo: verify the need of our current packages)
+
+then, run the development server:
 
 ```bash
 npm run dev
@@ -12,6 +20,8 @@ yarn dev
 pnpm dev
 # or
 bun dev
+# or
+deno task dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -21,6 +31,18 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More
+
+### Learn about this project in the _documentation_ folder
+
+- [coding-guidelines](./documentation/coding-guidelines.md)
+- [structure](./documentation/structure.md)
+- [packages-and-tools](./documentation/packages-and-tools.md)
+- [styling](./documentation/styling.md)
+- [components](./documentation/components.md)
+- [api-integration](./documentation/api-integration.md)
+- [state-management](./documentation/state-management.md)
+
+
 
 To learn more about Next.js, take a look at the following resources:
 

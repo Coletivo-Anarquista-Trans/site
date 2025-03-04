@@ -35,4 +35,3 @@ export default {
   mode: "jit",
   plugins: [twGlow],
 } satisfies Config;
-
