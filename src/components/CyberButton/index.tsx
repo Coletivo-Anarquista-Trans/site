@@ -1,7 +1,8 @@
 import React from "react";
 import classnames from "classnames";
+import theme from "tailwindcss/defaultTheme";
 
-type ButtonProps = {
+type CyberButtonProps = {
   children: React.ReactNode;
   className?: string;
   unevenBorders?: boolean;
@@ -17,7 +18,7 @@ type ButtonProps = {
   icon?: React.ReactNode;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
-const Button: React.FC<ButtonProps> = ({
+const CyberButton: React.FC<CyberButtonProps> = ({
   children,
   className,
   unevenBorders,
@@ -35,6 +36,7 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
 
 const baseStyles = "px-4 py-2 transition-colors border-2 focus:focus-custom flex items-center justify-center";
+const themeStyles = "bg-accent1";
 const sizeStyles = large ? "py-3 px-6 text-lg" : slim ? "py-1 px-3 text-sm" : "";
 
 const borderStyles = classnames({
@@ -53,6 +55,7 @@ const borderStyles = classnames({
     <button
       className={classnames(
         baseStyles,
+        themeStyles,
         borderStyles,
         sizeStyles,
         textStyles,
@@ -75,4 +78,4 @@ const borderStyles = classnames({
   );
 };
 
-export default Button;
+export default CyberButton;
