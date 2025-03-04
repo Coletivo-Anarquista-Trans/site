@@ -5,6 +5,7 @@ import AnimatedBackground from "@/components/AnimatedBackground";
 import Header from "@/components/Header";
 import OctagonBox from "@/components/OctagonBox";
 import MatrixBackground from "@/components/MatrixBackground";
+import Button from "@/components/Button"
 
 export default function Home() {
   const { theme, toggleTheme } = useTheme();
@@ -18,68 +19,63 @@ export default function Home() {
         <Header />
 
         <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-          <button
+          <Button
             onClick={toggleTheme}
-            className="px-4 py-2 transition-colors  text-button-foreground border-2 border-accent2 !important rounded-tl-[10px] rounded-br-[10px] rounded-bl-[0px] rounded-tr-[0px] focus:focus-custom"
+            unevenBorders
           >
             Toggle Theme
-          </button>
-          <button
+          </Button>
+          <Button
             onClick={toggleTheme}
-            className="px-4 py-2 border-2  rounded-none border-accent2 glow focus:focus-custom"
+            normalBorders
+            textGlow
           >
             Toggle Theme
-          </button>
-          <button
+          </Button>
+          <Button
             onClick={toggleTheme}
-            className="px-4 py-2 transition-colors focus:focus-custom  text-button-foreground border-2 border-accent2 !important rounded-tl-[10px] rounded-br-[10px] rounded-bl-[0px] rounded-tr-[0px]"
-          >
-            <span className="text-glow-accent1">Toggle Theme</span>
-          </button>
-          <button
-            onClick={toggleTheme}
-            className="px-4 focus:focus-custom py-2 border-2  rounded-none border-accent2 glow"
-          >
-            <span className="text-glow-accent1">Toggle Theme</span>
-          </button>
-          {/* <div className="border border-accent1 min-w-32 min-h-32"></div> */}
-          <button
-            onClick={toggleTheme}
-            className="px-4 py-2 transition-colors focus:focus-custom text-button-foreground border-2 border-accent2 rounded-tl-[10px] rounded-br-[10px] rounded-bl-[0px] rounded-tr-[0px] shadow-[0_0_10px_2px_var(--accent-1)]"
+            unevenBorders
+            glowingBorders
           >
             Toggle Theme
-          </button>
-          <button
+          </Button>
+          <Button
             onClick={toggleTheme}
-            className="px-4 focus:focus-custom py-2 border-2 rounded-none border-accent2 shadow-[0_0_10px_2px_var(--accent-1)]"
+            normalBorders
+            glowingBorders
           >
             Toggle Theme
-          </button>
-
-          <button
+          </Button>
+          <Button
             onClick={toggleTheme}
-            className="px-4 py-2 focus:focus-custom transition-colors border-glow-accent2 text-button-foreground border border-accent2 !important rounded-tl-[10px] rounded-br-[10px] rounded-bl-[0px] rounded-tr-[0px]"
+            unevenBorders
+            clearBorders
           >
             Toggle Theme
-          </button>
-          <button
+          </Button>
+          <Button
             onClick={toggleTheme}
-            className="border-glow-accent2 px-4 focus:focus-custom py-2 border  rounded-none border-accent2 glow"
+            normalBorders
+            clearBorders
           >
             Toggle Theme
-          </button>
-          <button
+          </Button>
+          <Button
             onClick={toggleTheme}
-            className="px-4 py-2 transition-colors focus:focus-custom border-glow-accent2 text-button-foreground border border-accent2 !important rounded-tl-[10px] rounded-br-[10px] rounded-bl-[0px] rounded-tr-[0px]"
+            unevenBorders
+            clearBorders
+            secondaryTextGlow
           >
-            <span className="text-glow-accent1">Toggle Theme</span>
-          </button>
-          <button
+            Toggle Theme
+          </Button>
+          <Button
             onClick={toggleTheme}
-            className="border-glow-accent1 focus:focus-custom px-4 py-2 border  rounded-none border-accent2 glow"
+            normalBorders
+            clearBorders
+            secondaryTextGlow
           >
-            <span className="text-glow-accent1">Toggle Theme</span>
-          </button>
+            Toggle Theme
+          </Button>
           <div className="flex gap-4 items-center flex-col sm:flex-row">
             <div className="flex gap-2">
               <div className="w-4 h-4 rounded-sm border bg-background"></div>
