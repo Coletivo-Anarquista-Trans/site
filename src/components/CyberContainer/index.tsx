@@ -3,7 +3,7 @@ import { useTheme } from "@/context/ThemeContext";
 import classnames from "classnames";
 
 
-type CyberContainerProps = {
+interface CyberContainerProps {
   children: React.ReactNode;
   className?: string;
   unevenBorders?: boolean;
@@ -12,7 +12,7 @@ type CyberContainerProps = {
   clearBorders?: boolean;
   large?: boolean;
   slim?: boolean;
-} & React.ButtonHTMLAttributes<HTMLButtonElement>;
+}
 
 export const CyberContainer: React.FC<CyberContainerProps> = ({
   children,
