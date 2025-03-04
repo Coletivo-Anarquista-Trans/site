@@ -14,7 +14,7 @@ type CyberContainerProps = {
   slim?: boolean;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
-const CyberContainer: React.FC<CyberContainerProps> = ({
+export const CyberContainer: React.FC<CyberContainerProps> = ({
   children,
   className,
   unevenBorders,
@@ -51,4 +51,3 @@ const borderStyles = classnames({
   );
 };
 
-export default CyberContainer;
