@@ -2,7 +2,7 @@ import React from "react";
 import classnames from "classnames";
 import theme from "tailwindcss/defaultTheme";
 
-type CyberButtonProps = {
+interface CyberButtonProps {
   children: React.ReactNode;
   className?: string;
   unevenBorders?: boolean;
@@ -16,7 +16,7 @@ type CyberButtonProps = {
   loading?: boolean;
   disabled?: boolean;
   icon?: React.ReactNode;
-} & React.ButtonHTMLAttributes<HTMLButtonElement>;
+}
 
 export const CyberButton: React.FC<CyberButtonProps> = ({
   children,
