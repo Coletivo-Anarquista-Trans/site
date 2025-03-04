@@ -11,10 +11,16 @@
   "dependencies": {
     "@arwes/react": "^1.0.0-alpha.23",
     "@emotion/react": "^11.14.0",
+    "@tsparticles/engine": "^3.8.1",
+    "@tsparticles/react": "^3.0.0",
+    "classnames": "^2.5.1",
     "next": "15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-powerglitch": "^1.1.0"
+    "react-powerglitch": "^1.1.0",
+    "react-tsparticles": "^2.12.2",
+    "tsparticles": "^3.8.1",
+    "twglow": "^0.0.10"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
