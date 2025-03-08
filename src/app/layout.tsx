@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ThemeProvider } from "@/context/ThemeContext";
 
 import "./globals.css";
-import ErrorBoundary from "@/components/ErrorBoundary";
+import ErrorBoundary from "../components/atoms/ErrorBoundary";
 
 // Metadata
 export const metadata: Metadata = {
