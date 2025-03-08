@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import CyberMiniButton from "../../atoms/CyberMiniButton";
-
+import CyberTree from "../../atoms/CyberTree";
 
 interface CyberTreeNodeProps {
-    children: React.ReactNode;
+    children?: React.ReactNode;
     theme: string;
     label: string,
 }
@@ -18,12 +18,12 @@ export default function CyberTreeNode({ children, theme, label }: CyberTreeNodeP
 
     return (
         <div className="ml-4">
-            <div className="ml-4">
+            <CyberTree className="ml-4">
                 <CyberMiniButton label={label} theme={theme} onClick={() => setIsOpen((prev) => !prev)}>
                     {label} {isOpen}
                 </CyberMiniButton>
                 {isOpen && <div className="ml-6">{children}</div>}
-            </div>
+            </CyberTree>
         </div>
     );
 }

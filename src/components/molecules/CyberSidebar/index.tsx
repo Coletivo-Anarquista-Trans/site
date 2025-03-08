@@ -1,9 +1,9 @@
 import React from "react";
-import CyberContainer from "../../atoms/CyberContainer";
 import classnames from "classnames";
+import CyberContainer from "../../atoms/CyberContainer";
+import CyberTreeNode from "@/components/molecules/CyberTreeNode";
 
 interface CyberSidebarProps {
-    children: React.ReactNode;
     className?: string;
     unevenBorders?: boolean;
     normalBorders?: boolean;
@@ -15,17 +15,16 @@ interface CyberSidebarProps {
 }
 
 export default function CyberSidebar({
-                                                              children,
-                                                              className,
-                                                              unevenBorders,
-                                                              normalBorders,
-                                                              glowingBorders,
-                                                              clearBorders,
-                                                              fixed = true,
-                                                              width = "w-64",
-                                                              theme,
-                                                          }: CyberSidebarProps) {
-    const baseStyles = "flex flex-col items-start p-4 h-full";
+                                         className,
+                                         unevenBorders,
+                                         normalBorders,
+                                         glowingBorders,
+                                         clearBorders,
+                                         fixed = true,
+                                         width = "w-64",
+                                         theme,
+                                     }: CyberSidebarProps) {
+    const baseStyles = "";
     const sizeStyles = classnames(width, fixed ? "fixed left-0 top-0 min-h-screen" : "relative");
     const borderStyles = classnames({
         "rounded-tl-[10px] rounded-br-[10px] rounded-bl-[0px] rounded-tr-[0px] border-accent1": unevenBorders,
@@ -36,14 +35,26 @@ export default function CyberSidebar({
 
     return (
         <CyberContainer
+            theme={theme}
             className={classnames(
                 theme,
                 baseStyles,
                 sizeStyles,
                 borderStyles,
                 className
-            )} theme={theme}>
-            {children}
+            )}>
+            <CyberTreeNode theme={theme} label={"Button 1"}>
+                <CyberTreeNode theme={theme} label={"Button 1.1"}>
+                </CyberTreeNode>
+            </CyberTreeNode>
+            <CyberTreeNode theme={theme} label={"Button 2"}>
+                <CyberTreeNode theme={theme} label={"Button 2.1"}>
+                </CyberTreeNode>
+            </CyberTreeNode>
+            <CyberTreeNode theme={theme} label={"Button 3"}>
+                <CyberTreeNode theme={theme} label={"Button 3.1"}>
+                </CyberTreeNode>
+            </CyberTreeNode>
         </CyberContainer>
     );
 };
