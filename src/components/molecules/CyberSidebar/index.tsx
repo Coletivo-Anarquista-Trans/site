@@ -1,5 +1,5 @@
 import React from "react";
-import CyberContainer from "../CyberContainer";
+import CyberContainer from "../../atoms/CyberContainer";
 import classnames from "classnames";
 
 interface CyberSidebarProps {
