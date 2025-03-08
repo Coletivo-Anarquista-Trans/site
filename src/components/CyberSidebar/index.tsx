@@ -1,5 +1,5 @@
 import React from "react";
-import { CyberContainer } from "../CyberContainer";
+import CyberContainer from "../CyberContainer";
 import classnames from "classnames";
 
 interface CyberSidebarProps {
@@ -11,9 +11,10 @@ interface CyberSidebarProps {
     clearBorders?: boolean;
     fixed?: boolean;
     width?: string;
+    theme: string;
 }
 
-export const CyberSidebar: React.FC<CyberSidebarProps> = ({
+export default function CyberSidebar({
                                                               children,
                                                               className,
                                                               unevenBorders,
@@ -22,7 +23,8 @@ export const CyberSidebar: React.FC<CyberSidebarProps> = ({
                                                               clearBorders,
                                                               fixed = true,
                                                               width = "w-64",
-                                                          }) => {
+                                                              theme,
+                                                          }: CyberSidebarProps) {
     const baseStyles = "flex flex-col items-start p-4 h-full";
     const sizeStyles = classnames(width, fixed ? "fixed left-0 top-0 min-h-screen" : "relative");
     const borderStyles = classnames({
@@ -35,12 +37,12 @@ export const CyberSidebar: React.FC<CyberSidebarProps> = ({
     return (
         <CyberContainer
             className={classnames(
+                theme,
                 baseStyles,
                 sizeStyles,
                 borderStyles,
                 className
-            )}
-        >
+            )} theme={theme}>
             {children}
         </CyberContainer>
     );

@@ -1,5 +1,4 @@
 import React from "react";
-import { useTheme } from "@/context/ThemeContext";
 import classnames from "classnames";
 
 
@@ -24,9 +23,9 @@ export default function CyberContainer({
   clearBorders,
   large,
   slim,
+  theme,
 }: CyberContainerProps) {
 
-const { theme } = useTheme();
 const baseStyles = "flex flex-col items-center justify-items-center bg-background min-h-screen font-[family-name:var(--font-geist-sans)] text-foreground";
 const sizeStyles = large ? "w-8 h-8 text-lg" : slim ? "w-4 h-4 text-sm" : "";
 
