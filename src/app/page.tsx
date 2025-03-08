@@ -17,29 +17,10 @@ export default function Home() {
                     <CyberContainer theme={theme}>
                         <CyberMiniButton
                             theme={theme}
-                            hasChildren
-                            label="Root Button"
-                            childButtons={[
-                                {
-                                    theme,
-                                    hasChildren: true,
-                                    label: "Child 1",
-                                    childButtons: [
-                                        { theme, label: "Child 1.1" },
-                                        { theme, label: "Child 1.2" },
-                                    ],
-                                },
-                                {
-                                    theme,
-                                    hasChildren: true,
-                                    label: "Child 2",
-                                    childButtons: [
-                                        { theme, label: "Child 2.1" },
-                                        { theme, label: "Child 2.2" },
-                                    ],
-                                },
-                            ]}
-                        />
+                            onClick={toggleTheme}
+                        >
+                            Click Me
+                        </CyberMiniButton>
                     </CyberContainer>
                 </CyberSidebar>
                 <CyberContainer
