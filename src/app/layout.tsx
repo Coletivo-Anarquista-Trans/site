@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { ThemeProvider } from "@/context/ThemeContext";
-import Header from "@/components/Header";
 
 import "./globals.css";
 import ErrorBoundary from "@/components/ErrorBoundary";
