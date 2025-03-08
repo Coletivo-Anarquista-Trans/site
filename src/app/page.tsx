@@ -1,10 +1,10 @@
 "use client";
 
 import {useTheme} from "@/context/ThemeContext";
-import Header from "@/components/Header";
 import {CyberButton} from "@/components/CyberButton"
 import {CyberContainer} from "@/components/CyberContainer"
 import classnames from "classnames";
+import {CyberSidebar} from "@/components/CyberSidebar";
 
 export default function Home() {
     const {theme, toggleTheme} = useTheme();
@@ -13,8 +13,9 @@ export default function Home() {
         <>
             <CyberContainer
                 className={classnames(theme)}>
-                <Header/>
-                <CyberContainer className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+                <CyberSidebar
+                    className="flex flex-col gap-8 row-start-2 items-center sm:items-start"
+                >
                     <CyberButton
                         onClick={toggleTheme}
                         unevenBorders
@@ -32,9 +33,10 @@ export default function Home() {
                         onClick={toggleTheme}
                         unevenBorders
                         glowingBorders
-                    >
-                        Toggle Theme
+                    >Toggle Theme
                     </CyberButton>
+                </CyberSidebar>
+                <CyberContainer >
                     <CyberButton
                         onClick={toggleTheme}
                         normalBorders
