@@ -12,9 +12,10 @@ interface CyberContainerProps {
   clearBorders?: boolean;
   large?: boolean;
   slim?: boolean;
+  theme: string,
 }
 
-export const CyberContainer: React.FC<CyberContainerProps> = ({
+export default function CyberContainer({
   children,
   className,
   unevenBorders,
@@ -23,8 +24,7 @@ export const CyberContainer: React.FC<CyberContainerProps> = ({
   clearBorders,
   large,
   slim,
-  ...rest
-}) => {
+}: CyberContainerProps) {
 
 const { theme } = useTheme();
 const baseStyles = "flex flex-col items-center justify-items-center bg-background min-h-screen font-[family-name:var(--font-geist-sans)] text-foreground";
