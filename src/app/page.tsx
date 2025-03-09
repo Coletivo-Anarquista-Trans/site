@@ -1,5 +1,4 @@
 "use client";
-
 import {useTheme} from "@/context/ThemeContext";
 import CyberButton from "../components/atoms/CyberButton"
 import CyberContainer from "../components/atoms/CyberContainer"

@@ -21,7 +21,7 @@ export default function CyberSidebar({
                                          glowingBorders,
                                          clearBorders,
                                          fixed = true,
-                                         width = "w-64",
+                                         width = "w-48",
                                          theme,
                                      }: CyberSidebarProps) {
     const baseStyles = "";
@@ -44,15 +44,15 @@ export default function CyberSidebar({
                 className
             )}>
             <CyberTreeNode theme={theme} label={"Button 1"}>
-                <CyberTreeNode theme={theme} label={"Button 1.1"}>
+                <CyberTreeNode theme={theme} label={"1.1"}>
                 </CyberTreeNode>
             </CyberTreeNode>
             <CyberTreeNode theme={theme} label={"Button 2"}>
-                <CyberTreeNode theme={theme} label={"Button 2.1"}>
+                <CyberTreeNode theme={theme} label={"2.1"}>
                 </CyberTreeNode>
             </CyberTreeNode>
             <CyberTreeNode theme={theme} label={"Button 3"}>
-                <CyberTreeNode theme={theme} label={"Button 3.1"}>
+                <CyberTreeNode theme={theme} label={"3.1"}>
                 </CyberTreeNode>
             </CyberTreeNode>
         </CyberContainer>
