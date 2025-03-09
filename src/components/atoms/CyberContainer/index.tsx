@@ -1,9 +1,8 @@
 import React from "react";
-import { useTheme } from "@/context/ThemeContext";
 import classnames from "classnames";
 
 
-type CyberContainerProps = {
+interface CyberContainerProps {
   children: React.ReactNode;
   className?: string;
   unevenBorders?: boolean;
@@ -12,9 +11,10 @@ type CyberContainerProps = {
   clearBorders?: boolean;
   large?: boolean;
   slim?: boolean;
-} & React.ButtonHTMLAttributes<HTMLButtonElement>;
+  theme: string,
+}
 
-export const CyberContainer: React.FC<CyberContainerProps> = ({
+export default function CyberContainer({
   children,
   className,
   unevenBorders,
@@ -23,11 +23,10 @@ export const CyberContainer: React.FC<CyberContainerProps> = ({
   clearBorders,
   large,
   slim,
-  ...rest
-}) => {
+  theme,
+}: CyberContainerProps) {
 
-const { theme } = useTheme();
-const baseStyles = "flex flex-col items-center justify-items-center bg-background min-h-screen font-[family-name:var(--font-geist-sans)] text-foreground";
+const baseStyles = "flex flex-col items-center justify-items-center bg-background min-h-screen text-foreground";
 const sizeStyles = large ? "w-8 h-8 text-lg" : slim ? "w-4 h-4 text-sm" : "";
 
 const borderStyles = classnames({
