@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React, {useState, useEffect } from "react";
 import CyberMiniButton from "../../atoms/CyberMiniButton";
-import CyberTree from "../../atoms/CyberTree";
 
 interface CyberTreeNodeProps {
     children?: React.ReactNode;
@@ -15,15 +14,32 @@ export default function CyberTreeNode({ children, theme, label }: CyberTreeNodeP
     useEffect(() => {
         setId(crypto.randomUUID());
     }, []);
+    const hasChildren = React.Children.count(children) > 0;
 
     return (
-        <div className="ml-4">
-            <CyberTree className="ml-4">
-                <CyberMiniButton label={label} theme={theme} onClick={() => setIsOpen((prev) => !prev)}>
-                    {label} {isOpen}
+        <div className=" flex flex-col self-start ">
+            <div className="flex items-center space-x-2">
+                {hasChildren && (
+                    <span onClick={() => setIsOpen(prev => !prev)} className="cursor-pointer">
+                        {isOpen}
+                    </span>
+                )}
+                <CyberMiniButton
+                    label={label}
+                    className={""}
+                    theme={theme}
+                    onClick={() => setIsOpen((prev) => !prev)}
+                    isParent={hasChildren} // \(★ω★)/ Parent buttons have icons, children have different icons
+                >
+                    {label}
                 </CyberMiniButton>
-                {isOpen && <div className="ml-6">{children}</div>}
-            </CyberTree>
+            </div>
+            {isOpen && hasChildren && (
+                <div className="pl-12 flex flex-col">
+                    {children}
+                </div>
+            )}
         </div>
     );
 }
+
