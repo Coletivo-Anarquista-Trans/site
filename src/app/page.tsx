@@ -1,8 +1,10 @@
 "use client";
+
 import {useTheme} from "@/context/ThemeContext";
-import CyberButton from "../components/atoms/CyberButton"
-import CyberContainer from "../components/atoms/CyberContainer"
-import CyberSidebar from "../components/molecules/CyberSidebar";
+import Header from "@/components/Header";
+import {CyberButton} from "@/components/CyberButton"
+import {CyberContainer} from "@/components/CyberContainer"
+import classnames from "classnames";
 
 export default function Home() {
     const {theme, toggleTheme} = useTheme();
@@ -10,19 +12,33 @@ export default function Home() {
     return (
         <>
             <CyberContainer
-                theme={theme}>
-                <CyberSidebar
-                    clearBorders
-                    glowingBorders
-                    theme={theme}>
-                </CyberSidebar>
-                <CyberContainer
-                    theme={theme}>
+                className={classnames(theme)}>
+                <Header/>
+                <CyberContainer className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+                    <CyberButton
+                        onClick={toggleTheme}
+                        unevenBorders
+                    >
+                        Toggle Theme
+                    </CyberButton>
+                    <CyberButton
+                        onClick={toggleTheme}
+                        normalBorders
+                        textGlow
+                    >
+                        Toggle Theme
+                    </CyberButton>
+                    <CyberButton
+                        onClick={toggleTheme}
+                        unevenBorders
+                        glowingBorders
+                    >
+                        Toggle Theme
+                    </CyberButton>
                     <CyberButton
                         onClick={toggleTheme}
                         normalBorders
                         glowingBorders
-                        theme={theme}
                     >
                         Toggle Theme
                     </CyberButton>
@@ -30,7 +46,6 @@ export default function Home() {
                         onClick={toggleTheme}
                         unevenBorders
                         clearBorders
-                        theme={theme}
                     >
                         Toggle Theme
                     </CyberButton>
@@ -38,7 +53,6 @@ export default function Home() {
                         onClick={toggleTheme}
                         normalBorders
                         clearBorders
-                        theme={theme}
                     >
                         Toggle Theme
                     </CyberButton>
@@ -47,7 +61,6 @@ export default function Home() {
                         unevenBorders
                         clearBorders
                         secondaryTextGlow
-                        theme={theme}
                     >
                         Toggle Theme
                     </CyberButton>
@@ -56,7 +69,6 @@ export default function Home() {
                         normalBorders
                         clearBorders
                         secondaryTextGlow
-                        theme={theme}
                     >
                         Toggle Theme
                     </CyberButton>
