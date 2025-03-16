@@ -1,9 +1,9 @@
 import React from "react";
 import classnames from "classnames";
-
+import {useTheme} from "@/context/ThemeContext";
 
 interface CyberContainerProps {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   className?: string;
   unevenBorders?: boolean;
   normalBorders?: boolean;
@@ -11,7 +11,6 @@ interface CyberContainerProps {
   clearBorders?: boolean;
   large?: boolean;
   slim?: boolean;
-  theme: string,
 }
 
 export default function CyberContainer({
@@ -23,18 +22,20 @@ export default function CyberContainer({
   clearBorders,
   large,
   slim,
-  theme,
 }: CyberContainerProps) {
 
-const baseStyles = "flex flex-col items-center justify-items-center bg-background min-h-screen text-foreground";
-const sizeStyles = large ? "w-8 h-8 text-lg" : slim ? "w-4 h-4 text-sm" : "";
+  const { theme } = useTheme();
+
+  const baseStyles = classnames("text-accent-1");
+  const sizeStyles = large ? "w-8 h-8 text-lg" : slim ? "w-4 h-4 text-sm" : "";
 
 const borderStyles = classnames({
-    "rounded-tl-[10px] rounded-br-[10px] rounded-bl-[0px] rounded-tr-[0px]": unevenBorders,
+    "rounded-tl-[10px] rounded-br-[10px] rounded-bl-[0px] rounded-tr-[0px] border-accent1": unevenBorders,
     "rounded-none": normalBorders,
     "shadow-[0_0_10px_2px] border-2": glowingBorders,
     "border-glow": clearBorders,
   });
+
 
   return (
     <div

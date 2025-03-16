@@ -1,49 +1,43 @@
 import React from "react";
 import classnames from "classnames";
+import {useTheme} from "@/context/ThemeContext";
+
 
 interface CyberButtonProps {
-  children: React.ReactNode;
-  className?: string;
-  unevenBorders?: boolean;
-  normalBorders?: boolean;
-  glowingBorders?: boolean;
-  clearBorders?: boolean;
-  textGlow?: boolean;
-  secondaryTextGlow?: boolean;
-  large?: boolean;
-  slim?: boolean;
-  loading?: boolean;
-  disabled?: boolean;
-  icon?: React.ReactNode;
-  onClick?: () => void;
-  theme: string;
+    children: React.ReactNode,
+    className?: string,
+    unevenBorders?: boolean,
+    normalBorders?: boolean,
+    glowingBorders?: boolean,
+    clearBorders?: boolean,
+    textGlow?: boolean,
+    secondaryTextGlow?: boolean,
+    large?: boolean,
+    slim?: boolean,
+    loading?: boolean,
+    disabled?: boolean,
+    icon?: React.ReactNode,
+    onClick?: () => void
 }
 
 export default function CyberButton({
-  children,
-  className,
-  unevenBorders,
-  normalBorders,
-  glowingBorders,
-  clearBorders,
-  large,
-  slim,
-  textGlow,
-  secondaryTextGlow,
-  loading,
-  disabled,
-  icon,
-  onClick,
-  theme,
-  ...rest
-}: CyberButtonProps) {
-  const baseStyles =
-    "px-4 py-2 transition-colors border-2 focus:focus-custom flex items-center justify-center";
-  const sizeStyles = large
-    ? "py-3 px-6 text-lg"
-    : slim
-    ? "py-1 px-3 text-sm"
-    : "";
+                                        children,
+                                        className,
+                                        unevenBorders,
+                                        normalBorders,
+                                        glowingBorders,
+                                        clearBorders,
+                                        large,
+                                        slim,
+                                        textGlow,
+                                        secondaryTextGlow,
+                                        loading,
+                                        disabled,
+                                        icon,
+                                        onClick,
+                                        ...rest
+                                    }: CyberButtonProps) {
+    const { theme } = useTheme();
 
   const borderStyles = classnames({
     "rounded-tl-[10px] rounded-br-[10px] rounded-bl-[0px] rounded-tr-[0px] border-accent1":

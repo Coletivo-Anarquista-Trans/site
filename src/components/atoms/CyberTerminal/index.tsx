@@ -2,10 +2,9 @@ import { useState, useRef, useEffect } from "react";
 import { kaomojis } from "@/utils/kaomojis";
 
 interface CyberTerminalProps {
-  theme: string; // Pass the current theme as a prop
 }
 
-export default function CyberTerminal({ theme }: CyberTerminalProps) {
+export default function CyberTerminal({}: CyberTerminalProps) {
   const [history, setHistory] = useState<string[]>([
     "Welcome to Fake Terminal!",
     "",
