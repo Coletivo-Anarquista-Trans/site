@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import classnames from "classnames";
 import {FaFolder, FaFolderOpen} from "react-icons/fa";
 import {HiOutlineArrowTurnDownRight} from "react-icons/hi2";
+import {useTheme} from "@/context/ThemeContext";
 
 interface CyberMiniButtonProps {
     children?: React.ReactNode;
@@ -12,7 +13,6 @@ interface CyberMiniButtonProps {
     disabled?: boolean;
     isOpen?: boolean;
     onClick?: () => void;
-    theme: string;
     toggleIcon?: () => void;
     label: string;
     isParent?: boolean,
@@ -30,9 +30,9 @@ export default function CyberMiniButton({
                                             toggleIcon,
                                             label,
                                             isParent,
-                                            theme,
                                             ...rest
                                         }: CyberMiniButtonProps) {
+    const { theme } = useTheme();
     const [isFolderOpen, setIsFolderOpen] = useState(false);
 
     const baseStyles = "px-4 py-2 transition-colors";

@@ -7,25 +7,21 @@ import CyberSidebar from "@/components/organism/CyberSidebar";
 import CyberTerminal from "@/components/atoms/CyberTerminal";
 
 export default function Home() {
-    const {theme, toggleTheme} = useTheme();
+    const {toggleTheme} = useTheme();
 
     return (
         <>
             <CyberContainer
-                className={"bg-background min-h-screen text-foreground flex flex-col items-center justify-items-center"}
-                theme={theme}>
-                <CyberTerminal theme={theme}/>
+                className={"bg-background min-h-screen text-foreground flex flex-col items-center justify-items-center"}>
+                <CyberTerminal />
                 <CyberSidebar
                     glowingBorders
-                    normalBorders
-                    theme={theme}>
+                    normalBorders>
                 </CyberSidebar>
-                <CyberContainer theme={theme} className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+                <CyberContainer className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
                     <CyberButton
                         onClick={toggleTheme}
-                        unevenBorders
-                        theme={theme}
-                    >
+                        unevenBorders>
                         Toggle Theme
                     </CyberButton>
                 </CyberContainer>

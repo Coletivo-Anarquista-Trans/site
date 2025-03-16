@@ -24,8 +24,8 @@
 .text-accent-4 { color: var(--accent-4); }
 
 .text-background {
-  background-color: var(--foreground);
-  opacity: 0.25;
+  background-color: var(--accent-4);
+  opacity: 0.50;
 }
 
 /* New Theme based on the provided palette */

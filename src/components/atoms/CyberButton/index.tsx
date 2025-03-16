@@ -1,5 +1,7 @@
 import React from "react";
 import classnames from "classnames";
+import {useTheme} from "@/context/ThemeContext";
+
 
 interface CyberButtonProps {
     children: React.ReactNode,
@@ -16,7 +18,6 @@ interface CyberButtonProps {
     disabled?: boolean,
     icon?: React.ReactNode,
     onClick?: () => void
-    theme: string,
 }
 
 export default function CyberButton({
@@ -34,9 +35,10 @@ export default function CyberButton({
                                         disabled,
                                         icon,
                                         onClick,
-                                        theme,
                                         ...rest
                                     }: CyberButtonProps) {
+    const { theme } = useTheme();
+
 
     const baseStyles = "px-4 py-2 transition-colors border-2 focus:focus-custom flex items-center justify-center";
     const sizeStyles = large ? "py-3 px-6 text-lg" : slim ? "py-1 px-3 text-sm" : "";
