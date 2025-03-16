@@ -15,6 +15,7 @@
     "npm:next@15.1.6": "15.1.6_react@19.0.0_react-dom@19.0.0__react@19.0.0",
     "npm:postcss@8": "8.5.3",
     "npm:react-dom@19": "19.0.0_react@19.0.0",
+    "npm:react-icons@^5.5.0": "5.5.0_react@19.0.0",
     "npm:react-powerglitch@^1.1.0": "1.1.0_react@19.0.0_react-dom@19.0.0__react@19.0.0",
     "npm:react-tsparticles@^2.12.2": "2.12.2_react@19.0.0",
     "npm:react@19": "19.0.0",
@@ -2687,6 +2688,12 @@
         "scheduler"
       ]
     },
+    "react-icons@5.5.0_react@19.0.0": {
+      "integrity": "sha512-MEFcXdkP3dLo8uumGI5xN3lDFNsRtrjbOEKDLD7yv76v4wpnEq2Lt2qeHaQOr34I/wPN3s3+N08WkQ+CW37Xiw==",
+      "dependencies": [
+        "react@19.0.0"
+      ]
+    },
     "react-is@16.13.1": {
       "integrity": "sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ=="
     },
@@ -3340,6 +3347,7 @@
         "npm:next@15.1.6",
         "npm:postcss@8",
         "npm:react-dom@19",
+        "npm:react-icons@^5.5.0",
         "npm:react-powerglitch@^1.1.0",
         "npm:react-tsparticles@^2.12.2",
         "npm:react@19",

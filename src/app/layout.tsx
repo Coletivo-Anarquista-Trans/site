@@ -17,16 +17,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body
-      >
+    <html lang="en" >
+      <body >
         <ThemeProvider>
           <ErrorBoundary fallback={<div>Something went wrong!</div>}>
-            
-              
-
-              {children}
-            
+            <div className="min-h-screen flex flex-col">{children}</div>
           </ErrorBoundary>
         </ThemeProvider>
       </body>
