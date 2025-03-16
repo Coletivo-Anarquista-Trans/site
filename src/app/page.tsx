@@ -7,7 +7,7 @@ import CyberSidebar from "@/components/organism/CyberSidebar";
 import CyberTerminal from "@/components/atoms/CyberTerminal";
 
 export default function Home() {
-    const {toggleTheme} = useTheme();
+    const { toggleTheme} = useTheme();
 
     return (
         <>

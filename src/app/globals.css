@@ -24,7 +24,7 @@
 .text-accent-4 { color: var(--accent-4); }
 
 .text-background {
-  background-color: var(--accent-4);
+  background-color: var(--background);
   opacity: 0.50;
 }
 
@@ -53,7 +53,7 @@
 /* Cyberpunk Red and Black Theme */
 .cyberpunk-red-theme {
   --background: #000; /* Even darker solid color */
-  --foreground: #ff6b6b; /* Brighter red for contrast */
+  --foreground: #ff0000; /* Brighter red for contrast */
   --accent-1: #d32f2f;
   --accent-2: #b71c1c;
   --accent-3: #ff5252;

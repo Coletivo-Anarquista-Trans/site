@@ -26,7 +26,7 @@ export default function CyberContainer({
 
   const { theme } = useTheme();
 
-  const baseStyles = classnames("p-4, text-accent-1");
+  const baseStyles = classnames("text-accent-1");
   const sizeStyles = large ? "w-8 h-8 text-lg" : slim ? "w-4 h-4 text-sm" : "";
 
 const borderStyles = classnames({
@@ -36,7 +36,6 @@ const borderStyles = classnames({
     "border-glow": clearBorders,
   });
 
-  const backgroundStyles = "bg-clip-padding p-4 rounded-r-3xl shadow-xl text-background";
 
   return (
     <div
@@ -44,7 +43,6 @@ const borderStyles = classnames({
         theme,
         baseStyles,
         borderStyles,
-        backgroundStyles,
         sizeStyles,
         className
       )}>
