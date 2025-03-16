@@ -1,9 +1,13 @@
-import React from "react";
+"use client";
+
+import React, {useEffect} from "react";
 import classnames from "classnames";
 import CyberContainer from "../../atoms/CyberContainer";
 import CyberTreeNode from "@/components/molecules/CyberTreeNode";
 import Link from "next/link";
 import {useTheme} from "@/context/ThemeContext";
+import {useCyberSection} from "@/context/CyberSectionsContext/CyberSections";
+import {useRouter} from "next/navigation";
 
 interface CyberSidebarProps {
     className?: string;
@@ -24,7 +28,18 @@ export default function CyberSidebar({
                                          fixed = true,
                                          width = "w-48",
                                      }: CyberSidebarProps) {
-    const { theme } = useTheme();
+    const router = useRouter();
+    const {theme} = useTheme();
+    const {cyberSections} = useCyberSection();
+
+    useEffect(() => {
+        console.log("🔍 [CyberSidebar] Sections in Sidebar:", cyberSections);
+    }, [cyberSections]);
+
+    const handleSectionClick = (id: string) => {
+        const manifestoPath = `/manifesto#${id}`;
+        router.push(manifestoPath);
+    };
 
     const baseStyles = "bg-background min-h-screen text-foreground";
     const sizeStyles = classnames(width, fixed ? "fixed left-0 top-0 min-h-screen" : "relative");
@@ -36,27 +51,26 @@ export default function CyberSidebar({
     });
 
     return (
-        <CyberContainer
-            className={classnames(
-                theme,
-                baseStyles,
-                sizeStyles,
-                borderStyles,
-                className
-            )}>
-            <CyberTreeNode label={"Home"}>
-                <Link href="/" passHref>
-                <CyberTreeNode label={"Clique aqui!"}/>
-                </Link>
+        <CyberContainer className={classnames(theme, baseStyles, sizeStyles, borderStyles, className)}>
+            <Link href="/" passHref>
+                <CyberTreeNode label="Home"/>
+            </Link>
+            <CyberTreeNode label={<Link href="/manifesto">Manifesto</Link>}>
+                {cyberSections.length > 0 ? (
+                    cyberSections.map((section) => (
+                        <CyberTreeNode
+                            key={section.id}
+                            label={section.label}
+                            onClick={() => handleSectionClick(section.id)}
+                        />
+                    ))
+                ) : (
+                    <p className="text-gray-500 text-center">No sections available</p>
+                )}
             </CyberTreeNode>
-            <CyberTreeNode label={"Manifesto"}>
-                <Link href="/manifesto" passHref>
-                <CyberTreeNode label={"Clique aqui!"}/>
-                </Link>
-            </CyberTreeNode>
-            <CyberTreeNode label={"Button 3"}>
-                <CyberTreeNode label={"3.1"}/>
+            <CyberTreeNode label="Button 3">
+                <CyberTreeNode label="3.1"/>
             </CyberTreeNode>
         </CyberContainer>
     );
-};
+}
