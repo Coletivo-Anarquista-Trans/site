@@ -1,29 +1,26 @@
 "use client";
 
-import {useTheme} from "@/context/ThemeContext";
 import CyberContainer from "@/components/atoms/CyberContainer"
 import CyberSidebar from "../../components/organism/CyberSidebar";
-import CyberText from "@/components/atoms/CyberText/CyberText";
 
 export default function Manifesto() {
-    const {theme, toggleTheme} = useTheme();
 
     return (
         <>
             <CyberContainer
                 className={"bg-background min-h-screen text-foreground flex flex-col items-center justify-items-center"}
-                theme={theme}>
+            >
                 <CyberSidebar
                     glowingBorders
                     normalBorders
-                    theme={theme}>
+                >
                 </CyberSidebar>
-                <CyberContainer theme={theme} className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+                <CyberContainer className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
                     <div className="inline-block justify-normal whitespace-normal p-8 break-words w-auto h-auto min-w-[48rem] max-w-md">
-                            <CyberText theme={theme}>
+                        <CyberContainer unevenBorders glowingBorders className="text-center text-4xl p-4 m-14 w-auto h-auto">
                                 Finalidade
-                            </CyberText>
-                        <CyberContainer textBackground theme={theme} className={"text-center text-base p-2 m-4 w-auto h-auto"}>
+                        </CyberContainer>
+                        <CyberContainer className={"text-center text-base p-2 m-4 w-auto h-auto"}>
                             O corpo é político. Construiremos um mundo onde toda pessoa será livre para construir e viver o seu corpo desejado.
                             Desejamos o livre acesso à produção e uso das tecnologias de afirmação do corpo e da mente.
                             Colocaremos tudo que precisamos para construir nossos corpos nas mãos dos trabalhadores, pessoas trans, queer, não-brancas, neurodivergentes e pessoas com deficiência.
@@ -37,7 +34,7 @@ export default function Manifesto() {
                             Destrua o Cistema!
                         </CyberContainer>
 
-                        <CyberContainer unevenBorders glowingBorders theme={theme} className="text-center text-4xl p-4 m-14 w-auto h-auto">
+                        <CyberContainer unevenBorders glowingBorders className="text-center text-4xl p-4 m-14 w-auto h-auto">
                             Como faremos
                         </CyberContainer>
 
@@ -45,8 +42,8 @@ export default function Manifesto() {
                             Uma sociedade em que as tecnologias de produção dos corpos* estejam nas mãos dos marginalizados pelo Cistema depende de uma ruptura radical das estruturas que nos excluem. Por isso, seguimos os seguintes princípios:
                         </span>
 
-                        <CyberContainer theme={theme} className="text-center text-base p-2 m-4 w-auto h-auto">
-                            <CyberContainer theme={theme} className="text-center text-2xl p-2 m-4 w-auto h-auto">
+                        <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
+                            <CyberContainer className="text-center text-2xl p-2 m-4 w-auto h-auto">
                                 1. Somos anarquistas
                             </CyberContainer>
                             Porque não acreditamos em vanguardas*. Acreditamos na construção e organização das comunidades como forma de cultivar a cooperação sem a dependência de uma estrutura mercadológica, estatal ou partidária para garantir a organização.
@@ -54,8 +51,8 @@ export default function Manifesto() {
                             Líderes tem a função de tornarem-se dispensáveis a longo prazo, empoderando o coletivo para não depender deles.
                         </CyberContainer>
 
-                        <CyberContainer theme={theme} className="text-center text-base p-2 m-4 w-auto h-auto">
-                            <CyberContainer theme={theme} className="text-center text-2xl p-2 m-4 w-auto h-auto">
+                        <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
+                            <CyberContainer className="text-center text-2xl p-2 m-4 w-auto h-auto">
                                 2. Acreditamos no voluntarismo
                             </CyberContainer>
                             “De cada um de acordo com sua capacidade”. Seguimos essa máxima, pois o mundo capitalista consome grande parte do nosso tempo e capacidades, precisamos antes sobreviver para lutar.
@@ -63,8 +60,8 @@ export default function Manifesto() {
                             Construímos em coletivo. Acreditamos que a cooperação organizada com habilidades distintas nos leva mais longe.
                         </CyberContainer>
 
-                        <CyberContainer theme={theme} className="text-center text-base p-2 m-4 w-auto h-auto">
-                            <CyberContainer theme={theme} className="text-center text-2xl p-2 m-4 w-auto h-auto">
+                        <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
+                            <CyberContainer className="text-center text-2xl p-2 m-4 w-auto h-auto">
                                 3. Construímos comunidade
                             </CyberContainer>
                             “Para cada um de acordo com a sua necessidade”. Trabalhamos coletivamente para fortalecer nossa comunidade como base para uma experiência social capaz de atender nossas necessidades.
@@ -72,8 +69,8 @@ export default function Manifesto() {
                             Faremos ação direta, usando nosso trabalho para contribuir com a comunidade sem depender do mercado e do estado que há tempos tem abandonado nossa comunidade.
                         </CyberContainer>
 
-                        <CyberContainer theme={theme} className="text-center text-base p-2 m-4 w-auto h-auto">
-                            <CyberContainer theme={theme} className="text-center text-2xl p-2 m-4 w-auto h-auto">
+                        <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
+                            <CyberContainer className="text-center text-2xl p-2 m-4 w-auto h-auto">
                                 4. Produzimos arte
                             </CyberContainer>
                             Somos hackers. “Hackear é abstrair. Abstrair é produzir o plano sobre o qual coisas diferentes podem entrar em relação” (McKenzie Wark). Nossa arte produz relações.
@@ -83,8 +80,8 @@ export default function Manifesto() {
                             No mundo virtual, toda interface feita por nós será feita para produzir relações que constroem coletividade e resistência da nossa comunidade. Não recuaremos diante do roubo feito pelas big techs das artes no território da internet. As Inteligências Artificiais têm sido usadas para se apropriar do trabalho artístico e gerar lucro para bilionários. Mostraremos a verdadeira potência da IA e da arte marginalizada, colocando suas tecnologias contra os magnatas virtuais, ironizando-os.
                         </CyberContainer>
 
-                        <CyberContainer theme={theme} className="text-center text-base p-2 m-4 w-auto h-auto">
-                            <CyberContainer theme={theme} className="text-center text-2xl p-2 m-4 w-auto h-auto">
+                        <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
+                            <CyberContainer className="text-center text-2xl p-2 m-4 w-auto h-auto">
                                 5. Vemos o mundo de uma Transperspectiva
                             </CyberContainer>
                             Cisgenereidade é compulsória! O presente é apenas potencial e o futuro é a realização ou contenção dele. Rejeitamos a perspectiva fatalista cisheteronormativa em que tudo que somos é um produto “biológico” determinado por nossas genitais ou gametas fechado em uma possibilidade binária.
@@ -94,12 +91,12 @@ export default function Manifesto() {
                             A revolução é agora e estão atacando ela. O que você fará?
                         </CyberContainer>
 
-                        <CyberContainer unevenBorders glowingBorders theme={theme} className="text-center text-4xl p-4 m-14 w-auto h-auto">
+                        <CyberContainer unevenBorders glowingBorders className="text-center text-4xl p-4 m-14 w-auto h-auto">
                             Nossos objetivos
                         </CyberContainer>
 
-                        <CyberContainer theme={theme} className="text-center text-base p-2 m-4 w-auto h-auto">
-                            <CyberContainer theme={theme} className="text-center text-2xl p-2 m-4 w-auto h-auto">
+                        <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
+                            <CyberContainer className="text-center text-2xl p-2 m-4 w-auto h-auto">
                                 1. Nossa comunidade tem fome
                             </CyberContainer>
                             Não existe liberdade onde se tem fome. Faltam oportunidades para pessoas trans, com deficiência e neurodivergentes poderem matar sua fome. Enquanto isso, há supermercados cheios com preços inacessíveis, porque o Cistema produz a comida para dar lucro e não para matar fome.
@@ -107,16 +104,16 @@ export default function Manifesto() {
                             Necessidades básicas não são para dar lucro, o trabalho humano deve atender as necessidades e não disperdício como parte da lógica do lucro.
                         </CyberContainer>
 
-                        <CyberContainer theme={theme} className="text-center text-base p-2 m-4 w-auto h-auto">
-                            <CyberContainer theme={theme} className="text-center text-2xl p-2 m-4 w-auto h-auto">
+                        <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
+                            <CyberContainer className="text-center text-2xl p-2 m-4 w-auto h-auto">
                                 2. Por uma saúde transgênera
                             </CyberContainer>
                             Saúde é para garantir autonomia e não só para tratar sintomas. Queremos livre acesso a hormônios, cirurgias e fármacos com conscientização do uso e esforço para redução dos colaterais indesejados e maximização dos desejados. Enquanto a técnica for refém das necessidades do Cistema, a finalidade acima não poderá se realizar para nossos corpos marginalizados.
                             Precisamos de pessoas trans, neurodivergentes e pessoas com deficiência participando da produção da sua própria saúde como sujeitos ativos de uma saúde que visa aumentar o potencial dos corpos e não paciente-passivo da saúde capitalista do Cistema, que só trata os sintomas dos adoecimentos que ele mesmo causa para nos tornar mais produtivos e não nos dar autonomia. Saúde não deveria ser mercadoria.
                         </CyberContainer>
 
-                        <CyberContainer theme={theme} className="text-center text-base p-2 m-4 w-auto h-auto">
-                            <CyberContainer theme={theme} className="text-center text-2xl p-2 m-4 w-auto h-auto">
+                        <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
+                            <CyberContainer className="text-center text-2xl p-2 m-4 w-auto h-auto">
                                 3. Por moradias para nossos corpos
                             </CyberContainer>
                             Não existe liberdade sem ter um teto. Precisamos morar. Os corpos marginalizados são negados o direito de ter um abrigo em um lar próprio, somos expulsos de nossas casas e desacolhidos pelo Estado e o mercado.
@@ -125,16 +122,16 @@ export default function Manifesto() {
                             Queremos nossos lares.
                         </CyberContainer>
 
-                        <CyberContainer theme={theme} className="text-center text-base p-2 m-4 w-auto h-auto">
-                            <CyberContainer theme={theme} className="text-center text-2xl p-2 m-4 w-auto h-auto">
+                        <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
+                            <CyberContainer className="text-center text-2xl p-2 m-4 w-auto h-auto">
                                 4. Descentralização das tecnologias de generificação
                             </CyberContainer>
                             Corpos são políticos! Não tirem nossos corpos de nós. Homem e mulher é um produto da cisgenerificação compulsória. Próteses, fármacos e procedimentos estéticos de afirmação de gênero são livres para pessoas cis e restringidos para pessoas trans. Isso é uma consequência direta do Cistema, dependente da linha de produção de proles (filhos) para servirem de mão-de-obra barata e consumidor. Queremos o fim disso tudo.
                             A descentralização das tecnologias de modificação corporal depende do fim do capitalismo e do patriarcado. Portanto, defendemos a propriedade coletiva de todos meios de produção e reprodução da vida, de construção corporal e da consciência como das terras onde a comida nasce, das fábricas onde fazemos as ferramentas e bens que auxiliam a vida, e dos meios de comunicação que nos ajudam a entender nossos papeis no mundo e na comunidade.
                         </CyberContainer>
 
-                        <CyberContainer theme={theme} className="text-center text-base p-2 m-4 w-auto h-auto">
-                            <CyberContainer theme={theme} className="text-center text-2xl p-2 m-4 w-auto h-auto">
+                        <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
+                            <CyberContainer className="text-center text-2xl p-2 m-4 w-auto h-auto">
                                 5. Internet livre como meio de produção da consciência
                             </CyberContainer>
                             A internet assumiu um papel central em como nos informamos sobre o mundo. O controle do fluxo dessa informação se mantém oculto por trás dos algoritmos dominados por big techs, produzindo percepções falsas sobre a realidade e condicionando a verdade aos primeiros resultado de ferramentas de pesquisas, que mostram resultados patrocinados e de inteligência artificial, atendendo interesses privados focados no lucro e não do coletivo.
@@ -145,8 +142,8 @@ export default function Manifesto() {
                             Por isso, disputaremos a internet como forma de produzir a si próprio, construindo e reforçando novas tecnologias de produção de si virtualmente, podendo também servir como ferramenta para que transições virtuais possam se materializar fora dela.
                         </CyberContainer>
 
-                        <CyberContainer theme={theme} className="text-center text-base p-2 m-4 w-auto h-auto">
-                            <CyberContainer theme={theme} className="text-center text-2xl p-2 m-4 w-auto h-auto">
+                        <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
+                            <CyberContainer className="text-center text-2xl p-2 m-4 w-auto h-auto">
                                 6. Despatologização da vida
                             </CyberContainer>
                             Neurodivergência não é patologia, patológico é um sistema que lê as diferenças como doença. O Cistema tenta nos confundir ao transformar suas mazelas em doenças e diagnósticos para atribuir o seu fracasso aos indivíduos, chamando-os de doentes mentais.
@@ -155,8 +152,8 @@ export default function Manifesto() {
                             Lutamos pelo livre acesso aos fármacos e pelo fim de uma lógica de trabalho adoecedora que consome todo o tempo de vida das pessoas para enriquecer uma minoria, enquanto resta migalhas para a maioria.
                         </CyberContainer>
 
-                        <CyberContainer theme={theme} className="text-center text-base p-2 m-4 w-auto h-auto">
-                            <CyberContainer theme={theme} className="text-center text-2xl p-2 m-4 w-auto h-auto">
+                        <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
+                            <CyberContainer className="text-center text-2xl p-2 m-4 w-auto h-auto">
                                 7. Pelo direito à reprodução queer
                             </CyberContainer>
                             Se um corpo pode vir de nós, então somos nossos próprios mestres. A tecnologia nos possibilitou hackear nossos corpos para reproduzirmos sem depender da heterossexualidade.

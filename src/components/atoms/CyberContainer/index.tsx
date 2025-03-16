@@ -1,6 +1,6 @@
 import React from "react";
 import classnames from "classnames";
-
+import {useTheme} from "@/context/ThemeContext";
 
 interface CyberContainerProps {
   children?: React.ReactNode;
@@ -9,11 +9,8 @@ interface CyberContainerProps {
   normalBorders?: boolean;
   glowingBorders?: boolean;
   clearBorders?: boolean;
-  textBackground?: boolean;
   large?: boolean;
   slim?: boolean;
-  theme: string;
-  accentIndex?: number;
 }
 
 export default function CyberContainer({
@@ -24,13 +21,12 @@ export default function CyberContainer({
   glowingBorders,
   clearBorders,
   large,
-  textBackground,
   slim,
-  theme,
-  accentIndex,
 }: CyberContainerProps) {
 
-  const baseStyles = classnames("p-4", `text-accent-${accentIndex}`);
+  const { theme } = useTheme();
+
+  const baseStyles = classnames("p-4, text-accent-1");
   const sizeStyles = large ? "w-8 h-8 text-lg" : slim ? "w-4 h-4 text-sm" : "";
 
 const borderStyles = classnames({
@@ -40,10 +36,7 @@ const borderStyles = classnames({
     "border-glow": clearBorders,
   });
 
-  const backgroundStyles = classnames({
-    "bg-clip-padding p-4 rounded-r-3xl shadow-xl": textBackground,
-    "text-background": textBackground,
-  });
+  const backgroundStyles = "bg-clip-padding p-4 rounded-r-3xl shadow-xl text-background";
 
   return (
     <div
