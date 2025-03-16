@@ -6,6 +6,9 @@
 
 :root {
   --font-family: 'Chakra Petch', sans-serif;
+  background-color: var(--background);
+  background: #000;
+  
 }
 
 /* Default Theme */
@@ -68,14 +71,18 @@ body {
   transition: background 0.5s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* Granular Noise Effect */
-body::before {
+/* Granular Noise Effect as a Reusable Class */
+.granular-effect {
+  position: relative;
+}
+
+.granular-effect::before {
   content: "";
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   pointer-events: none;
   background-image: url("https://grainy-gradients.vercel.app/noise.svg");
   opacity: 1;
@@ -83,14 +90,13 @@ body::before {
   z-index: 1;
 }
 
-/* Add this after your existing body::before styles */
-body::after {
+.granular-effect::after {
   content: "";
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   pointer-events: none;
   background: repeating-linear-gradient(
     to bottom,
@@ -110,4 +116,3 @@ body::after {
     box-shadow: 0 0 0 2px var(--accent-2);
   }
 }
-

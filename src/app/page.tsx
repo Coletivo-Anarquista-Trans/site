@@ -13,7 +13,9 @@ export default function Home() {
         <>
             <CyberContainer
                 className={"bg-background min-h-screen text-foreground flex flex-col items-center justify-items-center"}>
-                <CyberTerminal />
+        <div className="granular-effect">
+          <CyberTerminal theme={theme} />
+        </div>
                 <CyberSidebar
                     glowingBorders
                     normalBorders>
