@@ -1,36 +1,58 @@
-import React, {useState, useEffect } from "react";
+import {Children, ReactNode, useEffect, useState} from "react";
 import CyberMiniButton from "../../atoms/CyberMiniButton";
 import {useTheme} from "@/context/ThemeContext";
 import classnames from "classnames";
 
 interface CyberTreeNodeProps {
-    children?: React.ReactNode;
-    label: string,
+    children?: ReactNode;
+    label: any;
+    onClick?: () => void;
 }
 
-export default function CyberTreeNode({ children, label }: CyberTreeNodeProps) {
-    const [isOpen, setIsOpen] = useState(false);
-    const [id, setId] = useState("");
+export default function CyberTreeNode({children, label, onClick}: CyberTreeNodeProps) {
     const {theme} = useTheme();
+    const [isInitialized, setIsInitialized] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
+    const storageKey = `treeNodeState-${label}`;
 
     useEffect(() => {
-        setId(crypto.randomUUID());
+        const storedState = sessionStorage.getItem(storageKey);
+        if (storedState !== null) {
+            setIsOpen(JSON.parse(storedState));
+        }
+        setIsInitialized(true);
     }, []);
-    const hasChildren = React.Children.count(children) > 0;
+
+    useEffect(() => {
+        if (isInitialized) {
+            sessionStorage.setItem(storageKey, JSON.stringify(isOpen));
+        }
+    }, [isOpen, isInitialized]);
+
+    const hasChildren = Children.count(children) > 0;
+
+    const handleClick = () => {
+        if (onClick) {
+            sessionStorage.setItem(storageKey, JSON.stringify(true)); // Ensure storage updates before redirect
+            onClick();
+        } else if (hasChildren) {
+            setIsOpen((prev) => {
+                const newState = !prev;
+                sessionStorage.setItem(storageKey, JSON.stringify(newState)); // Save open state immediately
+                return newState;
+            });
+        }
+    };
+
+    if (!isInitialized) return null;
 
     return (
-        <div
-            className={classnames(theme)}>
-            {hasChildren && (
-                <span onClick={() => setIsOpen(prev => !prev)} className="cursor-pointer">
-                        {isOpen}
-                    </span>
-            )}
+        <div className={classnames(theme)}>
             <CyberMiniButton
                 label={label}
-                className={""}
-                onClick={() => setIsOpen((prev) => !prev)}
-                isParent={hasChildren} // \(★ω★)/ Parent buttons have icons, children have different icons
+                className=""
+                onClick={handleClick}
+                isParent={hasChildren}
             >
                 {label}
             </CyberMiniButton>
@@ -40,6 +62,5 @@ export default function CyberTreeNode({ children, label }: CyberTreeNodeProps) {
                 </div>
             )}
         </div>
-    )
-};
-
+    );
+}

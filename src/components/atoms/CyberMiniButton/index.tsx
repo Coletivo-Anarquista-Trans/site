@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import classnames from "classnames";
 import {FaFolder, FaFolderOpen} from "react-icons/fa";
 import {HiOutlineArrowTurnDownRight} from "react-icons/hi2";
@@ -33,16 +33,26 @@ export default function CyberMiniButton({
                                             ...rest
                                         }: CyberMiniButtonProps) {
     const { theme } = useTheme();
-    const [isFolderOpen, setIsFolderOpen] = useState(false);
+
+    const storageKey = `folderState-${label}`;
+    const [isFolderOpen, setIsFolderOpen] = useState<boolean>(() => {
+        if (typeof window !== "undefined") {
+            return JSON.parse(sessionStorage.getItem(storageKey) || "false");
+        }
+        return false;
+    });
 
     const baseStyles = "px-4 py-2 transition-colors";
     const sizeStyles = large ? "py-3 px-6 text-lg" : slim ? "py-1 px-3 text-sm" : "";
+
+    useEffect(() => {
+        sessionStorage.setItem(storageKey, JSON.stringify(isFolderOpen));
+    }, [isFolderOpen]);
 
     const handleClick = () => {
         if (onClick) onClick();
         setIsFolderOpen(prev => !prev);
     };
-
     return (
         <button
             className={classnames(

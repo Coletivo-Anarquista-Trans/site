@@ -3,7 +3,6 @@
 import {useTheme} from "@/context/ThemeContext";
 import CyberButton from "@/components/atoms/CyberButton"
 import CyberContainer from "@/components/atoms/CyberContainer"
-import CyberSidebar from "@/components/organism/CyberSidebar";
 import CyberTerminal from "@/components/atoms/CyberTerminal";
 
 export default function Home() {
@@ -16,10 +15,6 @@ export default function Home() {
         <div className="granular-effect">
           <CyberTerminal/>
         </div>
-                <CyberSidebar
-                    glowingBorders
-                    normalBorders>
-                </CyberSidebar>
                 <CyberContainer className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
                     <CyberButton
                         onClick={toggleTheme}
