@@ -10,25 +10,19 @@ export default function Home() {
     const {theme, toggleTheme} = useTheme();
 
     return (
-        <>
-            <CyberContainer
-                theme={theme}>
-                <CyberTerminal theme={theme}/>
-                <CyberSidebar
-                    glowingBorders
-                    normalBorders
-                    theme={theme}>
-                </CyberSidebar>
-                <CyberContainer theme={theme} className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-                    <CyberButton
-                        onClick={toggleTheme}
-                        unevenBorders
-                        theme={theme}
-                    >
-                        Toggle Theme
-                    </CyberButton>
-                </CyberContainer>
-            </CyberContainer>
-        </>
+      <CyberContainer theme={theme}>
+        <div className="granular-effect">
+          <CyberTerminal theme={theme} />
+        </div>
+        <CyberSidebar glowingBorders normalBorders theme={theme}></CyberSidebar>
+        <CyberContainer
+          theme={theme}
+          className="flex flex-col gap-8 row-start-2 items-center sm:items-start"
+        >
+          <CyberButton onClick={toggleTheme} unevenBorders theme={theme}>
+            Toggle Theme
+          </CyberButton>
+        </CyberContainer>
+      </CyberContainer>
     );
 }
