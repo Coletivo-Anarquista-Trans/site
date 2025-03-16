@@ -85,7 +85,7 @@ Follow the SOLID principles to write clean and maintainable code if possible:
 
 ## General Best Practices
 
-- Write clean, readable, and well-documented code.
+- Write clean, readable, and well-documented code (We can add examples here)
 - Follow consistent naming conventions for variables, functions, and files.
 - Write meaningful commit messages that describe the purpose of the changes.
 - Test your code thoroughly before submitting a pull request.
