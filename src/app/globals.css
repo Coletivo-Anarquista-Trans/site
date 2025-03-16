@@ -18,6 +18,16 @@
   --accent-4: #2d1b5a;
 }
 
+.text-accent-1 { color: var(--accent-1); }
+.text-accent-2 { color: var(--accent-2); }
+.text-accent-3 { color: var(--accent-3); }
+.text-accent-4 { color: var(--accent-4); }
+
+.text-background {
+  background-color: var(--foreground);
+  opacity: 0.25;
+}
+
 /* New Theme based on the provided palette */
 .new-theme {
   --background: #000; /* Darker solid color */

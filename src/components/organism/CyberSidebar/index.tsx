@@ -2,6 +2,7 @@ import React from "react";
 import classnames from "classnames";
 import CyberContainer from "../../atoms/CyberContainer";
 import CyberTreeNode from "@/components/molecules/CyberTreeNode";
+import Link from "next/link";
 
 interface CyberSidebarProps {
     className?: string;
@@ -24,7 +25,7 @@ export default function CyberSidebar({
                                          width = "w-48",
                                          theme,
                                      }: CyberSidebarProps) {
-    const baseStyles = "";
+    const baseStyles = "bg-background min-h-screen text-foreground";
     const sizeStyles = classnames(width, fixed ? "fixed left-0 top-0 min-h-screen" : "relative");
     const borderStyles = classnames({
         "rounded-tl-[10px] rounded-br-[10px] rounded-bl-[0px] rounded-tr-[0px] border-accent1": unevenBorders,
@@ -43,17 +44,18 @@ export default function CyberSidebar({
                 borderStyles,
                 className
             )}>
-            <CyberTreeNode theme={theme} label={"Button 1"}>
-                <CyberTreeNode theme={theme} label={"1.1"}>
-                </CyberTreeNode>
+            <CyberTreeNode theme={theme} label={"Home"}>
+                <Link href="/" passHref>
+                <CyberTreeNode theme={theme} label={"Clique aqui!"}/>
+                </Link>
             </CyberTreeNode>
-            <CyberTreeNode theme={theme} label={"Button 2"}>
-                <CyberTreeNode theme={theme} label={"2.1"}>
-                </CyberTreeNode>
+            <CyberTreeNode theme={theme} label={"Manifesto"}>
+                <Link href="/manifesto" passHref>
+                <CyberTreeNode theme={theme} label={"Clique aqui!"}/>
+                </Link>
             </CyberTreeNode>
             <CyberTreeNode theme={theme} label={"Button 3"}>
-                <CyberTreeNode theme={theme} label={"3.1"}>
-                </CyberTreeNode>
+                <CyberTreeNode theme={theme} label={"3.1"}/>
             </CyberTreeNode>
         </CyberContainer>
     );

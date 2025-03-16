@@ -3,7 +3,7 @@
 import {useTheme} from "@/context/ThemeContext";
 import CyberButton from "@/components/atoms/CyberButton"
 import CyberContainer from "@/components/atoms/CyberContainer"
-import CyberSidebar from "@/components/molecules/CyberSidebar";
+import CyberSidebar from "@/components/organism/CyberSidebar";
 import CyberTerminal from "@/components/atoms/CyberTerminal";
 
 export default function Home() {
@@ -12,6 +12,7 @@ export default function Home() {
     return (
         <>
             <CyberContainer
+                className={"bg-background min-h-screen text-foreground flex flex-col items-center justify-items-center"}
                 theme={theme}>
                 <CyberTerminal theme={theme}/>
                 <CyberSidebar
