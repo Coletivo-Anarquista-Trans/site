@@ -21,6 +21,16 @@
   --accent-4: #2d1b5a;
 }
 
+.text-accent-1 { color: var(--accent-1); }
+.text-accent-2 { color: var(--accent-2); }
+.text-accent-3 { color: var(--accent-3); }
+.text-accent-4 { color: var(--accent-4); }
+
+.text-background {
+  background-color: var(--background);
+  opacity: 0.50;
+}
+
 /* New Theme based on the provided palette */
 .new-theme {
   --background: #000; /* Darker solid color */
@@ -46,7 +56,7 @@
 /* Cyberpunk Red and Black Theme */
 .cyberpunk-red-theme {
   --background: #000; /* Even darker solid color */
-  --foreground: #ff6b6b; /* Brighter red for contrast */
+  --foreground: #ff0000; /* Brighter red for contrast */
   --accent-1: #d32f2f;
   --accent-2: #b71c1c;
   --accent-3: #ff5252;
