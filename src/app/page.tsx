@@ -11,9 +11,9 @@ export default function Home() {
 
     return (
       <CyberContainer theme={theme}>
-        <div className="granular-effect">
+
           <CyberTerminal theme={theme} />
-        </div>
+        
         <CyberSidebar glowingBorders normalBorders theme={theme}></CyberSidebar>
         <CyberContainer
           theme={theme}

@@ -1,5 +1,9 @@
 import { useState, useRef, useEffect } from "react";
 import { kaomojis } from "@/utils/kaomojis";
+import dynamic from "next/dynamic"; // Import dynamic from Next.js
+
+// Dynamically import IconTint with SSR disabled
+const IconTint = dynamic(() => import("react-icon-tint"), { ssr: false });
 
 interface CyberTerminalProps {
   theme: string; // Pass the current theme as a prop
@@ -29,7 +33,6 @@ export default function CyberTerminal({ theme }: CyberTerminalProps) {
     } else if (command === "contact") {
       response = "Email: example@example.com";
     } else {
-      // Generate a random number of kaomojis (1 to 4)
       const numKaomojis = Math.floor(Math.random() * 4) + 1;
       response = Array.from({ length: numKaomojis }, () =>
         getRandomKaomoji()
@@ -53,7 +56,7 @@ export default function CyberTerminal({ theme }: CyberTerminalProps) {
 
   return (
     <div
-      className={`p-4 rounded-lg w-full max-w-2xl mx-auto h-96 overflow-y-auto font-mono border bg-background text-foreground border-accent3`}
+      className={`p-4 rounded-lg w-full max-w-2xl mx-auto h-96 overflow-y-auto font-mono border bg-background text-foreground border-accent3 granular-effect`}
     >
       {history.map((line, index) => (
         <div
@@ -63,6 +66,9 @@ export default function CyberTerminal({ theme }: CyberTerminalProps) {
         />
       ))}
       <div ref={terminalRef} />
+      {/* Render IconTint (will only render on the client side) */}
+      <IconTint maxHeight={150} maxWidth={150} color="#2d1b5a" src="cats.png" />
+
       <form onSubmit={handleSubmit} className="flex">
         <span className="text-foreground">$</span>
         <input
