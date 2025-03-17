@@ -42,7 +42,7 @@ export default function CyberMiniButton({
         return false;
     });
 
-    const baseStyles = "px-4 py-2 transition-colors";
+    const baseStyles = "px-4 py-2 transition-colors text-left flex items-center justify-start";
     const sizeStyles = large ? "py-3 px-6 text-lg" : slim ? "py-1 px-3 text-sm" : "";
 
     useEffect(() => {
@@ -74,7 +74,7 @@ export default function CyberMiniButton({
                     {isParent ? (
                         isFolderOpen ? <FaFolderOpen className="w-4 h-4"/> : <FaFolder className="w-4 h-4"/>
                     ) : (
-                        <HiOutlineArrowTurnDownRight className="w-4 h-4"/>
+                        <HiOutlineArrowTurnDownRight className="w-4 h-4 flex-shrink-0"/>
                     )}
                     {children}
                 </span>
