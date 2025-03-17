@@ -10,7 +10,7 @@ export default function QuemSomosNos() {
                 className={"bg-background min-h-screen text-foreground flex flex-col items-center justify-items-center"}
             >
                 <CyberSidebar glowingBorders normalBorders />
-                <CyberContainer className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+                <CyberContainer className="flex flex-col gap-4 row-start-2 items-center sm:items-start">
                     <div className="inline-block justify-normal whitespace-normal p-8 break-words w-auto h-auto min-w-[48rem] max-w-md">
                         <CyberContainer unevenBorders glowingBorders className="text-center text-4xl p-4 m-14 w-auto h-auto">
                             <b>Quem Somos</b>
@@ -45,33 +45,33 @@ export default function QuemSomosNos() {
                         </CyberContainer> 
                     </div>
                     {/* Side-by-side containers */}
-                    <div className="flex flex-row justify-normal whitespace-normal p-2 break-words w-auto h-auto min-w-[12rem] max-w-md">
+                    <div className="flex flex-row flex-wrap justify-normal whitespace-normal gap-6 p-2 break-words w-auto h-auto min-w-[12rem] max-w-[48rem]">
                         {/* Mazrine container */}
-                        <CyberContainer unevenBorders glowingBorders className="text-center text-4xl p-1 m-1 w-64 h-16">
+                        <CyberContainer unevenBorders glowingBorders className="text-center text-4xl p-1 m-1 w-40 h-16">
                             <b>Mazrine</b>
                         </CyberContainer>
                         {/* Lynx container */}
-                        <CyberContainer unevenBorders glowingBorders className="text-center text-4xl p-1 m-1 w-64 h-16">
+                        <CyberContainer unevenBorders glowingBorders className="text-center text-4xl p-1 m-1 w-40 h-16">
                             <b>Lynx</b>
                         </CyberContainer>
                         {/* Ini container */}
-                        <CyberContainer unevenBorders glowingBorders className="text-center text-4xl p-1 m-1 w-64 h-16">
+                        <CyberContainer unevenBorders glowingBorders className="text-center text-4xl p-1 m-1 w-40 h-16">
                             <b>Iniari</b>
                         </CyberContainer>
                         {/* V container */}
-                        <CyberContainer unevenBorders glowingBorders className="text-center text-4xl p-1 m-1 w-64 h-16">
+                        <CyberContainer unevenBorders glowingBorders className="text-center text-4xl p-1 m-1 w-40 h-16">
                             <b>V</b>
                         </CyberContainer>
                          {/* (member) container */}
-                        <CyberContainer unevenBorders glowingBorders className="text-center text-4xl p-1 m-1 w-64 h-16">
+                        <CyberContainer unevenBorders glowingBorders className="text-center text-4xl p-1 m-1 w-40 h-16">
                             <b>???</b>
                         </CyberContainer>
                          {/* (member) container */}
-                         <CyberContainer unevenBorders glowingBorders className="text-center text-4xl p-1 m-1 w-64 h-16">
+                         <CyberContainer unevenBorders glowingBorders className="text-center text-4xl p-1 m-1 w-40 h-16">
                             <b>???</b>
                         </CyberContainer>
                          {/* (member) container */}
-                         <CyberContainer unevenBorders glowingBorders className="text-center text-4xl p-1 m-1 w-64 h-16">
+                         <CyberContainer unevenBorders glowingBorders className="text-center text-4xl p-1 m-1 w-40 h-16">
                             <b>???</b>
                         </CyberContainer>
 
