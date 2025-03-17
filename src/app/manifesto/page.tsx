@@ -26,8 +26,9 @@ export default function Manifesto() {
                 <CyberContainer className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
                     <div
                         className="inline-block justify-normal whitespace-normal p-8 break-words w-auto h-auto min-w-[48rem] max-w-md">
-                        <CyberContainer id="section-1" unevenBorders glowingBorders
-                                        className="text-center text-4xl p-4 m-14 w-auto h-auto">
+                        <CyberContainer
+                            id="section-1" unevenBorders glowingBorders
+                            className="text-center text-4xl p-4 m-14 w-auto h-auto">
                             1 - Finalidade
                         </CyberContainer>
                         <CyberContainer className={"text-center text-base p-2 m-4 w-auto h-auto"}>
@@ -61,8 +62,9 @@ export default function Manifesto() {
                         </CyberContainer>
 
                         <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
-                            <CyberContainer id="section-2" unevenBorders glowingBorders
-                                            className="text-center text-4xl p-4 m-14 w-auto h-auto">
+                            <CyberContainer
+                                id="section-2" unevenBorders glowingBorders
+                                className="text-center text-4xl p-4 m-14 w-auto h-auto">
                                 2 - Como faremos
                             </CyberContainer>
 
@@ -72,8 +74,9 @@ export default function Manifesto() {
                         </CyberContainer>
 
                         <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
-                            <CyberContainer id="section-2.1"
-                                            className="text-center text-2xl p-2 m-4 mb-6 w-fit mx-auto border-b-2 border-b-accent1">
+                            <CyberContainer
+                                id="section-2.1"
+                                className="text-center text-2xl p-2 m-4 mb-6 w-fit mx-auto border-b-2 border-b-accent1">
                                 2.1 - Somos anarquistas
                             </CyberContainer>
                             Porque não acreditamos em vanguardas*. Acreditamos na construção e organização das
@@ -91,6 +94,7 @@ export default function Manifesto() {
 
                         <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
                             <CyberContainer
+                                id="section-2.2"
                                 className="text-center text-2xl p-2 m-4 mb-6 w-fit mx-auto border-b-2 border-b-accent1">
                                 2.2 - Acreditamos no voluntarismo
                             </CyberContainer>
@@ -106,6 +110,7 @@ export default function Manifesto() {
 
                         <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
                             <CyberContainer
+                                id="section-2.3"
                                 className="text-center text-2xl p-2 m-4 mb-6 w-fit mx-auto border-b-2 border-b-accent1">
                                 2.3 - Construímos comunidade
                             </CyberContainer>
@@ -120,6 +125,7 @@ export default function Manifesto() {
 
                         <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
                             <CyberContainer
+                                id="section-2.4"
                                 className="text-center text-2xl p-2 m-4 mb-6 w-fit mx-auto border-b-2 border-b-accent1">
                                 2.4 - Produzimos arte
                             </CyberContainer>
@@ -146,6 +152,7 @@ export default function Manifesto() {
 
                         <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
                             <CyberContainer
+                                id="section-2.5"
                                 className="text-center text-2xl p-2 m-4 mb-6 w-fit mx-auto border-b-2 border-b-accent1">
                                 2.5 - Vemos o mundo de uma Transperspectiva
                             </CyberContainer>
@@ -166,13 +173,15 @@ export default function Manifesto() {
                             A revolução é agora e estão atacando ela. O que você fará?
                         </CyberContainer>
 
-                        <CyberContainer unevenBorders glowingBorders
-                                        className="text-center text-4xl p-4 m-14 w-auto h-auto">
+                        <CyberContainer
+                            id="section-3" unevenBorders glowingBorders
+                            className="text-center text-4xl p-4 m-14 w-auto h-auto">
                             3 - Nossos objetivos
                         </CyberContainer>
 
                         <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
                             <CyberContainer
+                                id="section-3.1"
                                 className="text-center text-2xl p-2 m-4 mb-6 w-fit mx-auto border-b-2 border-b-accent1">
                                 3.1 - Nossa comunidade tem fome
                             </CyberContainer>
@@ -188,6 +197,7 @@ export default function Manifesto() {
 
                         <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
                             <CyberContainer
+                                id="section-3.2"
                                 className="text-center text-2xl p-2 m-4 mb-6 w-fit mx-auto border-b-2 border-b-accent1">
                                 3.2 - Por uma saúde transgênera
                             </CyberContainer>
@@ -206,6 +216,7 @@ export default function Manifesto() {
 
                         <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
                             <CyberContainer
+                                id="section-3.3"
                                 className="text-center text-2xl p-2 m-4 mb-6 w-fit mx-auto border-b-2 border-b-accent1">
                                 3.3 - Por moradias para nossos corpos
                             </CyberContainer>
@@ -223,6 +234,7 @@ export default function Manifesto() {
 
                         <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
                             <CyberContainer
+                                id="section-3.4"
                                 className="text-center text-2xl p-2 m-4 mb-6 w-fit mx-auto border-b-2 border-b-accent1">
                                 3.4 - Descentralização das tecnologias de generificação
                             </CyberContainer>
@@ -243,6 +255,7 @@ export default function Manifesto() {
 
                         <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
                             <CyberContainer
+                                id="section-3.5"
                                 className="text-center text-2xl p-2 m-4 mb-6 w-fit mx-auto border-b-2 border-b-accent1">
                                 3.5 - Internet livre como meio de produção da consciência
                             </CyberContainer>
@@ -277,6 +290,7 @@ export default function Manifesto() {
 
                         <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
                             <CyberContainer
+                                id="section-3.6"
                                 className="text-center text-2xl p-2 m-4 mb-6 w-fit mx-auto border-b-2 border-b-accent1">
                                 3.6 - Despatologização da vida
                             </CyberContainer>
@@ -296,6 +310,7 @@ export default function Manifesto() {
 
                         <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
                             <CyberContainer
+                                id="section-3.7"
                                 className="text-center text-2xl p-2 m-4 mb-6 w-fit mx-auto border-b-2 border-b-accent1">
                                 3.7 - Pelo direito à reprodução queer
                             </CyberContainer>
