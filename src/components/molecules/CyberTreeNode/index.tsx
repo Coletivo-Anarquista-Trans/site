@@ -57,7 +57,7 @@ export default function CyberTreeNode({children, label, onClick}: CyberTreeNodeP
                 {label}
             </CyberMiniButton>
             {isOpen && hasChildren && (
-                <div className="pl-12 flex flex-col">
+                <div className="pl-8 flex flex-col">
                     {children}
                 </div>
             )}
