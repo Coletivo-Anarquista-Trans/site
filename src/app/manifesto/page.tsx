@@ -3,6 +3,7 @@
 import CyberContainer from "@/components/atoms/CyberContainer"
 import {useSearchParams} from "next/navigation";
 import {useEffect} from "react";
+import CyberTooltip from "@/components/atoms/CyberTooltip";
 
 export default function Manifesto() {
 
@@ -207,11 +208,14 @@ export default function Manifesto() {
                             necessidades do Cistema, a finalidade acima não poderá se realizar para nossos corpos
                             marginalizados.
                             <br/><br/>
-                            Precisamos de pessoas trans, neurodivergentes e pessoas com deficiência participando da
-                            produção da sua própria saúde como sujeitos ativos de uma saúde que visa aumentar o
-                            potencial dos corpos e não paciente-passivo da saúde capitalista do Cistema, que só trata os
-                            sintomas dos adoecimentos que ele mesmo causa para nos tornar mais produtivos e não nos dar
-                            autonomia. Saúde não deveria ser mercadoria.
+                            <div className="whitespace-pre-wrap">
+                                Precisamos de pessoas trans, neurodivergentes e pessoas com deficiência participando da
+                                produção da sua própria saúde como sujeitos ativos de uma saúde que visa aumentar o
+                                potencial dos corpos e não paciente-passivo da saúde capitalista do {''}
+                                <CyberTooltip word="Cistema" description="Bando de cuzoes. ex: elon musk" />, que só trata os
+                                sintomas dos adoecimentos que ele mesmo causa para nos tornar mais produtivos e não nos dar
+                                autonomia. Saúde não deveria ser mercadoria.
+                            </div>
                         </CyberContainer>
 
                         <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
