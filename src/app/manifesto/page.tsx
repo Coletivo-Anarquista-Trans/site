@@ -4,6 +4,7 @@ import CyberContainer from "@/components/atoms/CyberContainer"
 import {useSearchParams} from "next/navigation";
 import {useEffect} from "react";
 import CyberTooltip from "@/components/atoms/CyberTooltip";
+import CyberSpeech from "@/components/atoms/CyberSpeech";
 
 export default function Manifesto() {
 
@@ -202,11 +203,13 @@ export default function Manifesto() {
                                 className="text-center text-2xl p-2 m-4 mb-6 w-fit mx-auto border-b-2 border-b-accent1">
                                 3.2 - Por uma saúde transgênera
                             </CyberContainer>
-                            Saúde é para garantir autonomia e não só para tratar sintomas. Queremos livre acesso a
-                            hormônios, cirurgias e fármacos com conscientização do uso e esforço para redução dos
-                            colaterais indesejados e maximização dos desejados. Enquanto a técnica for refém das
-                            necessidades do Cistema, a finalidade acima não poderá se realizar para nossos corpos
-                            marginalizados.
+                            <CyberSpeech>
+                                Saúde é para garantir autonomia e não só para tratar sintomas. Queremos livre acesso a
+                                hormônios, cirurgias e fármacos com conscientização do uso e esforço para redução dos
+                                colaterais indesejados e maximização dos desejados. Enquanto a técnica for refém das
+                                necessidades do Cistema, a finalidade acima não poderá se realizar para nossos corpos
+                                marginalizados.
+                            </CyberSpeech>
                             <br/><br/>
                             <div className="whitespace-pre-wrap">
                                 Precisamos de pessoas trans, neurodivergentes e pessoas com deficiência participando da
