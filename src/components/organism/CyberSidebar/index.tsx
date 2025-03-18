@@ -26,7 +26,7 @@ export default function CyberSidebar({
                                          glowingBorders,
                                          clearBorders,
                                          fixed = true,
-                                         width = "w-48",
+                                         width = "w-64",
                                      }: CyberSidebarProps) {
     const router = useRouter();
     const {theme} = useTheme();
@@ -41,7 +41,7 @@ export default function CyberSidebar({
         router.push(manifestoPath);
     };
 
-    const baseStyles = "bg-background min-h-screen text-foreground";
+    const baseStyles = "bg-background h-screen text-foreground overflow-y-auto custom-scrollbar";
     const sizeStyles = classnames(width, fixed ? "fixed left-0 top-0 min-h-screen" : "relative");
     const borderStyles = classnames({
         "rounded-tl-[10px] rounded-br-[10px] rounded-bl-[0px] rounded-tr-[0px] border-accent1": unevenBorders,
@@ -55,7 +55,8 @@ export default function CyberSidebar({
             <Link href="/" passHref>
                 <CyberTreeNode label="Home"/>
             </Link>
-            <CyberTreeNode label={<Link href="/manifesto">Manifesto</Link>}>
+            <CyberTreeNode
+                label={<Link href="/manifesto">Manifesto</Link>}>
                 {cyberSections.length > 0 ? (
                     cyberSections.map((section) => (
                         <CyberTreeNode
@@ -65,7 +66,7 @@ export default function CyberSidebar({
                         />
                     ))
                 ) : (
-                    <p className="text-gray-500 text-center">No sections available</p>
+                    <p className="text-gray-500 text-center">- x -</p>
                 )}
             </CyberTreeNode>
             <CyberTreeNode label="Button 3">
