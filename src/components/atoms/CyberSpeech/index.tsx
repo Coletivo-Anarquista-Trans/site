@@ -32,12 +32,10 @@ export default function CyberSpeech({ children }: CyberSpeechProps) {
 
     return (
         <div className="relative">
-            {/* The text block */}
             <div ref={textRef} className={`p-4 rounded-lg ${theme}`}>
                 {children}
             </div>
 
-            {/* The speech button */}
             <CyberButton
                 unevenBorders
                 glowingBorders
