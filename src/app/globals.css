@@ -23,8 +23,8 @@
 
 /* New Theme based on the provided palette */
 .new-theme {
-  --background: #000; /* Darker solid color */
-  --foreground: #06cfce; /* Brighter foreground for contrast */
+  --background: #000; 
+  --foreground: #06cfce;
   --accent-1: #292a50;
   --accent-2: #285b77;
   --accent-3: #0b959f;
