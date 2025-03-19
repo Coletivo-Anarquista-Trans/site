@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Animator, Dots } from "@arwes/react";
-import { useTheme } from "../ThemeContext"; // Adjust this import path
+import { useTheme } from "../../../context/ThemeContext"; // Adjust this import path
 
 interface AnimatedBackgroundProps {
   // Add any props you need here
