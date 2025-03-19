@@ -3,10 +3,10 @@
 import { createContext, useContext, useState } from "react";
 
 type Theme =
-  | "default-theme"
-  | "new-theme"
-  | "cyberpunk-purple-theme"
-  | "cyberpunk-red-theme";
+  | "dark-violet"
+  | "neon-aqua"
+  | "cyberpunk-violet"
+  | "cyberpunk-crimson";
 
 type ThemeContextType = {
   theme: Theme;
@@ -16,21 +16,21 @@ type ThemeContextType = {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [theme, setTheme] = useState<Theme>("default-theme");
+  const [theme, setTheme] = useState<Theme>("dark-violet");
 
   const toggleTheme = () => {
     setTheme((prevTheme) => {
       switch (prevTheme) {
-        case "default-theme":
-          return "new-theme";
-        case "new-theme":
-          return "cyberpunk-purple-theme";
-        case "cyberpunk-purple-theme":
-          return "cyberpunk-red-theme";
-        case "cyberpunk-red-theme":
-          return "default-theme";
+        case "dark-violet":
+          return "neon-aqua";
+        case "neon-aqua":
+          return "cyberpunk-violet";
+        case "cyberpunk-violet":
+          return "cyberpunk-crimson";
+        case "cyberpunk-crimson":
+          return "dark-violet";
         default:
-          return "default-theme";
+          return "dark-violet";
       }
     });
   };

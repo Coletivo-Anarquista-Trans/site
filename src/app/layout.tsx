@@ -4,6 +4,8 @@ import { ThemeProvider } from "@/context/ThemeContext";
 import "./globals.css";
 import ErrorBoundary from "../components/atoms/ErrorBoundary";
 
+import { FontProvider } from "@/context/FontContext";
+
 // Metadata
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,12 +19,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" >
-      <body >
-        <ThemeProvider>
+    <html lang="en">
+      <body>
+        <ThemeProvider><FontProvider>
           <ErrorBoundary fallback={<div>Something went wrong!</div>}>
             <div className="min-h-screen flex flex-col">{children}</div>
-          </ErrorBoundary>
+            
+          </ErrorBoundary></FontProvider>
         </ThemeProvider>
       </body>
     </html>
