@@ -1,45 +1,66 @@
-import React, {useState, useEffect } from "react";
+import {Children, ReactNode, useEffect, useState} from "react";
 import CyberMiniButton from "../../atoms/CyberMiniButton";
+import {useTheme} from "@/context/ThemeContext";
+import classnames from "classnames";
 
 interface CyberTreeNodeProps {
-    children?: React.ReactNode;
-    theme: string;
-    label: string,
+    children?: ReactNode;
+    label: any;
+    onClick?: () => void;
 }
 
-export default function CyberTreeNode({ children, theme, label }: CyberTreeNodeProps) {
+export default function CyberTreeNode({children, label, onClick}: CyberTreeNodeProps) {
+    const {theme} = useTheme();
+    const [isInitialized, setIsInitialized] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
-    const [id, setId] = useState("");
+    const storageKey = `treeNodeState-${label}`;
 
     useEffect(() => {
-        setId(crypto.randomUUID());
+        const storedState = sessionStorage.getItem(storageKey);
+        if (storedState !== null) {
+            setIsOpen(JSON.parse(storedState));
+        }
+        setIsInitialized(true);
     }, []);
-    const hasChildren = React.Children.count(children) > 0;
+
+    useEffect(() => {
+        if (isInitialized) {
+            sessionStorage.setItem(storageKey, JSON.stringify(isOpen));
+        }
+    }, [isOpen, isInitialized]);
+
+    const hasChildren = Children.count(children) > 0;
+
+    const handleClick = () => {
+        if (onClick) {
+            sessionStorage.setItem(storageKey, JSON.stringify(true)); // Ensure storage updates before redirect
+            onClick();
+        } else if (hasChildren) {
+            setIsOpen((prev) => {
+                const newState = !prev;
+                sessionStorage.setItem(storageKey, JSON.stringify(newState)); // Save open state immediately
+                return newState;
+            });
+        }
+    };
+
+    if (!isInitialized) return null;
 
     return (
-        <div className=" flex flex-col self-start ">
-            <div className="flex items-center space-x-2">
-                {hasChildren && (
-                    <span onClick={() => setIsOpen(prev => !prev)} className="cursor-pointer">
-                        {isOpen}
-                    </span>
-                )}
-                <CyberMiniButton
-                    label={label}
-                    className={""}
-                    theme={theme}
-                    onClick={() => setIsOpen((prev) => !prev)}
-                    isParent={hasChildren} // \(★ω★)/ Parent buttons have icons, children have different icons
-                >
-                    {label}
-                </CyberMiniButton>
-            </div>
+        <div className={classnames(theme)}>
+            <CyberMiniButton
+                label={label}
+                className=""
+                onClick={handleClick}
+                isParent={hasChildren}
+            >
+                {label}
+            </CyberMiniButton>
             {isOpen && hasChildren && (
-                <div className="pl-12 flex flex-col">
+                <div className="pl-8 flex flex-col">
                     {children}
                 </div>
             )}
         </div>
     );
 }
-

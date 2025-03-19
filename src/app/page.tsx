@@ -3,12 +3,11 @@
 import {useTheme} from "@/context/ThemeContext";
 import CyberButton from "@/components/atoms/CyberButton"
 import CyberContainer from "@/components/atoms/CyberContainer"
-import CyberSidebar from "@/components/molecules/CyberSidebar";
 import CyberTerminal from "@/components/atoms/CyberTerminal";
 import CyberDrone from "@/components/molecules/CyberDrone";
 
 export default function Home() {
-    const {theme, toggleTheme} = useTheme();
+    const { toggleTheme} = useTheme();
 
     return (
       <CyberContainer theme={theme}>
@@ -23,7 +22,21 @@ export default function Home() {
             Toggle Theme
           </CyberButton>
         </CyberContainer>
-        <CyberDrone onClick={() => console.log("CyberDrone clicked!")} />
+        <CyberDrone />
       </CyberContainer>
+            <CyberContainer
+                className={"bg-background min-h-screen text-foreground flex flex-col items-center justify-items-center"}>
+        <div className="granular-effect">
+          <CyberTerminal/>
+        </div>
+                <CyberContainer className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+                    <CyberButton
+                        onClick={toggleTheme}
+                        unevenBorders>
+                        Toggle Theme
+                    </CyberButton>
+                </CyberContainer>
+              <CyberDrone />
+            </CyberContainer>
     );
 }

@@ -78,17 +78,17 @@ The `components` directory contains reusable UI components, each in its own fold
 ```markdown
 components/
 ├── AnimatedBackground/ # Animated background component
-│ └── index.tsx
+│ └── page.tsx
 ├── ErrorBoundary/ # Error boundary component
-│ └── index.tsx
+│ └── page.tsx
 ├── Header/ # Header component
-│ └── index.tsx
+│ └── page.tsx
 ├── MatrixBackground/ # Matrix-style background component
-│ └── index.tsx
+│ └── page.tsx
 ├── OctagonBox/ # Octagon-shaped box component
-│ └── index.tsx
+│ └── page.tsx
 └── ParticleBackground/ # Particle-based background component
-└── index.tsx
+└── page.tsx
 ```
 
 ### Context Directory (`context`)
