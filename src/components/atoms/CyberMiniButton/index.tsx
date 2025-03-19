@@ -1,7 +1,8 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import classnames from "classnames";
 import {FaFolder, FaFolderOpen} from "react-icons/fa";
 import {HiOutlineArrowTurnDownRight} from "react-icons/hi2";
+import {useTheme} from "@/context/ThemeContext";
 
 interface CyberMiniButtonProps {
     children?: React.ReactNode;
@@ -12,7 +13,6 @@ interface CyberMiniButtonProps {
     disabled?: boolean;
     isOpen?: boolean;
     onClick?: () => void;
-    theme: string;
     toggleIcon?: () => void;
     label: string;
     isParent?: boolean,
@@ -30,19 +30,29 @@ export default function CyberMiniButton({
                                             toggleIcon,
                                             label,
                                             isParent,
-                                            theme,
                                             ...rest
                                         }: CyberMiniButtonProps) {
-    const [isFolderOpen, setIsFolderOpen] = useState(false);
+    const { theme } = useTheme();
 
-    const baseStyles = "px-4 py-2 transition-colors";
+    const storageKey = `folderState-${label}`;
+    const [isFolderOpen, setIsFolderOpen] = useState<boolean>(() => {
+        if (typeof window !== "undefined") {
+            return JSON.parse(sessionStorage.getItem(storageKey) || "false");
+        }
+        return false;
+    });
+
+    const baseStyles = "px-4 py-2 transition-colors text-left flex items-center justify-start";
     const sizeStyles = large ? "py-3 px-6 text-lg" : slim ? "py-1 px-3 text-sm" : "";
+
+    useEffect(() => {
+        sessionStorage.setItem(storageKey, JSON.stringify(isFolderOpen));
+    }, [isFolderOpen]);
 
     const handleClick = () => {
         if (onClick) onClick();
         setIsFolderOpen(prev => !prev);
     };
-
     return (
         <button
             className={classnames(
@@ -64,7 +74,7 @@ export default function CyberMiniButton({
                     {isParent ? (
                         isFolderOpen ? <FaFolderOpen className="w-4 h-4"/> : <FaFolder className="w-4 h-4"/>
                     ) : (
-                        <HiOutlineArrowTurnDownRight className="w-4 h-4"/>
+                        <HiOutlineArrowTurnDownRight className="w-4 h-4 flex-shrink-0"/>
                     )}
                     {children}
                 </span>

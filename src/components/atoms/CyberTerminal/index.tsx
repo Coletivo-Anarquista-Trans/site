@@ -6,10 +6,9 @@ import dynamic from "next/dynamic"; // Import dynamic from Next.js
 const IconTint = dynamic(() => import("react-icon-tint"), { ssr: false });
 
 interface CyberTerminalProps {
-  theme: string; // Pass the current theme as a prop
 }
 
-export default function CyberTerminal({ theme }: CyberTerminalProps) {
+export default function CyberTerminal({}: CyberTerminalProps) {
   const [history, setHistory] = useState<string[]>([
     "Welcome to Fake Terminal!",
     "",

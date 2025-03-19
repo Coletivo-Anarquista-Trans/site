@@ -23,6 +23,7 @@
   --accent-6: #c2185b; /* Secondary */
 }
 
+
 /* Neon Aqua */
 .neon-aqua {
   --background: #000;
@@ -46,6 +47,7 @@
   --accent-5: #ff4081; /* Secondary */
   --accent-6: #c2185b; /* Secondary */
 }
+
 
 /* Cyberpunk Crimson */
 .cyberpunk-crimson {
@@ -112,3 +114,21 @@ body {
     box-shadow: 0 0 0 2px var(--accent-2);
   }
 }
+
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--accent-1);
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: var(--background);
+}
+
+.custom-scrollbar:hover::-webkit-scrollbar-thumb {
+  background-color: var(--accent-1);
+}
+
