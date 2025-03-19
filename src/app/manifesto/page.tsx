@@ -23,7 +23,7 @@ export default function Manifesto() {
     return (
         <>
             <CyberContainer
-                className={"bg-background min-h-screen text-foreground flex flex-col items-center justify-items-center"}
+                className={"bg-background min-h-screen text-accent1 flex flex-col items-center justify-items-center"}
             >
                 <CyberContainer className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
                     <div
