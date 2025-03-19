@@ -54,6 +54,14 @@ export default function CyberTerminal({ theme }: CyberTerminalProps) {
     terminalRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [history]);
 
+  // Define color mappings for each theme
+  const themeColors: Record<string, string> = {
+    "dark-violet": "#6a0dad",
+    "neon-aqua": "#00ffff",
+    "cyberpunk-violet": "#a020f0",
+    "cyberpunk-crimson": "#dc143c",
+  };
+
   return (
     <div
       className={`p-4 rounded-lg w-full max-w-2xl mx-auto h-96 overflow-y-auto font-mono border bg-background text-foreground border-accent3 granular-effect`}
@@ -66,8 +74,14 @@ export default function CyberTerminal({ theme }: CyberTerminalProps) {
         />
       ))}
       <div ref={terminalRef} />
-      {/* Render IconTint (will only render on the client side) */}
-      <IconTint maxHeight={150} maxWidth={150} color="#2d1b5a" src="cats.png" />
+
+      {/* Render IconTint with dynamic color based on theme */}
+      <IconTint
+        maxHeight={150}
+        maxWidth={150}
+        color={themeColors[theme] || "#ffffff"}
+        src="cats.png"
+      />
 
       <form onSubmit={handleSubmit} className="flex">
         <span className="text-foreground">$</span>
