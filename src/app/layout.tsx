@@ -5,6 +5,8 @@ import {ThemeProvider} from "@/context/ThemeContext";
 import {CyberSectionProvider} from "@/context/CyberSectionsContext/CyberSections";
 import CyberSidebar from "@/components/organism/CyberSidebar";
 
+import { FontProvider } from "@/context/FontContext";
+
 // Metadata
 export const metadata: Metadata = {
     title: "CATS",
@@ -21,6 +23,7 @@ export default function RootLayout({
         <html lang="en">
         <body>
         <ThemeProvider>
+          <FontProvider>
             <CyberSectionProvider>
                 <ErrorBoundary fallback={<div>Something went wrong!</div>}>
                     <div className="min-h-screen flex">
@@ -29,6 +32,7 @@ export default function RootLayout({
                         <div className="flex-1">{children}</div>
                     </div>
                 </ErrorBoundary>
+              </FontProvider>
             </CyberSectionProvider>
         </ThemeProvider>
         </body>

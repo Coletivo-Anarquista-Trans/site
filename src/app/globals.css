@@ -5,62 +5,60 @@
 @tailwind utilities;
 
 :root {
-  --font-family: 'Chakra Petch', sans-serif;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
   background-color: var(--background);
   background: #000;
-  
 }
 
-/* Default Theme */
-.default-theme {
-  --background: #000; /* Darker solid color */
-  --foreground: #a064ee; /* Brighter foreground for contrast */
-  --accent-1: #7c4dff;
+/* Dark Violet */
+.dark-violet {
+  --background: #000;
+  --foreground: #a064ee;
+  --accent-1: #7c4dff; /* Strongest */
   --accent-2: #6a1b9a;
   --accent-3: #4a148c;
   --accent-4: #2d1b5a;
+  --accent-5: #ff4081; /* Secondary */
+  --accent-6: #c2185b; /* Secondary */
 }
 
-.text-accent-1 { color: var(--accent-1); }
-.text-accent-2 { color: var(--accent-2); }
-.text-accent-3 { color: var(--accent-3); }
-.text-accent-4 { color: var(--accent-4); }
 
-.text-background {
-  background-color: var(--background);
-  opacity: 0.50;
+/* Neon Aqua */
+.neon-aqua {
+  --background: #000;
+  --foreground: #06cfce;
+  --accent-1: #06cfce; /* Strongest */
+  --accent-2: #0b959f;
+  --accent-3: #285b77;
+  --accent-4: #292a50;
+  --accent-5: #d3167c; /* Secondary */
+  --accent-6: #8d155e; /* Secondary */
 }
 
-/* New Theme based on the provided palette */
-.new-theme {
-  --background: #000; /* Darker solid color */
-  --foreground: #06cfce; /* Brighter foreground for contrast */
-  --accent-1: #292a50;
-  --accent-2: #285b77;
-  --accent-3: #0b959f;
-  --accent-4: #06cfce;
-  --accent-5: #d3167c;
-  --accent-6: #8d155e;
-}
-
-/* Cyberpunk Purple and Black Theme */
-.cyberpunk-purple-theme {
-  --background: #000; /* Even darker solid color */
-  --foreground: #e0aaff; /* Brighter purple for contrast */
-  --accent-1: #6a1b9a;
+/* Cyberpunk Violet */
+.cyberpunk-violet {
+  --background: #000;
+  --foreground: #e0aaff;
+  --accent-1: #ce93d8; /* Strongest */
   --accent-2: #9c27b0;
-  --accent-3: #ce93d8;
+  --accent-3: #6a1b9a;
   --accent-4: #ffffff;
+  --accent-5: #ff4081; /* Secondary */
+  --accent-6: #c2185b; /* Secondary */
 }
 
-/* Cyberpunk Red and Black Theme */
-.cyberpunk-red-theme {
-  --background: #000; /* Even darker solid color */
-  --foreground: #ff0000; /* Brighter red for contrast */
-  --accent-1: #d32f2f;
-  --accent-2: #b71c1c;
-  --accent-3: #ff5252;
+
+/* Cyberpunk Crimson */
+.cyberpunk-crimson {
+  --background: #c6b9b9;
+  --foreground: #ff6b6b;
+  --accent-1: #ff5252; /* Strongest */
+  --accent-2: #d32f2f;
+  --accent-3: #b71c1c;
   --accent-4: #ffffff;
+  --accent-5: #ff9800; /* Secondary */
+  --accent-6: #ff5722; /* Secondary */
 }
 
 body {
@@ -71,7 +69,7 @@ body {
   transition: background 0.5s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* Granular Noise Effect as a Reusable Class */
+/* Granular Noise Effect */
 .granular-effect {
   position: relative;
 }
@@ -106,7 +104,7 @@ body {
     rgba(255, 255, 255, 0.05) 4px
   );
   z-index: 2;
-  opacity: 0.5; /* Adjust opacity to make it subtle or more pronounced */
+  opacity: 0.5;
 }
 
 /* Global Focus Styles */
@@ -116,6 +114,7 @@ body {
     box-shadow: 0 0 0 2px var(--accent-2);
   }
 }
+
 
 .custom-scrollbar::-webkit-scrollbar {
   width: 4px;
@@ -132,3 +131,4 @@ body {
 .custom-scrollbar:hover::-webkit-scrollbar-thumb {
   background-color: var(--accent-1);
 }
+
