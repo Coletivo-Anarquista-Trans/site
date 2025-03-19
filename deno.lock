@@ -15,6 +15,7 @@
     "npm:next@15.1.6": "15.1.6_react@19.0.0_react-dom@19.0.0__react@19.0.0",
     "npm:postcss@8": "8.5.3",
     "npm:react-dom@19": "19.0.0_react@19.0.0",
+    "npm:react-icon-tint@^2.5.1": "2.5.1_react@18.3.1",
     "npm:react-icons@^5.5.0": "5.5.0_react@19.0.0",
     "npm:react-powerglitch@^1.1.0": "1.1.0_react@19.0.0_react-dom@19.0.0__react@19.0.0",
     "npm:react-tooltip@^5.28.0": "5.28.0_react@19.0.0_react-dom@19.0.0__react@19.0.0",
@@ -2705,6 +2706,12 @@
         "scheduler"
       ]
     },
+    "react-icon-tint@2.5.1_react@18.3.1": {
+      "integrity": "sha512-FisyQdK/TBOACgbzIgbgaf0Wvgy0umf3YnqDdZKdtbROuVnyaxzjga3cn43bO7tUTcQPGgZkk6iRgpPU3/Xsqw==",
+      "dependencies": [
+        "react@18.3.1"
+      ]
+    },
     "react-icons@5.5.0_react@19.0.0": {
       "integrity": "sha512-MEFcXdkP3dLo8uumGI5xN3lDFNsRtrjbOEKDLD7yv76v4wpnEq2Lt2qeHaQOr34I/wPN3s3+N08WkQ+CW37Xiw==",
       "dependencies": [
@@ -3373,6 +3380,7 @@
         "npm:next@15.1.6",
         "npm:postcss@8",
         "npm:react-dom@19",
+        "npm:react-icon-tint@^2.5.1",
         "npm:react-icons@^5.5.0",
         "npm:react-powerglitch@^1.1.0",
         "npm:react-tooltip@^5.28.0",
