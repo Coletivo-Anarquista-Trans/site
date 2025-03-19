@@ -70,43 +70,50 @@ export default function CyberDrone() {
       {isMenuOpen && (
         <div
           ref={menuRef}
-          className="absolute bottom-16 right-0 w-64 p-4 bg-background text-foreground rounded-lg shadow-lg border border-accent1"
+          className="absolute bottom-16 right-0 w-64 p-4 bg-background rounded-lg shadow-lg border-2 border-accent1"
+          style={{ fontFamily: font, fontSize: `${fontSize}px` }}
         >
-          <h2 className="text-lg font-bold mb-4">Configurações</h2>
+          <div className="flex flex-col">
+            <h2 className="text-lg font-bold mb-4 text-accent5">
+              Configurações
+            </h2>
 
-          {/* Mudar Tema */}
-          <div className="mb-4">
-            <CyberButton onClick={toggleTheme} unevenBorders theme={theme}>
-                        Mudar tema
-                      </CyberButton>
-          </div>
+            {/* Mudar Tema */}
+            <div className="mb-4">
+              <CyberButton onClick={toggleTheme} unevenBorders theme={theme}>
+                <span className="text-accent1">Mudar tema</span>
+              </CyberButton>
+            </div>
 
-          {/* Seletor de Fonte */}
-          <div className="mb-4">
-            <label className="block mb-2">Fonte</label>
-            <select
-              value={font}
-              onChange={(e) => setFont(e.target.value)}
-              className="w-full p-2 border border-accent1 rounded bg-background text-foreground"
-            >
-              <option value="Chakra Petch">Chakra Petch</option>
-              <option value="Arial">Arial</option>
-              <option value="Times New Roman">Times New Roman</option>
-            </select>
-          </div>
+            {/* Seletor de Fonte */}
+            <div className="mb-4">
+              <label className="block mb-2 text-accent5">Fonte</label>
+              <select
+                value={font}
+                onChange={(e) => setFont(e.target.value)}
+                className="w-full p-2 border border-accent1 rounded bg-background text-foreground"
+              >
+                <option value="Chakra Petch">Chakra Petch</option>
+                <option value="Arial">Arial</option>
+                <option value="Times New Roman">Times New Roman</option>
+              </select>
+            </div>
 
-          {/* Controle de Tamanho da Fonte */}
-          <div className="mb-4">
-            <label className="block mb-2">Tamanho da Fonte</label>
-            <input
-              type="range"
-              min="12"
-              max="24"
-              value={fontSize}
-              onChange={(e) => setFontSize(Number(e.target.value))}
-              className="w-full"
-            />
-            <span className="text-sm">{fontSize}px</span>
+            {/* Controle de Tamanho da Fonte */}
+            <div className="mb-4">
+              <label className="block mb-2 text-accent5">
+                Tamanho da Fonte
+              </label>
+              <input
+                type="range"
+                min="12"
+                max="24"
+                value={fontSize}
+                onChange={(e) => setFontSize(Number(e.target.value))}
+                className="w-full"
+              />
+              <span className="text-sm">{fontSize}px</span>
+            </div>
           </div>
         </div>
       )}

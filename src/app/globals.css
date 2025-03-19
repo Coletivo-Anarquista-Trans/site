@@ -15,12 +15,12 @@
 .dark-violet {
   --background: #000;
   --foreground: #a064ee;
-  --accent-1: #7c4dff; /* Strongest */
-  --accent-2: #6a1b9a;
+  --accent-1: #682dff; /* Strongest */
+  --accent-2: #400b7d;
   --accent-3: #4a148c;
   --accent-4: #2d1b5a;
-  --accent-5: #ff4081; /* Secondary */
-  --accent-6: #c2185b; /* Secondary */
+  --accent-5: #00ffff; /* Secondary */
+  --accent-6: #0b959f; /* Secondary */
 }
 
 
@@ -28,12 +28,12 @@
 .neon-aqua {
   --background: #000;
   --foreground: #06cfce;
-  --accent-1: #06cfce; /* Strongest */
+  --accent-1: #00ffff; 
   --accent-2: #0b959f;
   --accent-3: #285b77;
   --accent-4: #292a50;
-  --accent-5: #d3167c; /* Secondary */
-  --accent-6: #8d155e; /* Secondary */
+  --accent-5: #ff0088;
+  --accent-6: #8d155e; 
 }
 
 /* Cyberpunk Violet */
@@ -66,6 +66,7 @@ body {
   background: var(--background);
   background-attachment: fixed;
   font-family: var(--font-family);
+  font-size: var(--font-size);
   transition: background 0.5s ease-in-out, color 0.3s ease-in-out;
 }
 

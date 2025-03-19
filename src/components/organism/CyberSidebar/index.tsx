@@ -41,17 +41,17 @@ export default function CyberSidebar({
         router.push(manifestoPath);
     };
 
-    const baseStyles = "bg-background h-screen text-foreground overflow-y-auto custom-scrollbar";
+    const baseStyles = "bg-background h-screen text-accent1 overflow-y-auto custom-scrollbar";
     const sizeStyles = classnames(width, fixed ? "fixed left-0 top-0 min-h-screen" : "relative");
     const borderStyles = classnames({
         "rounded-tl-[10px] rounded-br-[10px] rounded-bl-[0px] rounded-tr-[0px] border-accent1": unevenBorders,
-        "rounded-none border-accent1": normalBorders,
+        "border-accent1": normalBorders,
         "shadow-[0_0_10px_2px] border-1": glowingBorders,
         "border-glow-accent1": clearBorders,
     });
 
     return (
-        <CyberContainer className={classnames(theme, baseStyles, sizeStyles, borderStyles, className)}>
+        <CyberContainer className={classnames(theme, baseStyles, sizeStyles, borderStyles, className, "border-r-2")}>
             <Link href="/" passHref>
                 <CyberTreeNode label="Home"/>
             </Link>
