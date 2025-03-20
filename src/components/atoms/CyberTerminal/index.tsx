@@ -58,6 +58,9 @@ export default function CyberTerminal({}: CyberTerminalProps) {
     "neon-aqua": "#00ffff",
     "cyberpunk-violet": "#a020f0",
     "cyberpunk-crimson": "#dc143c",
+    "paleta-um": "#d92acd",
+    "paleta-dois": "#fe3e8b",
+    "paleta-tres": "#d6e122",
   };
 
   return (

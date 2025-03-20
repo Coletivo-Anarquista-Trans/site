@@ -70,7 +70,7 @@ export default function CyberDrone() {
       {isMenuOpen && (
         <div
           ref={menuRef}
-          className="absolute bottom-16 right-0 w-64 p-4 bg-background rounded-lg shadow-lg border-2 border-accent1"
+          className="absolute bottom-16 right-0 w-64 p-4 bg-background rounded-lg shadow-lg border-2 border-accent3"
           style={{ fontFamily: font, fontSize: `${fontSize}px` }}
         >
           <div className="flex flex-col">
