@@ -23,17 +23,16 @@
   --accent-6: #0b959f; /* Secondary */
 }
 
-
 /* Neon Aqua */
 .neon-aqua {
   --background: #000;
   --foreground: #06cfce;
-  --accent-1: #00ffff; 
+  --accent-1: #00ffff;
   --accent-2: #0b959f;
   --accent-3: #285b77;
   --accent-4: #292a50;
   --accent-5: #ff0088;
-  --accent-6: #8d155e; 
+  --accent-6: #8d155e;
 }
 
 /* Cyberpunk Violet */
@@ -48,7 +47,6 @@
   --accent-6: #c2185b; /* Secondary */
 }
 
-
 /* Cyberpunk Crimson */
 .cyberpunk-crimson {
   --background: #c6b9b9;
@@ -59,6 +57,48 @@
   --accent-4: #ffffff;
   --accent-5: #ff9800; /* Secondary */
   --accent-6: #ff5722; /* Secondary */
+}
+/* Paleta Um */
+.paleta-um {
+  --background: #080808; /* Updated background */
+  --foreground: #ffffff; /* Updated foreground */
+  --accent-1: #04c4d9; /* Brightest color */
+  --accent-2: #891b8c;
+  --accent-3: #d92acd; /* Second brightest */
+  --accent-4: #ffffff;
+  --accent-5: #2b118c; /* Third brightest */
+}
+
+/* Paleta Dois */
+.paleta-dois {
+  --background: #080808; /* Updated background */
+  --foreground: #ffffff; /* Updated foreground */
+  --accent-1: #fe0060; /* Brightest color */
+  --accent-2: #863987;
+  --accent-3: #fe3e8b; /* Second brightest */
+  --accent-4: #ffffff;
+  --accent-5: #023584; /* Third brightest */
+}
+
+/* Paleta Três */
+.paleta-tres {
+  --background: #080808; /* Updated background */
+  --foreground: #ffffff; /* Updated foreground */
+  --accent-1: #fd418e; /* Brightest color */
+  --accent-2: #191e67;
+  --accent-3: #d6e122; /* Second brightest */
+  --accent-4: #ffffff;
+  --accent-5: #56d2d2; /* Third brightest */
+}
+/* Tipografia */
+:root {
+  --font-drowner: 'Drowner', sans-serif;
+  --font-mleitod: 'Mleitod', sans-serif;
+  --font-gigasaturn: 'GigaSaturn', sans-serif;
+  --font-ghanes: 'Ghanes Font', sans-serif;
+  --font-madpixel: 'Mad Pixel Club', sans-serif;
+  --font-retrotech: 'RETROTECH', sans-serif;
+  --font-kunkarlow: 'KUNKARLOW', sans-serif;
 }
 
 body {
@@ -116,7 +156,6 @@ body {
   }
 }
 
-
 .custom-scrollbar::-webkit-scrollbar {
   width: 4px;
 }
@@ -132,4 +171,3 @@ body {
 .custom-scrollbar:hover::-webkit-scrollbar-thumb {
   background-color: var(--accent-1);
 }
-

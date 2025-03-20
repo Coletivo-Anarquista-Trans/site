@@ -6,7 +6,10 @@ type Theme =
   | "dark-violet"
   | "neon-aqua"
   | "cyberpunk-violet"
-  | "cyberpunk-crimson";
+  | "cyberpunk-crimson"
+  | "paleta-um"
+  | "paleta-dois"
+  | "paleta-tres";
 
 type ThemeContextType = {
   theme: Theme;
@@ -28,9 +31,15 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
         case "cyberpunk-violet":
           return "cyberpunk-crimson";
         case "cyberpunk-crimson":
+          return "paleta-um";
+        case "paleta-um":
+          return "paleta-dois";
+        case "paleta-dois":
+          return "paleta-tres";
+        case "paleta-tres":
           return "dark-violet";
         default:
-          return "dark-violet";
+          return "dark-violet"; // Fallback, should never be reached
       }
     });
   };
