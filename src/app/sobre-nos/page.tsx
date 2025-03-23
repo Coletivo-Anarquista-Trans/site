@@ -2,6 +2,7 @@
 
 import CyberContainer from "@/components/atoms/CyberContainer";
 import CyberSidebar from "../../components/organism/CyberSidebar";
+import Link from "next/link";
 
 export default function QuemSomosNos() {
     return (
@@ -18,7 +19,7 @@ export default function QuemSomosNos() {
                         <CyberContainer className={"text-center text-base p-2 m-4 w-auto h-auto"}>
                             {/* Add your content here */}
                             <p>
-                                Somos um coletivo buscando garantir a liberdade e <b>autonomia dos corpos e mentes marginalizados</b>. 
+                                Somos um coletivo buscando garantir a liberdade e <b>autonomia dos corpos e mentes marginalizades</b>.
                             </p>
                             <br />
                             <p>
@@ -26,7 +27,7 @@ export default function QuemSomosNos() {
                             </p>
                             <br />
                             <p>
-                                Acreditamos na construção de comunidades autônomas e colaborativas, proporcionando <b>experiências sociais fora do cistema</b>. 
+                                Acreditamos na construção de comunidades autônomas e colaborativas, proporcionando <b>experiências sociais fora do cistema</b>.
                             </p>
                             <br />
                             <p>
@@ -36,13 +37,17 @@ export default function QuemSomosNos() {
                             <p>
                                 Retome as tecnologias roubadas de nós, não deixe-os ter nossos amores e corpos.
                             </p>
+                            <br />
+                            <p>
+                                Se quer saber como faremos isso, <Link href="/manifesto#section-2" target="_blank" ><u>clique aqui.</u></Link>
+                            </p>
                         </CyberContainer>
                     </div>
                     {/* Integrantes container */}
                     <div className="inline-block justify-normal whitespace-normal p-2 break-words w-auto h-auto min-w-[48rem] max-w-md">
                         <CyberContainer unevenBorders glowingBorders className="text-center text-4xl p-1 m-1 w-auto h-auto">
                             <b>Integrantes</b>
-                        </CyberContainer> 
+                        </CyberContainer>
                     </div>
                     {/* Side-by-side containers */}
                     <div className="flex flex-row flex-wrap justify-normal whitespace-normal gap-6 p-2 break-words w-auto h-auto min-w-[12rem] max-w-[48rem]">
@@ -56,23 +61,31 @@ export default function QuemSomosNos() {
                         </CyberContainer>
                         {/* Ini container */}
                         <CyberContainer unevenBorders glowingBorders className="text-center text-4xl p-1 m-1 w-40 h-16">
-                            <b>Iniari</b>
+                            <b>iniari</b>
                         </CyberContainer>
                         {/* V container */}
                         <CyberContainer unevenBorders glowingBorders className="text-center text-4xl p-1 m-1 w-40 h-16">
                             <b>V</b>
                         </CyberContainer>
-                         {/* (member) container */}
+                        {/* n3o container */}
                         <CyberContainer unevenBorders glowingBorders className="text-center text-4xl p-1 m-1 w-40 h-16">
-                            <b>???</b>
+                            <b>n3o</b>
                         </CyberContainer>
-                         {/* (member) container */}
-                         <CyberContainer unevenBorders glowingBorders className="text-center text-4xl p-1 m-1 w-40 h-16">
-                            <b>???</b>
+                        {/* Yu container */}
+                        <CyberContainer unevenBorders glowingBorders className="text-center text-4xl p-1 m-1 w-40 h-16">
+                            <b>Yu</b>
                         </CyberContainer>
-                         {/* (member) container */}
-                         <CyberContainer unevenBorders glowingBorders className="text-center text-4xl p-1 m-1 w-40 h-16">
-                            <b>???</b>
+                        {/* Naor container */}
+                        <CyberContainer unevenBorders glowingBorders className="text-center text-4xl p-1 m-1 w-40 h-16">
+                            <b>Naor</b>
+                        </CyberContainer>
+                        {/* Fefe container */}
+                        <CyberContainer unevenBorders glowingBorders className="text-center text-4xl p-1 m-1 w-40 h-16">
+                            <b>Fefe</b>
+                        </CyberContainer>
+                        {/* Kia container */}
+                        <CyberContainer unevenBorders glowingBorders className="text-center text-4xl p-1 m-1 w-40 h-16">
+                            <b>Kia</b>
                         </CyberContainer>
 
                     </div>
