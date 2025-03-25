@@ -22,18 +22,20 @@ export default function Manifesto() {
 
     return (
         <>
-            <CyberContainer
-                className={"bg-background min-h-screen text-accent1 flex flex-col items-center justify-items-center"}
-            >
-                <CyberContainer className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-                    <div
-                        className="inline-block justify-normal whitespace-normal p-8 break-words w-auto h-auto min-w-[48rem] max-w-md">
-                        <CyberContainer
-                            id="section-1" unevenBorders glowingBorders
-                            className="text-center text-4xl p-4 m-14 w-auto h-auto">
-                            1 - Finalidade
+            <CyberContainer className="min-h-screen flex flex-col items-start px-4 py-8">
+                <CyberContainer className="w-full mx-auto text-accent1 max-w-screen-lg px-4 sm:px-8">
+                    <CyberContainer className="p-4 sm:p-8 break-words w-full max-w-4xl">
+                        <CyberContainer className="w-full flex justify-center">
+                            <CyberContainer
+                                id="section-1"
+                                unevenBorders
+                                glowingBorders
+                                className="inline-block text-2xl sm:text-3xl md:text-4xl p-4 m-14 text-center break-keep whitespace-nowrap"
+                            >
+                                1 - Finalidade
+                            </CyberContainer>
                         </CyberContainer>
-                        <CyberContainer className={"text-center text-base p-2 m-4 w-auto h-auto"}>
+                        <CyberContainer className={"p-4 sm:p-8 break-words w-full max-w-4xl justify-normal"}>
                             O corpo é político. Construiremos um mundo onde toda pessoa será livre para construir e
                             viver o seu corpo desejado.
                             Desejamos o livre acesso à produção e uso das tecnologias de afirmação do corpo e da mente.
@@ -63,11 +65,16 @@ export default function Manifesto() {
                             <br/><br/>Destrua o Cistema!
                         </CyberContainer>
 
-                        <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
-                            <CyberContainer
-                                id="section-2" unevenBorders glowingBorders
-                                className="text-center text-4xl p-4 m-14 w-auto h-auto">
-                                2 - Como faremos
+                        <CyberContainer className="p-4 sm:p-8 break-words w-full max-w-4xl justify-normal">
+                            <CyberContainer className="w-full flex justify-center">
+                                <CyberContainer className="w-full flex justify-center">
+                                    <CyberContainer
+                                        id="section-2" unevenBorders glowingBorders
+                                        className="inline-block text-2xl sm:text-3xl md:text-4xl p-4 m-14 text-center break-keep whitespace-nowrap"
+                                    >
+                                        2 - Como faremos
+                                    </CyberContainer>
+                                </CyberContainer>
                             </CyberContainer>
 
                             Uma sociedade em que as tecnologias de produção dos corpos* estejam nas mãos dos
@@ -75,7 +82,7 @@ export default function Manifesto() {
                             Por isso, seguimos os seguintes princípios:
                         </CyberContainer>
 
-                        <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
+                        <CyberContainer className="p-4 sm:p-8 break-words w-full max-w-4xl justify-normal">
                             <CyberContainer
                                 id="section-2.1"
                                 className="text-center text-2xl p-2 m-4 mb-6 w-fit mx-auto border-b-2 border-b-accent1">
@@ -94,7 +101,7 @@ export default function Manifesto() {
                             não depender deles.
                         </CyberContainer>
 
-                        <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
+                        <CyberContainer className="p-4 sm:p-8 break-words w-full max-w-4xl justify-normal">
                             <CyberContainer
                                 id="section-2.2"
                                 className="text-center text-2xl p-2 m-4 mb-6 w-fit mx-auto border-b-2 border-b-accent1">
@@ -110,7 +117,8 @@ export default function Manifesto() {
                             nos leva mais longe.
                         </CyberContainer>
 
-                        <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
+                        <CyberContainer className="p-4 sm:p-8 break-words w-full max-w-4xl justify-normal">
+
                             <CyberContainer
                                 id="section-2.3"
                                 className="text-center text-2xl p-2 m-4 mb-6 w-fit mx-auto border-b-2 border-b-accent1">
@@ -125,7 +133,7 @@ export default function Manifesto() {
                             mercado e do estado que há tempos tem abandonado nossa comunidade.
                         </CyberContainer>
 
-                        <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
+                        <CyberContainer className="p-4 sm:p-8 break-words w-full max-w-4xl justify-normal">
                             <CyberContainer
                                 id="section-2.4"
                                 className="text-center text-2xl p-2 m-4 mb-6 w-fit mx-auto border-b-2 border-b-accent1">
@@ -152,7 +160,7 @@ export default function Manifesto() {
                             contra os magnatas virtuais, ironizando-os.
                         </CyberContainer>
 
-                        <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
+                        <CyberContainer className="p-4 sm:p-8 break-words w-full max-w-4xl justify-normal">
                             <CyberContainer
                                 id="section-2.5"
                                 className="text-center text-2xl p-2 m-4 mb-6 w-fit mx-auto border-b-2 border-b-accent1">
@@ -175,13 +183,16 @@ export default function Manifesto() {
                             A revolução é agora e estão atacando ela. O que você fará?
                         </CyberContainer>
 
-                        <CyberContainer
-                            id="section-3" unevenBorders glowingBorders
-                            className="text-center text-4xl p-4 m-14 w-auto h-auto">
-                            3 - Nossos objetivos
+                        <CyberContainer className="w-full flex justify-center">
+                            <CyberContainer
+                                id="section-3" unevenBorders glowingBorders
+                                className="inline-block text-2xl sm:text-3xl md:text-4xl p-4 m-14 text-center break-keep whitespace-nowrap"
+                            >
+                                3 - Nossos objetivos
+                            </CyberContainer>
                         </CyberContainer>
 
-                        <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
+                        <CyberContainer className="p-4 sm:p-8 break-words w-full max-w-4xl justify-normal">
                             <CyberContainer
                                 id="section-3.1"
                                 className="text-center text-2xl p-2 m-4 mb-6 w-fit mx-auto border-b-2 border-b-accent1">
@@ -197,7 +208,7 @@ export default function Manifesto() {
                             e não disperdício como parte da lógica do lucro.
                         </CyberContainer>
 
-                        <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
+                        <CyberContainer className="p-4 sm:p-8 break-words w-full max-w-4xl justify-normal">
                             <CyberContainer
                                 id="section-3.2"
                                 className="text-center text-2xl p-2 m-4 mb-6 w-fit mx-auto border-b-2 border-b-accent1">
@@ -215,13 +226,15 @@ export default function Manifesto() {
                                 Precisamos de pessoas trans, neurodivergentes e pessoas com deficiência participando da
                                 produção da sua própria saúde como sujeitos ativos de uma saúde que visa aumentar o
                                 potencial dos corpos e não paciente-passivo da saúde capitalista do {''}
-                                <CyberTooltip word="Cistema" description="Bando de cuzoes. ex: elon musk" />, que só trata os
-                                sintomas dos adoecimentos que ele mesmo causa para nos tornar mais produtivos e não nos dar
+                                <CyberTooltip word="Cistema" description="Bando de cuzoes. ex: elon musk"/>, que só
+                                trata os
+                                sintomas dos adoecimentos que ele mesmo causa para nos tornar mais produtivos e não nos
+                                dar
                                 autonomia. Saúde não deveria ser mercadoria.
                             </div>
                         </CyberContainer>
 
-                        <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
+                        <CyberContainer className="p-4 sm:p-8 break-words w-full max-w-4xl justify-normal">
                             <CyberContainer
                                 id="section-3.3"
                                 className="text-center text-2xl p-2 m-4 mb-6 w-fit mx-auto border-b-2 border-b-accent1">
@@ -239,7 +252,7 @@ export default function Manifesto() {
                             Queremos nossos lares.
                         </CyberContainer>
 
-                        <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
+                        <CyberContainer className="p-4 sm:p-8 break-words w-full max-w-4xl justify-normal">
                             <CyberContainer
                                 id="section-3.4"
                                 className="text-center text-2xl p-2 m-4 mb-6 w-fit mx-auto border-b-2 border-b-accent1">
@@ -260,7 +273,7 @@ export default function Manifesto() {
                             comunicação que nos ajudam a entender nossos papeis no mundo e na comunidade.
                         </CyberContainer>
 
-                        <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
+                        <CyberContainer className="p-4 sm:p-8 break-words w-full max-w-4xl justify-normal">
                             <CyberContainer
                                 id="section-3.5"
                                 className="text-center text-2xl p-2 m-4 mb-6 w-fit mx-auto border-b-2 border-b-accent1">
@@ -295,7 +308,7 @@ export default function Manifesto() {
                             ferramenta para que transições virtuais possam se materializar fora dela.
                         </CyberContainer>
 
-                        <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
+                        <CyberContainer className="p-4 sm:p-8 break-words w-full max-w-4xl justify-normal">
                             <CyberContainer
                                 id="section-3.6"
                                 className="text-center text-2xl p-2 m-4 mb-6 w-fit mx-auto border-b-2 border-b-accent1">
@@ -315,7 +328,7 @@ export default function Manifesto() {
                             migalhas para a maioria.
                         </CyberContainer>
 
-                        <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
+                        <CyberContainer className="p-4 sm:p-8 break-words w-full max-w-4xl justify-normal">
                             <CyberContainer
                                 id="section-3.7"
                                 className="text-center text-2xl p-2 m-4 mb-6 w-fit mx-auto border-b-2 border-b-accent1">
@@ -330,7 +343,7 @@ export default function Manifesto() {
                             em nossas mãos, a cisheterossexualidade deixa de ter sentido na sua existência, justificada
                             hoje pela concentração para si da capacidade reprodutiva.
                         </CyberContainer>
-                    </div>
+                    </CyberContainer>
                 </CyberContainer>
             </CyberContainer>
         </>
