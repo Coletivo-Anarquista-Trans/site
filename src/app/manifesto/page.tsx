@@ -39,8 +39,11 @@ export default function Manifesto() {
                         <CyberContainer className={"text-center text-base p-2 m-4 w-auto h-auto"}>
                             <p>
                                 <b>O corpo é político, quem não lutar por ele irá perdê-lo para o {''}
-                                    <CyberTooltip word="Cistema"
-                                        description="" />.
+                                <CyberTooltip
+                                        word="Cistema"
+                                        description="teste"
+                                        link="#cistema"
+                                    />.
                                 </b>
                             </p>
                             Construiremos um mundo onde toda pessoa será livre para construir e viver o seu corpo
