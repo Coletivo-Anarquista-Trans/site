@@ -59,9 +59,9 @@ const glossary: GlossaryItem[] = [
     },
 ];
 
-function GlossarySection({ title, description }: GlossaryItem) {
+function GlossarySection({ id, title, description }: GlossaryItem) {
     return (
-        <div className="mb-4">
+        <div id={id} className="mb-4">
             <p>
                 <b>{title}:</b> {description}
             </p>
@@ -83,7 +83,7 @@ export default function CyberGlossary({ title }: CyberGlossaryProps) {
             <p className="text-accent5">ᓚᘏᗢ ~nya</p>
 
             {glossary.map((item, index) => (
-                <GlossarySection key={index} title={item.title} description={item.description} id={item.id} />
+                <GlossarySection key={index} id={item.id} title={item.title} description={item.description} />
             ))}
         </div>
     );
