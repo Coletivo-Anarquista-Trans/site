@@ -61,7 +61,7 @@ const glossary: GlossaryItem[] = [
 
 function GlossarySection({ id, title, description }: GlossaryItem) {
     return (
-        <div id={id} className="mb-4">
+        <div id={id} className="mb-4 tracking-widest text-center">
             <p>
                 <b>{title}:</b> {description}
             </p>
@@ -71,16 +71,16 @@ function GlossarySection({ id, title, description }: GlossaryItem) {
 
 export default function CyberGlossary({ title }: CyberGlossaryProps) {
     return (
-        <div className="w-full flex flex-col items-center justify-center gap-2 text-accent4">
+        <div className="w-full flex flex-col items-center justify-center gap-2 text-accent5">
             <CyberContainer
                 unevenBorders
                 glowingBorders
-                className="inline-block text-2xl sm:text-3xl d:text-4xl p-4 m-14 text-center break-keep whitespace-nowrap"
+                className="inline-block text-2xl sm:text-3xl d:text-4xl p-4 m-14 text-center break-keep whitespace-nowrap border-accent5"
             >
                 {title}
             </CyberContainer>
 
-            <p className="text-accent5">ᓚᘏᗢ ~nya</p>
+            <p className="text-accent4">ᓚᘏᗢ ~nya</p>
 
             {glossary.map((item, index) => (
                 <GlossarySection key={index} id={item.id} title={item.title} description={item.description} />
