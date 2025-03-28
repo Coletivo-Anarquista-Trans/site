@@ -57,7 +57,9 @@ jobs:
         run: npm install
 
       - name: Build static site
-        run: npm run build
+        run: |
+             npx next build --no-lint
+             npx next export
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
