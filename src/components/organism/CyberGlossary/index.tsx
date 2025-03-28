@@ -1,4 +1,5 @@
 import CyberContainer from "../../atoms/CyberContainer";
+import {JSX} from "react";
 
 interface CyberGlossaryProps {
     title: string;
