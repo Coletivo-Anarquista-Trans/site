@@ -80,7 +80,7 @@ export default function CyberDrone() {
 
             {/* Mudar Tema */}
             <div className="mb-4">
-              <CyberButton onClick={toggleTheme} unevenBorders theme={theme}>
+              <CyberButton onClick={toggleTheme} unevenBorders>
                 <span className="text-accent1">Mudar tema</span>
               </CyberButton>
             </div>
