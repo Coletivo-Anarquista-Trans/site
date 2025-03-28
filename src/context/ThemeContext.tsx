@@ -3,6 +3,8 @@
 import { createContext, useContext, useState } from "react";
 
 type Theme =
+  | "default-theme"
+  | "new-theme"
   | "dark-violet"
   | "neon-aqua"
   | "cyberpunk-violet"
