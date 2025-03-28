@@ -10,9 +10,7 @@ export default function Home() {
 
   return (
     <CyberContainer className="bg-background min-h-screen text-foreground flex flex-col items-center justify-items-center">
-      <div className="granular-effect mt-8 w-full max-w-md px-8">
         <CyberTerminal />
-      </div>
       <div className="flex flex-col gap-2 mt-8n">
         <div className="flex items-center flex-row gap-2">
           <div className="w-4 h-4 bg-[var(--background)]" />

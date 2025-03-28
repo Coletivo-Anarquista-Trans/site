@@ -56,7 +56,7 @@ export default function CyberSidebar({
     return (
         <>
             {/* Mobile Hamburger Button */}
-            <div className="md:hidden p-4">
+            <div className="md:hidden p-4 absolute">
                 <button
                     onClick={() => setOpen((prev) => !prev)}
                     className="text-accent1 focus:outline-none"
