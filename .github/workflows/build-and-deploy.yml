@@ -59,7 +59,6 @@ jobs:
       - name: Build static site
         run: |
              npx next build --no-lint
-             npx next export
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
