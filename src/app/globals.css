@@ -1,21 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  background-color: var(--background);
+  background: #000;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Dark Violet */
+.dark-violet {
+  --background: #000;
+  --foreground: #a064ee;
+  --accent-1: #682dff; /* Strongest */
+  --accent-2: #400b7d;
+  --accent-3: #4a148c;
+  --accent-4: #2d1b5a;
+  --accent-5: #00ffff; /* Secondary */
+  --accent-6: #0b959f; /* Secondary */
+}
+
+/* Neon Aqua */
+.neon-aqua {
+  --background: #000;
+  --foreground: #06cfce;
+  --accent-1: #00ffff;
+  --accent-2: #0b959f;
+  --accent-3: #285b77;
+  --accent-4: #292a50;
+  --accent-5: #ff0088;
+  --accent-6: #8d155e;
+}
+
+/* Cyberpunk Violet */
+.cyberpunk-violet {
+  --background: #000;
+  --foreground: #e0aaff;
+  --accent-1: #ce93d8; /* Strongest */
+  --accent-2: #9c27b0;
+  --accent-3: #6a1b9a;
+  --accent-4: #ffffff;
+  --accent-5: #ff4081; /* Secondary */
+  --accent-6: #c2185b; /* Secondary */
+}
+
+/* Cyberpunk Crimson */
+.cyberpunk-crimson {
+  --background: #c6b9b9;
+  --foreground: #ff6b6b;
+  --accent-1: #ff5252; /* Strongest */
+  --accent-2: #d32f2f;
+  --accent-3: #b71c1c;
+  --accent-4: #ffffff;
+  --accent-5: #ff9800; /* Secondary */
+  --accent-6: #ff5722; /* Secondary */
+}
+/* Paleta Um */
+.paleta-um {
+  --background: #080808; /* Updated background */
+  --foreground: #ffffff; /* Updated foreground */
+  --accent-1: #04c4d9; /* Brightest color */
+  --accent-2: #891b8c;
+  --accent-3: #d92acd; /* Second brightest */
+  --accent-4: #ffffff;
+  --accent-5: #2b118c; /* Third brightest */
+}
+
+/* Paleta Dois */
+.paleta-dois {
+  --background: #080808; /* Updated background */
+  --foreground: #ffffff; /* Updated foreground */
+  --accent-1: #fe0060; /* Brightest color */
+  --accent-2: #863987;
+  --accent-3: #fe3e8b; /* Second brightest */
+  --accent-4: #ffffff;
+  --accent-5: #023584; /* Third brightest */
+}
+
+/* Paleta Três */
+.paleta-tres {
+  --background: #080808; /* Updated background */
+  --foreground: #ffffff; /* Updated foreground */
+  --accent-1: #fd418e; /* Brightest color */
+  --accent-2: #191e67;
+  --accent-3: #d6e122; /* Second brightest */
+  --accent-4: #ffffff;
+  --accent-5: #56d2d2; /* Third brightest */
+}
+/* Tipografia */
+:root {
+  --font-drowner: 'Drowner', sans-serif;
+  --font-mleitod: 'Mleitod', sans-serif;
+  --font-gigasaturn: 'GigaSaturn', sans-serif;
+  --font-ghanes: 'Ghanes Font', sans-serif;
+  --font-madpixel: 'Mad Pixel Club', sans-serif;
+  --font-retrotech: 'RETROTECH', sans-serif;
+  --font-kunkarlow: 'KUNKARLOW', sans-serif;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-attachment: fixed;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  transition: background 0.5s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Granular Noise Effect */
+.granular-effect {
+  position: relative;
+}
+
+.granular-effect::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+  opacity: 1;
+  mix-blend-mode: overlay;
+  z-index: 1;
+}
+
+.granular-effect::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 2px,
+    rgba(255, 255, 255, 0.05) 2px,
+    rgba(255, 255, 255, 0.05) 4px
+  );
+  z-index: 2;
+  opacity: 0.5;
+}
+
+/* Enhanced CRT Effects */
+.crt-screen {
+  position: relative;
+  overflow: hidden;
+  /* Creates the curved tube effect */
+  box-shadow: 
+    inset 0 0 60px rgba(0, 255, 255, 0.1),
+    inset 0 0 20px rgba(0, 255, 255, 0.2),
+    0 0 40px rgba(0, 255, 255, 0.1);
+}
+
+.crt-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px 0 0 20px;
+  box-shadow: 
+    inset 0 0 60px rgba(0, 255, 255, 0.1),
+    inset 0 0 20px rgba(0, 255, 255, 0.2),
+    0 0 40px rgba(0, 255, 255, 0.1);
+}
+
+/* Curvature effect */
+.crt-curvature::before {
+  content: "";
+  position: absolute;
+  top: -5%;
+  left: -5%;
+  right: -5%;
+  bottom: -5%;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 255, 255, 0.05) 0%,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+  border-radius: 20px 0 0 20px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Scanlines */
+.crt-scanlines::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 255, 255, 0.05) 0.5%,
+    transparent 1%
+  );
+  background-size: 100% 4px;
+  z-index: 2;
+  pointer-events: none;
+  animation: scanline 8s linear infinite;
+  border-radius: inherit;
+}
+
+
+
+/* Screen flicker */
+@keyframes flicker {
+  0% { opacity: 0.9; }
+  5% { opacity: 0.95; }
+  10% { opacity: 0.85; }
+  15% { opacity: 1; }
+  100% { opacity: 0.9; }
+}
+
+/* Scanline animation */
+@keyframes scanline {
+  from { transform: translateY(0); }
+  to { transform: translateY(-4px); }
+}
+
+/* Reflection effect */
+.crt-reflection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  z-index: 3;
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+/* Modified granular effect for internal use */
+.terminal-container {
+  position: relative;
+}
+
+.terminal-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+  opacity: 1;
+  mix-blend-mode: overlay;
+  z-index: 1;
+}
+
+.terminal-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 2px,
+    rgba(255, 255, 255, 0.05) 2px,
+    rgba(255, 255, 255, 0.05) 4px
+  );
+  z-index: 2;
+  opacity: 0.5;
+}
+
+@keyframes scanline {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+
+/* Global Focus Styles */
+@layer utilities {
+  .focus-custom {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--accent-2);
+  }
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--accent-1);
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: var(--background);
+}
+
+.custom-scrollbar:hover::-webkit-scrollbar-thumb {
+  background-color: var(--accent-1);
 }
