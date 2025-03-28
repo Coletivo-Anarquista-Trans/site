@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
+    "build": "next build && next export",
+    "deploy": "rm -rf out && npm run build && touch out/.nojekyll && git add out && git commit -m 'Deploy' && git subtree push --prefix out origin gh-pages",
     "start": "next start",
     "lint": "next lint"
   },
