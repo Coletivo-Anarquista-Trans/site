@@ -3,7 +3,7 @@ import CyberCategorySection from '@/components/organism/CyberCategorySection';
 
 export default function Recursos() {
     const categories = resources.reduce((acc, resource) => {
-        const category = resource.category || 'Other Resources';
+        const category = resource.category || 'Outros';
 
         if (!acc[category]) {
             acc[category] = [];
@@ -18,9 +18,9 @@ export default function Recursos() {
     return (
         <div className="container mx-auto px-4 py-8 max-w-4xl">
             <div className="mb-8">
-                <h1 className="text-3xl font-bold text-gray-900 mb-2">Ciborguificação</h1>
+                <h1 className="text-3xl font-bold text-gray-900 mb-2">Trengenerificação</h1>
                 <p className="text-gray-600">
-                    Recursos para se tornar um ciborgue.
+                    Recursos para tornar e manutenir um corpo ciborgue.
                 </p>
             </div>
 
