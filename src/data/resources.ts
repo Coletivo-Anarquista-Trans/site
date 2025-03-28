@@ -1,6 +1,6 @@
-// src/data/resources.ts
 import { Resource } from '../types/resources';
 
+// Dados da página de resources
 export const resources: Resource[] = [
   {
     id: '1',
