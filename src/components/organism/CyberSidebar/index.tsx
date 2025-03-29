@@ -28,9 +28,9 @@ export default function CyberSidebar({
                                          fixed = true,
                                          width = "w-64",
                                      }: CyberSidebarProps) {
-    const router = useRouter();
     const { theme } = useTheme();
     const { cyberSections } = useCyberSection();
+    const router = useRouter();
 
     const [open, setOpen] = useState(false);
 
@@ -38,17 +38,29 @@ export default function CyberSidebar({
         console.log("🔍 [CyberSidebar] Sections in Sidebar:", cyberSections);
     }, [cyberSections]);
 
-    const handleSectionClick = (id: string) => {
-        const manifestoPath = `/manifesto#${id}`;
-        router.push(manifestoPath);
-        setOpen(false);
+    const handleSectionClick = (id: string, prefix: string) => {
+        const path = `/${prefix}#${id}`;
+        router.push(path);
     };
 
     const manifestoSections = cyberSections.filter(s => s.parent === "manifesto");
     const recursosSections = cyberSections.filter(s => s.parent === "recursos");
 
-    const baseStyles = "bg-background h-screen md:h-auto text-accent1 overflow-y-auto custom-scrollbar transition-transform duration-300 ease-in-out transform";
-    const sizeStyles = classnames(width, fixed ? "min-h-screen" : "relative");
+    const baseStyles = "z-50 md:static md:block bg-background text-accent1 custom-scrollbar transition-transform duration-300 ease-in-out";
+    const sizeStyles = classnames(
+        // Mobile
+        open
+            ? "fixed top-0 left-0 h-full w-full z-50 overflow-y-auto"
+            : "fixed top-0 left-0 h-full w-full z-50 overflow-y-auto -translate-x-full",
+
+        // Desktop
+        "md:translate-x-0 md:relative md:sticky md:top-0 md:h-screen md:overflow-y-auto md:z-40",
+
+        // Correct width
+        "w-3/4  md:w-64"
+    );
+
+
     const borderStyles = classnames({
         "rounded-tl-[10px] rounded-br-[10px] rounded-bl-[0px] rounded-tr-[0px] border-accent1": unevenBorders,
         "border-accent1": normalBorders,
@@ -59,15 +71,13 @@ export default function CyberSidebar({
     return (
         <>
             {/* Mobile Hamburger Button */}
-            <div className="md:hidden p-4 absolute">
+            <div className="md:hidden fixed inset-0">
                 <button
                     onClick={() => setOpen((prev) => !prev)}
-                    className="text-accent1 focus:outline-none"
+                    className="bg-accent1 text-background p-3 rounded-full shadow-lg focus:outline-none"
                 >
-                    <svg className="w-6 h-6" fill="none" stroke="white" strokeWidth="2"
-                         viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round"
-                              d="M4 6h16M4 12h16M4 18h16"/>
+                    <svg className="w-6 h-6" fill="white" stroke="white" strokeWidth="2" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
                 </button>
             </div>
@@ -116,9 +126,9 @@ export default function CyberSidebar({
                         manifestoSections.map((section) => (
                             <CyberTreeNode
                                 key={section.id}
-                                id={section.id}
+                                id={`${section.id}`}
                                 label={section.label}
-                                onClick={() => handleSectionClick(section.id)}
+                                onClick={() => handleSectionClick(section.id, "manifesto")}
                             />
                         ))
                     ) : (
@@ -131,9 +141,9 @@ export default function CyberSidebar({
                         recursosSections.map((section) => (
                             <CyberTreeNode
                                 key={section.id}
-                                id={section.id}
+                                id={`${section.id}`}
                                 label={section.label}
-                                onClick={() => handleSectionClick(section.id)}
+                                onClick={() => handleSectionClick(section.id, "recursos")}
                             />
                         ))
                     ) : (
