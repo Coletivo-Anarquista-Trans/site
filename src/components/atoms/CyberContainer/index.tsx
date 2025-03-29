@@ -83,7 +83,7 @@ export default function CyberContainer({
 const borderStyles = classnames({
     "rounded-tl-[10px] rounded-br-[10px] rounded-bl-[0px] rounded-tr-[0px] border-accent1": unevenBorders,
     "rounded-none": normalBorders,
-    "shadow-[0_0_10px_2px] border-2": glowingBorders,
+    "shadow-[0_0_10px_2px] border": glowingBorders,
     "border-glow": clearBorders,
   });
 
