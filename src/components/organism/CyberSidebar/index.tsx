@@ -28,9 +28,9 @@ export default function CyberSidebar({
                                          fixed = true,
                                          width = "w-64",
                                      }: CyberSidebarProps) {
-    const router = useRouter();
     const { theme } = useTheme();
     const { cyberSections } = useCyberSection();
+    const router = useRouter();
 
     const [open, setOpen] = useState(false);
 
@@ -38,10 +38,9 @@ export default function CyberSidebar({
         console.log("🔍 [CyberSidebar] Sections in Sidebar:", cyberSections);
     }, [cyberSections]);
 
-    const handleSectionClick = (id: string) => {
-        const manifestoPath = `/manifesto#${id}`;
-        router.push(manifestoPath);
-        setOpen(false);
+    const handleSectionClick = (id: string, prefix: string) => {
+        const path = `/${prefix}#${id}`;
+        router.push(path);
     };
 
     const manifestoSections = cyberSections.filter(s => s.parent === "manifesto");
@@ -116,9 +115,9 @@ export default function CyberSidebar({
                         manifestoSections.map((section) => (
                             <CyberTreeNode
                                 key={section.id}
-                                id={section.id}
+                                id={`${section.id}`}
                                 label={section.label}
-                                onClick={() => handleSectionClick(section.id)}
+                                onClick={() => handleSectionClick(section.id, "manifesto")}
                             />
                         ))
                     ) : (
@@ -131,9 +130,9 @@ export default function CyberSidebar({
                         recursosSections.map((section) => (
                             <CyberTreeNode
                                 key={section.id}
-                                id={section.id}
+                                id={`${section.id}`}
                                 label={section.label}
-                                onClick={() => handleSectionClick(section.id)}
+                                onClick={() => handleSectionClick(section.id, "recursos")}
                             />
                         ))
                     ) : (

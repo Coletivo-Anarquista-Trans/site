@@ -3,16 +3,19 @@ import CyberContainer from "@/components/atoms/CyberContainer";
 
 interface CyberCategorySectionProps {
     title: string;
+    id: string;
     resources: CyberResource[];
 }
 
-export default function CyberCategorySection({ title, resources }: CyberCategorySectionProps) {
+export default function CyberCategorySection({ title, id, resources }: CyberCategorySectionProps) {
     if (resources.length === 0) {
         return null;
     }
 
     return (
-        <CyberContainer className="mb-10">
+        <CyberContainer
+            id={id}
+            className="mb-10">
             <h2 className="text-xl font-semibold text-accent1 mb-4 pb-2 border-b border-accent1">
                 {title}
             </h2>
