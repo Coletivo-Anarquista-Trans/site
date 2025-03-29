@@ -1,7 +1,10 @@
+"use client";
+
 import {ReactNode, useEffect} from "react";
 import classnames from "classnames";
 import {useTheme} from "@/context/ThemeContext";
 import {useCyberSection} from "@/context/CyberSectionsContext/CyberSections";
+import {usePathname} from "next/navigation";
 
 interface CyberContainerProps {
   children?: ReactNode;
@@ -28,13 +31,15 @@ export default function CyberContainer({
 }: CyberContainerProps) {
   const { theme } = useTheme();
   const { registerCyberSection } = useCyberSection();
-
+  const pathname = usePathname();
 
   useEffect(() => {
-    if (!id) return;
-    const label = typeof children === "string" ? children : `Section ${id}`;
-    registerCyberSection(id, label);
-  }, [id, children, registerCyberSection]);
+    const parent = pathname.includes("/recursos") ? "recursos" : "manifesto";
+
+    if (typeof children === "string") {
+      registerCyberSection(parent, id as string, children);
+    }
+  }, [id, children]);
 
   const baseStyles = classnames("text-accent-1");
   const sizeStyles = large ? "w-8 h-8 text-lg" : slim ? "w-4 h-4 text-sm" : "";
