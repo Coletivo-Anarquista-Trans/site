@@ -1,15 +1,16 @@
 "use client";
 
-import {createContext, useContext, useState, useEffect, ReactNode} from "react";
+import {createContext, useContext, useState, ReactNode} from "react";
 
 interface Section {
     id: string;
     label: string;
+    parent: string;
 }
 
 interface CyberSectionContextType {
     cyberSections: Section[];
-    registerCyberSection: (id: string, label: string) => void;
+    registerCyberSection: (parent: string, id: string, label: string) => void;
 }
 
 const CyberSectionContext = createContext<CyberSectionContextType | undefined>(undefined);
@@ -22,21 +23,15 @@ export function CyberSectionProvider({ children }: { children: ReactNode }) {
         return [];
     });
 
-    const registerCyberSection = (id: string, label: string) => {
+    const registerCyberSection = (parent: string, id: string, label: string) => {
         setCyberSections((prev) => {
-            if (prev.some((section) => section.id === id)) return prev;
+            if (prev.some((section) => section.id === id && section.parent === parent)) return prev;
 
-            const updatedSections = [...prev, { id, label }];
-            sessionStorage.setItem("cyberSections", JSON.stringify(updatedSections)); // Save persistently
-
-            console.log(`✅ [CyberSectionsContext] Registered: ${id} - ${label}`);
+            const updatedSections = [...prev, { parent, id, label }];
+            sessionStorage.setItem("cyberSections", JSON.stringify(updatedSections));
             return updatedSections;
         });
     };
-
-    useEffect(() => {
-        console.log("🔍 [CyberSectionsContext] Updated:", cyberSections);
-    }, [cyberSections]);
 
     return (
         <CyberSectionContext.Provider value={{ cyberSections, registerCyberSection }}>

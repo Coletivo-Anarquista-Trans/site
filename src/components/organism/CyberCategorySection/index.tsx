@@ -1,9 +1,9 @@
-import { Resource } from '@/types/resources';
-import CyberResourceCard from '@/components/molecules/CyberResourceCard';
+import CyberResourceCard, {CyberResource} from '@/components/molecules/CyberResourceCard';
+import CyberContainer from "@/components/atoms/CyberContainer";
 
 interface CyberCategorySectionProps {
     title: string;
-    resources: Resource[];
+    resources: CyberResource[];
 }
 
 export default function CyberCategorySection({ title, resources }: CyberCategorySectionProps) {
@@ -12,8 +12,8 @@ export default function CyberCategorySection({ title, resources }: CyberCategory
     }
 
     return (
-        <div className="mb-10">
-            <h2 className="text-xl font-semibold text-gray-800 mb-4 pb-2 border-b border-gray-200">
+        <CyberContainer className="mb-10">
+            <h2 className="text-xl font-semibold text-accent1 mb-4 pb-2 border-b border-accent1">
                 {title}
             </h2>
 
@@ -22,6 +22,6 @@ export default function CyberCategorySection({ title, resources }: CyberCategory
                     <CyberResourceCard key={resource.id} resource={resource} />
                 ))}
             </div>
-        </div>
+        </CyberContainer>
     );
 }
