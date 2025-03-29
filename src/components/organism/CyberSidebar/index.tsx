@@ -46,9 +46,13 @@ export default function CyberSidebar({
     const manifestoSections = cyberSections.filter(s => s.parent === "manifesto");
     const recursosSections = cyberSections.filter(s => s.parent === "recursos");
 
-    const baseStyles = "bg-background h-screen md:h-auto text-accent1 overflow-y-auto custom-scrollbar transition-transform duration-300 ease-in-out transform";
-    const sizeStyles = classnames(width, fixed ? "min-h-screen" : "relative");
-    const borderStyles = classnames({
+    const baseStyles = "fixed inset-0 z-50 md:static md:block bg-background text-accent1 overflow-y-auto custom-scrollbar transition-transform duration-300 ease-in-out transform";
+    const sizeStyles = classnames(
+        open ? "translate-x-0" : "-translate-x-full",
+        "md:translate-x-0",
+        width,
+        fixed ? "md:min-h-screen" : "relative"
+    );    const borderStyles = classnames({
         "rounded-tl-[10px] rounded-br-[10px] rounded-bl-[0px] rounded-tr-[0px] border-accent1": unevenBorders,
         "border-accent1": normalBorders,
         "shadow-[0_0_10px_2px] border-1": glowingBorders,
@@ -58,15 +62,13 @@ export default function CyberSidebar({
     return (
         <>
             {/* Mobile Hamburger Button */}
-            <div className="md:hidden p-4 absolute">
+            <div className="md:hidden fixed inset-0">
                 <button
                     onClick={() => setOpen((prev) => !prev)}
-                    className="text-accent1 focus:outline-none"
+                    className="bg-accent1 text-background p-3 rounded-full shadow-lg focus:outline-none"
                 >
-                    <svg className="w-6 h-6" fill="none" stroke="white" strokeWidth="2"
-                         viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round"
-                              d="M4 6h16M4 12h16M4 18h16"/>
+                    <svg className="w-6 h-6" fill="white" stroke="white" strokeWidth="2" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
                 </button>
             </div>
