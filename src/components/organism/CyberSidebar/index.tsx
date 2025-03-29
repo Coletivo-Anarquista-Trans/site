@@ -46,13 +46,22 @@ export default function CyberSidebar({
     const manifestoSections = cyberSections.filter(s => s.parent === "manifesto");
     const recursosSections = cyberSections.filter(s => s.parent === "recursos");
 
-    const baseStyles = "fixed inset-0 z-50 md:static md:block bg-background text-accent1 overflow-y-auto custom-scrollbar transition-transform duration-300 ease-in-out transform";
+    const baseStyles = "z-50 md:static md:block bg-background text-accent1 custom-scrollbar transition-transform duration-300 ease-in-out";
     const sizeStyles = classnames(
-        open ? "translate-x-0" : "-translate-x-full",
-        "md:translate-x-0",
-        width,
-        fixed ? "md:min-h-screen" : "relative"
-    );    const borderStyles = classnames({
+        // Mobile
+        open
+            ? "fixed top-0 left-0 h-full w-full z-50 overflow-y-auto"
+            : "fixed top-0 left-0 h-full w-full z-50 overflow-y-auto -translate-x-full",
+
+        // Desktop
+        "md:translate-x-0 md:relative md:sticky md:top-0 md:h-screen md:overflow-y-auto md:z-40",
+
+        // Correct width
+        "w-3/4  md:w-64"
+    );
+
+
+    const borderStyles = classnames({
         "rounded-tl-[10px] rounded-br-[10px] rounded-bl-[0px] rounded-tr-[0px] border-accent1": unevenBorders,
         "border-accent1": normalBorders,
         "shadow-[0_0_10px_2px] border-1": glowingBorders,

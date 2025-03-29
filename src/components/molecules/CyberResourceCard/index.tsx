@@ -36,7 +36,7 @@ export default function CyberResourceCard({resource}: CyberResourceCardProps) {
         <CyberContainer
             glowingBorders
             id={sectionId}
-            className="border border-accent1 p-1 min-w-[24rem] crt-screen crt-curvature crt-scanlines crt-reflection granular-effect"
+            className="border border-accent1 p-1 w-full max-w-full crt-screen crt-curvature crt-scanlines crt-reflection granular-effect"
         >
             <CyberContainer
                 glowingBorders
