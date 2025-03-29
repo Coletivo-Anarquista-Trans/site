@@ -1,19 +1,32 @@
 "use client";
 
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
 
 type Theme =
   | "dark-violet"
+  | "light-dark-violet"
   | "neon-aqua"
+  | "light-neon-aqua"
   | "cyberpunk-violet"
+  | "light-cyberpunk-violet"
   | "cyberpunk-crimson"
   | "paleta-um"
+  | "light-paleta-um"
   | "paleta-dois"
-  | "paleta-tres";
+  | "light-paleta-dois"
+  | "paleta-tres"
+  | "light-paleta-tres";
+
+type ThemeCategory = 
+  | "dark"
+  | "light"
+  | "default";
 
 type ThemeContextType = {
   theme: Theme;
-  toggleTheme: () => void;
+  themeCategory: ThemeCategory;
+  toggleTheme: () => void
+  setThemeCategory: (category: ThemeCategory) => void;
 };
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
@@ -21,31 +34,82 @@ const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState<Theme>("neon-aqua");
 
+  const [themeCategory, setThemeCategory] = useState<ThemeCategory>(() => {
+    if (["neon-aqua", "dark-violet", "cyberpunk-violet", "paleta-um", "paleta-dois", "paleta-tres"].includes(theme)) {
+      return "dark";
+    } else if (["cyberpunk-crimson","light-dark-violet", "light-cyberpunk-violet", "light-paleta-um", "light-paleta-dois", "light-paleta-tres"].includes(theme)) {
+      return "light";
+    } else {
+      return "default"; // Fallback for the user's default theme
+    }
+  });
+
+  useEffect(() => {
+    if (
+      [
+        "neon-aqua",
+        "dark-violet",
+        "cyberpunk-violet",
+        "paleta-um",
+        "paleta-dois",
+        "paleta-tres",
+      ].includes(theme)
+    ) {
+      setThemeCategory("dark");
+    } else if (
+      [
+        "cyberpunk-crimson",
+        "light-dark-violet",
+        "light-cyberpunk-violet",
+        "light-paleta-um",
+        "light-paleta-dois",
+        "light-paleta-tres",
+      ].includes(theme)
+    ) {
+      setThemeCategory("light");
+    } else {
+      setThemeCategory("default");
+    }
+  }, [theme]);
+
+  // Toggle between themes within the same category
   const toggleTheme = () => {
     setTheme((prevTheme) => {
-      switch (prevTheme) {
-        case "dark-violet":
-          return "neon-aqua";
-        case "neon-aqua":
-          return "cyberpunk-violet";
-        case "cyberpunk-violet":
-          return "cyberpunk-crimson";
-        case "cyberpunk-crimson":
-          return "paleta-um";
-        case "paleta-um":
-          return "paleta-dois";
-        case "paleta-dois":
-          return "paleta-tres";
-        case "paleta-tres":
-          return "dark-violet";
-        default:
-          return "dark-violet"; // Fallback, should never be reached
+      console.log("Current theme:", prevTheme);
+      if (themeCategory === "dark") {
+        const darkThemes: Theme[] = [
+          "neon-aqua",
+          "dark-violet",
+          "cyberpunk-violet",
+          "paleta-um",
+          "paleta-dois",
+          "paleta-tres",
+        ];
+        const currentIndex = darkThemes.indexOf(prevTheme);
+        const nextTheme = darkThemes[(currentIndex + 1) % darkThemes.length];
+        console.log("Next dark theme:", nextTheme);
+        return nextTheme as Theme;
+      } else if (themeCategory === "light") {
+        const lightThemes: Theme[] = [
+          "cyberpunk-crimson",
+          "light-dark-violet",
+          "light-cyberpunk-violet",
+          "light-paleta-um",
+          "light-paleta-dois",
+          "light-paleta-tres",
+        ];
+        const currentIndex = lightThemes.indexOf(prevTheme);
+        const nextTheme = lightThemes[(currentIndex + 1) % lightThemes.length];
+        console.log("Next light theme:", nextTheme);
+        return nextTheme as Theme;
+      } else {
+        return prevTheme; // Default theme remains unchanged
       }
     });
   };
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    <ThemeContext.Provider value={{ theme, themeCategory, toggleTheme, setThemeCategory }}>
       {children}
     </ThemeContext.Provider>
   );

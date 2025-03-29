@@ -23,6 +23,18 @@
   --accent-6: #0b959f; /* Secondary */
 }
 
+/* Dark Violet - Light Version */
+.light-dark-violet {
+  --background: #ffffff; /* Light background */
+  --foreground: #4a148c; /* Dark violet text */
+  --accent-1: #682dff; /* Strongest */
+  --accent-2: #400b7d;
+  --accent-3: #4a148c;
+  --accent-4: #2d1b5a;
+  --accent-5: #00ffff; /* Secondary */
+  --accent-6: #0b959f; /* Secondary */
+}
+
 /* Neon Aqua */
 .neon-aqua {
   --background: #000;
@@ -35,10 +47,34 @@
   --accent-6: #8d155e;
 }
 
+/* Neon Aqua - Light Version */
+.light-neon-aqua {
+  --background: #f0faff; /* Light aqua background */
+  --foreground: #004d4d; /* Darker aqua text */
+  --accent-1: #00ffff; /* Brightest */
+  --accent-2: #0b959f;
+  --accent-3: #285b77;
+  --accent-4: #292a50;
+  --accent-5: #ff0088; /* Secondary */
+  --accent-6: #8d155e; /* Secondary */
+}
+
 /* Cyberpunk Violet */
 .cyberpunk-violet {
   --background: #000;
   --foreground: #e0aaff;
+  --accent-1: #ce93d8; /* Strongest */
+  --accent-2: #9c27b0;
+  --accent-3: #6a1b9a;
+  --accent-4: #ffffff;
+  --accent-5: #ff4081; /* Secondary */
+  --accent-6: #c2185b; /* Secondary */
+}
+
+/* Cyberpunk Violet - Light Version */
+.light-cyberpunk-violet {
+  --background: #f9f5ff; /* Light violet background */
+  --foreground: #6a1b9a; /* Dark violet text */
   --accent-1: #ce93d8; /* Strongest */
   --accent-2: #9c27b0;
   --accent-3: #6a1b9a;
@@ -68,6 +104,15 @@
   --accent-4: #ffffff;
   --accent-5: #2b118c; /* Third brightest */
 }
+/* Paleta Um - Light Version */
+.light-paleta-um {
+  --background: #f9f9f9; /* Light gray background */
+  --foreground: #2b118c; /* Dark blue text */
+  --accent-1: #04c4d9; /* Brightest */
+  --accent-2: #891b8c;
+  --accent-3: #d92acd; /* Second brightest */
+  --accent-4: #000000; /* Black for contrast */
+  --accent-5: #2b118c; /* Third brightest */
 
 /* Paleta Dois */
 .paleta-dois {
@@ -77,6 +122,17 @@
   --accent-2: #863987;
   --accent-3: #fe3e8b; /* Second brightest */
   --accent-4: #ffffff;
+  --accent-5: #023584; /* Third brightest */
+}
+
+/* Paleta Dois - Light Version */
+.light-paleta-dois {
+  --background: #f9f9f9; /* Light gray background */
+  --foreground: #863987; /* Dark purple text */
+  --accent-1: #fe0060; /* Brightest */
+  --accent-2: #863987;
+  --accent-3: #fe3e8b; /* Second brightest */
+  --accent-4: #000000; /* Black for contrast */
   --accent-5: #023584; /* Third brightest */
 }
 
@@ -90,6 +146,18 @@
   --accent-4: #ffffff;
   --accent-5: #56d2d2; /* Third brightest */
 }
+
+/* Paleta Três - Light Version */
+.light-paleta-tres {
+  --background: #f9f9f9; /* Light gray background */
+  --foreground: #191e67; /* Dark blue text */
+  --accent-1: #fd418e; /* Brightest */
+  --accent-2: #191e67;
+  --accent-3: #d6e122; /* Second brightest */
+  --accent-4: #000000; /* Black for contrast */
+  --accent-5: #56d2d2; /* Third brightest */
+}
+
 /* Tipografia */
 :root {
   --font-drowner: 'Drowner', sans-serif;
@@ -170,4 +238,5 @@ body {
 
 .custom-scrollbar:hover::-webkit-scrollbar-thumb {
   background-color: var(--accent-1);
+}
 }

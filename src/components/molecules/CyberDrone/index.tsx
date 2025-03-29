@@ -4,9 +4,10 @@ import React, { useState, useRef, useEffect } from "react";
 import { useTheme } from "@/context/ThemeContext";
 import { useFont } from "@/context/FontContext";
 import CyberButton from "@/components/atoms/CyberButton";
+import CyberRadioButton from "@/components/atoms/CyberRadioButton";
 
 export default function CyberDrone() {
-  const { theme, toggleTheme } = useTheme();
+  const { theme, themeCategory, toggleTheme, setThemeCategory } = useTheme();
   const { font, fontSize, setFont, setFontSize } = useFont();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -78,9 +79,39 @@ export default function CyberDrone() {
               Configurações
             </h2>
 
+               {/* Theme Category Selection */}
+                <div className="mb-4">
+              <h3 className="text-md mb-2 text-accent5">
+                Escuro / Claro
+              </h3>
+              <div className="flex flex-col gap-2">
+                <CyberRadioButton
+                  name="themeCategory"
+                  value="dark"
+                  checked={themeCategory === "dark"}
+                  onChange={(value) => setThemeCategory(value as "dark" | "light" | "default")}
+                  label="Escuro"
+                />
+                <CyberRadioButton
+                  name="themeCategory"
+                  value="light"
+                  checked={themeCategory === "light"}
+                  onChange={(value) => setThemeCategory(value as "dark" | "light" | "default")}
+                  label="Claro"
+                />
+                <CyberRadioButton
+                  name="themeCategory"
+                  value="default"
+                  checked={themeCategory === "default"}
+                  onChange={(value) => setThemeCategory(value as "dark" | "light" | "default")}
+                  label="Default"
+                />
+              </div>
+            </div>
+
             {/* Mudar Tema */}
             <div className="mb-4">
-              <CyberButton onClick={toggleTheme} unevenBorders theme={theme}>
+              <CyberButton onClick={toggleTheme} unevenBorders>
                 <span className="text-accent1">Mudar tema</span>
               </CyberButton>
             </div>
