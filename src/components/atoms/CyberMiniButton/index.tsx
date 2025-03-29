@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {ReactNode, useEffect, useState} from "react";
 import classnames from "classnames";
 import {FaFolder, FaFolderOpen} from "react-icons/fa";
 import {HiOutlineArrowTurnDownRight} from "react-icons/hi2";
@@ -11,10 +11,8 @@ interface CyberMiniButtonProps {
     slim?: boolean;
     loading?: boolean;
     disabled?: boolean;
-    isOpen?: boolean;
     onClick?: () => void;
-    toggleIcon?: () => void;
-    label: string;
+    label: string | ReactNode;
     isParent?: boolean,
 }
 
@@ -25,9 +23,7 @@ export default function CyberMiniButton({
                                             slim,
                                             loading,
                                             disabled,
-                                            isOpen = false,
                                             onClick,
-                                            toggleIcon,
                                             label,
                                             isParent,
                                             ...rest
