@@ -1,7 +1,8 @@
-import { Resource } from '../types/resources';
 
 // Dados da página de resources
-export const resourcesByCategory: Record<string, Resource[]> = {
+import {CyberResource} from "@/components/molecules/CyberResourceCard";
+
+export const resourcesByCategory: Record<string, CyberResource[]> = {
   Hormonização: [
     {
       id: '1',
