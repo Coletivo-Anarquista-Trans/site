@@ -36,10 +36,34 @@ export default function CyberContainer({
   useEffect(() => {
     const parent = pathname.includes("/recursos") ? "recursos" : "manifesto";
 
-    if (typeof children === "string") {
-      registerCyberSection(parent, id as string, children);
+    if (id && children && typeof children === "string") {
+      registerCyberSection(parent, id, children);
     }
-  }, [id, children]);
+
+    const scrollToSelfIfHashMatches = () => {
+      if (!id) return;
+      const currentHash = window.location.hash.replace("#", "");
+      if (currentHash === id) {
+        const el = document.getElementById(id);
+        if (el) {
+          setTimeout(() => {
+            el.scrollIntoView({ behavior: "smooth", block: "start" });
+          }, 100);
+        }
+      }
+    };
+
+    // Delayed first scroll to handle navigation from another page
+    const delay = setTimeout(scrollToSelfIfHashMatches, 200);
+
+    window.addEventListener("hashchange", scrollToSelfIfHashMatches);
+
+    return () => {
+      clearTimeout(delay);
+      window.removeEventListener("hashchange", scrollToSelfIfHashMatches);
+    };
+  }, [id, children, pathname, registerCyberSection]);
+
 
   const baseStyles = classnames("text-accent-1");
   const sizeStyles = large ? "w-8 h-8 text-lg" : slim ? "w-4 h-4 text-sm" : "";

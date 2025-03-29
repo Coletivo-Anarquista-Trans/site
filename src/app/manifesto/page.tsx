@@ -1,25 +1,11 @@
 "use client";
 
 import CyberContainer from "@/components/atoms/CyberContainer"
-import { useSearchParams } from "next/navigation";
-import { useEffect } from "react";
 import CyberTooltip from "@/components/atoms/CyberTooltip";
 import CyberSpeech from "@/components/atoms/CyberSpeech";
 import CyberGlossary from "../../components/molecules/CyberGlossary";
 
 export default function Manifesto() {
-
-    useEffect(() => {
-        const hash = window.location.hash.replace("#", "");
-        if (hash) {
-            const element = document.getElementById(hash);
-            if (element) {
-                setTimeout(() => {
-                    element.scrollIntoView({ behavior: "smooth", block: "start" });
-                }, 100);
-            }
-        }
-    }, [useSearchParams]);
 
     return (
         <>
