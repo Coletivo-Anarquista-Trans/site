@@ -50,14 +50,14 @@ export default function CyberSidebar({
     const sizeStyles = classnames(
         // Mobile
         open
-            ? "fixed top-0 left-0 h-full w-full z-50 overflow-y-auto"
-            : "fixed top-0 left-0 h-full w-full z-50 overflow-y-auto -translate-x-full",
+            ? "fixed top-0 left-0 h-full z-50 overflow-y-auto"
+            : "fixed top-0 left-0 h-full z-50 overflow-y-auto -translate-x-full",
 
         // Desktop
         "md:translate-x-0 md:relative md:sticky md:top-0 md:h-screen md:overflow-y-auto md:z-40",
 
-        // Correct width
-        "w-3/4  md:w-64"
+        // Width
+        "w-3/4 md:w-64"
     );
 
 
@@ -99,7 +99,7 @@ export default function CyberSidebar({
                     borderStyles,
                     className,
                     "border-r-2 z-50",
-                    open ? "translate-x-0 fixed top-0 left-0" : "-translate-x-full fixed top-0 left-0",
+                    open ? "translate-x-0" : "-translate-x-full", // ✅ no duplicate fixed/positioning
                     "md:translate-x-0 md:static md:block"
                 )}
             >
