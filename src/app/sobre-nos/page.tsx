@@ -1,7 +1,6 @@
 "use client";
 
 import CyberContainer from "@/components/atoms/CyberContainer";
-import CyberSidebar from "../../components/organism/CyberSidebar";
 import Link from "next/link";
 
 export default function QuemSomosNos() {
