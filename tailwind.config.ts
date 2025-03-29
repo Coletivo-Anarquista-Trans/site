@@ -1,5 +1,4 @@
 import type { Config } from "tailwindcss";
-import twGlow from "twglow";
 
 export default {
   content: [
@@ -33,5 +32,4 @@ export default {
   },
   darkMode: "class", // Enables manual theme toggling
   mode: "jit",
-  plugins: [twGlow],
 } satisfies Config;

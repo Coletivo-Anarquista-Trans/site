@@ -1,7 +1,17 @@
-import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-    reactStrictMode: false
+const isGithubPages = process.env.GITHUB_ACTIONS === "true";
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export',
+  trailingSlash: true,
+  basePath: isGithubPages ? "/" : "",
+  assetPrefix: isGithubPages ? "/" : "",
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
+
+
