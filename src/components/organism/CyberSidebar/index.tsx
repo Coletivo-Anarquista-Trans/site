@@ -44,6 +44,9 @@ export default function CyberSidebar({
         setOpen(false); // close on nav
     };
 
+    const manifestoSections = cyberSections.filter(s => s.parent === "manifesto");
+    const recursosSections = cyberSections.filter(s => s.parent === "recursos");
+
     const baseStyles = "bg-background h-screen md:h-auto text-accent1 overflow-y-auto custom-scrollbar transition-transform duration-300 ease-in-out transform";
     const sizeStyles = classnames(width, fixed ? "min-h-screen" : "relative");
     const borderStyles = classnames({
@@ -106,23 +109,36 @@ export default function CyberSidebar({
                 )}
 
                 <Link href="/" passHref>
-                    <CyberTreeNode label="Home" />
+                    <CyberTreeNode id="home-root" label="Home" />
                 </Link>
-                <CyberTreeNode label={<Link href="/manifesto">Manifesto</Link>}>
-                    {cyberSections.length > 0 ? (
-                        cyberSections.map((section) => (
+                <CyberTreeNode id="manifesto-root" label={<Link href="/manifesto">Manifesto</Link>}>
+                    {manifestoSections.length > 0 ? (
+                        manifestoSections.map((section) => (
                             <CyberTreeNode
                                 key={section.id}
+                                id={section.id}
                                 label={section.label}
                                 onClick={() => handleSectionClick(section.id)}
                             />
                         ))
                     ) : (
-                        <p className="text-gray-500 text-center">- x -</p>
+                        <p className="text-accent3 text-center">- x -</p>
                     )}
                 </CyberTreeNode>
-                <CyberTreeNode label="Button 3">
-                    <CyberTreeNode label="3.1" />
+
+                <CyberTreeNode id="recursos-root" label={<Link href="/recursos">Recursos</Link>}>
+                    {recursosSections.length > 0 ? (
+                        recursosSections.map((section) => (
+                            <CyberTreeNode
+                                key={section.id}
+                                id={section.id}
+                                label={section.label}
+                                onClick={() => handleSectionClick(section.id)}
+                            />
+                        ))
+                    ) : (
+                        <p className="text-accent3 text-center">- x -</p>
+                    )}
                 </CyberTreeNode>
             </CyberContainer>
         </>
