@@ -6,6 +6,7 @@ interface Section {
     id: string;
     label: ReactNode;
     parent: string;
+    children?: ReactNode;
 }
 
 interface CyberSectionContextType {
@@ -15,7 +16,7 @@ interface CyberSectionContextType {
 
 const CyberSectionContext = createContext<CyberSectionContextType | undefined>(undefined);
 
-export function CyberSectionProvider({ children }: { children: string }) {
+export function CyberSectionProvider({ children }: { children: ReactNode }) {
     const [cyberSections, setCyberSections] = useState<Section[]>(() => {
         if (typeof window !== "undefined") {
             return JSON.parse(sessionStorage.getItem("cyberSections") || "[]");
