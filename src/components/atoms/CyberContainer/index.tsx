@@ -34,11 +34,12 @@ export default function CyberContainer({
   const pathname = usePathname();
 
   useEffect(() => {
-    if (id) {
-      const parent = pathname.includes("/recursos") ? "recursos" : "manifesto";
-      registerCyberSection(parent, id, id);
+    const parent = pathname.includes("/recursos") ? "recursos" : "manifesto";
+
+    if (typeof children === "string") {
+      registerCyberSection(parent, id as string, children);
     }
-  }, [id, pathname]);
+  }, [id, children]);
 
   const baseStyles = classnames("text-accent-1");
   const sizeStyles = large ? "w-8 h-8 text-lg" : slim ? "w-4 h-4 text-sm" : "";

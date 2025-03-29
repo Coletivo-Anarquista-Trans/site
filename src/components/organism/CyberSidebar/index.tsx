@@ -41,7 +41,7 @@ export default function CyberSidebar({
     const handleSectionClick = (id: string) => {
         const manifestoPath = `/manifesto#${id}`;
         router.push(manifestoPath);
-        setOpen(false); // close on nav
+        setOpen(false);
     };
 
     const manifestoSections = cyberSections.filter(s => s.parent === "manifesto");
