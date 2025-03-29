@@ -33,15 +33,27 @@ export default function CyberContainer({
   const { registerCyberSection } = useCyberSection();
   const pathname = usePathname();
 
-  useEffect(() => {
-    const parent = pathname.includes("/recursos") ? "recursos" : "manifesto";
+  //todo refactor this logic inside cybercontainer where we do scrolling to the container in question.
+  // we need to encapsulate this
 
-    if (id && children && typeof children === "string") {
+
+  useEffect(() => {
+    const getParentFromPathOrId = (): string | null => {
+      if (!id) return null;
+
+      const match = id.match(/^(recursos|manifesto)-/);
+      if (match) return match[1];
+
+      return pathname.includes("/recursos") ? "recursos" : "manifesto";
+    };
+
+    const parent = getParentFromPathOrId();
+
+    if (id && typeof children === "string" && typeof parent === "string") {
       registerCyberSection(parent, id, children);
     }
 
     const scrollToSelfIfHashMatches = () => {
-      if (!id) return;
       const currentHash = window.location.hash.replace("#", "");
       if (currentHash === id) {
         const el = document.getElementById(id);
@@ -53,16 +65,16 @@ export default function CyberContainer({
       }
     };
 
-    // Delayed first scroll to handle navigation from another page
     const delay = setTimeout(scrollToSelfIfHashMatches, 200);
-
     window.addEventListener("hashchange", scrollToSelfIfHashMatches);
-
     return () => {
       clearTimeout(delay);
       window.removeEventListener("hashchange", scrollToSelfIfHashMatches);
     };
   }, [id, children, pathname, registerCyberSection]);
+
+
+  // above, a terrible approach to doing this. we need to refactor it
 
 
   const baseStyles = classnames("text-accent-1");

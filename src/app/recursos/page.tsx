@@ -11,12 +11,11 @@ export default function Resources() {
     return (
         <CyberContainer className="container mx-auto px-4 py-8 max-w-4xl textaccent1">
             <CyberContainer
-                id="section-1"
                 className="text-3xl font-bold text-accent1 mb-2">Transgenerificação</CyberContainer>
             {sortedCategories.map(category => (
                 <CyberCategorySection
                     key={category}
-                    id={`recursos-${category}`}
+                    id={`item-${category}`}
                     title={category}
                     resources={resourcesByCategory[category]}
                 />
