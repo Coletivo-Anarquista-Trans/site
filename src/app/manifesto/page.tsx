@@ -1,41 +1,25 @@
 "use client";
 
 import CyberContainer from "@/components/atoms/CyberContainer"
-import { useSearchParams } from "next/navigation";
-import { useEffect } from "react";
 import CyberTooltip from "@/components/atoms/CyberTooltip";
-import CyberSpeech from "@/components/atoms/CyberSpeech";
 import CyberGlossary from "../../components/molecules/CyberGlossary";
 
 export default function Manifesto() {
 
-    useEffect(() => {
-        const hash = window.location.hash.replace("#", "");
-        if (hash) {
-            const element = document.getElementById(hash);
-            if (element) {
-                setTimeout(() => {
-                    element.scrollIntoView({ behavior: "smooth", block: "start" });
-                }, 100);
-            }
-        }
-    }, [useSearchParams]);
-
     return (
         <>
-            <CyberContainer className="min-h-screen flex flex-col items-start px-4 py-8">
-                <CyberContainer className="w-full mx-auto text-accent1 max-w-screen-lg px-4 sm:px-8">
-                    <CyberContainer className="p-4 sm:p-8 break-words w-full max-w-4xl">
-                        <CyberContainer className="w-full flex justify-center">
+            <CyberContainer className="min-h-screen flex flex-col items-center overflow-x-hidden px-4 py-8">
+                    <CyberContainer className="p-4 text-accent1 sm:p-8 break-words w-full max-w-4xl">
+                        <CyberContainer className="w-full max-w-screen-md mx-auto px-4">
                             <CyberContainer
                                 id="section-1"
                                 unevenBorders
                                 glowingBorders
-                                className="inline-block text-2xl sm:text-3xl md:text-4xl p-4 m-14 text-center break-keep whitespace-nowrap"
-                            >
+                                className="text-center text-2xl sm:text-3xl md:text-4xl p-4 mt-6 mb-10 border-b-2 border-b-accent1">
                                 1 - Finalidade
                             </CyberContainer>
                         </CyberContainer>
+
                         <CyberContainer className={"text-center text-base p-2 m-4 w-auto h-auto"}>
                             <p>
                                 <b>O corpo é político, quem não lutar por ele irá perdê-lo para o {''}
@@ -82,7 +66,7 @@ export default function Manifesto() {
                             <CyberContainer className="w-full flex justify-center">
                                 <CyberContainer
                                     id="section-2" unevenBorders glowingBorders
-                                    className="inline-block text-2xl sm:text-3xl md:text-4xl p-4 m-14 text-center break-keep whitespace-nowrap">
+                                    className="inline-block text-2xl sm:text-3xl md:text-4xl p-4 m-6 sm:m-14 text-center break-keep whitespace-nowrap"                                 >
                                     2 - Como faremos
                                 </CyberContainer>
                             </CyberContainer>
@@ -98,7 +82,7 @@ export default function Manifesto() {
                         <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
                             <CyberContainer
                                 id="section-2.1"
-                                className="text-center text-2xl p-2 m-4 mb-6 w-fit mx-auto border-b-2 border-b-accent1">
+                                className="text-center text-2xl p-4 mb-6 w-full max-w-xs sm:max-w-md md:max-w-2xl mx-auto border-b-2 border-b-accent1">
                                 2.1 - Somos anarquistas
                             </CyberContainer>
                             Porque não acreditamos em {''}
@@ -122,13 +106,13 @@ export default function Manifesto() {
                         <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
                             <CyberContainer
                                 id="section-2.2"
-                                className="text-center text-2xl p-2 m-4 mb-6 w-fit mx-auto border-b-2 border-b-accent1">
+                                className="text-center text-2xl p-4 mb-6 w-full max-w-xs sm:max-w-md md:max-w-2xl mx-auto border-b-2 border-b-accent1">
                                 2.2 - Acreditamos no voluntarismo
                             </CyberContainer>
                             <b>“De cada um de acordo com sua capacidade”</b>. Seguimos essa máxima, pois o mundo
                             capitalista
                             consome grande parte do nosso tempo e capacidades, <b>precisamos antes sobreviver para
-                                lutar.</b>
+                            lutar.</b>
                             <br /><br />
                             O voluntarismo permite recuos estratégicos, avanços engajados, dedicação naquilo que amamos
                             e manifestação da diversidade de habilidades e desejos. Isso não significa autonomismo, que
@@ -141,7 +125,7 @@ export default function Manifesto() {
                         <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
                             <CyberContainer
                                 id="section-2.3"
-                                className="text-center text-2xl p-2 m-4 mb-6 w-fit mx-auto border-b-2 border-b-accent1">
+                                className="text-center text-2xl p-4 mb-6 w-full max-w-xs sm:max-w-md md:max-w-2xl mx-auto border-b-2 border-b-accent1">
                                 2.3 - Construímos comunidade
                             </CyberContainer>
                             <b>“Para cada um de acordo com a sua necessidade”</b>. Trabalhamos coletivamente para
@@ -158,7 +142,7 @@ export default function Manifesto() {
                         <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
                             <CyberContainer
                                 id="section-2.4"
-                                className="text-center text-2xl p-2 m-4 mb-6 w-fit mx-auto border-b-2 border-b-accent1">
+                                className="text-center text-2xl p-4 mb-6 w-full max-w-xs sm:max-w-md md:max-w-2xl mx-auto border-b-2 border-b-accent1">
                                 2.4 - Produzimos arte
                             </CyberContainer>
                             Somos hackers. “Hackear é abstrair. Abstrair é produzir o plano sobre o qual coisas
@@ -169,7 +153,7 @@ export default function Manifesto() {
                             <br /><br />
                             A arte é um mecanismo humano de expressão, que construído com intenção política pode ser um
                             instrumento de luta muito importante. <b>Ela é capaz de produzir memória, ancestralidade e
-                                perspectivas de novos mundos.</b>
+                            perspectivas de novos mundos.</b>
                             Enquanto coletivo, produziremos arte política e educacional que converse diretamente com a
                             nossa comunidade (zines, lambes e o que mais der na telha), e iremos incentivar as ocupações
                             e movimentações queer culturais e marginais diversas pela cidade.
@@ -186,7 +170,7 @@ export default function Manifesto() {
                         <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
                             <CyberContainer
                                 id="section-2.5"
-                                className="text-center text-2xl p-2 m-4 mb-6 w-fit mx-auto border-b-2 border-b-accent1">
+                                className="text-center text-2xl p-4 mb-6 w-full max-w-xs sm:max-w-md md:max-w-2xl mx-auto border-b-2 border-b-accent1">
                                 2.5 - Vemos o mundo de uma Transperspectiva
                             </CyberContainer>
                             <b>Cisgenereidade é compulsória! O presente é apenas potencial e o futuro é a realização ou
@@ -215,7 +199,7 @@ export default function Manifesto() {
                         <CyberContainer className="w-full flex justify-center">
                             <CyberContainer
                                 id="section-3" unevenBorders glowingBorders
-                                className="inline-block text-2xl sm:text-3xl md:text-4xl p-4 m-14 text-center break-keep whitespace-nowrap">
+                                className="inline-block text-2xl sm:text-3xl md:text-4xl p-4 m-6 sm:m-14 text-center break-keep whitespace-nowrap">
                                 3 - Nossos objetivos
                             </CyberContainer>
                         </CyberContainer>
@@ -223,12 +207,12 @@ export default function Manifesto() {
                         <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
                             <CyberContainer
                                 id="section-3.1"
-                                className="text-center text-2xl p-2 m-4 mb-6 w-fit mx-auto border-b-2 border-b-accent1">
+                                className="text-center text-2xl p-4 mb-6 w-full max-w-xs sm:max-w-md md:max-w-2xl mx-auto border-b-2 border-b-accent1">
                                 3.1 - Nossa comunidade tem fome
                             </CyberContainer>
                             <b>Não existe liberdade onde se tem fome</b>. Faltam oportunidades para pessoas trans, com
                             deficiência e neurodivergentes poderem matar sua fome. Enquanto isso, há <b>supermercados
-                                cheios com preços inacessíveis</b>, porque o Cistema produz a comida para dar lucro e não
+                            cheios com preços inacessíveis</b>, porque o Cistema produz a comida para dar lucro e não
                             para
                             matar fome.
                             <br /><br />
@@ -240,17 +224,15 @@ export default function Manifesto() {
                         <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
                             <CyberContainer
                                 id="section-3.2"
-                                className="text-center text-2xl p-2 m-4 mb-6 w-fit mx-auto border-b-2 border-b-accent1">
+                                className="text-center text-2xl p-4 mb-6 w-full max-w-xs sm:max-w-md md:max-w-2xl mx-auto border-b-2 border-b-accent1">
                                 3.2 - Por uma saúde transgênera
                             </CyberContainer>
-                            <CyberSpeech>
                                 <b>Saúde é para garantir autonomia e não só para tratar sintomas.</b> Queremos livre
                                 acesso a
                                 hormônios, cirurgias e fármacos com conscientização do uso e esforço para redução dos
                                 colaterais indesejados e maximização dos desejados. Enquanto a técnica for refém das
                                 necessidades do Cistema, a finalidade acima não poderá se realizar para nossos corpos
                                 marginalizados.
-                            </CyberSpeech>
                             <br /><br />
                             <div className="whitespace-pre-wrap">
                                 <b>Precisamos de pessoas trans, neurodivergentes e pessoas com deficiência participando
@@ -271,7 +253,7 @@ export default function Manifesto() {
                         <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
                             <CyberContainer
                                 id="section-3.3"
-                                className="text-center text-2xl p-2 m-4 mb-6 w-fit mx-auto border-b-2 border-b-accent1">
+                                className="text-center text-2xl p-4 mb-6 w-full max-w-xs sm:max-w-md md:max-w-2xl mx-auto border-b-2 border-b-accent1">
                                 3.3 - Por moradias para nossos corpos
                             </CyberContainer>
                             <b>Não existe liberdade sem ter um teto</b>. Precisamos morar. Os corpos marginalizados são
@@ -281,20 +263,20 @@ export default function Manifesto() {
                             pelo Estado e o mercado.
                             <br /><br />
                             A moradia para nossos corpos não está contemplada por essas lógicas, que produz<b> {''}
-                                <CyberTooltip word="casas sem pessoas e pessoas sem casas"
-                                    description="Censo 2022: imóveis desocupados representam 12 vezes a população de rua da cidade de SP" /></b>.
+                            <CyberTooltip word="casas sem pessoas e pessoas sem casas"
+                                          description="Censo 2022: imóveis desocupados representam 12 vezes a população de rua da cidade de SP" /></b>.
                             Nossa comunidade é uma das mais afetadas por essa escassez
                             produzida para dar lucro.
                             Por isso, <b>lutamos por uma lógica de propriedade que permita que ninguém morra de frio nas
-                                ruas.
-                                <br /><br />
-                                Queremos nossos lares.</b>
+                            ruas.
+                            <br /><br />
+                            Queremos nossos lares.</b>
                         </CyberContainer>
 
                         <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
                             <CyberContainer
                                 id="section-3.4"
-                                className="text-center text-2xl p-2 m-4 mb-6 w-fit mx-auto border-b-2 border-b-accent1">
+                                className="text-center text-2xl p-4 mb-6 w-full max-w-xs sm:max-w-md md:max-w-2xl mx-auto border-b-2 border-b-accent1">
                                 3.4 - Descentralização das tecnologias de generificação
                             </CyberContainer>
                             <b>Corpos são políticos! Não tirem nossos corpos de nós.</b> Homem e mulher é um produto da
@@ -306,7 +288,7 @@ export default function Manifesto() {
                             <br /><br />
                             A descentralização das tecnologias de modificação corporal depende do fim do capitalismo e
                             do patriarcado. Portanto, <b>defendemos a propriedade coletiva de todos meios de produção e
-                                reprodução da vida, de construção corporal e da consciência</b> como das terras onde a
+                            reprodução da vida, de construção corporal e da consciência</b> como das terras onde a
                             comida
                             nasce, das fábricas onde fazemos as ferramentas e bens que auxiliam a vida, e dos meios de
                             comunicação que nos ajudam a entender nossos papeis no mundo e na comunidade.
@@ -315,7 +297,7 @@ export default function Manifesto() {
                         <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
                             <CyberContainer
                                 id="section-3.5"
-                                className="text-center text-2xl p-2 m-4 mb-6 w-fit mx-auto border-b-2 border-b-accent1">
+                                className="text-center text-2xl p-4 mb-6 w-full max-w-xs sm:max-w-md md:max-w-2xl mx-auto border-b-2 border-b-accent1">
                                 3.5 - Internet livre como meio de produção da consciência
                             </CyberContainer>
                             A internet assumiu um papel central em como nos informamos sobre o mundo. O controle do
@@ -342,9 +324,9 @@ export default function Manifesto() {
                             pessoas e não do enriquecimento de uma minoria bilionária que nos explora e usa a internet
                             como meio de nos dominar.
                             Também acreditamos na possibilidade de se <b>construir um corpo através de um espaço
-                                extracorporal</b>, uma simulação do que se é/ou se deseja ser na virtualização do ser. <b>Não
-                                    hierarquizamos e definimos a linha que traça a distinção entre os espaços materiais e os
-                                    virtuais.</b>
+                            extracorporal</b>, uma simulação do que se é/ou se deseja ser na virtualização do ser. <b>Não
+                            hierarquizamos e definimos a linha que traça a distinção entre os espaços materiais e os
+                            virtuais.</b>
                             <br /><br />
                             Por isso, <b>disputaremos a internet como forma de produzir a si próprio</b>, construindo e
                             reforçando novas tecnologias de produção de si virtualmente, podendo também servir como
@@ -354,7 +336,7 @@ export default function Manifesto() {
                         <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
                             <CyberContainer
                                 id="section-3.6"
-                                className="text-center text-2xl p-2 m-4 mb-6 w-fit mx-auto border-b-2 border-b-accent1">
+                                className="text-center text-2xl p-4 mb-6 w-full max-w-xs sm:max-w-md md:max-w-2xl mx-auto border-b-2 border-b-accent1">
                                 3.6 - Despatologização da vida
                             </CyberContainer>
                             <b>Neurodivergência não é patologia, patológico é um sistema que lê as diferenças como
@@ -364,11 +346,11 @@ export default function Manifesto() {
                             Os fármacos têm a finalidade de tornar neurodivergentes do sistema em corpos produtivos.
                             <br /><br />
                             Queremos libertar as mentes destes fármacos. <b>Fármacos devem atender as necessidades
-                                individuais e coletivas, não do sistema capitalista para manter a lógica de produção de
-                                lucro.</b>
+                            individuais e coletivas, não do sistema capitalista para manter a lógica de produção de
+                            lucro.</b>
                             <br /><br />
                             Lutamos pelo <b>livre acesso e domínio dos fármacos</b>, pelo <b>fim de uma lógica de
-                                trabalho adoecedora</b> que
+                            trabalho adoecedora</b> que
                             consome todo o tempo de vida das pessoas para enriquecer uma minoria, enquanto resta
                             migalhas para a maioria.
                         </CyberContainer>
@@ -376,25 +358,25 @@ export default function Manifesto() {
                         <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
                             <CyberContainer
                                 id="section-3.7"
-                                className="text-center text-2xl p-2 m-4 mb-6 w-fit mx-auto border-b-2 border-b-accent1">
+                                className="text-center text-2xl p-4 mb-6 w-full max-w-xs sm:max-w-md md:max-w-2xl mx-auto border-b-2 border-b-accent1">
                                 3.7 - Pelo direito à reprodução queer
                             </CyberContainer>
                             <b>Se um corpo pode vir de nós, então somos nossos próprios mestres.</b> A tecnologia nos
                             possibilitou hackear nossos corpos para reproduzirmos sem depender da heterossexualidade.
                             Essas tecnologias são restringidas pelo tecnopatriarcado para poucos. <b>Ter filhos deve ser
-                                uma possibilidade e escolha para qualquer corpo através das tecnologias de reprodução.</b>
+                            uma possibilidade e escolha para qualquer corpo através das tecnologias de reprodução.</b>
                             <br /><br />
                             A cisheteronormatividade jamais permitirá que utilizemos essas tecnologias, pois, com elas
                             em nossas mãos, a <b>cisheterossexualidade deixa de ter sentido na sua existência,
-                                justificada
-                                hoje pela concentração para si da capacidade reprodutiva.</b>
+                            justificada
+                            hoje pela concentração para si da capacidade reprodutiva.</b>
                         </CyberContainer>
 
                         <CyberContainer className="w-full flex justify-center">
                             <CyberGlossary title="Glossário" />
                         </CyberContainer>
+
                     </CyberContainer>
-                </CyberContainer>
             </CyberContainer>
         </>
     );

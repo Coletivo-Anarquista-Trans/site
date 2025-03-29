@@ -33,13 +33,49 @@ export default function CyberContainer({
   const { registerCyberSection } = useCyberSection();
   const pathname = usePathname();
 
-  useEffect(() => {
-    const parent = pathname.includes("/recursos") ? "recursos" : "manifesto";
+  //todo refactor this logic inside cybercontainer where we do scrolling to the container in question.
+  // we need to encapsulate this
 
-    if (typeof children === "string") {
-      registerCyberSection(parent, id as string, children);
+
+  useEffect(() => {
+    const getParentFromPathOrId = (): string | null => {
+      if (!id) return null;
+
+      const match = id.match(/^(recursos|manifesto)-/);
+      if (match) return match[1];
+
+      return pathname.includes("/recursos") ? "recursos" : "manifesto";
+    };
+
+    const parent = getParentFromPathOrId();
+
+    if (id && typeof children === "string" && typeof parent === "string") {
+      registerCyberSection(parent, id, children);
     }
-  }, [id, children]);
+
+    const scrollToSelfIfHashMatches = () => {
+      const currentHash = window.location.hash.replace("#", "");
+      if (currentHash === id) {
+        const el = document.getElementById(id);
+        if (el) {
+          setTimeout(() => {
+            el.scrollIntoView({ behavior: "smooth", block: "start" });
+          }, 100);
+        }
+      }
+    };
+
+    const delay = setTimeout(scrollToSelfIfHashMatches, 200);
+    window.addEventListener("hashchange", scrollToSelfIfHashMatches);
+    return () => {
+      clearTimeout(delay);
+      window.removeEventListener("hashchange", scrollToSelfIfHashMatches);
+    };
+  }, [id, children, pathname, registerCyberSection]);
+
+
+  // above, a terrible approach to doing this. we need to refactor it
+
 
   const baseStyles = classnames("text-accent-1");
   const sizeStyles = large ? "w-8 h-8 text-lg" : slim ? "w-4 h-4 text-sm" : "";
@@ -47,7 +83,7 @@ export default function CyberContainer({
 const borderStyles = classnames({
     "rounded-tl-[10px] rounded-br-[10px] rounded-bl-[0px] rounded-tr-[0px] border-accent1": unevenBorders,
     "rounded-none": normalBorders,
-    "shadow-[0_0_10px_2px] border-2": glowingBorders,
+    "shadow-[0_0_10px_2px] border": glowingBorders,
     "border-glow": clearBorders,
   });
 
