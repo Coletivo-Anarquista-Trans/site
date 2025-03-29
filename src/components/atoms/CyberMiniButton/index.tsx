@@ -11,9 +11,7 @@ interface CyberMiniButtonProps {
     slim?: boolean;
     loading?: boolean;
     disabled?: boolean;
-    isOpen?: boolean;
     onClick?: () => void;
-    toggleIcon?: () => void;
     label: string | ReactNode;
     isParent?: boolean,
 }
@@ -25,9 +23,7 @@ export default function CyberMiniButton({
                                             slim,
                                             loading,
                                             disabled,
-                                            isOpen = false,
                                             onClick,
-                                            toggleIcon,
                                             label,
                                             isParent,
                                             ...rest
