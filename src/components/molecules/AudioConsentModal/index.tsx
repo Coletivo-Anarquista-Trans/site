@@ -8,22 +8,29 @@ import CyberButton from "@/components/atoms/CyberButton";
 import CyberPortrait from "@/components/atoms/CyberPortrait";
 
 export default function AudioConsentModal() {
-  const { enableAudio, isAudioEnabled, playArpeggio } = useAudio();
+  const { enableAudio, disableAudio, isAudioEnabled, playArpeggio } =
+    useAudio();
   const [showModal, setShowModal] = useState(false);
 
   useEffect(() => {
-    setShowModal(!isAudioEnabled);
+    // This effect runs only on client-side after mount
+    const audioDisabled =
+      typeof window !== "undefined"
+        ? localStorage.getItem("audioDisabled") === "true"
+        : false;
+    setShowModal(!isAudioEnabled && !audioDisabled);
   }, [isAudioEnabled]);
 
   const handleEnable = async () => {
-    await enableAudio(); // Wait for audio to be enabled
-    // Small delay to ensure audio context is fully ready
+    await enableAudio();
     setTimeout(() => {
       playArpeggio();
     }, 100);
+    setShowModal(false);
   };
 
   const handleDisable = () => {
+    disableAudio();
     setShowModal(false);
   };
 
