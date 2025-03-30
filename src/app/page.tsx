@@ -119,17 +119,33 @@ export default function Home() {
 
           {/* Visitor Counter */}
           <motion.div
+            initial={{ opacity: 0, scale: 1, x: -200 }}
+            animate={{ opacity: 1, scale: 1, x: 0 }}
+            exit={{ opacity: 0, scale: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
             className="w-full"
-            whileHover={{
-              scale: 1.05,
-              transition: { duration: 0.2 },
-            }}
-            onHoverStart={playButtonSelect}
           >
             <CyberBig
               text={`visitantes: ${count !== null ? count : "---"}`}
               className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
             />
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, scale: 1, x: -200 }}
+            animate={{ opacity: 1, scale: 1, x: 0 }}
+            exit={{ opacity: 0, scale: 1, x: 0 }}
+            transition={{ duration: 0.9 }}
+            className="w-full"
+          >
+            <button
+              onClick={() => setIsForumModalOpen(true)}
+              className="focus:outline-none focus:ring-2 focus:ring-accent1 w-full"
+            >
+              <CyberBig
+                text="forum"
+                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
+              />
+            </button>
           </motion.div>
         </CyberContainer>
 
