@@ -220,41 +220,84 @@ export default function CyberTerminal({}: CyberTerminalProps) {
   const handleCommand = (command: string) => {
     let response: string;
     const parts = command.split(" ");
-    const cmd = parts[0];
+    // Convert command to lowercase for case-insensitive comparison
+    const cmd = parts[0].toLowerCase();
     const args = parts.slice(1).join(" ");
 
-    if (cmd === "ajuda") {
-      response =
-        "Comandos disponíveis: ajuda, about, contato, manifesto, arquivos, recursos, username [nome]";
-    } else if (cmd === "about") {
-      response =
-        "This is a fake terminal built with React, Next.js, and Tailwind!";
-    } else if (cmd === "contato") {
-      response = "E-mail: cats-trans@riseup.net";
-    } else if (cmd === "sobre-nos") {
-      router.push("/sobre");
-      return;
-    } else if (cmd === "arquivos") {
-      router.push("/arquivos");
-      return;
-    } else if (cmd === "recursos") {
-      router.push("/recursos");
-      return;
-    } else if (cmd === "manifesto") {
-      router.push("/manifesto");
-      return;
-    } else if (cmd === "username") {
-      if (!args) {
-        response = "coloque o seu nome após o comando";
-      } else {
-        setUsername(args);
-        response = `Nome de usuário alterado para ${args}`;
-      }
-    } else {
-      const numKaomojis = Math.floor(Math.random() * 2) + 1;
-      response = Array.from({ length: numKaomojis }, () =>
-        getRandomKaomoji()
-      ).join(" ");
+    switch (cmd) {
+      case "ajuda":
+        response =
+          "Comandos disponíveis: ajuda, terminal, contato, cats, manifesto, arquivos, recursos, username [nome], mazrine, lynx, n3o, kia, v, iniari, yu, fefe, em-breve, forum";
+        break;
+      case "terminal":
+        response =
+          "Esse é um terminal de mentirinha que a mazrine fez pra ser engraçadinha hihi (•⩊•)";
+        break;
+      case "contato":
+        response = "E-mail: cats-trans@riseup.net";
+        break;
+      case "forum":
+        response = "Estamos desenvolvendo um forum para uso da comunidade trans. Aguardem notícias!";
+        break;
+      case "mazrine":
+        response =
+          "programadora, musicista e glitch artist nas horas vagas com estranha obsessão pela cor roxa e triângulos ( • ⩊ • )";
+        break;
+      case "em-breve":
+        response =
+          "temos várias funcionalidades e recursos por vir! Isso aqui é só o começo o(>ω<)o";
+        break;
+      case "lynx":
+        response = "programadora, musicista e furry nas horas vagas. ฅ(^◕ᴥ◕^)ฅ";
+        break;
+      case "n3o":
+        response =
+          "programador e artista misterioso... que ama gatos e odeia letras maiúsculas ᓚᘏᗢ";
+        break;
+      case "iniari":
+        response =
+          "catgirl jack of all trades que consegue ser boa em tudo que faz ♡(>ᴗ•)<♡";
+        break;
+      case "v":
+        response =
+          "ping pong ping pong ping pong ping pong ping pong o( ❛ᴗ❛ )o";
+        break;
+      case "yu":
+        response =
+          "artista incrível, responsável por diversas produções no coletivo (๑>◡<๑)";
+        break;
+      case "kia":
+        response = "memetic warfare intimacy coordinator. Kia faz de tudo e também é a melhor cozinheira de são paulo ppr";
+        break;
+      case "fefe":
+        response = "artista obsecada pela cor rosa, cardgames e animes";
+        break;
+
+      case "cats":
+        router.push("/sobre");
+        return;
+      case "arquivos":
+        router.push("/arquivos");
+        return;
+      case "recursos":
+        router.push("/recursos");
+        return;
+      case "manifesto":
+        router.push("/manifesto");
+        return;
+      case "username":
+        if (!args) {
+          response = "coloque o seu nome após o comando";
+        } else {
+          setUsername(args);
+          response = `Nome de usuário alterado para ${args}`;
+        }
+        break;
+      default:
+        const numKaomojis = Math.floor(Math.random() * 2) + 1;
+        response = Array.from({ length: numKaomojis }, () =>
+          getRandomKaomoji()
+        ).join(" ");
     }
 
     setHistory((prev) => [...prev, `$ ${command}`, response]);
@@ -364,8 +407,8 @@ export default function CyberTerminal({}: CyberTerminalProps) {
               <pre className="text-left" style={{ fontFamily: font }}>
                 {`
     ╭───────────⏣────────────╮
-    ⟁ -> site 1.13.2
-    ⏣ -> trangenerificação 132%
+    ⟁ -> site 1.1.0
+    ⏣ -> transgenerificação 132%
     ⏣ -> non-binary.exe READY
     ⏣ -> fim do cistema IN-PROGRESS
     ╰───────────⏣────────────╯

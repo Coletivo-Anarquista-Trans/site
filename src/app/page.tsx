@@ -13,6 +13,7 @@ import { useState } from "react";
 import CyberAudioControl from "@/components/molecules/CyberAudioControl";
 import { useAudio } from "@/context/AudioContext";
 import { useEffect } from "react";
+import useIsMobile from "@/utils/useIsMobile";
 
 export default function Home() {
   const { theme } = useTheme();
@@ -20,6 +21,8 @@ export default function Home() {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
   const { playButtonSelect } = useAudio();
   const [count, setCount] = useState<number | null>(null);
+
+  const isMobile = useIsMobile();
 
   useEffect(() => {
     fetch(
@@ -44,7 +47,7 @@ export default function Home() {
           >
             <CyberPortrait
               id="1"
-              text="CATS-Coletivo-Anarquista-Trans.tsx"
+              text="Coletivo-Anarquista-Trans.tsx"
               altText="Cyber Portrait 1"
               nested={
                 <CyberContainer className="w-full min-w-[90vw] sm:min-w-[80vw] md:min-w-[70vw] lg:min-w-[60vw] xl:min-w-[50vw] 2xl:min-w-[42rem] max-w-[90vw] sm:max-w-[80vw] md:max-w-[70vw] lg:max-w-[60vw] xl:max-w-[50vw] 2xl:max-w-[42rem]">
@@ -147,10 +150,14 @@ export default function Home() {
               />
             </button>
           </motion.div>
+          <div className="flex flex-row gap-4">
+            {isMobile && <CyberDrone floating={false} />}
+            {isMobile && <CyberAudioControl floating={false} />}
+          </div>
         </CyberContainer>
 
-        <CyberAudioControl className="" />
-        <CyberDrone className="" />
+        {!isMobile && <CyberAudioControl />}
+        {!isMobile && <CyberDrone />}
       </CyberContainer>
 
       {/* Forum Modal */}

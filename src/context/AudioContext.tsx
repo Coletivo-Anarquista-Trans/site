@@ -21,6 +21,7 @@ interface AudioContextType {
   enableAudio: () => void;
   disableAudio: () => void;
   showAudioModal: () => void;
+  initializeAudio: () => void;
 }
 
 const AudioContext = createContext<AudioContextType | undefined>(undefined);
@@ -28,64 +29,85 @@ const AudioContext = createContext<AudioContextType | undefined>(undefined);
 export const AudioContextProvider = ({ children }: { children: ReactNode }) => {
   const audioContextRef = useRef<AudioContext | null>(null);
   const gainNodeRef = useRef<GainNode | null>(null);
-  const [isAudioEnabled, setIsAudioEnabled] = useState(true);
+  const [isAudioEnabled, setIsAudioEnabled] = useState(false);
+  const [isInitialized, setIsInitialized] = useState(false);
+
+  const initializeAudio = () => {
+    if (isInitialized || typeof window === "undefined") return;
+
+    try {
+      audioContextRef.current = new (window.AudioContext ||
+        (window as any).webkitAudioContext)({ latencyHint: "interactive" });
+      gainNodeRef.current = audioContextRef.current.createGain();
+      gainNodeRef.current.gain.value = 0;
+      gainNodeRef.current.connect(audioContextRef.current.destination);
+
+      const audioDisabled = localStorage.getItem("audioDisabled");
+      if (audioDisabled === "true") {
+        disableAudio();
+      } else {
+        enableAudio();
+      }
+
+      setIsInitialized(true);
+    } catch (e) {
+      console.error("AudioContext initialization failed", e);
+      setIsAudioEnabled(false);
+    }
+  };
 
   useEffect(() => {
-    if (typeof window === "undefined") return;
-
-    const initializeAudio = () => {
-      try {
-        audioContextRef.current = new (window.AudioContext ||
-          (window as any).webkitAudioContext)({ latencyHint: "interactive" });
-        gainNodeRef.current = audioContextRef.current.createGain();
-        gainNodeRef.current.gain.value = 0;
-        gainNodeRef.current.connect(audioContextRef.current.destination);
-
-        const audioDisabled = localStorage.getItem("audioDisabled");
-        if (audioDisabled === "true") {
-          disableAudio();
-        } else {
-          enableAudio();
-        }
-      } catch (e) {
-        console.error("AudioContext initialization failed", e);
-        setIsAudioEnabled(false);
-      }
+    // Set up click event listener for the whole window
+    const handleFirstInteraction = () => {
+      initializeAudio();
+      window.removeEventListener("click", handleFirstInteraction);
+      window.removeEventListener("keydown", handleFirstInteraction);
+      window.removeEventListener("touchstart", handleFirstInteraction);
     };
 
-    const timer = setTimeout(initializeAudio, 100);
+    window.addEventListener("click", handleFirstInteraction);
+    window.addEventListener("keydown", handleFirstInteraction);
+    window.addEventListener("touchstart", handleFirstInteraction);
+
     return () => {
-      clearTimeout(timer);
+      window.removeEventListener("click", handleFirstInteraction);
+      window.removeEventListener("keydown", handleFirstInteraction);
+      window.removeEventListener("touchstart", handleFirstInteraction);
       audioContextRef.current?.close();
     };
   }, []);
 
   const enableAudio = () => {
-    if (audioContextRef.current?.state === "suspended") {
-      audioContextRef.current.resume();
+    if (!audioContextRef.current) return;
+
+    if (audioContextRef.current.state === "suspended") {
+      audioContextRef.current.resume().catch((e) => {
+        console.error("Failed to resume audio context:", e);
+      });
     }
+
     if (gainNodeRef.current) {
+      const now = audioContextRef.current.currentTime;
+      gainNodeRef.current.gain.cancelScheduledValues(now);
       gainNodeRef.current.gain.setValueAtTime(
-        0,
-        audioContextRef.current?.currentTime || 0
+        gainNodeRef.current.gain.value,
+        now
       );
-      gainNodeRef.current.gain.linearRampToValueAtTime(
-        0.1,
-        (audioContextRef.current?.currentTime || 0) + 0.5
-      );
+      gainNodeRef.current.gain.linearRampToValueAtTime(0.1, now + 1.0); // Slower ramp-up
     }
     setIsAudioEnabled(true);
     localStorage.removeItem("audioDisabled");
   };
 
   const disableAudio = () => {
-    if (gainNodeRef.current) {
-      const now = audioContextRef.current?.currentTime || 0;
+    if (gainNodeRef.current && audioContextRef.current) {
+      const now = audioContextRef.current.currentTime;
+      gainNodeRef.current.gain.cancelScheduledValues(now);
       gainNodeRef.current.gain.setValueAtTime(
         gainNodeRef.current.gain.value,
         now
       );
-      gainNodeRef.current.gain.linearRampToValueAtTime(0, now + 0.2);
+      gainNodeRef.current.gain.linearRampToValueAtTime(0, now + 0.5); // Slower ramp-down
     }
     setIsAudioEnabled(false);
     localStorage.setItem("audioDisabled", "true");
@@ -159,10 +181,10 @@ export const AudioContextProvider = ({ children }: { children: ReactNode }) => {
       if (!audioContextRef.current) return;
 
       const oscillator = audioContextRef.current.createOscillator();
-      const gain = audioContextRef.current.createGain(); // Create a new gain node for each play
+      const gain = audioContextRef.current.createGain();
       oscillator.type = "square";
       oscillator.connect(gain);
-      gain.connect(audioContextRef.current.destination); // Connect to destination directly
+      gain.connect(audioContextRef.current.destination);
 
       const notes = [220, 261.63, 329.63, 392, 493.88, 587.33];
       const sequence = [];
@@ -177,8 +199,7 @@ export const AudioContextProvider = ({ children }: { children: ReactNode }) => {
         oscillator.frequency.setValueAtTime(freq, now + i * 0.1);
       });
 
-      // Set up the gain envelope
-      gain.gain.setValueAtTime(0.05, now);
+      gain.gain.setValueAtTime(0.01, now);
       gain.gain.exponentialRampToValueAtTime(
         0.001,
         now + noteCount * 0.1 + 0.2
@@ -310,6 +331,7 @@ export const AudioContextProvider = ({ children }: { children: ReactNode }) => {
         enableAudio,
         disableAudio,
         showAudioModal,
+        initializeAudio,
       }}
     >
       {children}

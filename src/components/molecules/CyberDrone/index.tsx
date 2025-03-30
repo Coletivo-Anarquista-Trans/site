@@ -5,7 +5,13 @@ import { useTheme } from "@/context/ThemeContext";
 import { useFont } from "@/context/FontContext";
 import CyberButton from "@/components/atoms/CyberButton";
 
-export default function CyberDrone( { className }: { className?: string } ) {
+export default function CyberDrone({
+  className,
+  floating = true,
+}: {
+  className?: string;
+  floating?: boolean;
+}) {
   const { theme, toggleTheme } = useTheme();
   const { font, fontSize, setFont, setFontSize } = useFont();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,7 +30,11 @@ export default function CyberDrone( { className }: { className?: string } ) {
   }, []);
 
   return (
-    <div className={`fixed bottom-5 right-5 ${className || ""}`}>
+    <div
+      className={`${
+        floating ? "fixed bottom-5 right-5" : "relative"
+      } ${className || ""}`}
+    >
       {/* Hexagonal Border */}
       <svg
         className="absolute inset-0 w-full h-full"
@@ -70,7 +80,9 @@ export default function CyberDrone( { className }: { className?: string } ) {
       {isMenuOpen && (
         <div
           ref={menuRef}
-          className="absolute bottom-16 right-0 w-64 p-4 bg-background rounded-lg shadow-lg border-2 border-accent3"
+          className={`absolute ${
+            floating ? "bottom-16 right-0" : "top-16 left-0"
+          } w-64 p-4 bg-background rounded-lg shadow-lg border-2 border-accent3`}
           style={{ fontFamily: font, fontSize: `${fontSize}px` }}
         >
           <div className="flex flex-col">

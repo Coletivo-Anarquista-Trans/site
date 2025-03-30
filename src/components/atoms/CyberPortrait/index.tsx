@@ -170,7 +170,7 @@ export default function CyberPortrait({
             <div className="bg-background-secondary w-full p-1 rounded-sm flex flex-row gap-2 align-center items-center justify-between border border-accent1">
               <div className="flex flex-row gap-2 align-center items-center justify-between">
                 <div className="w-4 h-4 rounded-sm bg-accent1"></div>
-                <span className="text-foreground">{text}</span>
+                <span className="text-foreground text-sm">{text}</span>
               </div>
               <div className="flex flex-row gap-2 align-center items-center justify-between">
                 <div

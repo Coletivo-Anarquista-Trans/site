@@ -12,7 +12,7 @@ export default function Resources() {
       <CyberContainer className="min-h-screen flex flex-col items-center overflow-x-hidden px-4 py-8">
         <CyberContainer className="w-full max-w-4xl">
           <CyberContainer className="text-2xl sm:text-3xl font-bold text-accent1 mb-6 text-center">
-            Transgenerificação
+            Recursos
           </CyberContainer>
 
           <CyberContainer className=" font-bold text-accent1 mb-6 text-center">
