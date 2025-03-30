@@ -14,22 +14,23 @@ export default function Manifesto() {
                             <CyberContainer
                                 id="section-1"
                                 unevenBorders
-                                glowingBorders
+                                
+                                
                                 className="text-center text-2xl sm:text-3xl md:text-4xl p-4 mt-6 mb-10 border-b-2 border-b-accent1">
                                 1 - Finalidade
                             </CyberContainer>
                         </CyberContainer>
 
                         <CyberContainer className={"text-center text-base p-2 m-4 w-auto h-auto"}>
-                            <p>
+                            <div>
                                 <b>O corpo é político, quem não lutar por ele irá perdê-lo para o {''}
                                 <CyberTooltip
                                         word="Cistema"
-                                        description="teste"
+                                        description="w.i.p"
                                         link="#cistema"
                                     />.
                                 </b>
-                            </p>
+                            </div>
                             Construiremos um mundo onde toda pessoa será livre para construir e viver o seu corpo
                             desejado.
                             Desejamos o domínio e livre acesso à produção e uso das tecnologias de afirmação do corpo e
@@ -65,8 +66,8 @@ export default function Manifesto() {
                         <CyberContainer className="text-center text-base p-2 m-4 w-auto h-auto">
                             <CyberContainer className="w-full flex justify-center">
                                 <CyberContainer
-                                    id="section-2" unevenBorders glowingBorders
-                                    className="inline-block text-2xl sm:text-3xl md:text-4xl p-4 m-6 sm:m-14 text-center break-keep whitespace-nowrap"                                 >
+                                    id="section-2" unevenBorders 
+                                    className="border border-accent1 inline-block text-2xl sm:text-3xl md:text-4xl p-4 m-6 sm:m-14 text-center break-keep whitespace-nowrap"                                 >
                                     2 - Como faremos
                                 </CyberContainer>
                             </CyberContainer>
@@ -198,8 +199,8 @@ export default function Manifesto() {
 
                         <CyberContainer className="w-full flex justify-center">
                             <CyberContainer
-                                id="section-3" unevenBorders glowingBorders
-                                className="inline-block text-2xl sm:text-3xl md:text-4xl p-4 m-6 sm:m-14 text-center break-keep whitespace-nowrap">
+                                id="section-3" unevenBorders 
+                                className="inline-block text-2xl sm:text-3xl md:text-4xl p-4 m-6 sm:m-14 text-center break-keep whitespace-nowrap border border-accent1">
                                 3 - Nossos objetivos
                             </CyberContainer>
                         </CyberContainer>

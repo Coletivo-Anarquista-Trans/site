@@ -78,7 +78,7 @@ export default function Home() {
             transition={{ duration: 0.5 }}
             className="w-full"
           >
-            <Link href="/sobre-nos" className="block w-full">
+            <Link href="/sobre" className="block w-full">
               <CyberBig
                 text="quem somos"
                 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
@@ -118,7 +118,7 @@ export default function Home() {
           </motion.div>
 
           {/* Visitor Counter */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, scale: 1, x: -200 }}
             animate={{ opacity: 1, scale: 1, x: 0 }}
             exit={{ opacity: 0, scale: 1, x: 0 }}
@@ -129,7 +129,7 @@ export default function Home() {
               text={`visitantes: ${count !== null ? count : "---"}`}
               className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
             />
-          </motion.div>
+          </motion.div> */}
           <motion.div
             initial={{ opacity: 0, scale: 1, x: -200 }}
             animate={{ opacity: 1, scale: 1, x: 0 }}

@@ -138,16 +138,25 @@ export default function CyberSidebar({
             </button>
           </div>
 
-          <Link href="/" passHref>
-            <CyberTreeNode
-              id="home-root"
-              label="Home"
-              onClick={() => setOpen(false)}
-            />
-          </Link>
+          {/* Home Link */}
+          <CyberTreeNode
+            id="home-root"
+            label={
+              <Link href="/" passHref>
+                Home
+              </Link>
+            }
+            onClick={() => setOpen(false)}
+          />
+
+          {/* Manifesto Section */}
           <CyberTreeNode
             id="manifesto-root"
-            label={<Link href="/manifesto">Manifesto</Link>}
+            label={
+              <Link href="/manifesto" passHref>
+                Manifesto
+              </Link>
+            }
           >
             {manifestoSections.length > 0 ? (
               manifestoSections.map((section) => (
@@ -163,9 +172,14 @@ export default function CyberSidebar({
             )}
           </CyberTreeNode>
 
+          {/* Recursos Section */}
           <CyberTreeNode
             id="recursos-root"
-            label={<Link href="/recursos">Recursos</Link>}
+            label={
+              <Link href="/recursos" passHref>
+                Recursos
+              </Link>
+            }
           >
             {recursosSections.length > 0 ? (
               recursosSections.map((section) => (
@@ -180,6 +194,28 @@ export default function CyberSidebar({
               <p className="text-accent3 text-center">- x -</p>
             )}
           </CyberTreeNode>
+
+          {/* Arquivos Link */}
+          <CyberTreeNode
+            id="arquivos-root"
+            label={
+              <Link href="/arquivos" passHref>
+                Arquivos
+              </Link>
+            }
+            onClick={() => setOpen(false)}
+          />
+
+          {/* Sobre Link */}
+          <CyberTreeNode
+            id="sobre-root"
+            label={
+              <Link href="/sobre" passHref>
+                Sobre
+              </Link>
+            }
+            onClick={() => setOpen(false)}
+          />
         </CyberContainer>
       </CyberContainer>
     </>
