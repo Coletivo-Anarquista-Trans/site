@@ -15,10 +15,10 @@ interface CyberTerminalProps {}
 export default function CyberTerminal({}: CyberTerminalProps) {
   const router = useRouter();
   const INITIAL_MESSAGES = [
-    "Olá, {user}. Essa é a barricada dos corpos dissidentes, aqui projetamos o futuro em que seu corpo-virtual é livre para transitar e transicionar sem ser conduzido por uma timeline.",
+    "Olá, {visitante}. Essa é a barricada dos corpos dissidentes, aqui projetamos o futuro em que seu corpo-virtual é livre para transitar e transicionar sem ser conduzido por uma timeline.",
     "Transicione pelo nosso site, explorando um ciberespaço alternativo.",
     "Desenvolva conosco essa nova proposta de internet livre e descentralizada.",
-    "Seja hacker, retome as tecnologias roubadas de nós, não deixe-os ter nossos amores e corpos.",
+    "Seja hacker, retome as tecnologias roubadas de nós, não deixe-os ter nossos amores e corpos. Digite ajuda para saber mais.",
   ];
 
   // State management
@@ -33,7 +33,8 @@ export default function CyberTerminal({}: CyberTerminalProps) {
   const [isClicking, setIsClicking] = useState(false);
   const [isAtBottom, setIsAtBottom] = useState(true);
   const [isSelectingText, setIsSelectingText] = useState(false);
-  const termInput = "[user@cats] - [$] <>";
+  const [username, setUsername] = useState<string>("user"); // Default username set to "user"
+  const termInput = `[${username}@cats] - [$] <>`;
 
   // Refs for animation control
   const typingIntervalRef = useRef<NodeJS.Timeout | null>(null);
@@ -43,6 +44,11 @@ export default function CyberTerminal({}: CyberTerminalProps) {
   const { theme } = useTheme();
   const { font, fontSize } = useFont();
   const { playTypingSound, playEnterSound } = useAudio();
+
+  // Replace {user} placeholder with actual username
+  const formatMessage = (message: string) => {
+    return message.replace(/{user}/g, username);
+  };
 
   // Handle scroll events
   useEffect(() => {
@@ -193,7 +199,10 @@ export default function CyberTerminal({}: CyberTerminalProps) {
     playEnterSound();
 
     if (currentIntroIndex < INITIAL_MESSAGES.length) {
-      setHistory((prev) => [...prev, INITIAL_MESSAGES[currentIntroIndex]]);
+      setHistory((prev) => [
+        ...prev,
+        formatMessage(INITIAL_MESSAGES[currentIntroIndex]),
+      ]);
       setCurrentIntroIndex((prev) => prev + 1);
       setTypingComplete(false);
     } else {
@@ -203,23 +212,44 @@ export default function CyberTerminal({}: CyberTerminalProps) {
 
   useEffect(() => {
     if (displayMode === "message" && history.length === 0) {
-      setHistory([INITIAL_MESSAGES[0]]);
+      setHistory([formatMessage(INITIAL_MESSAGES[0])]);
       setCurrentIntroIndex(1);
     }
   }, [displayMode]);
 
   const handleCommand = (command: string) => {
     let response: string;
-    if (command === "help") {
-      response = "Comandos disponíveis: help, about, contact, manifesto";
-    } else if (command === "about") {
+    const parts = command.split(" ");
+    const cmd = parts[0];
+    const args = parts.slice(1).join(" ");
+
+    if (cmd === "ajuda") {
+      response =
+        "Comandos disponíveis: ajuda, about, contato, manifesto, arquivos, recursos, username [nome]";
+    } else if (cmd === "about") {
       response =
         "This is a fake terminal built with React, Next.js, and Tailwind!";
-    } else if (command === "contact") {
-      response = "Email: example@example.com";
-    } else if (command === "manifesto") {
+    } else if (cmd === "contato") {
+      response = "E-mail: cats-trans@riseup.net";
+    } else if (cmd === "sobre-nos") {
+      router.push("/sobre");
+      return;
+    } else if (cmd === "arquivos") {
+      router.push("/arquivos");
+      return;
+    } else if (cmd === "recursos") {
+      router.push("/recursos");
+      return;
+    } else if (cmd === "manifesto") {
       router.push("/manifesto");
       return;
+    } else if (cmd === "username") {
+      if (!args) {
+        response = "coloque o seu nome após o comando";
+      } else {
+        setUsername(args);
+        response = `Nome de usuário alterado para ${args}`;
+      }
     } else {
       const numKaomojis = Math.floor(Math.random() * 2) + 1;
       response = Array.from({ length: numKaomojis }, () =>
@@ -307,7 +337,7 @@ export default function CyberTerminal({}: CyberTerminalProps) {
           onClick={handleTerminalClick}
           onTouchStart={handleTerminalTouch}
         >
-          <div className="flex flex-col md:flex-row items-center md:items-start">
+          <div className="flex flex-col md:flex-row items-center md:items-center">
             <motion.div
               initial={{ opacity: 0, scale: 0.9, x: 0 }}
               animate={{ opacity: 1, scale: 1, x: 0 }}
