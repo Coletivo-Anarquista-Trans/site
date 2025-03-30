@@ -1,10 +1,12 @@
+// components/CyberTerminal.tsx
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { kaomojis } from "@/utils/kaomojis";
 import dynamic from "next/dynamic";
 import { useTheme } from "@/context/ThemeContext";
 import { useFont } from "@/context/FontContext";
-
+import { motion } from "framer-motion";
+import { useAudio } from "@/context/AudioContext";
 
 const IconTint = dynamic(() => import("react-icon-tint"), { ssr: false });
 
@@ -13,10 +15,10 @@ interface CyberTerminalProps {}
 export default function CyberTerminal({}: CyberTerminalProps) {
   const router = useRouter();
   const INITIAL_MESSAGES = [
-    "Olá, pessoa usuária. Essa é a barricada dos corpos dissidentes, aqui projetamos o futuro em que seu corpo-virtual é livre para transitar e transicionar sem ser conduzido por uma timeline.",
+    "Olá, {visitante}. Essa é a barricada dos corpos dissidentes, aqui projetamos o futuro em que seu corpo-virtual é livre para transitar e transicionar sem ser conduzido por uma timeline.",
     "Transicione pelo nosso site, explorando um ciberespaço alternativo.",
     "Desenvolva conosco essa nova proposta de internet livre e descentralizada.",
-    "Seja hacker, retome as tecnologias roubadas de nós, não deixe-os ter nossos amores e corpos.",
+    "Seja hacker, retome as tecnologias roubadas de nós, não deixe-os ter nossos amores e corpos. Digite ajuda para saber mais.",
   ];
 
   // State management
@@ -29,87 +31,118 @@ export default function CyberTerminal({}: CyberTerminalProps) {
   const [currentIntroIndex, setCurrentIntroIndex] = useState(0);
   const [typingComplete, setTypingComplete] = useState(false);
   const [isClicking, setIsClicking] = useState(false);
+  const [isAtBottom, setIsAtBottom] = useState(true);
+  const [isSelectingText, setIsSelectingText] = useState(false);
+  const [username, setUsername] = useState<string>("user"); // Default username set to "user"
+  const termInput = `[${username}@cats] - [$] <>`;
 
   // Refs for animation control
   const typingIntervalRef = useRef<NodeJS.Timeout | null>(null);
-  const audioContextRef = useRef<AudioContext | null>(null);
   const terminalRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   const { theme } = useTheme();
   const { font, fontSize } = useFont();
+  const { playTypingSound, playEnterSound } = useAudio();
 
-  // Initialize audio context
+  // Replace {user} placeholder with actual username
+  const formatMessage = (message: string) => {
+    return message.replace(/{user}/g, username);
+  };
+
+  // Handle scroll events
   useEffect(() => {
-    audioContextRef.current = new (window.AudioContext ||
-      (window as any).webkitAudioContext)();
-    return () => {
-      audioContextRef.current?.close();
-      if (typingIntervalRef.current) clearInterval(typingIntervalRef.current);
+    const container = terminalRef.current;
+    if (!container) return;
+
+    const handleScroll = () => {
+      const isUserAtBottom =
+        container.scrollHeight - container.scrollTop <=
+        container.clientHeight + 10;
+      setIsAtBottom(isUserAtBottom);
     };
+
+    container.addEventListener("scroll", handleScroll);
+    return () => container.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // gerador de cyber-som
-  // gerador de cyber-som
-  const playTypingSound = () => {
-    if (!audioContextRef.current) return;
+  // Auto-scroll when new content is added and user is at bottom
+  useEffect(() => {
+    if (isAtBottom && terminalRef.current) {
+      terminalRef.current.scrollTo({
+        top: terminalRef.current.scrollHeight,
+        behavior: "smooth",
+      });
+    }
+  }, [history, displayTexts, isAtBottom]);
 
-    const oscillator = audioContextRef.current.createOscillator();
-    const gain = audioContextRef.current.createGain();
+  // Focus input when in command mode
+  useEffect(() => {
+    if (displayMode === "command" && inputRef.current && !isSelectingText) {
+      inputRef.current.focus();
+    }
+  }, [displayMode, isSelectingText]);
 
-    oscillator.type = "square";
-    oscillator.frequency.value = 1200 + Math.random() * 600;
+  // Handle keyboard input for the terminal
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      // Check if user is selecting text
+      const selection = window.getSelection();
+      if (selection && selection.toString().length > 0) {
+        setIsSelectingText(true);
+        return;
+      } else {
+        setIsSelectingText(false);
+      }
 
-    // Start with gain at 0
-    gain.gain.setValueAtTime(0, audioContextRef.current.currentTime);
-    // Quickly ramp up to 0.1
-    gain.gain.linearRampToValueAtTime(
-      0.05,
-      audioContextRef.current.currentTime + 0.01
-    );
-    // Then exponential ramp down
-    gain.gain.exponentialRampToValueAtTime(
-      0.0001,
-      audioContextRef.current.currentTime + 0.03
-    );
+      // In message mode, handle space/enter for advancing messages
+      if (displayMode === "message") {
+        if (typingComplete && (e.key === " " || e.key === "Enter")) {
+          e.preventDefault();
+          advanceMessage();
+        }
+        return;
+      }
 
-    oscillator.connect(gain);
-    gain.connect(audioContextRef.current.destination);
+      // In command mode, focus input and handle typing
+      if (displayMode === "command") {
+        // Ignore if a modifier key is pressed (like Ctrl, Alt, etc.)
+        if (e.ctrlKey || e.altKey || e.metaKey) return;
 
-    oscillator.start();
-    oscillator.stop(audioContextRef.current.currentTime + 0.03);
-  };
+        // Focus the input if it's not already focused
+        if (document.activeElement !== inputRef.current && inputRef.current) {
+          inputRef.current.focus();
+          // If the key is a character, add it to the input
+          if (e.key.length === 1 && !e.metaKey && !e.ctrlKey) {
+            setInput((prev) => prev + e.key);
+            e.preventDefault();
+          }
+        }
+      }
+    };
 
-  // Generate enter (beep)
-  const playEnterSound = () => {
-    if (!audioContextRef.current) return;
+    const handleMouseUp = () => {
+      // Check if user has selected text
+      const selection = window.getSelection();
+      if (selection && selection.toString().length > 0) {
+        setIsSelectingText(true);
+      } else {
+        setIsSelectingText(false);
+        if (displayMode === "command" && inputRef.current) {
+          inputRef.current.focus();
+        }
+      }
+    };
 
-    const oscillator = audioContextRef.current.createOscillator();
-    const gain = audioContextRef.current.createGain();
+    window.addEventListener("keydown", handleKeyDown);
+    window.addEventListener("mouseup", handleMouseUp);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+      window.removeEventListener("mouseup", handleMouseUp);
+    };
+  }, [displayMode, typingComplete]);
 
-    oscillator.type = "sine";
-    oscillator.frequency.value = 800;
-
-    // Start with gain at 0
-    gain.gain.setValueAtTime(0, audioContextRef.current.currentTime);
-    // Quickly ramp up to 0.2
-    gain.gain.linearRampToValueAtTime(
-      0.2,
-      audioContextRef.current.currentTime + 0.01
-    );
-    // Then exponential ramp down
-    gain.gain.exponentialRampToValueAtTime(
-      0.0001,
-      audioContextRef.current.currentTime + 0.1
-    );
-
-    oscillator.connect(gain);
-    gain.connect(audioContextRef.current.destination);
-
-    oscillator.start();
-    oscillator.stop(audioContextRef.current.currentTime + 0.1);
-  };
-
-  // skippar mensagem
+  // Skip message
   const completeCurrentMessage = () => {
     if (typingIntervalRef.current) {
       clearInterval(typingIntervalRef.current);
@@ -125,7 +158,7 @@ export default function CyberTerminal({}: CyberTerminalProps) {
     }
   };
 
-  // Animaçãozinha
+  // Typing animation
   useEffect(() => {
     if (history.length === 0) return;
 
@@ -166,7 +199,10 @@ export default function CyberTerminal({}: CyberTerminalProps) {
     playEnterSound();
 
     if (currentIntroIndex < INITIAL_MESSAGES.length) {
-      setHistory((prev) => [...prev, INITIAL_MESSAGES[currentIntroIndex]]);
+      setHistory((prev) => [
+        ...prev,
+        formatMessage(INITIAL_MESSAGES[currentIntroIndex]),
+      ]);
       setCurrentIntroIndex((prev) => prev + 1);
       setTypingComplete(false);
     } else {
@@ -176,44 +212,92 @@ export default function CyberTerminal({}: CyberTerminalProps) {
 
   useEffect(() => {
     if (displayMode === "message" && history.length === 0) {
-      setHistory([INITIAL_MESSAGES[0]]);
+      setHistory([formatMessage(INITIAL_MESSAGES[0])]);
       setCurrentIntroIndex(1);
     }
   }, [displayMode]);
 
-  useEffect(() => {
-    const handler = (e: KeyboardEvent) => {
-      if (
-        displayMode === "message" &&
-        typingComplete &&
-        (e.key === " " || e.key === "Enter")
-      ) {
-        e.preventDefault();
-        advanceMessage();
-      }
-    };
-
-    window.addEventListener("keydown", handler);
-    return () => window.removeEventListener("keydown", handler);
-  }, [displayMode, typingComplete]);
-
   const handleCommand = (command: string) => {
     let response: string;
-    if (command === "help") {
-      response = "Available commands: help, about, contact, manifesto";
-    } else if (command === "about") {
-      response =
-        "This is a fake terminal built with React, Next.js, and Tailwind!";
-    } else if (command === "contact") {
-      response = "Email: example@example.com";
-    } else if (command === "manifesto") {
-      router.push("/manifesto");
-      return;
-    } else {
-      const numKaomojis = Math.floor(Math.random() * 4) + 1;
-      response = Array.from({ length: numKaomojis }, () =>
-        getRandomKaomoji()
-      ).join(" ");
+    const parts = command.split(" ");
+    // Convert command to lowercase for case-insensitive comparison
+    const cmd = parts[0].toLowerCase();
+    const args = parts.slice(1).join(" ");
+
+    switch (cmd) {
+      case "ajuda":
+        response =
+          "Comandos disponíveis: ajuda, terminal, contato, cats, manifesto, arquivos, recursos, username [nome], mazrine, lynx, n3o, kia, v, iniari, yu, fefe, em-breve, forum";
+        break;
+      case "terminal":
+        response =
+          "Esse é um terminal de mentirinha que a mazrine fez pra ser engraçadinha hihi (•⩊•)";
+        break;
+      case "contato":
+        response = "E-mail: cats-trans@riseup.net";
+        break;
+      case "forum":
+        response = "Estamos desenvolvendo um forum para uso da comunidade trans. Aguardem notícias!";
+        break;
+      case "mazrine":
+        response =
+          "programadora, musicista e glitch artist nas horas vagas com estranha obsessão pela cor roxa e triângulos ( • ⩊ • )";
+        break;
+      case "em-breve":
+        response =
+          "temos várias funcionalidades e recursos por vir! Isso aqui é só o começo o(>ω<)o";
+        break;
+      case "lynx":
+        response = "programadora, musicista e furry nas horas vagas. ฅ(^◕ᴥ◕^)ฅ";
+        break;
+      case "n3o":
+        response =
+          "programador e artista misterioso... que ama gatos e odeia letras maiúsculas ᓚᘏᗢ";
+        break;
+      case "iniari":
+        response =
+          "catgirl jack of all trades que consegue ser boa em tudo que faz ♡(>ᴗ•)<♡";
+        break;
+      case "v":
+        response =
+          "ping pong ping pong ping pong ping pong ping pong o( ❛ᴗ❛ )o";
+        break;
+      case "yu":
+        response =
+          "artista incrível, responsável por diversas produções no coletivo (๑>◡<๑)";
+        break;
+      case "kia":
+        response = "memetic warfare intimacy coordinator. Kia faz de tudo e também é a melhor cozinheira de são paulo ppr";
+        break;
+      case "fefe":
+        response = "artista obsecada pela cor rosa, cardgames e animes";
+        break;
+
+      case "cats":
+        router.push("/sobre");
+        return;
+      case "arquivos":
+        router.push("/arquivos");
+        return;
+      case "recursos":
+        router.push("/recursos");
+        return;
+      case "manifesto":
+        router.push("/manifesto");
+        return;
+      case "username":
+        if (!args) {
+          response = "coloque o seu nome após o comando";
+        } else {
+          setUsername(args);
+          response = `Nome de usuário alterado para ${args}`;
+        }
+        break;
+      default:
+        const numKaomojis = Math.floor(Math.random() * 2) + 1;
+        response = Array.from({ length: numKaomojis }, () =>
+          getRandomKaomoji()
+        ).join(" ");
     }
 
     setHistory((prev) => [...prev, `$ ${command}`, response]);
@@ -229,7 +313,30 @@ export default function CyberTerminal({}: CyberTerminalProps) {
     }
   };
 
-  const handleTerminalClick = () => {
+  const handleTerminalClick = (e: React.MouseEvent) => {
+    // Don't handle click if user is selecting text
+    const selection = window.getSelection();
+    if (selection && selection.toString().length > 0) {
+      setIsSelectingText(true);
+      return;
+    }
+
+    handleInteraction();
+  };
+
+  const handleTerminalTouch = (e: React.TouchEvent) => {
+    // Don't handle touch if user is selecting text
+    const selection = window.getSelection();
+    if (selection && selection.toString().length > 0) {
+      setIsSelectingText(true);
+      return;
+    }
+
+    handleInteraction();
+  };
+
+  const handleInteraction = () => {
+    setIsSelectingText(false);
     setIsClicking(true);
     setTimeout(() => setIsClicking(false), 200);
 
@@ -239,14 +346,10 @@ export default function CyberTerminal({}: CyberTerminalProps) {
       } else {
         advanceMessage();
       }
+    } else if (displayMode === "command" && inputRef.current) {
+      inputRef.current.focus();
     }
   };
-
-  useEffect(() => {
-    if (terminalRef.current) {
-      terminalRef.current.scrollTop = terminalRef.current.scrollHeight;
-    }
-  }, [history, displayTexts]);
 
   const themeColors: Record<string, string> = {
     "dark-violet": "#301055FF",
@@ -259,35 +362,60 @@ export default function CyberTerminal({}: CyberTerminalProps) {
   };
 
   return (
-    <div
-      className="granular-effect w-full max-w-2xl p-8 rounded-tl-[20px] rounded-br-[20px] 
-        rounded-bl-[0px] rounded-tr-[0px] mt-8"
-    >
-      <div
-        className="crt-screen crt-curvature crt-scanlines crt-reflection relative rounded-tl-[20px] rounded-br-[20px] 
-        rounded-bl-[0px] rounded-tr-[0px]"
-      >
+    <div className="w-full">
+      <div className="crt-screen crt-curvature crt-scanlines crt-reflection relative">
         <div
-          className={` granular-effect
-        w-full max-w-none mx-auto
-        h-[50vh] sm:h-[70vh] max-h-[400px]
-        overflow-y-auto font-mono border-4
-        bg-background text-accent-5 border-accent1 rounded-tl-[20px] rounded-br-[20px] 
-        rounded-bl-[0px] rounded-tr-[0px]
-        px-2 sm:px-6 py-2 sm:py-4
-        ${displayMode === "message" ? "cursor-pointer" : ""}
-        ${isClicking ? "brightness-110" : ""}
-      `}
+          ref={terminalRef}
+          className={`granular-effect
+            w-full max-w-none mx-auto
+            h-[50vh] sm:h-[70vh] max-h-[400px]
+            overflow-y-auto font-mono border
+            bg-background text-accent-5 border-accent1
+            px-2 sm:px-6 py-2 sm:py-4
+            ${displayMode === "message" ? "cursor-pointer" : ""}
+            ${isClicking ? "brightness-110" : ""}
+            select-text
+          `}
           style={{ fontFamily: font, fontSize: `${fontSize}px` }}
           onClick={handleTerminalClick}
-          onTouchStart={handleTerminalClick}
+          onTouchStart={handleTerminalTouch}
         >
-          <IconTint
-            maxHeight={150}
-            maxWidth={150}
-            color={themeColors[theme] || "#ffffff"}
-            src="cats.png"
-          />
+          <div className="flex flex-col md:flex-row items-center md:items-center">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9, x: 0 }}
+              animate={{ opacity: 1, scale: 1, x: 0 }}
+              exit={{ opacity: 0, scale: 1, x: 100 }}
+              transition={{ duration: 0.5 }}
+              className=""
+            >
+              <IconTint
+                maxHeight={125}
+                maxWidth={125}
+                color={themeColors[theme] || "#ffffff"}
+                src="cats.png"
+              />
+            </motion.div>
+
+            {/* System info panel - now will stack below on small screens */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9, x: 0 }}
+              animate={{ opacity: 1, scale: 1, x: 0 }}
+              exit={{ opacity: 0, scale: 1, x: 100 }}
+              transition={{ duration: 0.5 }}
+              className="text-accent5 mt-4 md:mt-0 md:ml-6 lg:ml-8 xl:ml-10"
+            >
+              <pre className="text-left" style={{ fontFamily: font }}>
+                {`
+    ╭───────────⏣────────────╮
+    ⟁ -> site 1.1.0
+    ⏣ -> transgenerificação 132%
+    ⏣ -> non-binary.exe READY
+    ⏣ -> fim do cistema IN-PROGRESS
+    ╰───────────⏣────────────╯
+  `}
+              </pre>
+            </motion.div>
+          </div>
 
           {history.map((line, index) => (
             <div
@@ -302,13 +430,12 @@ export default function CyberTerminal({}: CyberTerminalProps) {
               )}
             </div>
           ))}
-          <div ref={terminalRef} />
 
           {displayMode === "message" && typingComplete && (
             <div className="flex items-center justify-center gap-2 mt-2 text-accent5 animate-pulse">
               <span className="animate-bounce">▼</span>
               <span className="text-sm">
-                Press space/enter or click to continue
+                Pressione enter/espaço ou clique para continuar
               </span>
               <span className="animate-bounce">▼</span>
             </div>
@@ -319,8 +446,9 @@ export default function CyberTerminal({}: CyberTerminalProps) {
               onSubmit={handleSubmit}
               className="flex items-baseline gap-2 mt-2"
             >
-              <span className="text-accent5">$</span>
+              <span className="text-accent5">{termInput}</span>
               <input
+                ref={inputRef}
                 type="text"
                 className="bg-transparent border-none outline-none text-accent5 flex-1 text-sm sm:text-base"
                 value={input}
