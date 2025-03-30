@@ -4,16 +4,17 @@ import {useTheme} from "@/context/ThemeContext";
 import classnames from "classnames";
 
 interface CyberTreeNodeProps {
+    id: string;
     children?: ReactNode;
-    label: any;
+    label: string | ReactNode;
     onClick?: () => void;
 }
 
-export default function CyberTreeNode({children, label, onClick}: CyberTreeNodeProps) {
-    const {theme} = useTheme();
+export default function CyberTreeNode({children, label, onClick, id}: CyberTreeNodeProps) {
+    const { theme } = useTheme();
     const [isInitialized, setIsInitialized] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
-    const storageKey = `treeNodeState-${label}`;
+    const storageKey = `treeNodeState-${id}`;
 
     useEffect(() => {
         const storedState = sessionStorage.getItem(storageKey);
@@ -33,12 +34,12 @@ export default function CyberTreeNode({children, label, onClick}: CyberTreeNodeP
 
     const handleClick = () => {
         if (onClick) {
-            sessionStorage.setItem(storageKey, JSON.stringify(true)); // Ensure storage updates before redirect
+            sessionStorage.setItem(storageKey, JSON.stringify(true));
             onClick();
         } else if (hasChildren) {
             setIsOpen((prev) => {
                 const newState = !prev;
-                sessionStorage.setItem(storageKey, JSON.stringify(newState)); // Save open state immediately
+                sessionStorage.setItem(storageKey, JSON.stringify(newState));
                 return newState;
             });
         }

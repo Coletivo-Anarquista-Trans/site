@@ -1,7 +1,6 @@
 "use client";
 
 import CyberContainer from "@/components/atoms/CyberContainer";
-import CyberSidebar from "../../components/organism/CyberSidebar";
 import Link from "next/link";
 
 export default function QuemSomosNos() {
@@ -10,7 +9,6 @@ export default function QuemSomosNos() {
             <CyberContainer
                 className={"bg-background min-h-screen text-foreground flex flex-col items-center justify-items-center"}
             >
-                <CyberSidebar glowingBorders normalBorders />
                 <CyberContainer className="flex flex-col gap-4 row-start-2 items-center sm:items-start">
                     <div className="inline-block justify-normal whitespace-normal p-8 break-words w-auto h-auto min-w-[48rem] max-w-md">
                         <CyberContainer unevenBorders glowingBorders className="text-center text-4xl p-4 m-14 w-auto h-auto">
