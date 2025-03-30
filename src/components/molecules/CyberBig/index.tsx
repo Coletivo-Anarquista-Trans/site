@@ -6,6 +6,7 @@ import { useAudio } from "@/context/AudioContext";
 interface CyberBigProps {
   text: string;
   className?: string;
+  children?: React.ReactNode;
 }
 
 export default function CyberBig({ text, className }: CyberBigProps) {

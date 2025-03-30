@@ -11,21 +11,30 @@ import CyberBig from "@/components/molecules/CyberBig";
 import Link from "next/link";
 import { useState } from "react";
 import CyberAudioControl from "@/components/molecules/CyberAudioControl";
-import VisitorCounter from "@/components/atoms/VisitorCounter";
-import CyberVisitorCounter from "@/components/atoms/VisitorCounter";
+import { useAudio } from "@/context/AudioContext";
+import { useEffect } from "react";
 
 export default function Home() {
   const { theme } = useTheme();
   const [isForumModalOpen, setIsForumModalOpen] = useState(false);
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
+  const { playButtonSelect } = useAudio();
+  const [count, setCount] = useState<number | null>(null);
+
+  useEffect(() => {
+    fetch(
+      "https://api.hitcounter.dev/count?repo=coletivo-anarquista-trans-site"
+    )
+      .then((res) => res.json())
+      .then((data) => setCount(data.value))
+      .catch(() => setCount(null));
+  }, []);
 
   return (
     <>
       <CyberContainer className="bg-background text-accent1 flex flex-col lg:flex-row justify-center items-center w-full gap-4 lg:gap-12 px-4 py-8 lg:py-0 lg:px-0">
-        {/* Portrait Section - Adjusted for mobile */}
+        {/* Portrait Section */}
         <CyberContainer className="justify-center items-center w-full lg:w-auto -mx-4 lg:mx-0">
-          {" "}
-          {/* Added -mx-4 to counter the px-4 on mobile */}
           <motion.div
             initial={{ opacity: 0, scale: 1, x: -200 }}
             animate={{ opacity: 1, scale: 1, x: 0 }}
@@ -46,7 +55,7 @@ export default function Home() {
           </motion.div>
         </CyberContainer>
 
-        {/* Navigation Links - Stacked vertically on all screens */}
+        {/* Navigation Links */}
         <CyberContainer className="lg:h-screen flex flex-col justify-center items-center gap-4 sm:gap-6 py-8 lg:py-0">
           <motion.div
             initial={{ opacity: 0, scale: 1, x: -200 }}
@@ -107,25 +116,23 @@ export default function Home() {
               />
             </button>
           </motion.div>
+
+          {/* Visitor Counter */}
           <motion.div
-            initial={{ opacity: 0, scale: 1, x: -200 }}
-            animate={{ opacity: 1, scale: 1, x: 0 }}
-            exit={{ opacity: 0, scale: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
             className="w-full"
+            whileHover={{
+              scale: 1.05,
+              transition: { duration: 0.2 },
+            }}
+            onHoverStart={playButtonSelect}
           >
-            <button
-              onClick={() => setIsForumModalOpen(true)}
-              className="focus:outline-none focus:ring-2 focus:ring-accent1 w-full"
-            >
-              <CyberBig
-                text="forum"
-                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
-              />
-            </button>
+            <CyberBig
+              text={`visitantes: ${count !== null ? count : "---"}`}
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
+            />
           </motion.div>
         </CyberContainer>
-        <CyberVisitorCounter className="absolute" />
+
         <CyberAudioControl className="" />
         <CyberDrone className="" />
       </CyberContainer>
@@ -140,14 +147,11 @@ export default function Home() {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.15 }}
           >
-            {/* Backdrop */}
             <div
               className="fixed inset-0 bg-background backdrop-blur-[2px]"
               onClick={() => setIsForumModalOpen(false)}
               aria-hidden="true"
             />
-
-            {/* Modal Content */}
             <div className="flex min-h-full items-center justify-center p-4 text-center bg-background">
               <CyberContainer className="w-full max-w-xs sm:max-w-sm md:max-w-md">
                 <motion.div
@@ -201,7 +205,6 @@ export default function Home() {
                             </div>
                           </div>
                         </div>
-
                         <div className="mt-6 flex justify-end space-x-3">
                           <div className="border border-accent1 p-1">
                             <button
@@ -233,14 +236,11 @@ export default function Home() {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.15 }}
           >
-            {/* Backdrop */}
             <div
               className="fixed inset-0 bg-background backdrop-blur-[2px]"
               onClick={() => setIsContactModalOpen(false)}
               aria-hidden="true"
             />
-
-            {/* Modal Content */}
             <div className="flex min-h-full items-center justify-center p-4 text-center bg-background">
               <CyberContainer className="w-full max-w-xs sm:max-w-sm md:max-w-md">
                 <motion.div
@@ -269,7 +269,6 @@ export default function Home() {
                             </h3>
                           </div>
                         </div>
-
                         <div className="mt-6 flex justify-end space-x-3">
                           <div className="border border-accent1 p-1">
                             <button
