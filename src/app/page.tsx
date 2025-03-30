@@ -14,24 +14,18 @@ import CyberAudioControl from "@/components/molecules/CyberAudioControl";
 import { useAudio } from "@/context/AudioContext";
 import { useEffect } from "react";
 import useIsMobile from "@/utils/useIsMobile";
+import VisitorCounter from "@/components/atoms/VisitorCounter";
 
 export default function Home() {
   const { theme } = useTheme();
   const [isForumModalOpen, setIsForumModalOpen] = useState(false);
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
   const { playButtonSelect } = useAudio();
-  const [count, setCount] = useState<number | null>(null);
+
 
   const isMobile = useIsMobile();
 
-  useEffect(() => {
-    fetch(
-      "https://api.hitcounter.dev/count?repo=coletivo-anarquista-trans-site"
-    )
-      .then((res) => res.json())
-      .then((data) => setCount(data.value))
-      .catch(() => setCount(null));
-  }, []);
+
 
   return (
     <>
@@ -45,6 +39,14 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="w-full flex justify-center mt-8 lg:mt-0"
           >
+            {" "}
+            {!isMobile && (
+              <CyberContainer className="border border-accent1 p-1 fixed top-0 right-0">
+                <CyberContainer className="border border-accent1">
+                  <VisitorCounter />
+                </CyberContainer>
+              </CyberContainer>
+            )}
             <CyberPortrait
               id="1"
               text="Coletivo-Anarquista-Trans.tsx"
@@ -119,20 +121,6 @@ export default function Home() {
               />
             </button>
           </motion.div>
-
-          {/* Visitor Counter */}
-          {/* <motion.div
-            initial={{ opacity: 0, scale: 1, x: -200 }}
-            animate={{ opacity: 1, scale: 1, x: 0 }}
-            exit={{ opacity: 0, scale: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            className="w-full"
-          >
-            <CyberBig
-              text={`visitantes: ${count !== null ? count : "---"}`}
-              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
-            />
-          </motion.div> */}
           <motion.div
             initial={{ opacity: 0, scale: 1, x: -200 }}
             animate={{ opacity: 1, scale: 1, x: 0 }}
@@ -149,7 +137,7 @@ export default function Home() {
                 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
               />
             </button>
-          </motion.div>
+          </motion.div>{" "}
           <div className="flex flex-row gap-4">
             {isMobile && <CyberDrone floating={false} />}
             {isMobile && <CyberAudioControl floating={false} />}
