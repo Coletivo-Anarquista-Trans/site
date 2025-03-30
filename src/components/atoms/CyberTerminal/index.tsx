@@ -248,6 +248,21 @@ export default function CyberTerminal({}: CyberTerminalProps) {
       return;
     }
 
+    handleInteraction();
+  };
+
+  const handleTerminalTouch = (e: React.TouchEvent) => {
+    // Don't handle touch if user is selecting text
+    const selection = window.getSelection();
+    if (selection && selection.toString().length > 0) {
+      setIsSelectingText(true);
+      return;
+    }
+
+    handleInteraction();
+  };
+
+  const handleInteraction = () => {
     setIsSelectingText(false);
     setIsClicking(true);
     setTimeout(() => setIsClicking(false), 200);
@@ -258,11 +273,7 @@ export default function CyberTerminal({}: CyberTerminalProps) {
       } else {
         advanceMessage();
       }
-    } else if (
-      displayMode === "command" &&
-      inputRef.current &&
-      e.target !== inputRef.current
-    ) {
+    } else if (displayMode === "command" && inputRef.current) {
       inputRef.current.focus();
     }
   };
@@ -278,7 +289,7 @@ export default function CyberTerminal({}: CyberTerminalProps) {
   };
 
   return (
-    <div className="w-full max-w-2xl">
+    <div className="w-full">
       <div className="crt-screen crt-curvature crt-scanlines crt-reflection relative">
         <div
           ref={terminalRef}
@@ -294,9 +305,9 @@ export default function CyberTerminal({}: CyberTerminalProps) {
           `}
           style={{ fontFamily: font, fontSize: `${fontSize}px` }}
           onClick={handleTerminalClick}
-          onTouchStart={handleTerminalClick}
+          onTouchStart={handleTerminalTouch}
         >
-          <div className="flex items-center">
+          <div className="flex flex-col md:flex-row items-center md:items-start">
             <motion.div
               initial={{ opacity: 0, scale: 0.9, x: 0 }}
               animate={{ opacity: 1, scale: 1, x: 0 }}
@@ -312,18 +323,23 @@ export default function CyberTerminal({}: CyberTerminalProps) {
               />
             </motion.div>
 
-            {/* System info panel with perfect alignment */}
+            {/* System info panel - now will stack below on small screens */}
             <motion.div
               initial={{ opacity: 0, scale: 0.9, x: 0 }}
               animate={{ opacity: 1, scale: 1, x: 0 }}
               exit={{ opacity: 0, scale: 1, x: 100 }}
               transition={{ duration: 0.5 }}
-              className="text-accent5 ml-10"
+              className="text-accent5 mt-4 md:mt-0 md:ml-6 lg:ml-8 xl:ml-10"
             >
               <pre className="text-left" style={{ fontFamily: font }}>
-                ╭───────────⏣────────────╮{"\n"}⟁ -> site 0.13.2{"\n"}⏣ ->
-                trangenerificação 132%{"\n"}⏣ -> non-binary.exe READY{"\n"}⏣ -> fim do cistema IN-PROGRESS{"\n"}
-                ╰───────────⏣────────────╯{"\n"}
+                {`
+    ╭───────────⏣────────────╮
+    ⟁ -> site 0.13.2
+    ⏣ -> trangenerificação 132%
+    ⏣ -> non-binary.exe READY
+    ⏣ -> fim do cistema IN-PROGRESS
+    ╰───────────⏣────────────╯
+  `}
               </pre>
             </motion.div>
           </div>

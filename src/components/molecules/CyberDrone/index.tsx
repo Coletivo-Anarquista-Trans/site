@@ -5,7 +5,7 @@ import { useTheme } from "@/context/ThemeContext";
 import { useFont } from "@/context/FontContext";
 import CyberButton from "@/components/atoms/CyberButton";
 
-export default function CyberDrone() {
+export default function CyberDrone( { className }: { className?: string } ) {
   const { theme, toggleTheme } = useTheme();
   const { font, fontSize, setFont, setFontSize } = useFont();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,7 +24,7 @@ export default function CyberDrone() {
   }, []);
 
   return (
-    <div className="fixed bottom-5 right-5">
+    <div className={`fixed bottom-5 right-5 ${className || ""}`}>
       {/* Hexagonal Border */}
       <svg
         className="absolute inset-0 w-full h-full"

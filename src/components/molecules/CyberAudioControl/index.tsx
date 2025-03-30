@@ -3,11 +3,15 @@
 import React from "react";
 import { useAudio } from "@/context/AudioContext";
 
-export default function CyberAudioControl() {
+export default function CyberAudioControl({
+  className,
+}: {
+  className?: string;
+}) {
   const { isAudioEnabled, showAudioModal } = useAudio();
 
   return (
-    <div className="fixed bottom-5 right-20">
+    <div className={`fixed bottom-5 right-20 ${className || ""}`}>
       {" "}
       {/* Positioned to the left of CyberDrone */}
       {/* Hexagonal Border */}

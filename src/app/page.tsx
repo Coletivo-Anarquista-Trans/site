@@ -11,6 +11,8 @@ import CyberBig from "@/components/molecules/CyberBig";
 import Link from "next/link";
 import { useState } from "react";
 import CyberAudioControl from "@/components/molecules/CyberAudioControl";
+import VisitorCounter from "@/components/atoms/VisitorCounter";
+import CyberVisitorCounter from "@/components/atoms/VisitorCounter";
 
 export default function Home() {
   const { theme } = useTheme();
@@ -19,20 +21,24 @@ export default function Home() {
 
   return (
     <>
-      <CyberContainer className="bg-background text-accent1 flex flex-row justify-center justify-items-center w-full gap-12">
-        <CyberContainer className="justify-center items-center self-center">
+      <CyberContainer className="bg-background text-accent1 flex flex-col lg:flex-row justify-center items-center w-full gap-4 lg:gap-12 px-4 py-8 lg:py-0 lg:px-0">
+        {/* Portrait Section - Adjusted for mobile */}
+        <CyberContainer className="justify-center items-center w-full lg:w-auto -mx-4 lg:mx-0">
+          {" "}
+          {/* Added -mx-4 to counter the px-4 on mobile */}
           <motion.div
             initial={{ opacity: 0, scale: 1, x: -200 }}
             animate={{ opacity: 1, scale: 1, x: 0 }}
             exit={{ opacity: 0, scale: 1, x: 0 }}
             transition={{ duration: 0.6 }}
+            className="w-full flex justify-center mt-8 lg:mt-0"
           >
             <CyberPortrait
               id="1"
               text="CATS-Coletivo-Anarquista-Trans.tsx"
               altText="Cyber Portrait 1"
               nested={
-                <CyberContainer className="w-full min-w-[90vw] max-w-[90vw] sm:min-w-[80vw] sm:max-w-[80vw] md:min-w-[70vw] md:max-w-[70vw] lg:min-w-[60vw] lg:max-w-[60vw] xl:min-w-[50vw] xl:max-w-[50vw] 2xl:min-w-[42rem] 2xl:max-w-[42rem]">
+                <CyberContainer className="w-full min-w-[90vw] sm:min-w-[80vw] md:min-w-[70vw] lg:min-w-[60vw] xl:min-w-[50vw] 2xl:min-w-[42rem] max-w-[90vw] sm:max-w-[80vw] md:max-w-[70vw] lg:max-w-[60vw] xl:max-w-[50vw] 2xl:max-w-[42rem]">
                   <CyberTerminal />
                 </CyberContainer>
               }
@@ -40,15 +46,20 @@ export default function Home() {
           </motion.div>
         </CyberContainer>
 
-        <CyberContainer className="h-screen flex flex-col justify-center items-center gap-6">
+        {/* Navigation Links - Stacked vertically on all screens */}
+        <CyberContainer className="lg:h-screen flex flex-col justify-center items-center gap-4 sm:gap-6 py-8 lg:py-0">
           <motion.div
             initial={{ opacity: 0, scale: 1, x: -200 }}
             animate={{ opacity: 1, scale: 1, x: 0 }}
             exit={{ opacity: 0, scale: 1, x: 0 }}
             transition={{ duration: 0.4 }}
+            className="w-full"
           >
-            <Link href="/manifesto">
-              <CyberBig text="manifesto" />
+            <Link href="/manifesto" className="block w-full">
+              <CyberBig
+                text="manifesto"
+                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
+              />
             </Link>
           </motion.div>
           <motion.div
@@ -56,9 +67,13 @@ export default function Home() {
             animate={{ opacity: 1, scale: 1, x: 0 }}
             exit={{ opacity: 0, scale: 1, x: 0 }}
             transition={{ duration: 0.5 }}
+            className="w-full"
           >
-            <Link href="/sobre-nos">
-              <CyberBig text="quem somos" />
+            <Link href="/sobre-nos" className="block w-full">
+              <CyberBig
+                text="quem somos"
+                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
+              />
             </Link>
           </motion.div>
           <motion.div
@@ -66,9 +81,13 @@ export default function Home() {
             animate={{ opacity: 1, scale: 1, x: 0 }}
             exit={{ opacity: 0, scale: 1, x: 0 }}
             transition={{ duration: 0.6 }}
+            className="w-full"
           >
-            <Link href="/recursos">
-              <CyberBig text="recursos" />
+            <Link href="/recursos" className="block w-full">
+              <CyberBig
+                text="recursos"
+                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
+              />
             </Link>
           </motion.div>
           <motion.div
@@ -76,12 +95,16 @@ export default function Home() {
             animate={{ opacity: 1, scale: 1, x: 0 }}
             exit={{ opacity: 0, scale: 1, x: 0 }}
             transition={{ duration: 0.7 }}
+            className="w-full"
           >
             <button
               onClick={() => setIsContactModalOpen(true)}
-              className="focus:outline-none focus:ring-2 focus:ring-accent1"
+              className="focus:outline-none focus:ring-2 focus:ring-accent1 w-full"
             >
-              <CyberBig text="fale conosco" />
+              <CyberBig
+                text="fale conosco"
+                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
+              />
             </button>
           </motion.div>
           <motion.div
@@ -89,17 +112,22 @@ export default function Home() {
             animate={{ opacity: 1, scale: 1, x: 0 }}
             exit={{ opacity: 0, scale: 1, x: 0 }}
             transition={{ duration: 0.8 }}
+            className="w-full"
           >
             <button
               onClick={() => setIsForumModalOpen(true)}
-              className="focus:outline-none focus:ring-2 focus:ring-accent1"
+              className="focus:outline-none focus:ring-2 focus:ring-accent1 w-full"
             >
-              <CyberBig text="forum" />
+              <CyberBig
+                text="forum"
+                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
+              />
             </button>
           </motion.div>
         </CyberContainer>
-        <CyberAudioControl />
-        <CyberDrone />
+        <CyberVisitorCounter className="absolute" />
+        <CyberAudioControl className="" />
+        <CyberDrone className="" />
       </CyberContainer>
 
       {/* Forum Modal */}
@@ -121,9 +149,9 @@ export default function Home() {
 
             {/* Modal Content */}
             <div className="flex min-h-full items-center justify-center p-4 text-center bg-background">
-              <CyberContainer>
+              <CyberContainer className="w-full max-w-xs sm:max-w-sm md:max-w-md">
                 <motion.div
-                  className="relative w-full max-w-md transform overflow-hidden border-accent1 bg-background text-left align-middle shadow-xl"
+                  className="relative w-full transform overflow-hidden border-accent1 bg-background text-left align-middle shadow-xl"
                   initial={{ opacity: 0, y: 20, scale: 0.98 }}
                   animate={{ opacity: 1, y: 0, scale: 1 }}
                   exit={{ opacity: 0, y: 20, scale: 0.98 }}
@@ -137,7 +165,7 @@ export default function Home() {
                     text="forum.rs"
                     onClose={() => setIsForumModalOpen(false)}
                     nested={
-                      <CyberContainer className="border border-accent1 p-6">
+                      <CyberContainer className="border border-accent1 p-4 sm:p-6">
                         <div className="flex items-start">
                           <div className="border border-accent1 rounded-full p-1">
                             <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-accent1">
@@ -214,9 +242,9 @@ export default function Home() {
 
             {/* Modal Content */}
             <div className="flex min-h-full items-center justify-center p-4 text-center bg-background">
-              <CyberContainer>
+              <CyberContainer className="w-full max-w-xs sm:max-w-sm md:max-w-md">
                 <motion.div
-                  className="relative w-full max-w-md transform overflow-hidden border-accent1 bg-background text-left align-middle shadow-xl"
+                  className="relative w-full transform overflow-hidden border-accent1 bg-background text-left align-middle shadow-xl"
                   initial={{ opacity: 0, y: 20, scale: 0.98 }}
                   animate={{ opacity: 1, y: 0, scale: 1 }}
                   exit={{ opacity: 0, y: 20, scale: 0.98 }}
@@ -230,11 +258,11 @@ export default function Home() {
                     text="fale conosco"
                     onClose={() => setIsContactModalOpen(false)}
                     nested={
-                      <CyberContainer className="border border-accent1 p-6">
+                      <CyberContainer className="border border-accent1 p-4 sm:p-6">
                         <div className="flex items-center justify-center">
                           <div className="text-center">
                             <h3
-                              className="text-lg font-medium leading-6 text-accent1"
+                              className="text-lg font-medium leading-6 text-accent1 break-all"
                               id="modal-title"
                             >
                               cats-trans@riseup.net
