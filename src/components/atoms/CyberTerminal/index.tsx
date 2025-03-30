@@ -33,8 +33,7 @@ export default function CyberTerminal({}: CyberTerminalProps) {
   const [isClicking, setIsClicking] = useState(false);
   const [isAtBottom, setIsAtBottom] = useState(true);
   const [isSelectingText, setIsSelectingText] = useState(false);
-  const termInput =
-    "[user@cats] - [$] <>";
+  const termInput = "[user@cats] - [$] <>";
 
   // Refs for animation control
   const typingIntervalRef = useRef<NodeJS.Timeout | null>(null);
@@ -82,7 +81,8 @@ export default function CyberTerminal({}: CyberTerminalProps) {
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       // Check if user is selecting text
-      if (window.getSelection()?.toString().length > 0) {
+      const selection = window.getSelection();
+      if (selection && selection.toString().length > 0) {
         setIsSelectingText(true);
         return;
       } else {
@@ -117,7 +117,8 @@ export default function CyberTerminal({}: CyberTerminalProps) {
 
     const handleMouseUp = () => {
       // Check if user has selected text
-      if (window.getSelection()?.toString().length > 0) {
+      const selection = window.getSelection();
+      if (selection && selection.toString().length > 0) {
         setIsSelectingText(true);
       } else {
         setIsSelectingText(false);
@@ -135,7 +136,7 @@ export default function CyberTerminal({}: CyberTerminalProps) {
     };
   }, [displayMode, typingComplete]);
 
-  // skippar mensagem
+  // Skip message
   const completeCurrentMessage = () => {
     if (typingIntervalRef.current) {
       clearInterval(typingIntervalRef.current);
@@ -151,7 +152,7 @@ export default function CyberTerminal({}: CyberTerminalProps) {
     }
   };
 
-  // Animaçãozinha
+  // Typing animation
   useEffect(() => {
     if (history.length === 0) return;
 
@@ -241,7 +242,8 @@ export default function CyberTerminal({}: CyberTerminalProps) {
 
   const handleTerminalClick = (e: React.MouseEvent) => {
     // Don't handle click if user is selecting text
-    if (window.getSelection()?.toString().length > 0) {
+    const selection = window.getSelection();
+    if (selection && selection.toString().length > 0) {
       setIsSelectingText(true);
       return;
     }
@@ -296,35 +298,32 @@ export default function CyberTerminal({}: CyberTerminalProps) {
         >
           <div className="flex items-center">
             <motion.div
-                  initial={{ opacity: 0, scale: 0.9, x: 0 }}
-                  animate={{ opacity: 1, scale: 1, x: 0 }}
-                  exit={{ opacity: 0, scale: 1, x: 100 }}
-                  transition={{ duration: 0.5 }}
-                  className=""
-                >
-                
-                
-            <IconTint
-              maxHeight={125}
-              maxWidth={125}
-              color={themeColors[theme] || "#ffffff"}
-              src="cats.png"
-            /></motion.div>
+              initial={{ opacity: 0, scale: 0.9, x: 0 }}
+              animate={{ opacity: 1, scale: 1, x: 0 }}
+              exit={{ opacity: 0, scale: 1, x: 100 }}
+              transition={{ duration: 0.5 }}
+              className=""
+            >
+              <IconTint
+                maxHeight={125}
+                maxWidth={125}
+                color={themeColors[theme] || "#ffffff"}
+                src="cats.png"
+              />
+            </motion.div>
 
             {/* System info panel with perfect alignment */}
             <motion.div
-                  
-                  initial={{ opacity: 0, scale: 0.9, x: 0 }}
-                  animate={{ opacity: 1, scale: 1, x: 0 }}
-                  exit={{ opacity: 0, scale: 1, x: 100 }}
-                  transition={{ duration: 0.5 }}
-                  className="text-accent5 ml-10"
-                >
+              initial={{ opacity: 0, scale: 0.9, x: 0 }}
+              animate={{ opacity: 1, scale: 1, x: 0 }}
+              exit={{ opacity: 0, scale: 1, x: 100 }}
+              transition={{ duration: 0.5 }}
+              className="text-accent5 ml-10"
+            >
               <pre className="text-left" style={{ fontFamily: font }}>
                 ╭───────────⏣────────────╮{"\n"}⟁ -> site 0.13.2{"\n"}⏣ ->
-                 trangenerificação 132%{"\n"}⏣ -> non-binary.exe READY{"\n"}⏣ -> fim do cistema IN-PROGRESS{"\n"}
+                trangenerificação 132%{"\n"}⏣ -> non-binary.exe READY{"\n"}⏣ -> fim do cistema IN-PROGRESS{"\n"}
                 ╰───────────⏣────────────╯{"\n"}
-                
               </pre>
             </motion.div>
           </div>
