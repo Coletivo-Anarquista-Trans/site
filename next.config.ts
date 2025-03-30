@@ -1,10 +1,15 @@
 
+const isGithubPages = process.env.GITHUB_ACTIONS === "true";
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
+  images: {
+    unoptimized: true
+  },
   trailingSlash: true,
-  basePath: '/',
-  assetPrefix: '/',
+  basePath: isGithubPages ? "/" : "",
+  assetPrefix: isGithubPages ? "/" : "",
   eslint: {
     ignoreDuringBuilds: true,
   },
