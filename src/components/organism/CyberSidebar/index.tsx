@@ -10,147 +10,178 @@ import { useCyberSection } from "@/context/CyberSectionsContext/CyberSections";
 import { useRouter } from "next/navigation";
 
 interface CyberSidebarProps {
-    className?: string;
-    unevenBorders?: boolean;
-    normalBorders?: boolean;
-    glowingBorders?: boolean;
-    clearBorders?: boolean;
-    fixed?: boolean;
-    width?: string;
+  className?: string;
+  unevenBorders?: boolean;
+  normalBorders?: boolean;
+  glowingBorders?: boolean;
+  clearBorders?: boolean;
+  fixed?: boolean;
+  width?: string;
 }
 
 export default function CyberSidebar({
-                                         className,
-                                         unevenBorders,
-                                         normalBorders,
-                                         glowingBorders,
-                                         clearBorders,
-                                         fixed = true,
-                                         width = "w-64",
-                                     }: CyberSidebarProps) {
-    const { theme } = useTheme();
-    const { cyberSections } = useCyberSection();
-    const router = useRouter();
+  className,
+  unevenBorders,
+  normalBorders,
+  glowingBorders,
+  clearBorders,
+  fixed = true,
+  width = "w-64",
+}: CyberSidebarProps) {
+  const { theme } = useTheme();
+  const { cyberSections } = useCyberSection();
+  const router = useRouter();
 
-    const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
-    useEffect(() => {
-        console.log("🔍 [CyberSidebar] Sections in Sidebar:", cyberSections);
-    }, [cyberSections]);
+  useEffect(() => {
+    console.log("🔍 [CyberSidebar] Sections in Sidebar:", cyberSections);
+  }, [cyberSections]);
 
-    const handleSectionClick = (id: string, prefix: string) => {
-        const path = `/${prefix}#${id}`;
-        router.push(path);
-    };
+  const handleSectionClick = (id: string, prefix: string) => {
+    const path = `/${prefix}#${id}`;
+    router.push(path);
+    setOpen(false); // Close sidebar on navigation for mobile/tablet
+  };
 
-    const manifestoSections = cyberSections.filter(s => s.parent === "manifesto");
-    const recursosSections = cyberSections.filter(s => s.parent === "recursos");
+  const manifestoSections = cyberSections.filter(
+    (s) => s.parent === "manifesto"
+  );
+  const recursosSections = cyberSections.filter((s) => s.parent === "recursos");
 
-    const baseStyles = "z-50 md:static md:block bg-background text-accent1 custom-scrollbar transition-transform duration-300 ease-in-out";
-    const sizeStyles = classnames(
-        // Mobile
-        open
-            ? "fixed top-0 left-0 h-full z-50 overflow-y-auto"
-            : "fixed top-0 left-0 h-full z-50 overflow-y-auto -translate-x-full",
+  const baseStyles =
+    "z-50 bg-background text-accent1 custom-scrollbar transition-transform duration-300 ease-in-out";
 
-        // Desktop
-        "md:translate-x-0 md:relative md:sticky md:top-0 md:h-screen md:overflow-y-auto md:z-40",
+  const sizeStyles = classnames(
+    // Mobile and Tablet (below lg)
+    "fixed top-0 left-0 h-full z-50 overflow-y-auto",
+    open ? "translate-x-0" : "-translate-x-full",
+    "w-3/4 sm:w-64", // Width on mobile and tablet
 
-        // Width
-        "w-3/4 md:w-64"
-    );
+    // Desktop (lg and above)
+    "lg:translate-x-0 lg:relative lg:sticky lg:top-0 lg:h-screen lg:overflow-y-auto lg:z-40",
+    width // Use the passed width prop for desktop
+  );
 
+  const borderStyles = classnames({
+    "rounded-tl-[10px] rounded-br-[10px] rounded-bl-[0px] rounded-tr-[0px] border-accent1":
+      unevenBorders,
+    "border-accent1": normalBorders,
+    "shadow-[0_0_10px_2px] border-1": glowingBorders,
+    "border-glow-accent1": clearBorders,
+  });
 
-    const borderStyles = classnames({
-        "rounded-tl-[10px] rounded-br-[10px] rounded-bl-[0px] rounded-tr-[0px] border-accent1": unevenBorders,
-        "border-accent1": normalBorders,
-        "shadow-[0_0_10px_2px] border-1": glowingBorders,
-        "border-glow-accent1": clearBorders,
-    });
-
-    return (
-        <>
-            {/* Mobile Hamburger Button */}
-            <div className="md:hidden fixed inset-0">
-                <button
-                    onClick={() => setOpen((prev) => !prev)}
-                    className="bg-accent1 text-background p-3 rounded-full shadow-lg focus:outline-none"
-                >
-                    <svg className="w-6 h-6" fill="white" stroke="white" strokeWidth="2" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                </button>
-            </div>
-
-            {/* Overlay for mobile when open */}
-            {open && (
-                <div
-                    className="fixed inset-0 z-40 bg-black bg-opacity-50 transition-opacity duration-300 md:hidden"
-                    onClick={() => setOpen(false)}
-                />
-            )}
-
-            {/* Sidebar  */}
-            <CyberContainer
-                className={classnames(
-                    theme,
-                    baseStyles,
-                    sizeStyles,
-                    borderStyles,
-                    className,
-                    "border-r-2 z-50",
-                    open ? "translate-x-0" : "-translate-x-full", // ✅ no duplicate fixed/positioning
-                    "md:translate-x-0 md:static md:block"
-                )}
+  return (
+    <>
+      <CyberContainer>
+        {/* Mobile/Tablet Hamburger Button - hidden on desktop */}
+        <div className="fixed top-4 left-4 z-40 lg:hidden">
+          <button
+            onClick={() => setOpen((prev) => !prev)}
+            className="p-3 rounded-full focus:outline-none text-accent1 hover:text-accent1-hover transition-colors"
+          >
+            <svg
+              className="w-6 h-6"
+              fill="currentColor"
+              stroke="currentColor"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
             >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
 
-                {/* Mobile Close Button inside sidebar */}
-                {open && (
-                    <div className="md:hidden flex justify-end p-4">
-                        <button onClick={() => setOpen(false)} className="text-accent1 focus:outline-none">
-                            {/* X icon */}
-                            <svg className="w-6 h-6" fill="none" stroke="white" strokeWidth="2"
-                                 viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round"
-                                      d="M4 6h16M4 12h16M4 18h16"/>
-                            </svg>
-                        </button>
-                    </div>
-                )}
+        {/* Overlay for mobile/tablet when open */}
+        {open && (
+          <div
+            className="fixed inset-0 z-40 bg-black bg-opacity-50 transition-opacity duration-300 lg:hidden"
+            onClick={() => setOpen(false)}
+          />
+        )}
 
-                <Link href="/" passHref>
-                    <CyberTreeNode id="home-root" label="Home" />
-                </Link>
-                <CyberTreeNode id="manifesto-root" label={<Link href="/manifesto">Manifesto</Link>}>
-                    {manifestoSections.length > 0 ? (
-                        manifestoSections.map((section) => (
-                            <CyberTreeNode
-                                key={section.id}
-                                id={`${section.id}`}
-                                label={section.label}
-                                onClick={() => handleSectionClick(section.id, "manifesto")}
-                            />
-                        ))
-                    ) : (
-                        <p className="text-accent3 text-center">- x -</p>
-                    )}
-                </CyberTreeNode>
+        {/* Sidebar */}
+        <CyberContainer
+          className={classnames(
+            theme,
+            baseStyles,
+            sizeStyles,
+            borderStyles,
+            className,
+            "border-r-2",
+            fixed ? "fixed lg:sticky" : "relative"
+          )}
+        >
+          {/* Mobile/Tablet Close Button inside sidebar */}
+          <div className="lg:hidden flex justify-end p-4">
+            <button
+              onClick={() => setOpen(false)}
+              className="text-accent1 hover:text-accent1-hover focus:outline-none transition-colors"
+            >
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
 
-                <CyberTreeNode id="recursos-root" label={<Link href="/recursos">Recursos</Link>}>
-                    {recursosSections.length > 0 ? (
-                        recursosSections.map((section) => (
-                            <CyberTreeNode
-                                key={section.id}
-                                id={`${section.id}`}
-                                label={section.label}
-                                onClick={() => handleSectionClick(section.id, "recursos")}
-                            />
-                        ))
-                    ) : (
-                        <p className="text-accent3 text-center">- x -</p>
-                    )}
-                </CyberTreeNode>
-            </CyberContainer>
-        </>
-    );
+          <Link href="/" passHref>
+            <CyberTreeNode
+              id="home-root"
+              label="Home"
+              onClick={() => setOpen(false)}
+            />
+          </Link>
+          <CyberTreeNode
+            id="manifesto-root"
+            label={<Link href="/manifesto">Manifesto</Link>}
+          >
+            {manifestoSections.length > 0 ? (
+              manifestoSections.map((section) => (
+                <CyberTreeNode
+                  key={section.id}
+                  id={`${section.id}`}
+                  label={section.label}
+                  onClick={() => handleSectionClick(section.id, "manifesto")}
+                />
+              ))
+            ) : (
+              <p className="text-accent3 text-center">- x -</p>
+            )}
+          </CyberTreeNode>
+
+          <CyberTreeNode
+            id="recursos-root"
+            label={<Link href="/recursos">Recursos</Link>}
+          >
+            {recursosSections.length > 0 ? (
+              recursosSections.map((section) => (
+                <CyberTreeNode
+                  key={section.id}
+                  id={`${section.id}`}
+                  label={section.label}
+                  onClick={() => handleSectionClick(section.id, "recursos")}
+                />
+              ))
+            ) : (
+              <p className="text-accent3 text-center">- x -</p>
+            )}
+          </CyberTreeNode>
+        </CyberContainer>
+      </CyberContainer>
+    </>
+  );
 }
