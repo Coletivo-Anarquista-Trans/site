@@ -94,7 +94,7 @@ export default function AudioConsentModal() {
                           <div className="mt-2">
                             <p className="text-sm text-accent1">
                               esse site utiliza efeitos sonoros experimentais
-                              que afetar sua experiência de navegação.
+                              que podem afetar sua experiência de navegação.
                               <br />
                               <br />
                               Você pode ativar/desativar os efeitos sonoros nas
