@@ -227,7 +227,11 @@ export default function CyberTerminal({}: CyberTerminalProps) {
     switch (cmd) {
       case "ajuda":
         response =
-          "Comandos disponíveis: ajuda, terminal, contato, cats, manifesto, arquivos, recursos, username [nome], mazrine, lynx, n3o, kia, v, iniari, yu, fefe, em-breve, forum";
+          "Comandos disponíveis: ajuda, comandos, terminal, contato, cats, manifesto, arquivos, recursos, username [nome], mazrine, lynx, n3o, kia, v, iniari, yu, fefe, em-breve, forum";
+        break;
+      case "comandos":
+        response =
+          "Comandos disponíveis: ajuda, comandos, terminal, contato, cats, manifesto, arquivos, recursos, username [nome], mazrine, lynx, n3o, kia, v, iniari, yu, fefe, em-breve, forum";
         break;
       case "terminal":
         response =
@@ -237,7 +241,8 @@ export default function CyberTerminal({}: CyberTerminalProps) {
         response = "E-mail: cats-trans@riseup.net";
         break;
       case "forum":
-        response = "Estamos desenvolvendo um forum para uso da comunidade trans. Aguardem notícias!";
+        response =
+          "Estamos desenvolvendo um forum para uso da comunidade trans. Aguardem notícias!";
         break;
       case "mazrine":
         response =
@@ -267,7 +272,8 @@ export default function CyberTerminal({}: CyberTerminalProps) {
           "artista incrível, responsável por diversas produções no coletivo (๑>◡<๑)";
         break;
       case "kia":
-        response = "memetic warfare intimacy coordinator. Kia faz de tudo e também é a melhor cozinheira de são paulo ppr";
+        response =
+          "memetic warfare intimacy coordinator. Kia faz de tudo e também é a melhor cozinheira de são paulo ppr";
         break;
       case "fefe":
         response = "artista obsecada pela cor rosa, cardgames e animes";
