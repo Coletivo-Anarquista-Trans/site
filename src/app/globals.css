@@ -315,3 +315,28 @@ body {
 .custom-scrollbar:hover::-webkit-scrollbar-thumb {
   background-color: var(--accent-1);
 }
+
+::-webkit-scrollbar {
+  width: 14px;
+  background: red;
+}
+
+::-webkit-scrollbar-track {  
+  background: #000000;
+  border: 1px solid #1BFFFF;
+  
+  border-bottom: none;
+  border-top: none;
+  border-right: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1BFFFF;
+  stroke: #1BFFFF;
+  stroke-width: 3px;
+  height: 80px;
+  border: 1px solid #1BFFFF;
+  border-bottom: none;
+  border-top: none;
+  border-right: none;
+}
