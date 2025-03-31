@@ -15,7 +15,7 @@ interface CyberTerminalProps {}
 export default function CyberTerminal({}: CyberTerminalProps) {
   const router = useRouter();
   const INITIAL_MESSAGES = [
-    "Olá, {visitante}. Essa é a barricada dos corpos dissidentes, aqui projetamos o futuro em que seu corpo-virtual é livre para transitar e transicionar sem ser conduzido por uma timeline.",
+    "Olá, {visitante}. Essa é a barricada dos corpos dissidentes, aqui projetamos o futuro em que seu corpo-virtual é livre para transitar e transicionar sem ser conduzide por uma timeline.",
     "Transicione pelo nosso site, explorando um ciberespaço alternativo.",
     "Desenvolva conosco essa nova proposta de internet livre e descentralizada.",
     "Seja hacker, retome as tecnologias roubadas de nós, não deixe-os ter nossos amores e corpos. Digite ajuda para saber mais.",
