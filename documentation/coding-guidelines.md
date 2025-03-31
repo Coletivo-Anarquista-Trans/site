@@ -24,10 +24,16 @@ This document outlines the coding and development practices to ensure consistenc
      ```bash
      git checkout dev
      git pull
-     git checkout -b dev-suggestion-box
+     git checkout -b "dev-suggestion-box"
      ```
 
    - Use descriptive branch names that reflect the feature or task you're working on.
+   - When committing a change, make sure to use,
+
+     ```bash
+     git commit -m "your_commit_message_here"
+     ```
+     offering a brief but descriptive commit message. This is especially useful for minor last-moment, unanticipated changes, which might not be accounted for in the branch name.
 
 2. **Pull Requests (PRs)**
 
