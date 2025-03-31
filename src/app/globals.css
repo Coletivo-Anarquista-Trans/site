@@ -11,6 +11,15 @@
   background: #000;
 }
 
+@media all and (min--moz-device-pixel-ratio:0) and (min-resolution: 3e1dpcm) {
+  :root {
+    scrollbar-color: #1BFFFF #000000;
+	scrollbar-base-color: #000000;
+  }
+  scrollbar {
+		width: 14px;
+  }
+}
 
 /* Dark Violet */
 .dark-violet {
