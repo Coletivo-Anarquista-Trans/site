@@ -41,7 +41,7 @@ export default function CyberTooltip({
         className="z-50"
         style={{
           maxWidth: "300px",
-          backgroundColor: "var(--color-accent1)",
+          backgroundColor: "#191919",
           color: "var(--color-text)",
           borderRadius: "4px",
           padding: "8px 12px",
