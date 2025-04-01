@@ -29,7 +29,7 @@ const books = [
     title: "Diário de uma ciborgue",
     description:
       "O corpo virtual e material como espaço político numa visão ciberfeminista",
-    image: "trans-archives/diariodeUmaciborgue.png",
+    image: "trans-archives/DiarioDeUmaCiborgue.jpg",
     url: "https://docs.google.com/document/d/1njyeH000ht7PCrGDaPXsVp53zJfAlRQgWipZJXpv5Pw/edit?tab=t.0#heading=h.sa0lg6ud6qbk",
   },
   {
