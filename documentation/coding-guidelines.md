@@ -18,16 +18,16 @@ This document outlines the coding and development practices to ensure consistenc
 
 1. **Branching Strategy**
 
-   - When developing a new feature, create a new branch based on the `dev` branch.  
-     **Example**: If you're working on a suggestion box feature, create a branch named `dev-suggestion-box` from `dev`.
+   - When developing a new feature, create a new branch based on the `main` branch.  
+     **Example**: If you're working on a suggestion box feature, create a branch named `feature-suggestion-box` from `main`.
 
      ```bash
-     git checkout dev
+     git checkout main
      git pull
-     git checkout -b "dev-suggestion-box"
+     git checkout -b "feature-suggestion-box"
      ```
 
-   - Use descriptive branch names that reflect the feature or task you're working on.
+   - Use descriptive branch names that reflect the feature or task you're working on. Use `feature-branchname` when altering modules in the source coude.
    - When committing a change, make sure to use,
 
      ```bash
@@ -37,19 +37,20 @@ This document outlines the coding and development practices to ensure consistenc
 
 2. **Pull Requests (PRs)**
 
-   - Once your feature is complete, open a pull request to merge your branch (`dev-feature`) into `dev`.
+   - Once your feature is complete, open a pull request to merge your branch (`feature-new-feature`) into `main`.
+   - Run the project locally. (( ToDo: Add run-locally documentation))
    - Request a review from at least one experienced or active team member.
    - Ensure your PR includes a clear description of the changes and any relevant context.
 
-3. **Syncing with `dev`**
+3. **Syncing with `main`**
 
-   - Regularly pull changes from the `dev` branch into your feature branch to avoid merge conflicts.
+   - Regularly pull changes from the `main` branch into your feature branch to avoid merge conflicts.
 
      ```bash
-     git checkout dev
+     git checkout main
      git pull
-     git checkout dev-suggestion-box
-     git merge dev
+     git checkout feature-suggestion-box
+     git merge main
      ```
 
 4. **Resolving Conflicts**
