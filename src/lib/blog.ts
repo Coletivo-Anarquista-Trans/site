@@ -14,7 +14,7 @@ const allPosts: BlogPost[] = [
     title: "Miauzers o( ❛ᴗ❛ )o",
     description: "Explorando as raízes e conceitos do movimento Miauzers.",
     date: "2023-05-15",
-    image: "/miau.jpg",
+    image: "miau.jpg",
   },
   // Add more posts here
 ];
