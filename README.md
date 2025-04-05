@@ -2,8 +2,8 @@
 
 ## Getting Started
 
-:::infos
-**/ᐠ - ˕ -マ Ⳋ**  `says:` welcome!a
+:::info
+**/ᐠ - ˕ -マ Ⳋ**  `says:` welcome!
 :::s
 
 * https://coletivo-anarquista-trans.github.io/site/
