@@ -16,11 +16,11 @@ const allPosts: BlogPost[] = [
     date: "2023-05-15",
     image: "miau.jpg",
   },
-  // Add more posts here
+
 ];
 
 export function getAllPosts(): BlogPost[] {
-  return [...allPosts]; // Return a copy
+  return [...allPosts]; 
 }
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
