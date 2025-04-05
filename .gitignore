@@ -33,7 +33,6 @@ jspm_packages
 
 # Dependency files
 package-lock.json
-package.json
 
 # Optional npm cache directory
 .npm
