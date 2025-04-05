@@ -2,6 +2,14 @@
 
 ## Getting Started
 
+:::infos
+**/ᐠ - ˕ -マ Ⳋ**  `says:` welcome!a
+:::s
+
+* https://coletivo-anarquista-trans.github.io/site/
+
+&nbsp;
+
 First, make sure your machine has deno 2 and use the command
 
 ```bash
