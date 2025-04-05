@@ -14,21 +14,22 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { slug: string };
-}): Promise<Metadata> {
+export async function generateMetadata(
+  props: {
+    params: Promise<{ slug: string }>;
+  }
+): Promise<Metadata> {
+  const params = await props.params;
   const post = getPostBySlug(params.slug);
 
   if (!post) {
     return {
-      title: "Post Not Found | Cyberfeminism Archive",
+      title: "Post Not Found | Blog Archive",
     };
   }
 
   return {
-    title: `${post.title} | Cyberfeminism Archive`,
+    title: `${post.title} | Blog Archive`,
     description: post.description,
     openGraph: {
       title: post.title,
@@ -46,7 +47,8 @@ export async function generateMetadata({
   };
 }
 
-export default function PostPage({ params }: { params: { slug: string } }) {
+export default async function PostPage(props: { params: Promise<{ slug: string }> }) {
+  const params = await props.params;
   const post = getPostBySlug(params.slug);
 
   if (!post) {
