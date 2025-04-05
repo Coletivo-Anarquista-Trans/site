@@ -29,7 +29,11 @@ out
 
 # Dependency directories
 node_modules
-jspm_packages
+jspm_package
+
+# Dependency files
+package-lock.json
+package.json
 
 # Optional npm cache directory
 .npm
