@@ -16,7 +16,7 @@ export const posts: BlogPost[] = [
     description: "Explorando as raízes e conceitos do movimento Kaomoji.",
     slug: "introducao-ao-miauzers",
     date: "2023-05-15",
-    image: "/miau.jpg",
+    image: "miau.jpg",
     content: `
       <h2>O que é Miauzers?</h2>
       <p>Miauzers é uma ferramenta de resistência...</p>
