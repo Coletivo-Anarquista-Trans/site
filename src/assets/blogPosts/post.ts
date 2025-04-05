@@ -14,7 +14,7 @@ export const posts: BlogPost[] = [
     id: "post-1",
     title: "Miauzers o( ❛ᴗ❛ )o",
     description: "Explorando as raízes e conceitos do movimento Kaomoji.",
-    slug: "introducao-ao-kaomoji",
+    slug: "introducao-ao-miauzers",
     date: "2023-05-15",
     image: "/miau.jpg",
     content: `
