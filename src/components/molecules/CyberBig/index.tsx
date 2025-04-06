@@ -1,6 +1,5 @@
 import CyberContainer from "@/components/atoms/CyberContainer";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import { useAudio } from "@/context/AudioContext";
 
 interface CyberBigProps {
@@ -14,7 +13,7 @@ export default function CyberBig({ text, className }: CyberBigProps) {
 
   return (
     <motion.div
-      className={className} // Preserve passed className
+      className={className}
       whileHover={{
         scale: 1.05,
         transition: { duration: 0.2 },
@@ -25,8 +24,11 @@ export default function CyberBig({ text, className }: CyberBigProps) {
         className="
         border border-accent1 
         p-1 
-        min-w-[18rem]  // Smaller on mobile
-        sm:min-w-[24rem] // Original size on computers (640px+)
+        min-w-[18rem]      // Default for mobile (<768px)
+        md:min-w-[20rem]   // Tablet (768px-1023px)
+        lg:min-w-[18rem]   // Laptop (1024px-1279px) - NEW intermediate size
+        
+        2xl:min-w-[24rem]  // Large desktop (1536px+) - Keep same as xl
         crt-screen 
         crt-curvature 
         crt-reflection 
@@ -38,7 +40,10 @@ export default function CyberBig({ text, className }: CyberBigProps) {
         <CyberContainer
           className="
           border border-accent1 
-          px-4 sm:px-8  // Slightly less padding on mobile
+          px-4       // Mobile
+          md:px-4    // Tablet
+          lg:px-4    // Laptop - Slightly less than original
+          2xl:px-8    // Desktop - Original padding
           py-2 
           flex 
           justify-center 
@@ -48,7 +53,10 @@ export default function CyberBig({ text, className }: CyberBigProps) {
           <span
             className="
             text-accent1 
-            text-4xl sm:text-5xl  // Slightly smaller text on mobile
+            text-4xl        // Mobile
+            md:text-[2.75rem]  // Tablet
+            lg:text-[2.5rem]     // Laptop - Intermediate size (between md and xl)
+            2xl:text-5xl      // Desktop - Original size (48px)
             text-center 
             self-center 
             items-center 

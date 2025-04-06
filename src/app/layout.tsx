@@ -24,7 +24,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Preload the icon for better performance */}
         <link rel="preload" href="cats.png" as="image" />
       </head>
       <body>
@@ -37,7 +36,7 @@ export default function RootLayout({
                     <div className="min-h-screen flex">
                       <CyberSidebar />
                       <AudioConsentModal />
-                      <div className="flex-1 relative">
+                      <div className="flex-1 lg:ml-72 relative">
                         <LoadingWrapper>{children}</LoadingWrapper>
                       </div>
                     </div>

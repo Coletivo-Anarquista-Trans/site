@@ -273,7 +273,7 @@ export default function CyberSidebar() {
   return (
     <CyberContainer>
       <motion.div
-        className="fixed top-4 left-4 z-40 lg:hidden"
+        className="fixed top-4 left-4 z-40 xl:hidden"
         whileHover={{ scale: 1.1 }}
         onHoverStart={playButtonSelect}
       >
