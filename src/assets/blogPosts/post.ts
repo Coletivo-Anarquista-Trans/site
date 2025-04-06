@@ -13,7 +13,7 @@ export const posts: BlogPost[] = [
   {
     id: "post-1",
     title: "Miauzers o( ❛ᴗ❛ )o",
-    description: "Explorando as raízes e conceitos do movimento Kaomoji.",
+    description: "Explorando as raízes e conceitos do movimento Miauzers.",
     slug: "introducao-ao-miauzers",
     date: "2023-05-15",
     image: "miau.jpg",

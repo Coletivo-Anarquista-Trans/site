@@ -1,3 +1,4 @@
+// components/atoms/Tooltip.tsx
 "use client";
 
 import React, { useState } from "react";
@@ -18,40 +19,28 @@ export const Tooltip = ({
 }: TooltipProps) => {
   const [isVisible, setIsVisible] = useState(false);
 
-  const positionClasses = {
-    top: "bottom-full mb-2 left-1/2 transform -translate-x-1/2",
-    bottom: "top-full mt-2 left-1/2 transform -translate-x-1/2",
-    left: "right-full mr-2 top-1/2 transform -translate-y-1/2",
-    right: "left-full ml-2 top-1/2 transform -translate-y-1/2",
-  }[position];
-
-  const arrowClasses = {
-    top: "top-full -translate-x-1/2 left-1/2 -mt-1",
-    bottom: "bottom-full -translate-x-1/2 left-1/2 -mb-1",
-    left: "left-full -translate-y-1/2 top-1/2 -ml-1",
-    right: "right-full -translate-y-1/2 top-1/2 -mr-1",
-  }[position];
-
   return (
     <div
-      className={`relative inline-block ${className}`}
+      className={`relative inline-block w-fit ${className}`}
       onMouseEnter={() => setIsVisible(true)}
       onMouseLeave={() => setIsVisible(false)}
     >
       {children}
       <AnimatePresence>
-        {isVisible && (
+        {isVisible && position === "top" && (
           <motion.div
-            className={`absolute ${positionClasses} z-50`}
-            initial={{ opacity: 0, y: position === "top" ? -5 : 5 }}
+            className="absolute bottom-full left-1/2 mb-2 z-50"
+            style={{ transform: "translateX(-50%)" }}
+            initial={{ opacity: 0, y: -4 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: position === "top" ? -5 : 5 }}
+            exit={{ opacity: 0, y: -4 }}
             transition={{ duration: 0.15 }}
           >
-            <div className="bg-foreground text-background text-xs px-2 py-1 rounded-md whitespace-nowrap shadow-lg">
+            <div className="relative bg-accent1 text-background text-xs px-2 py-1 rounded-md whitespace-nowrap shadow-lg">
               {content}
+              {/* Triangle arrow on bottom-left */}
               <div
-                className={`absolute w-2 h-2 bg-foreground transform rotate-45 ${arrowClasses}`}
+                className="absolute top-full left-2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-l-transparent border-r-transparent border-t-accent1"
               />
             </div>
           </motion.div>
