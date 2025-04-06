@@ -116,13 +116,6 @@ export default function QuemSomosNos() {
             >
               <b>Yu</b>
             </CyberContainer>
-            {/* Naor container */}
-            <CyberContainer
-              unevenBorders
-              className="text-center text-xl md:text-2xl p-2 h-12 md:h-16 flex items-center justify-center"
-            >
-              <b>Naor</b>
-            </CyberContainer>
             {/* Fefe container */}
             <CyberContainer
               unevenBorders

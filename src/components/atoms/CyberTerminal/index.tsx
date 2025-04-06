@@ -413,7 +413,7 @@ export default function CyberTerminal({}: CyberTerminalProps) {
               <pre className="text-left" style={{ fontFamily: font }}>
                 {`
     ╭───────────⏣────────────╮
-    ⟁ -> site 1.1.0
+    ⟁ -> site 1.2.0
     ⏣ -> transgenerificação 132%
     ⏣ -> non-binary.exe READY
     ⏣ -> fim do cistema IN-PROGRESS

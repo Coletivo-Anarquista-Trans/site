@@ -14,7 +14,7 @@ import {
   FaRandom,
 } from "react-icons/fa";
 import { useAudio } from "@/context/AudioContext";
-import { Tooltip as ReactTooltip } from "react-tooltip";
+import { Tooltip } from "@/components/atoms/Tooltip";
 
 const books = [
   {
@@ -97,129 +97,145 @@ const Page = () => {
       >
         {/* View mode selector */}
         <div className="flex gap-2 bg-foreground/10 p-2 rounded-md">
-          <button
-            data-tooltip-id="view-tile"
-            data-tooltip-content="Visualização em blocos"
-            onClick={() => {
-              playButtonSelect();
-              setViewMode("tile");
-            }}
-            onMouseEnter={() => playButtonSelect()}
-            className={`p-2 rounded ${
-              viewMode === "tile"
-                ? "bg-accent1 text-background"
-                : "hover:bg-foreground/20"
-            }`}
-            aria-label="Visualização em blocos"
+          <Tooltip
+            content="Visualização em blocos"
+            position="top"
+            className="mx-1"
           >
-            <FaTh />
-          </button>
-          <button
-            data-tooltip-id="view-list"
-            data-tooltip-content="Visualização em lista"
-            onClick={() => {
-              playButtonSelect();
-              setViewMode("list");
-            }}
-            onMouseEnter={() => playButtonSelect()}
-            className={`p-2 rounded ${
-              viewMode === "list"
-                ? "bg-accent1 text-background"
-                : "hover:bg-foreground/20"
-            }`}
-            aria-label="Visualização em lista"
+            <button
+              onClick={() => {
+                playButtonSelect();
+                setViewMode("tile");
+              }}
+              onMouseEnter={() => playButtonSelect()}
+              className={`p-2 rounded ${
+                viewMode === "tile"
+                  ? "bg-accent1 text-background"
+                  : "hover:bg-foreground/20"
+              }`}
+              aria-label="Visualização em blocos"
+            >
+              <FaTh />
+            </button>
+          </Tooltip>
+          <Tooltip
+            content="Visualização em lista"
+            position="top"
+            className="mx-1"
           >
-            <FaList />
-          </button>
-          <button
-            data-tooltip-id="view-compact"
-            data-tooltip-content="Visualização compacta"
-            onClick={() => {
-              playButtonSelect();
-              setViewMode("compact");
-            }}
-            onMouseEnter={() => playButtonSelect()}
-            className={`p-2 rounded ${
-              viewMode === "compact"
-                ? "bg-accent1 text-background"
-                : "hover:bg-foreground/20"
-            }`}
-            aria-label="Visualização compacta"
+            <button
+              onClick={() => {
+                playButtonSelect();
+                setViewMode("list");
+              }}
+              onMouseEnter={() => playButtonSelect()}
+              className={`p-2 rounded ${
+                viewMode === "list"
+                  ? "bg-accent1 text-background"
+                  : "hover:bg-foreground/20"
+              }`}
+              aria-label="Visualização em lista"
+            >
+              <FaList />
+            </button>
+          </Tooltip>
+          <Tooltip
+            content="Visualização compacta"
+            position="top"
+            className="mx-1"
           >
-            <FaCompress />
-          </button>
+            <button
+              onClick={() => {
+                playButtonSelect();
+                setViewMode("compact");
+              }}
+              onMouseEnter={() => playButtonSelect()}
+              className={`p-2 rounded ${
+                viewMode === "compact"
+                  ? "bg-accent1 text-background"
+                  : "hover:bg-foreground/20"
+              }`}
+              aria-label="Visualização compacta"
+            >
+              <FaCompress />
+            </button>
+          </Tooltip>
         </div>
 
         {/* Sort options */}
         <div className="flex gap-2 bg-foreground/10 p-2 rounded-md">
-          <button
-            data-tooltip-id="sort-default"
-            data-tooltip-content="Ordenação padrão"
-            onClick={() => {
-              playButtonSelect();
-              setSortOption("padrao");
-            }}
-            onMouseEnter={() => playButtonSelect()}
-            className={`p-2 rounded ${
-              sortOption === "padrao"
-                ? "bg-accent1 text-background"
-                : "hover:bg-foreground/20"
-            }`}
-            aria-label="Ordenação padrão"
+          <Tooltip content="Ordenação padrão" position="top" className="mx-1">
+            <button
+              onClick={() => {
+                playButtonSelect();
+                setSortOption("padrao");
+              }}
+              onMouseEnter={() => playButtonSelect()}
+              className={`p-2 rounded ${
+                sortOption === "padrao"
+                  ? "bg-accent1 text-background"
+                  : "hover:bg-foreground/20"
+              }`}
+              aria-label="Ordenação padrão"
+            >
+              <FaSortAmountDown />
+            </button>
+          </Tooltip>
+          <Tooltip content="Ordenar A-Z" position="top" className="mx-1">
+            <button
+              onClick={() => {
+                playButtonSelect();
+                setSortOption("titulo-asc");
+              }}
+              onMouseEnter={() => playButtonSelect()}
+              className={`p-2 rounded ${
+                sortOption === "titulo-asc"
+                  ? "bg-accent1 text-background"
+                  : "hover:bg-foreground/20"
+              }`}
+              aria-label="Ordenar A-Z"
+            >
+              <FaSortAlphaDown />
+            </button>
+          </Tooltip>
+          <Tooltip content="Ordenar Z-A" position="top" className="mx-1">
+            <button
+              onClick={() => {
+                playButtonSelect();
+                setSortOption("titulo-desc");
+              }}
+              onMouseEnter={() => playButtonSelect()}
+              className={`p-2 rounded ${
+                sortOption === "titulo-desc"
+                  ? "bg-accent1 text-background"
+                  : "hover:bg-foreground/20"
+              }`}
+              aria-label="Ordenar Z-A"
+            >
+              <FaSortAlphaUp />
+            </button>
+          </Tooltip>
+          <Tooltip
+            content="Ordenação aleatória"
+            position="top"
+            className="mx-1"
           >
-            <FaSortAmountDown />
-          </button>
-          <button
-            data-tooltip-id="sort-asc"
-            data-tooltip-content="Ordenar A-Z"
-            onClick={() => {
-              playButtonSelect();
-              setSortOption("titulo-asc");
-            }}
-            onMouseEnter={() => playButtonSelect()}
-            className={`p-2 rounded ${
-              sortOption === "titulo-asc"
-                ? "bg-accent1 text-background"
-                : "hover:bg-foreground/20"
-            }`}
-            aria-label="Ordenar A-Z"
-          >
-            <FaSortAlphaDown />
-          </button>
-          <button
-            data-tooltip-id="sort-desc"
-            data-tooltip-content="Ordenar Z-A"
-            onClick={() => {
-              playButtonSelect();
-              setSortOption("titulo-desc");
-            }}
-            onMouseEnter={() => playButtonSelect()}
-            className={`p-2 rounded ${
-              sortOption === "titulo-desc"
-                ? "bg-accent1 text-background"
-                : "hover:bg-foreground/20"
-            }`}
-            aria-label="Ordenar Z-A"
-          >
-            <FaSortAlphaUp />
-          </button>
-          <button
-            data-tooltip-id="sort-random"
-            data-tooltip-content="Ordenação aleatória"
-            onClick={() => {
-              playButtonSelect();
-              setSortOption("random");
-            }}
-            onMouseEnter={() => playButtonSelect()}
-            className={`p-2 rounded ${
-              sortOption === "random"
-                ? "bg-accent1 text-background"
-                : "hover:bg-foreground/20"
-            }`}
-            aria-label="Ordenação aleatória"
-          >
-            <FaRandom />
-          </button>
+            <button
+              onClick={() => {
+                playButtonSelect();
+                setSortOption("random");
+              }}
+              onMouseEnter={() => playButtonSelect()}
+              className={`p-2 rounded ${
+                sortOption === "random"
+                  ? "bg-accent1 text-background"
+                  : "hover:bg-foreground/20"
+              }`}
+              aria-label="Ordenação aleatória"
+            >
+              <FaRandom />
+            </button>
+          </Tooltip>
         </div>
       </motion.div>
 
@@ -242,15 +258,6 @@ const Page = () => {
           />
         ))}
       </motion.div>
-
-      {/* Tooltips */}
-      <ReactTooltip id="view-tile" place="top" />
-      <ReactTooltip id="view-list" place="top" />
-      <ReactTooltip id="view-compact" place="top" />
-      <ReactTooltip id="sort-default" place="top" />
-      <ReactTooltip id="sort-asc" place="top" />
-      <ReactTooltip id="sort-desc" place="top" />
-      <ReactTooltip id="sort-random" place="top" />
     </CyberContainer>
   );
 };

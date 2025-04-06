@@ -1,3 +1,4 @@
+// app/layout.tsx
 import type { Metadata } from "next";
 import "./globals.css";
 import ErrorBoundary from "../components/atoms/ErrorBoundary";
@@ -8,14 +9,13 @@ import { FontProvider } from "@/context/FontContext";
 import FontWrapper from "@/utils/FontWrapper";
 import { AudioContextProvider } from "@/context/AudioContext";
 import AudioConsentModal from "@/components/molecules/AudioConsentModal";
+import LoadingWrapper from "@/components/atoms/Loading/LoadingWrapper";
 
-// Metadata
 export const metadata: Metadata = {
   title: "CATS",
   description: "-x-",
 };
 
-// Root Layout Component
 export default function RootLayout({
   children,
 }: {
@@ -23,6 +23,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        {/* Preload the icon for better performance */}
+        <link rel="preload" href="cats.png" as="image" />
+      </head>
       <body>
         <ThemeProvider>
           <FontProvider>
@@ -31,9 +35,11 @@ export default function RootLayout({
                 <ErrorBoundary fallback={<div>Something went wrong!</div>}>
                   <FontWrapper>
                     <div className="min-h-screen flex">
-                      <CyberSidebar normalBorders />
+                      <CyberSidebar />
                       <AudioConsentModal />
-                      <div className="flex-1">{children}</div>
+                      <div className="flex-1 relative">
+                        <LoadingWrapper>{children}</LoadingWrapper>
+                      </div>
                     </div>
                   </FontWrapper>
                 </ErrorBoundary>

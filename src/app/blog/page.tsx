@@ -16,34 +16,36 @@ import {
   FaCalendar,
 } from "react-icons/fa";
 import { useAudio } from "@/context/AudioContext";
-import { Tooltip as ReactTooltip } from "react-tooltip";
+import { Tooltip } from "@/components/atoms/Tooltip";
 import Link from "next/link";
 import { posts } from "@/assets/blogPosts/post";
 
 type SortOption =
-  | "default"
-  | "title-asc"
-  | "title-desc"
-  | "date-asc"
-  | "date-desc"
-  | "random";
+  | "padrao"
+  | "titulo-asc"
+  | "titulo-desc"
+  | "data-asc"
+  | "data-desc"
+  | "aleatorio";
 
 const BlogListingPage = () => {
-  const [viewMode, setViewMode] = useState<"tile" | "list" | "compact">("tile");
-  const [sortOption, setSortOption] = useState<SortOption>("default");
+  const [viewMode, setViewMode] = useState<"bloco" | "lista" | "compacto">(
+    "bloco"
+  );
+  const [sortOption, setSortOption] = useState<SortOption>("padrao");
   const { playButtonSelect } = useAudio();
 
   const sortedPosts = [...posts].sort((a, b) => {
     switch (sortOption) {
-      case "title-asc":
+      case "titulo-asc":
         return a.title.localeCompare(b.title, "pt-BR");
-      case "title-desc":
+      case "titulo-desc":
         return b.title.localeCompare(a.title, "pt-BR");
-      case "date-asc":
+      case "data-asc":
         return new Date(a.date).getTime() - new Date(b.date).getTime();
-      case "date-desc":
+      case "data-desc":
         return new Date(b.date).getTime() - new Date(a.date).getTime();
-      case "random":
+      case "aleatorio":
         return Math.random() - 0.5;
       default:
         return 0;
@@ -51,23 +53,24 @@ const BlogListingPage = () => {
   });
 
   const gridClasses = {
-    tile: "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-6xl",
-    list: "grid grid-cols-1 gap-4 w-full max-w-4xl",
-    compact:
+    bloco:
+      "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-6xl",
+    lista: "grid grid-cols-1 gap-4 w-full max-w-4xl",
+    compacto:
       "grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 w-full max-w-6xl",
   }[viewMode];
 
   const getSortIcon = () => {
     switch (sortOption) {
-      case "title-asc":
+      case "titulo-asc":
         return <FaSortAlphaDown />;
-      case "title-desc":
+      case "titulo-desc":
         return <FaSortAlphaUp />;
-      case "date-asc":
+      case "data-asc":
         return <FaCalendarAlt />;
-      case "date-desc":
+      case "data-desc":
         return <FaCalendar />;
-      case "random":
+      case "aleatorio":
         return <FaRandom />;
       default:
         return <FaSortAmountDown />;
@@ -94,172 +97,178 @@ const BlogListingPage = () => {
         Registros e provocações do coletivo
       </motion.h2>
 
-      {/* Controls */}
+      {/* Controles */}
       <motion.div
         className="flex flex-wrap justify-center gap-4 mb-8 w-full max-w-4xl"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.4 }}
       >
-        {/* View mode selector */}
+        {/* Seletor de visualização */}
         <div className="flex gap-2 bg-foreground/10 p-2 rounded-md">
-          <button
-            data-tooltip-id="view-tile"
-            data-tooltip-content="Tile view"
-            onClick={() => {
-              playButtonSelect();
-              setViewMode("tile");
-            }}
-            onMouseEnter={() => playButtonSelect()}
-            className={`p-2 rounded ${
-              viewMode === "tile"
-                ? "bg-accent1 text-background"
-                : "hover:bg-foreground/20"
-            }`}
-            aria-label="Tile view"
-          >
-            <FaTh />
-          </button>
-          <button
-            data-tooltip-id="view-list"
-            data-tooltip-content="List view"
-            onClick={() => {
-              playButtonSelect();
-              setViewMode("list");
-            }}
-            onMouseEnter={() => playButtonSelect()}
-            className={`p-2 rounded ${
-              viewMode === "list"
-                ? "bg-accent1 text-background"
-                : "hover:bg-foreground/20"
-            }`}
-            aria-label="List view"
-          >
-            <FaList />
-          </button>
-          <button
-            data-tooltip-id="view-compact"
-            data-tooltip-content="Compact view"
-            onClick={() => {
-              playButtonSelect();
-              setViewMode("compact");
-            }}
-            onMouseEnter={() => playButtonSelect()}
-            className={`p-2 rounded ${
-              viewMode === "compact"
-                ? "bg-accent1 text-background"
-                : "hover:bg-foreground/20"
-            }`}
-            aria-label="Compact view"
-          >
-            <FaCompress />
-          </button>
+          <Tooltip content="Visualização em blocos" position="top">
+            <button
+              onClick={() => {
+                playButtonSelect();
+                setViewMode("bloco");
+              }}
+              onMouseEnter={() => playButtonSelect()}
+              className={`p-2 rounded ${
+                viewMode === "bloco"
+                  ? "bg-accent1 text-background"
+                  : "hover:bg-foreground/20"
+              }`}
+              aria-label="Visualização em blocos"
+            >
+              <FaTh />
+            </button>
+          </Tooltip>
+          <Tooltip content="Visualização em lista" position="top">
+            <button
+              onClick={() => {
+                playButtonSelect();
+                setViewMode("lista");
+              }}
+              onMouseEnter={() => playButtonSelect()}
+              className={`p-2 rounded ${
+                viewMode === "lista"
+                  ? "bg-accent1 text-background"
+                  : "hover:bg-foreground/20"
+              }`}
+              aria-label="Visualização em lista"
+            >
+              <FaList />
+            </button>
+          </Tooltip>
+          <Tooltip content="Visualização compacta" position="top">
+            <button
+              onClick={() => {
+                playButtonSelect();
+                setViewMode("compacto");
+              }}
+              onMouseEnter={() => playButtonSelect()}
+              className={`p-2 rounded ${
+                viewMode === "compacto"
+                  ? "bg-accent1 text-background"
+                  : "hover:bg-foreground/20"
+              }`}
+              aria-label="Visualização compacta"
+            >
+              <FaCompress />
+            </button>
+          </Tooltip>
         </div>
 
-        {/* Sort options */}
+        {/* Opções de ordenação */}
         <div className="flex gap-2 bg-foreground/10 p-2 rounded-md">
-          <button
-            data-tooltip-id="sort-default"
-            data-tooltip-content="Default sorting"
-            onClick={() => {
-              playButtonSelect();
-              setSortOption("default");
-            }}
-            onMouseEnter={() => playButtonSelect()}
-            className={`p-2 rounded ${
-              sortOption === "default"
-                ? "bg-accent1 text-background"
-                : "hover:bg-foreground/20"
-            }`}
-            aria-label="Default sorting"
+          <Tooltip content="Ordenação padrão" position="top">
+            <button
+              onClick={() => {
+                playButtonSelect();
+                setSortOption("padrao");
+              }}
+              onMouseEnter={() => playButtonSelect()}
+              className={`p-2 rounded ${
+                sortOption === "padrao"
+                  ? "bg-accent1 text-background"
+                  : "hover:bg-foreground/20"
+              }`}
+              aria-label="Ordenação padrão"
+            >
+              {getSortIcon()}
+            </button>
+          </Tooltip>
+          <Tooltip content="Ordenar por título (A-Z)" position="top">
+            <button
+              onClick={() => {
+                playButtonSelect();
+                setSortOption("titulo-asc");
+              }}
+              onMouseEnter={() => playButtonSelect()}
+              className={`p-2 rounded ${
+                sortOption === "titulo-asc"
+                  ? "bg-accent1 text-background"
+                  : "hover:bg-foreground/20"
+              }`}
+              aria-label="Ordenar por título (A-Z)"
+            >
+              <FaSortAlphaDown />
+            </button>
+          </Tooltip>
+          <Tooltip content="Ordenar por título (Z-A)" position="top">
+            <button
+              onClick={() => {
+                playButtonSelect();
+                setSortOption("titulo-desc");
+              }}
+              onMouseEnter={() => playButtonSelect()}
+              className={`p-2 rounded ${
+                sortOption === "titulo-desc"
+                  ? "bg-accent1 text-background"
+                  : "hover:bg-foreground/20"
+              }`}
+              aria-label="Ordenar por título (Z-A)"
+            >
+              <FaSortAlphaUp />
+            </button>
+          </Tooltip>
+          <Tooltip
+            content="Ordenar por data (mais antigas primeiro)"
+            position="top"
           >
-            {getSortIcon()}
-          </button>
-          <button
-            data-tooltip-id="sort-title-asc"
-            data-tooltip-content="Sort by title (A-Z)"
-            onClick={() => {
-              playButtonSelect();
-              setSortOption("title-asc");
-            }}
-            onMouseEnter={() => playButtonSelect()}
-            className={`p-2 rounded ${
-              sortOption === "title-asc"
-                ? "bg-accent1 text-background"
-                : "hover:bg-foreground/20"
-            }`}
-            aria-label="Sort by title (A-Z)"
+            <button
+              onClick={() => {
+                playButtonSelect();
+                setSortOption("data-asc");
+              }}
+              onMouseEnter={() => playButtonSelect()}
+              className={`p-2 rounded ${
+                sortOption === "data-asc"
+                  ? "bg-accent1 text-background"
+                  : "hover:bg-foreground/20"
+              }`}
+              aria-label="Ordenar por data (mais antigas primeiro)"
+            >
+              <FaCalendarAlt />
+            </button>
+          </Tooltip>
+          <Tooltip
+            content="Ordenar por data (mais recentes primeiro)"
+            position="top"
           >
-            <FaSortAlphaDown />
-          </button>
-          <button
-            data-tooltip-id="sort-title-desc"
-            data-tooltip-content="Sort by title (Z-A)"
-            onClick={() => {
-              playButtonSelect();
-              setSortOption("title-desc");
-            }}
-            onMouseEnter={() => playButtonSelect()}
-            className={`p-2 rounded ${
-              sortOption === "title-desc"
-                ? "bg-accent1 text-background"
-                : "hover:bg-foreground/20"
-            }`}
-            aria-label="Sort by title (Z-A)"
-          >
-            <FaSortAlphaUp />
-          </button>
-          <button
-            data-tooltip-id="sort-date-asc"
-            data-tooltip-content="Sort by date (oldest first)"
-            onClick={() => {
-              playButtonSelect();
-              setSortOption("date-asc");
-            }}
-            onMouseEnter={() => playButtonSelect()}
-            className={`p-2 rounded ${
-              sortOption === "date-asc"
-                ? "bg-accent1 text-background"
-                : "hover:bg-foreground/20"
-            }`}
-            aria-label="Sort by date (oldest first)"
-          >
-            <FaCalendarAlt />
-          </button>
-          <button
-            data-tooltip-id="sort-date-desc"
-            data-tooltip-content="Sort by date (newest first)"
-            onClick={() => {
-              playButtonSelect();
-              setSortOption("date-desc");
-            }}
-            onMouseEnter={() => playButtonSelect()}
-            className={`p-2 rounded ${
-              sortOption === "date-desc"
-                ? "bg-accent1 text-background"
-                : "hover:bg-foreground/20"
-            }`}
-            aria-label="Sort by date (newest first)"
-          >
-            <FaCalendar />
-          </button>
-          <button
-            data-tooltip-id="sort-random"
-            data-tooltip-content="Random order"
-            onClick={() => {
-              playButtonSelect();
-              setSortOption("random");
-            }}
-            onMouseEnter={() => playButtonSelect()}
-            className={`p-2 rounded ${
-              sortOption === "random"
-                ? "bg-accent1 text-background"
-                : "hover:bg-foreground/20"
-            }`}
-            aria-label="Random order"
-          >
-            <FaRandom />
-          </button>
+            <button
+              onClick={() => {
+                playButtonSelect();
+                setSortOption("data-desc");
+              }}
+              onMouseEnter={() => playButtonSelect()}
+              className={`p-2 rounded ${
+                sortOption === "data-desc"
+                  ? "bg-accent1 text-background"
+                  : "hover:bg-foreground/20"
+              }`}
+              aria-label="Ordenar por data (mais recentes primeiro)"
+            >
+              <FaCalendar />
+            </button>
+          </Tooltip>
+          <Tooltip content="Ordenação aleatória" position="top">
+            <button
+              onClick={() => {
+                playButtonSelect();
+                setSortOption("aleatorio");
+              }}
+              onMouseEnter={() => playButtonSelect()}
+              className={`p-2 rounded ${
+                sortOption === "aleatorio"
+                  ? "bg-accent1 text-background"
+                  : "hover:bg-foreground/20"
+              }`}
+              aria-label="Ordenação aleatória"
+            >
+              <FaRandom />
+            </button>
+          </Tooltip>
         </div>
       </motion.div>
 
@@ -282,25 +291,24 @@ const BlogListingPage = () => {
                 title={post.title}
                 description={post.description}
                 image={post.image}
-                metadata={new Date(post.date).toLocaleDateString("pt-BR")}
-                viewMode={viewMode}
+                metadata={new Date(post.date).toLocaleDateString("pt-BR", {
+                  day: "2-digit",
+                  month: "long",
+                  year: "numeric",
+                })}
+                viewMode={
+                  viewMode === "bloco"
+                    ? "tile"
+                    : viewMode === "lista"
+                    ? "list"
+                    : "compact"
+                }
                 onHover={playButtonSelect}
               />
             </a>
           </Link>
         ))}
       </motion.div>
-
-      {/* Tooltips */}
-      <ReactTooltip id="view-tile" place="top" />
-      <ReactTooltip id="view-list" place="top" />
-      <ReactTooltip id="view-compact" place="top" />
-      <ReactTooltip id="sort-default" place="top" />
-      <ReactTooltip id="sort-title-asc" place="top" />
-      <ReactTooltip id="sort-title-desc" place="top" />
-      <ReactTooltip id="sort-date-asc" place="top" />
-      <ReactTooltip id="sort-date-desc" place="top" />
-      <ReactTooltip id="sort-random" place="top" />
     </CyberContainer>
   );
 };
