@@ -87,12 +87,14 @@ export default function CyberGlossary({title}: CyberGlossaryProps) {
     return (
         <div className="w-full flex flex-col items-center justify-center gap-2 text-accent5">
             <CyberContainer
-                unevenBorders
-                glowingBorders
-                className="inline-block text-2xl sm:text-3xl d:text-4xl p-4 m-14 text-center break-keep whitespace-nowrap border-accent5"
-            >
-                {title}
-            </CyberContainer>
+                          id="section-1"
+                          className="border border-accent5 p-1 m-16 max-w-48 sm:max-w-48 md:max-w-64 mx-auto"
+                        >
+                          <CyberContainer className="border border-accent5 text-2xl sm:text-3xl p-2 md:text-4xl break-keep whitespace-nowrap">
+                            {title}
+                          </CyberContainer>
+                        </CyberContainer>
+
 
             <p className="text-accent4">ᓚᘏᗢ ~nya</p>
 
