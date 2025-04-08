@@ -14,7 +14,7 @@ import CyberAudioControl from "@/components/molecules/CyberAudioControl";
 import { useAudio } from "@/context/AudioContext";
 import { useEffect } from "react";
 import useIsMobile from "@/utils/useIsMobile";
-import VisitorCounter from "@/components/atoms/VisitorCounter";
+
 
 export default function Home() {
   const { theme } = useTheme();
@@ -43,7 +43,6 @@ export default function Home() {
             {!isMobile && (
               <CyberContainer className="border border-accent1 p-1 fixed top-0 right-0">
                 <CyberContainer className="border border-accent1">
-                  <VisitorCounter />
                 </CyberContainer>
               </CyberContainer>
             )}
