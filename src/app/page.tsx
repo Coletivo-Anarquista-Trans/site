@@ -15,6 +15,8 @@ import { useAudio } from "@/context/AudioContext";
 import { useEffect } from "react";
 import useIsMobile from "@/utils/useIsMobile";
 import VisitorCounter from "@/components/atoms/VisitorCounter";
+import CyberCircuits from "@/components/atoms/CyberCircuits";
+
 
 export default function Home() {
   const { theme } = useTheme();
@@ -29,7 +31,8 @@ export default function Home() {
 
   return (
     <>
-      <CyberContainer className="bg-background text-accent1 flex flex-col lg:flex-row justify-center items-center w-full gap-4 lg:gap-12 px-4 py-8 lg:py-0 lg:px-0">
+      <CyberContainer className=" text-accent1 flex flex-col lg:flex-row justify-center items-center w-full gap-4 lg:gap-12 px-4 py-8 lg:py-0 lg:px-0">
+        
         {/* Portrait Section */}
         <CyberContainer className="justify-center items-center w-full lg:w-auto -mx-4 lg:mx-0">
           <motion.div
@@ -43,7 +46,7 @@ export default function Home() {
             {!isMobile && (
               <CyberContainer className="border border-accent1 p-1 fixed top-0 right-0">
                 <CyberContainer className="border border-accent1">
-                  <VisitorCounter />
+                  
                 </CyberContainer>
               </CyberContainer>
             )}
