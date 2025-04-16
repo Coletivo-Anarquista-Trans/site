@@ -68,7 +68,7 @@ export default function Home() {
             transition={{ duration: 0.4 }}
             className="w-full"
           >
-            <Link href="/manifesto" className="block w-full">
+            <Link href="/manifesto" className="block w-full" >
               <CyberBig
                 text="manifesto"
                 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
@@ -96,7 +96,7 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="w-full"
           >
-            <Link href="/recursos" className="block w-full">
+            <Link href="/recursos" className="block w-full" >
               <CyberBig
                 text="recursos"
                 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
@@ -146,7 +146,6 @@ export default function Home() {
         {!isMobile && <CyberAudioControl />}
         {!isMobile && <CyberDrone />}
       </CyberContainer>
-
       {/* Forum Modal */}
       <AnimatePresence>
         {isForumModalOpen && (
@@ -235,7 +234,6 @@ export default function Home() {
           </motion.div>
         )}
       </AnimatePresence>
-
       {/* Contact Modal */}
       <AnimatePresence>
         {isContactModalOpen && (

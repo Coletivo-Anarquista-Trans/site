@@ -55,7 +55,7 @@ export default function QuemSomosNos() {
               <br />
               <p>
                 Se quer saber como faremos isso,{" "}
-                <Link href="/manifesto#section-2" target="_blank">
+                <Link href="/manifesto#section-2" target="_blank" >
                   <u>clique aqui.</u>
                 </Link>
               </p>

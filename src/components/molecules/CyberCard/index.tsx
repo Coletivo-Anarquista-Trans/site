@@ -107,35 +107,35 @@ const CyberCard = ({
         >
           {slug ? (
             // Internal link using slug
-            <Link
+            (<Link
               href={`/blog/${slug}`}
               className={`w-full h-full ${
                 viewMode === "list" ? "flex flex-row items-center" : ""
               }`}
-            >
+              >
               {linkContent}
-            </Link>
+            </Link>)
           ) : url ? (
             // External link using url
-            <Link
+            (<Link
               href={url}
               target="_blank"
               rel="noopener noreferrer"
               className={`w-full h-full ${
                 viewMode === "list" ? "flex flex-row items-center" : ""
               }`}
-            >
+              >
               {linkContent}
-            </Link>
+            </Link>)
           ) : (
             // Fallback when no link is provided
-            <div
+            (<div
               className={`w-full h-full ${
                 viewMode === "list" ? "flex flex-row items-center" : ""
               }`}
             >
               {linkContent}
-            </div>
+            </div>)
           )}
         </CyberContainer>
       </CyberContainer>

@@ -1,8 +1,7 @@
 
 const isGithubPages = process.env.GITHUB_ACTIONS === "true";
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+const nextConfig: import('next').NextConfig = {
   output: 'export',
   images: {
     unoptimized: true
