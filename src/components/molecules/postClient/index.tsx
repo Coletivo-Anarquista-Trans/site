@@ -29,10 +29,9 @@ export default function PostContent({ post }: { post: Post }) {
         className="text-accent1 hover:underline flex items-center gap-2 mb-6"
         onClick={() => playButtonSelect()}
         onMouseEnter={() => playButtonSelect()}
-      >
+        >
         <FaArrowLeft /> Voltar ao blog
       </Link>
-
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -41,7 +40,6 @@ export default function PostContent({ post }: { post: Post }) {
       >
         {post.title}
       </motion.h1>
-
       <motion.p
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -50,7 +48,6 @@ export default function PostContent({ post }: { post: Post }) {
       >
         Publicado em {new Date(post.date).toLocaleDateString("pt-BR")}
       </motion.p>
-
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -66,7 +63,6 @@ export default function PostContent({ post }: { post: Post }) {
           priority
         />
       </motion.div>
-
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
