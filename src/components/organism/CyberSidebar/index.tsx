@@ -186,7 +186,7 @@ export default function CyberSidebar() {
       animate="visible"
     >
       <motion.div variants={itemVariants}>
-        <Link href="/" passHref legacyBehavior>
+        <Link href="/" passHref>
           <CyberMiniButton className="flex items-center w-full hover:bg-accent1 hover:text-background">
             <HomeIcon />
             <span>home</span>
@@ -233,7 +233,7 @@ export default function CyberSidebar() {
       </motion.div>
 
       <motion.div variants={itemVariants}>
-        <Link href="/recursos" passHref legacyBehavior>
+        <Link href="/recursos" passHref >
           <CyberMiniButton className="flex items-center w-full hover:bg-accent1 hover:text-background">
             <ArchiveIcon />
             <span>recursos</span>
@@ -242,7 +242,7 @@ export default function CyberSidebar() {
       </motion.div>
 
       <motion.div variants={itemVariants}>
-        <Link href="/blog" passHref legacyBehavior>
+        <Link href="/blog" passHref >
           <CyberMiniButton className="flex items-center w-full hover:bg-accent1 hover:text-background">
             <BlogIcon />
             <span>blog</span>
@@ -251,7 +251,7 @@ export default function CyberSidebar() {
       </motion.div>
 
       <motion.div variants={itemVariants}>
-        <Link href="/arquivos" passHref legacyBehavior>
+        <Link href="/arquivos" passHref >
           <CyberMiniButton className="flex items-center w-full hover:bg-accent1 hover:text-background">
             <ArchiveIcon />
             <span>arquivos</span>
@@ -260,7 +260,7 @@ export default function CyberSidebar() {
       </motion.div>
 
       <motion.div variants={itemVariants}>
-        <Link href="/sobre" passHref legacyBehavior>
+        <Link href="/sobre" passHref >
           <CyberMiniButton className="flex items-center w-full hover:bg-accent1 hover:text-background">
             <AboutIcon />
             <span>sobre</span>

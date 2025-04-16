@@ -283,29 +283,27 @@ const BlogListingPage = () => {
             key={post.id}
             href={`/blog/${post.slug}`}
             passHref
-            legacyBehavior
+            onClick={() => playButtonSelect()}
           >
-            <a onClick={() => playButtonSelect()}>
-              <CyberCard
-                id={post.id}
-                title={post.title}
-                description={post.description}
-                image={post.image}
-                metadata={new Date(post.date).toLocaleDateString("pt-BR", {
-                  day: "2-digit",
-                  month: "long",
-                  year: "numeric",
-                })}
-                viewMode={
-                  viewMode === "bloco"
-                    ? "tile"
-                    : viewMode === "lista"
-                    ? "list"
-                    : "compact"
-                }
-                onHover={playButtonSelect}
-              />
-            </a>
+            <CyberCard
+              id={post.id}
+              title={post.title}
+              description={post.description}
+              image={post.image}
+              metadata={new Date(post.date).toLocaleDateString("pt-BR", {
+                day: "2-digit",
+                month: "long",
+                year: "numeric",
+              })}
+              viewMode={
+                viewMode === "bloco"
+                  ? "tile"
+                  : viewMode === "lista"
+                  ? "list"
+                  : "compact"
+              }
+              onHover={playButtonSelect}
+            />
           </Link>
         ))}
       </motion.div>
