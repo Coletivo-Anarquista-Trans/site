@@ -1,4 +1,5 @@
 // assets/blogPosts/post.ts
+
 interface BlogPost {
   id: string;
   title: string;
@@ -16,7 +17,7 @@ export const posts: BlogPost[] = [
     description: "n3o",
     slug: "marcha-transmasc-30-03-2025",
     date: "03-30-2025",
-    image: "marcha.jpeg",
+    image: "/blogImages/marcha.jpeg",
     content: `
       <h2>marcha  transmasc 30-03-2025</h2>
       <br/><p>ao perder o costume de escrever me vejo como criança: começo, apago, vejo e revejo, me repreendo, me anulo. engraçado, fui assim quando criança.</p>
@@ -37,7 +38,7 @@ export const posts: BlogPost[] = [
     description: "mazrine",
     slug: "introducao-ao-miauzers",
     date: "2023-05-15",
-    image: "miau.jpg",
+    image: "/blogImages/miau.jpg",
     content: `
       <h2>O que é Miauzers?</h2>
       <p>Miauzers é uma ferramenta de resistência...</p>
@@ -49,7 +50,7 @@ export const posts: BlogPost[] = [
     description: "ini",
     slug: "foda-se-o-cfm",
     date: "2025-05-15",
-    image: "bastard-doctors.png",
+    image: "/blogImages/bastard-doctors.png",
     content: `
       <h2><b>Sobre o CFM</b></h2>
       <p>Mais uma vez o Conselho Federal de Medicina decidiu “legislar”, através de suas normativas, sobre os corpos trans com a desculpa de estar fazendo “saúde”, mesmo que nenhuma pessoa trans participe dessas decisões.</p>
