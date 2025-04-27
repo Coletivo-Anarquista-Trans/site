@@ -19,7 +19,7 @@ import { Tooltip } from "@/components/atoms/Tooltip";
 const books = [
   {
     id: "livro-1",
-    title: "Como Hackear: Um manual para derrubar o sistema",
+    title: "Como Hackear: Um manual para derrubar o Cistema",
     description: "i.n.i.a.r.i",
     image: "trans-archives/comoHackear.jpg",
     url: "https://docs.google.com/document/d/1sBgqRi2aoBhSZ7qPE6PLyyEEyeac1ExmrprAc5O4OUQ/edit?tab=t.0#heading=h.40cqyoe39nq",
