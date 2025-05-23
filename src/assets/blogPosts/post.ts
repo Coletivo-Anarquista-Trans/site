@@ -81,6 +81,40 @@ export const posts: BlogPost[] = [
 <p>Será ainda necessário produzir contra-instituições dos corpos dissidentes, capazes de produzirem os recursos, linguagens e agenciamentos capazes de atender as necessidades da nossa comunidade. <b>A cisgenereidade não fará o papel do nos garantir nossos corpos.</b></p>
     `,
   },
+  {
+    id: "post-4",
+    title: "Rumo ao transpunk - Prefácio",
+    description: "ini",
+    slug: "rumo-ao-transpunk-prefacio",
+    date: "2025-05-22",
+    image: "t-punk.jpeg",
+    content: `
+      <h2>Rumo ao transpunk - Prefácio</h2>
+<p><i>Transpunk: Um mundo pós escassez em que todos têm acesso aos meios de produção da própria existência e corpo e em que a autonomia corporal é absoluta tanto quanto a capacidade de modificação corporal.</i></p>
+<br/>
+<p>Então é isso, o controle é absoluto, os cybercapitalistas venceram, eles dominam as interfaces onde aprendemos a linguagem que interpretará o mundo. Todos nossos fluxos, conexões e desejos estão passando por aqueles vetores. Cada ação, cada impulso, cada parte de onde não controlamos de nós foi automatizado num ponto em que não há mais movimento que não saia da organicidade da produção da nossa existência.</p>
+<br/>
+<p>Eis aí que essa utopia se desfaz, porque a utopia é só a distopia idealizada de quem deseja o controle, ou vice-versa. Onde vimos distopia, eles viram utopia, e o contrário também é verdade. É semiótica. É a linguagem sendo interpretada nas suas variâncias de onde vem cada multiplicidade de quem nós somos.</p>
+<br/>
+<p>Mas o controle também é finito. Ele também falha. Ele tem vieses humanos, vieses orgânicos, tem propriedades desterritorializantes das linhas de fuga, onde a multiplicidade escapa de todo o agenciamento maquínico para conectar os nossos desejos aos posts, memes, tiktoks, likes, fármacos e toda matriz de entretenimento e prazer.</p>
+<br/>
+<p>Nessas brechas surge algo. Onde a produção tecnológica da linguagem e da existência produz seus bugs, glitches, suas não-binariedades, aparecem aqueles que desejam que sua existência não seja destruída só porque ela não se conforma ao organismo maquinado.</p>
+<br/>
+<p>O organismo cyberpunk tenta consumi-la, uma vez, outra vez, mas ela permanece. Ela brota como as folhas brotam em meio a uma tecnosfera abandonada pelo trabalho humano. O controle não consegue impedir o nascimento da dissidência. E ela se faz, e se faz, e se impõe, aprende a hackear, a viver nas brechas, a construir nas brechas, a se conectar nas brechas, a se proliferar nas brechas, a florescer nas brechas. </p>
+<br/>
+<p>E então todo aquele agenciamento maquínico se depara com um maquínico agenciamento, uma inversão da sua lógica a tal ponto que o impulso de controlar tudo vira o impulso de descontrolar tudo.</p>
+<br/>
+<p>Os corpos que nascem dali são todos diferentes entre si e estão juntos pela possibilidade de serem diferentes, aprenderam algo sobre a potência da diferenciação que o maquinário de zeros e uns não aprendeu, ele só sabia repetir. Aqueles corpos tinham nascido daquele maquinário, aprendido com ele e criado sem ele, os corpos que ali se faziam, se faziam, e não eram feitos. Estava tudo invertido.</p>
+<br/>
+<p>As tecnologias confluem com a formação corporal. O corpo produzia a tecnologia e não a tecnologia produzia o corpo, eram todos anarcomórficos. Algo nunca antes visto saiu dali e dali se expressou aquilo que a organicidade não aprendia: conter os corpos é conter as potências, o corpo sem órgãos deleuziano é potência, a tal ponto que leva tudo consigo.</p>
+<br/>
+<p>E então o cyberpunk se inverteu. </p>
+</br>
+<p>E chegamos ao pós-cyberpunk, um mundo em que a observação do outro - o panóptico - não significava controle mas potência. Em que as conexões mostram o quão mais longe podemos ir e não o quão menos longe devemos ir. O Transpunk é a vitória dos ciborgues, monstros e quimeras, é o lugar onde os corpos podem existir sem restrição alguma, com exceção de nunca responder: <i>“o que deve ser um corpo ou partícula se não apenas movimento, transição?”</i></p>
+<br/>
+<p>Imagine quantos punks saíram dali.. t-punk e q-punk e cuirpunk e rizopunk e.. e.. e…</p>
+    `,
+  },
   // Add more posts here
 ];
 
