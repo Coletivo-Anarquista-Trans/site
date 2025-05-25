@@ -6,8 +6,8 @@ const nextConfig: import('next').NextConfig = {
     unoptimized: true
   },
   trailingSlash: true,
-  basePath: isGithubPages ? "/site" : "",
-  assetPrefix: isGithubPages ? "/site" : "",
+  basePath: isGithubPages ? "/" : "",
+  assetPrefix: isGithubPages ? "/" : "",
   eslint: {
     ignoreDuringBuilds: true,
   },
