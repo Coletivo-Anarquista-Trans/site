@@ -39,6 +39,13 @@ const books = [
     image: "/trans-archives/umManifestohacker.jpg",
     url: "https://baixacultura.org/wp-content/uploads/2024/02/ummanifesto_miolo.pdf",
   },
+  {
+    id: "livro-4",
+    title: "Um apartamento em Urano",
+    description: "Paul Preciado",
+    image: "/trans-archives/apartamentoEmUrano.jpg",
+    url: "https://trechos.org/wp-content/uploads/2020/07/Um-apartamento-em-Urano.pdf",
+  }
 ];
 
 type SortOption = "padrao" | "titulo-asc" | "titulo-desc" | "random";
