@@ -54,13 +54,13 @@ export const resourcesByCategory: Record<string, CyberResource[]> = {
       dateAdded: '2025-03-28',
     },
   ],
-   TransInstituições: [
+   EcossistemaTrans: [
     {
      id: '6',
      title: 'Acervo digital trans-anarquista',
      type: 'link',
      url: 'https://transanarquismo.noblogs.org/acervo/',
-     description: 'Acertvo com textos, livros e artigos sobre dissidência de gênero, perspectivas trans-anarquistas sobre o regime de gênero e como resistir e abolí-lo pela libertação do corpo',
+     description: 'Acervo com textos, livros e artigos sobre dissidência de gênero, perspectivas trans-anarquistas sobre o regime de gênero e como resistir e abolí-lo pela libertação do corpo',
      category: 'Livros e Artigos',
      dateAdded: '2025-05-25',
     },
