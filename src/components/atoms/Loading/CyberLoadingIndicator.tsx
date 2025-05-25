@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import { useTheme } from "@/context/ThemeContext";
 import CyberContainer from "@/components/atoms/CyberContainer";
 import { motion } from "framer-motion";
+import { getImagePath } from "@/utils/imagePath";
 
 const IconTint = dynamic(() => import("react-icon-tint"), {
   ssr: false,
@@ -56,7 +57,7 @@ export default function CyberLoadingIndicator() {
             maxHeight={128}
             maxWidth={128}
             color={themeColors[theme] || "#ffffff"}
-            src="/cats.png"
+            src={getImagePath("/cats.png")}
           />
         </div>
 
