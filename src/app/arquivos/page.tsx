@@ -45,6 +45,20 @@ const books = [
     description: "Paul Preciado",
     image: "/trans-archives/apartamentoEmUrano.jpg",
     url: "https://trechos.org/wp-content/uploads/2020/07/Um-apartamento-em-Urano.pdf",
+  },
+  {
+    id: "livro-5",
+    title: "Manifesto Contrassexual",
+    description: "Paul Preciado",
+    image: "/trans-archives/manifestoContrassexual.jpg",
+    url: "https://transreads.org/wp-content/uploads/2021/07/2021-07-28_61015e8a7322f_ManifestoContrassexual-PrticassubversivasdeidentidadesexualbyPaulPreciadoBeatrizPreciadoz-lib.org_.pdf",
+  },
+  {
+    id: "livro-6",
+    title: "Be gay, do crime",
+    description: "Mary Nardini Gang",
+    image: "/trans-archives/beGayDoCrime.png",
+    url: "https://bibliotecaanarquista.org/library/be-gay-do-crime.pdf",
   }
 ];
 
