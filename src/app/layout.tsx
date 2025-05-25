@@ -21,10 +21,13 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const isGitHubPages = process.env.GITHUB_ACTIONS === "true";
+  const imagePreloadHref = isGitHubPages ? "/site/cats.png" : "/cats.png";
+  
   return (
     <html lang="en">
       <head>
-        <link rel="preload" href="cats.png" as="image" />
+        <link rel="preload" href={imagePreloadHref} as="image" />
       </head>
       <body>
         <ThemeProvider>

@@ -3,6 +3,7 @@ import { useState, ReactNode, useEffect } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { useAudio } from "@/context/AudioContext";
+import { getImagePath } from "@/utils/imagePath";
 
 interface CyberPortraitProps {
   id: string;
@@ -147,7 +148,7 @@ export default function CyberPortrait({
               className="text-accent1"
             >
               <path
-                d="M9 2H5v2H3v2H1v6h2v2h2v2h2v2h2v2h2v2h2v-2h2v-2h2v-2h2v-2h2v-2h2V6h-2V4h-2V2h-4v2h-2v2h-2V4H9V2zm0 2v2h2v2h2V6h2V4h4v2h2v6h-2v2h-2v2h-2v2h-2v2h-2v-2H9v-2H7v-2H5v-2H3V6h2V4h4z"
+                d="M9 2H5v2H3v2H1v6h2v2h2v2h2v2h2v2h2v-2h2v-2h2v-2h2v-2h2v-2h2V6h-2V4h-2V2h-4v2h-2v2h-2V4H9V2zm0 2v2h2v2h2V6h2V4h4v2h2v6h-2v2h-2v2h-2v2h-2v2h-2v-2H9v-2H7v-2H5v-2H3V6h2V4h4z"
                 fill="currentColor"
               />
             </svg>
@@ -185,7 +186,7 @@ export default function CyberPortrait({
                     height={14}
                   >
                     <path
-                      d="M9 2H5v2H3v2H1v6h2v2h2v2h2v2h2v2h2v2h2v-2h2v-2h2v-2h2v-2h2v-2h2V6h-2V4h-2V2h-4v2h-2v2h-2V4H9V2zm0 2v2h2v2h2V6h2V4h4v2h2v6h-2v2h-2v2h-2v2h-2v2h-2v-2H9v-2H7v-2H5v-2H3V6h2V4h4z"
+                      d="M9 2H5v2H3v2H1v6h2v2h2v2h2v2h2v2h2v-2h2v-2h2v-2h2v-2h2v-2h2V6h-2V4h-2V2h-4v2h-2v2h-2V4H9V2zm0 2v2h2v2h2V6h2V4h4v2h2v6h-2v2h-2v2h-2v2h-2v2h-2v-2H9v-2H7v-2H5v-2H3V6h2V4h4z"
                       fill="currentColor"
                     />
                   </svg>
@@ -237,7 +238,7 @@ export default function CyberPortrait({
                   imageSrc ? (
                     <Image
                       className="rounded-sm border border-accent1"
-                      src={imageSrc}
+                      src={getImagePath(imageSrc)}
                       alt={altText || "Portrait"}
                       width={300}
                       height={76}

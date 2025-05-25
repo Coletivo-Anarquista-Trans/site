@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import CyberContainer from "../../atoms/CyberContainer";
 import Image from "next/image";
 import Link from "next/link";
+import { getImagePath } from "@/utils/imagePath";
 
 interface CyberCardProps {
   id: string;
@@ -66,7 +67,7 @@ const CyberCard = ({
         className={`${imageClasses} overflow-hidden bg-foreground/10`}
       >
         <Image
-          src={image}
+          src={getImagePath(image)}
           alt={title}
           fill
           className="object-cover"
