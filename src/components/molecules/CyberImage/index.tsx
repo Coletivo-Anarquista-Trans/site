@@ -4,6 +4,7 @@ import { ReactNode } from "react";
 import classnames from "classnames";
 import Image, { ImageProps } from "next/image";
 import CyberContainer from "@/components/atoms/CyberContainer";
+import { getImagePath } from "@/utils/imagePath";
 
 interface CyberImageProps extends Omit<ImageProps, "alt"> {
   text: string;
@@ -37,7 +38,7 @@ export default function CyberImage({
     >
       <div className={classnames("cyber-image", className)}>
         <Image
-          src={path}
+          src={getImagePath(path)}
           alt={text.replace(/<[^>]*>?/gm, "")} // Strip HTML tags for alt text
           width={width}
           height={height}
