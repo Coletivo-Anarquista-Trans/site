@@ -21,7 +21,7 @@ const books = [
     id: "livro-1",
     title: "Como Hackear: Um manual para derrubar o sistema",
     description: "i.n.i.a.r.i",
-    image: "trans-archives/comoHackear.jpg",
+    image: "/trans-archives/comoHackear.jpg",
     url: "https://docs.google.com/document/d/1sBgqRi2aoBhSZ7qPE6PLyyEEyeac1ExmrprAc5O4OUQ/edit?tab=t.0#heading=h.40cqyoe39nq",
   },
   {
@@ -29,14 +29,14 @@ const books = [
     title: "Diário de uma ciborgue",
     description:
       "O corpo virtual e material como espaço político numa visão ciberfeminista",
-    image: "trans-archives/DiarioDeUmaCiborgue.jpg",
+    image: "/trans-archives/DiarioDeUmaCiborgue.jpg",
     url: "https://docs.google.com/document/d/1njyeH000ht7PCrGDaPXsVp53zJfAlRQgWipZJXpv5Pw/edit?tab=t.0#heading=h.sa0lg6ud6qbk",
   },
   {
     id: "livro-3",
     title: "Um manifesto hacker",
     description: "Mckenzie Wark",
-    image: "trans-archives/umManifestohacker.jpg",
+    image: "/trans-archives/umManifestohacker.jpg",
     url: "https://baixacultura.org/wp-content/uploads/2024/02/ummanifesto_miolo.pdf",
   },
 ];
