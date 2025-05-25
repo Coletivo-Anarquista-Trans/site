@@ -54,9 +54,27 @@ export const resourcesByCategory: Record<string, CyberResource[]> = {
       dateAdded: '2025-03-28',
     },
   ],
-  // Instituições: [
+   TransInstituições: [
+     {
+       id: '6',
+       title: 'Acervo digital trans-anarquista',
+       type: 'link',
+       url: 'https://transanarquismo.noblogs.org/acervo/',
+       description: 'Acertvo com textos, livros e artigos sobre dissidência de gênero, perspectivas trans-anarquistas sobre o regime de gênero e como resistir e abolí-lo pela libertação do corpo',
+       category: 'Livros e Artigos',
+       dateAdded: '2025-05-25',
+     },
+     {
+       id: '7',
+       title: 'Coletivo Transcentrado',
+       type: 'link',
+       url: 'https://coletivotranscentrado.com.br/',
+       description: 'Site do Coletivo Transcentrado, possui informações sobre o processo de transição, um discord amigável para a comunidade trans e com deficiência.',
+       category: 'Parceiros',
+       dateAdded: '2025-05-25',
+     },
   //   {
-  //     id: '6',
+  //     id: '8',
   //     title: 'IBRAT - Instituto Brasileiro de Transmasculinidades',
   //     type: 'link',
   //     url: 'https://www.ibratsp.com/',
@@ -65,7 +83,7 @@ export const resourcesByCategory: Record<string, CyberResource[]> = {
   //     dateAdded: '2025-03-28',
   //   },
   //   {
-  //     id: '7',
+  //     id: '9',
   //     title: 'Casa 1',
   //     type: 'link',
   //     url: 'https://www.casaum.org/',
@@ -73,5 +91,5 @@ export const resourcesByCategory: Record<string, CyberResource[]> = {
   //     category: 'Recursos Gerais',
   //     dateAdded: '2025-03-28',
   //   }
-  // ],
+    ],
 };
