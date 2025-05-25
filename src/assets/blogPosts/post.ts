@@ -16,7 +16,7 @@ export const posts: BlogPost[] = [
     description: "n3o",
     slug: "marcha-transmasc",
     date: "03-30-2025",
-    image: "/marcha.jpeg",
+    image: "/trans-archives/marcha.jpeg",
     content: `
       <h2>II marcha transmasc de são paulo</h2>
       <br/><p>ao perder o costume de escrever me vejo como criança: começo, apago, vejo e revejo, me repreendo, me anulo. engraçado, fui assim quando criança.</p>
@@ -37,7 +37,7 @@ export const posts: BlogPost[] = [
     description: "mazrine",
     slug: "introducao-ao-miauzers",
     date: "2023-05-15",
-    image: "/miau.jpg",
+    image: "/trans-archives/miau.jpg",
     content: `
       <h2>O que é Miauzers?</h2>
       <p>Miauzers é uma ferramenta de resistência...</p>
@@ -49,7 +49,7 @@ export const posts: BlogPost[] = [
     description: "ini",
     slug: "foda-se-o-cfm",
     date: "2025-04-15",
-    image: "/bastard-doctors.png",
+    image: "/trans-archives/bastard-doctors.png",
     content: `
       <h2><b>Sobre o CFM</b></h2>
       <p>Mais uma vez o Conselho Federal de Medicina decidiu “legislar”, através de suas normativas, sobre os corpos trans com a desculpa de estar fazendo “saúde”, mesmo que nenhuma pessoa trans participe dessas decisões.</p>
@@ -87,7 +87,7 @@ export const posts: BlogPost[] = [
     description: "ini",
     slug: "rumo-ao-transpunk-prefacio",
     date: "2025-05-22",
-    image: "/t-punk.jpeg",
+    image: "/trans-archives/t-punk.jpeg",
     content: `
       <h2>Rumo ao transpunk - Prefácio</h2>
 <p><i>Transpunk: Um mundo pós escassez em que todos têm acesso aos meios de produção da própria existência e corpo e em que a autonomia corporal é absoluta tanto quanto a capacidade de modificação corporal.</i></p>
@@ -112,7 +112,7 @@ export const posts: BlogPost[] = [
 </br>
 <p>E chegamos ao pós-cyberpunk, um mundo em que a observação do outro - o panóptico - não significava controle mas potência. Em que as conexões mostram o quão mais longe podemos ir e não o quão menos longe devemos ir. O Transpunk é a vitória dos ciborgues, monstros e quimeras, é o lugar onde os corpos podem existir sem restrição alguma, com exceção de nunca responder: <i>“o que deve ser um corpo ou partícula se não apenas movimento, transição?”</i></p>
 <br/>
-<p>Imagine quantos punks saíram dali.. t-punk e q-punk e cuirpunk e rizopunk e.. e.. e…</p>
+<p>Imagine quantos punks saíram dali.. t-punk e q-punk e cuirpunk e rizopunk e... e... e...</p>
     `,
   },
   // Add more posts here
