@@ -15,7 +15,6 @@ import {
 } from "react-icons/fa";
 import { useAudio } from "@/context/AudioContext";
 import { Tooltip } from "@/components/atoms/Tooltip";
-import { getPdfPath } from "@/utils/pdfPath";
 
 const books = [
   {
@@ -38,35 +37,35 @@ const books = [
     title: "Um manifesto hacker",
     author: "Mckenzie Wark",
     image: "/trans-archives/um_manifesto_hacker.jpg",
-    url: getPdfPath("trans-resources/um_manifesto_hacker-mckenzie_wark.pdf"),
+    url: "https://drive.google.com/file/d/1fdAukJI2nQxfhYrtwk4Px-q55iynsQ9h/view?usp=sharing",
   },
   {
     id: "livro-4",
     title: "Um apartamento em Urano",
     author: "Paul B. Preciado",
     image: "/trans-archives/apartamento_em_urano.jpg",
-    url: getPdfPath("trans-resources/um_apartamento_em_urano-paul_b_preciado.pdf"),
+    url: "https://drive.google.com/file/d/1GieRzIQVf0hbYyutkvFbHHg3Q2W10rti/view?usp=sharing",
   },
   {
     id: "livro-5",
     title: "Manifesto Contrassexual",
     author: "Paul B. Preciado",
     image: "/trans-archives/manifesto_contrassexual.jpg",
-    url: getPdfPath("trans-resources/manifesto_contrassexual-paul_b_preciado.pdf"),
+    url: "https://drive.google.com/file/d/1sSlT-8WE_MOg4r48KT3PQFQT68E3netC/view?usp=sharing",
   },
   {
     id: "livro-6",
     title: "Be gay, do crime!",
     author: "Mary Nardini Gang",
     image: "/trans-archives/be_gay_do_crime.png",
-    url: getPdfPath("trans-resources/be_gay_do_crime-mary_nardini_gang.pdf"),
+    url: "https://drive.google.com/file/d/1aL2ATHzUXG8Z-QtSfy7-Ztkgo4pdA0Od/view?usp=sharing",
   },
   {
     id: "livro-7",
     title: "Transgeneridade, Decolonialidade e Anarquismo",
     author: "Bruno Latini Pfeil & Cello Latini Pfeil",
     image: "/trans-archives/transgeneridade_decolonialidade_e_anarquismo.png",
-    url: getPdfPath("trans-resources/transgeneridade_decolonialidade_e_anarquismo-bruno_latini_pfeil-cello_latini_pfeil.pdf"),
+    url: "https://drive.google.com/file/d/198d7eougTwfZ1Zs28fAatQk5tBgtY_Vg/view?usp=sharing",
   },
 ];
 
