@@ -3,7 +3,7 @@ import { useState, ReactNode, useEffect } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { useAudio } from "@/context/AudioContext";
-import { getImagePath } from "@/utils/imagePath";
+import { getAssetPath } from "@/utils/assetPath";
 
 interface CyberPortraitProps {
   id: string;
@@ -238,7 +238,7 @@ export default function CyberPortrait({
                   imageSrc ? (
                     <Image
                       className="rounded-sm border border-accent1"
-                      src={getImagePath(imageSrc)}
+                      src={getAssetPath(imageSrc)}
                       alt={altText || "Portrait"}
                       width={300}
                       height={76}

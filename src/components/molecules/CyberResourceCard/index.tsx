@@ -64,7 +64,7 @@ export default function CyberResourceCard({resource}: CyberResourceCardProps) {
                                 <CyberContainer
                                     className="inline-block align-top border border-accent1 crt-screen crt-curvature crt-reflection granular-effect"
                                 >
-                                    <Link href={resource.url} >
+                                    <Link href={resource.url} target="_blank" rel="noopener noreferrer">
                                         <CyberButton
                                             className="inline-flex items-center px-3 py-1.5 text-sm font-medium text-accent-1 transition-colors"
                                         >

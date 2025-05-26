@@ -7,7 +7,7 @@ import { useTheme } from "@/context/ThemeContext";
 import { useFont } from "@/context/FontContext";
 import { motion } from "framer-motion";
 import { useAudio } from "@/context/AudioContext";
-import { getImagePath } from "@/utils/imagePath";
+import { getAssetPath } from "@/utils/assetPath";
 
 const IconTint = dynamic(() => import("react-icon-tint"), { ssr: false });
 
@@ -399,7 +399,7 @@ export default function CyberTerminal({}: CyberTerminalProps) {
                 maxHeight={125}
                 maxWidth={125}
                 color={themeColors[theme] || "#ffffff"}
-                src={getImagePath("/cats.png")}
+                src={getAssetPath("/cats.png")}
               />
             </motion.div>
 
