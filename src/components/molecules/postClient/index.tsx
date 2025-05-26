@@ -6,7 +6,7 @@ import { FaArrowLeft } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
 import { useAudio } from "@/context/AudioContext";
-import { getImagePath } from "@/utils/imagePath";
+import { getAssetPath } from "@/utils/assetPath";
 
 interface Post {
   title: string;
@@ -56,7 +56,7 @@ export default function PostContent({ post }: { post: Post }) {
         className="mb-8 relative w-full aspect-video"
       >
         <Image
-          src={getImagePath(post.image)}
+          src={getAssetPath(post.image)}
           alt={post.title}
           fill
           className="rounded-lg object-cover"

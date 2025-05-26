@@ -48,7 +48,7 @@ const BlogListingPage = () => {
       case "aleatorio":
         return Math.random() - 0.5;
       default:
-        return 0;
+        return new Date(b.date).getTime() - new Date(a.date).getTime();
     }
   });
 

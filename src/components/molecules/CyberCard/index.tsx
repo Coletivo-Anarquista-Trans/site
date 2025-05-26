@@ -4,12 +4,13 @@ import { motion } from "framer-motion";
 import CyberContainer from "../../atoms/CyberContainer";
 import Image from "next/image";
 import Link from "next/link";
-import { getImagePath } from "@/utils/imagePath";
+import { getAssetPath } from "@/utils/assetPath";
 
 interface CyberCardProps {
   id: string;
   title: string;
-  description: string;
+  author?: string;
+  description?: string;
   image: string;
   url?: string; // Made optional
   slug?: string; // Added for internal links
@@ -21,6 +22,7 @@ interface CyberCardProps {
 const CyberCard = ({
   id,
   title,
+  author,
   description,
   image,
   url,
@@ -47,6 +49,12 @@ const CyberCard = ({
     compact: "text-sm font-bold text-center",
   }[viewMode];
 
+  const authorClasses = {
+    tile: "text-sm text-center text-foreground/80",
+    list: "text-xs text-foreground/80 flex-1 line-clamp-2",
+    compact: "text-xxs text-center text-foreground/80 line-clamp-1",
+  }[viewMode];
+
   const descriptionClasses = {
     tile: "text-sm text-center text-foreground/80",
     list: "text-xs text-foreground/80 flex-1 line-clamp-2",
@@ -67,7 +75,7 @@ const CyberCard = ({
         className={`${imageClasses} overflow-hidden bg-foreground/10`}
       >
         <Image
-          src={getImagePath(image)}
+          src={getAssetPath(image)}
           alt={title}
           fill
           className="object-cover"
@@ -78,6 +86,7 @@ const CyberCard = ({
 
       <div className={viewMode === "list" ? "flex-1 ml-3" : "mt-2"}>
         <h3 className={textClasses}>{title}</h3>
+        {author && <p className={authorClasses}>{author}</p>}
         <p className={descriptionClasses}>{description}</p>
         {metadata && (
           <div className={metadataClasses}>

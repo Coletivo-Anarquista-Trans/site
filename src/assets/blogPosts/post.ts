@@ -16,7 +16,7 @@ export const posts: BlogPost[] = [
     description: "n3o",
     slug: "marcha-transmasc",
     date: "03-30-2025",
-    image: "/trans-archives/marchaTransmasc.jpeg",
+    image: "/trans-archives/marcha_transmasc.jpeg",
     content: `
       <h2>II marcha transmasc de são paulo</h2>
       <br/><p>ao perder o costume de escrever me vejo como criança: começo, apago, vejo e revejo, me repreendo, me anulo. engraçado, fui assim quando criança.</p>
@@ -49,7 +49,7 @@ export const posts: BlogPost[] = [
     description: "ini",
     slug: "foda-se-o-cfm",
     date: "2025-04-15",
-    image: "/trans-archives/bastard-doctors.png",
+    image: "/trans-archives/bastard_doctors.png",
     content: `
       <h2><b>Sobre o CFM</b></h2>
       <p>Mais uma vez o Conselho Federal de Medicina decidiu “legislar”, através de suas normativas, sobre os corpos trans com a desculpa de estar fazendo “saúde”, mesmo que nenhuma pessoa trans participe dessas decisões.</p>
@@ -87,7 +87,7 @@ export const posts: BlogPost[] = [
     description: "ini",
     slug: "rumo-ao-transpunk-prefacio",
     date: "2025-05-22",
-    image: "/trans-archives/t-punk.jpeg",
+    image: "/trans-archives/t_punk.jpeg",
     content: `
       <h2>Rumo ao transpunk - Prefácio</h2>
 <p><i>Transpunk: Um mundo pós escassez em que todos têm acesso aos meios de produção da própria existência e corpo e em que a autonomia corporal é absoluta tanto quanto a capacidade de modificação corporal.</i></p>
