@@ -15,12 +15,12 @@ import {
 } from "react-icons/fa";
 import { useAudio } from "@/context/AudioContext";
 import { Tooltip } from "@/components/atoms/Tooltip";
-import { getAssetPath } from "@/utils/assetPath";
+import { getPdfPath } from "@/utils/pdfPath";
 
 const books = [
   {
     id: "livro-1",
-    title: "Como Hackear: Um manual para derrubar o sistema",
+    title: "Como Hackear: Um manual para derrubar o Cistema",
     author: "i.n.i.a.r.i",
     image: "/trans-archives/como_hackear.jpg",
     url: "https://docs.google.com/document/d/1sBgqRi2aoBhSZ7qPE6PLyyEEyeac1ExmrprAc5O4OUQ/edit?tab=t.0#heading=h.40cqyoe39nq",
@@ -38,35 +38,35 @@ const books = [
     title: "Um manifesto hacker",
     author: "Mckenzie Wark",
     image: "/trans-archives/um_manifesto_hacker.jpg",
-    url: getAssetPath("/trans-resources/um_manifesto_hacker-mckenzie_wark.pdf"),
+    url: getPdfPath("trans-resources/um_manifesto_hacker-mckenzie_wark.pdf"),
   },
   {
     id: "livro-4",
     title: "Um apartamento em Urano",
     author: "Paul B. Preciado",
     image: "/trans-archives/apartamento_em_urano.jpg",
-    url: getAssetPath("/trans-resources/um_apartamento_em_urano-paul_b_preciado.pdf"),
+    url: getPdfPath("trans-resources/um_apartamento_em_urano-paul_b_preciado.pdf"),
   },
   {
     id: "livro-5",
     title: "Manifesto Contrassexual",
     author: "Paul B. Preciado",
     image: "/trans-archives/manifesto_contrassexual.jpg",
-    url: getAssetPath("/trans-resources/manifesto_contrassexual-paul_b_preciado.pdf"),
+    url: getPdfPath("trans-resources/manifesto_contrassexual-paul_b_preciado.pdf"),
   },
   {
     id: "livro-6",
     title: "Be gay, do crime!",
     author: "Mary Nardini Gang",
     image: "/trans-archives/be_gay_do_crime.png",
-    url: getAssetPath("/trans-resources/be_gay_do_crime-mary_nardini_gang.pdf"),
+    url: getPdfPath("trans-resources/be_gay_do_crime-mary_nardini_gang.pdf"),
   },
   {
     id: "livro-7",
     title: "Transgeneridade, Decolonialidade e Anarquismo",
     author: "Bruno Latini Pfeil & Cello Latini Pfeil",
     image: "/trans-archives/transgeneridade_decolonialidade_e_anarquismo.png",
-    url: getAssetPath("/trans-resources/transgeneridade_decolonialidade_e_anarquismo-bruno_latini_pfeil-cello_latini_pfeil.pdf"),
+    url: getPdfPath("trans-resources/transgeneridade_decolonialidade_e_anarquismo-bruno_latini_pfeil-cello_latini_pfeil.pdf"),
   },
 ];
 
