@@ -30,7 +30,7 @@ export default function Resources() {
           Em breve, mais recursos que não sejam sobre hormonios!
           <br />
           <span className="text-accent5">
-            Tem algum recurso? Mande pra gente em cats-trans@riseup.net
+            Tem algum recurso? Mande pra gente em: cats-trans@riseup.net
           </span>
         </CyberContainer>
 
