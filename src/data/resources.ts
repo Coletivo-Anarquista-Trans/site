@@ -69,7 +69,7 @@ export const resourcesByCategory: Record<string, CyberResource[]> = {
      title: 'Coletivo Transcentrado',
      type: 'link',
      url: 'https://coletivotranscentrado.com.br/',
-     description: 'Site do Coletivo Transcentrado, possui informações sobre processo de transição, e um discord amigável para a pessoas trans e com deficiência',
+     description: 'Site do Coletivo Transcentrado, possui informações sobre processo de transição, e um discord amigável para pessoas trans e com deficiência',
      category: 'Coletivos',
      dateAdded: '2025-05-25',
     },
