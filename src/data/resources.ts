@@ -1,6 +1,6 @@
 // Dados da página de resources
 import {CyberResource} from "@/components/molecules/CyberResourceCard";
-import { getAssetPath } from "@/utils/assetPath";
+import { getPdfPath } from "@/utils/pdfPath";
 
 export const resourcesByCategory: Record<string, CyberResource[]> = {
   Hormonização: [
@@ -19,7 +19,7 @@ export const resourcesByCategory: Record<string, CyberResource[]> = {
       id: '2',
       title: 'Introdução a hormonização transmasculina',
       type: 'file',
-      url: getAssetPath('/trans-resources/intro_a_th_transmasc.pdf'),
+      url: getPdfPath('/trans-resources/intro_a_th_transmasc.pdf'),
       description: 'Guia introdutório a hormonização para transmasculines',
       category: 'Transmasc',
       dateAdded: '2025-03-28',
@@ -28,7 +28,7 @@ export const resourcesByCategory: Record<string, CyberResource[]> = {
       id: '3',
       title: 'Guia DIY de hormonização transmasculina',
       type: 'file',
-      url: getAssetPath('/trans-resources/transmasc_th_diy.pdf'),
+      url: getPdfPath('/trans-resources/transmasc_th_diy.pdf'),
       description: 'Guia de hormonização DIY para transmasculines',
       category: 'Transmasc',
       dateAdded: '2025-03-28',
@@ -39,7 +39,7 @@ export const resourcesByCategory: Record<string, CyberResource[]> = {
       id: '4',
       title: 'Guia DIY de hormonização transfeminina',
       type: 'file',
-      url: getAssetPath('/trans-resources/transfem_th_diy.pdf'),
+      url: getPdfPath('/trans-resources/transfem_th_diy.pdf'),
       description: 'Guia de hormonização DIY para transfeminines',
       category: 'Transfem',
       dateAdded: '2025-03-28',

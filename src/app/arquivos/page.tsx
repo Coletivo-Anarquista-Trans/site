@@ -15,7 +15,6 @@ import {
 } from "react-icons/fa";
 import { useAudio } from "@/context/AudioContext";
 import { Tooltip } from "@/components/atoms/Tooltip";
-import { getAssetPath } from "@/utils/assetPath";
 import { getPdfPath } from "@/utils/pdfPath";
 
 const books = [
