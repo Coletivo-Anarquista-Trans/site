@@ -13,7 +13,24 @@ import LoadingWrapper from "@/components/atoms/Loading/LoadingWrapper";
 
 export const metadata: Metadata = {
   title: "CATS",
-  description: "-x-",
+  description: "Coletivo Anarquista Trans",
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/cat-icon.svg", type: "image/svg+xml" },
+      { url: "/cats.png", type: "image/png", sizes: "512x512" }
+    ],
+    apple: [
+      { url: "/cats.png", sizes: "180x180" }
+    ],
+    other: [
+      {
+        rel: "mask-icon",
+        url: "/cat-icon.svg",
+        color: "#000000"
+      }
+    ]
+  },
 };
 
 export default function RootLayout({

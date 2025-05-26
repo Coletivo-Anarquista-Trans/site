@@ -15,51 +15,59 @@ import {
 } from "react-icons/fa";
 import { useAudio } from "@/context/AudioContext";
 import { Tooltip } from "@/components/atoms/Tooltip";
+import { getAssetPath } from "@/utils/assetPath";
 
 const books = [
   {
     id: "livro-1",
     title: "Como Hackear: Um manual para derrubar o sistema",
-    description: "i.n.i.a.r.i",
-    image: "/trans-archives/comoHackear.jpg",
+    author: "i.n.i.a.r.i",
+    image: "/trans-archives/como_hackear.jpg",
     url: "https://docs.google.com/document/d/1sBgqRi2aoBhSZ7qPE6PLyyEEyeac1ExmrprAc5O4OUQ/edit?tab=t.0#heading=h.40cqyoe39nq",
   },
   {
     id: "livro-2",
     title: "Diário de uma ciborgue",
-    description:
-      "O corpo virtual e material como espaço político numa visão ciberfeminista",
-    image: "/trans-archives/DiarioDeUmaCiborgue.jpg",
+    author: "i.n.i.a.r.i",
+    description: "O corpo virtual e material como espaço político numa visão ciberfeminista",
+    image: "/trans-archives/diario_de_uma_ciborgue.jpg",
     url: "https://docs.google.com/document/d/1njyeH000ht7PCrGDaPXsVp53zJfAlRQgWipZJXpv5Pw/edit?tab=t.0#heading=h.sa0lg6ud6qbk",
   },
   {
     id: "livro-3",
     title: "Um manifesto hacker",
-    description: "Mckenzie Wark",
-    image: "/trans-archives/umManifestohacker.jpg",
-    url: "https://baixacultura.org/wp-content/uploads/2024/02/ummanifesto_miolo.pdf",
+    author: "Mckenzie Wark",
+    image: "/trans-archives/um_manifesto_hacker.jpg",
+    url: getAssetPath("/trans-resources/um_manifesto_hacker-mckenzie_wark.pdf"),
   },
   {
     id: "livro-4",
     title: "Um apartamento em Urano",
-    description: "Paul Preciado",
-    image: "/trans-archives/apartamentoEmUrano.jpg",
-    url: "https://trechos.org/wp-content/uploads/2020/07/Um-apartamento-em-Urano.pdf",
+    author: "Paul B. Preciado",
+    image: "/trans-archives/apartamento_em_urano.jpg",
+    url: getAssetPath("/trans-resources/um_apartamento_em_urano-paul_b_preciado.pdf"),
   },
   {
     id: "livro-5",
     title: "Manifesto Contrassexual",
-    description: "Paul Preciado",
-    image: "/trans-archives/manifestoContrassexual.jpg",
-    url: "https://transreads.org/wp-content/uploads/2021/07/2021-07-28_61015e8a7322f_ManifestoContrassexual-PrticassubversivasdeidentidadesexualbyPaulPreciadoBeatrizPreciadoz-lib.org_.pdf",
+    author: "Paul B. Preciado",
+    image: "/trans-archives/manifesto_contrassexual.jpg",
+    url: getAssetPath("/trans-resources/manifesto_contrassexual-paul_b_preciado.pdf"),
   },
   {
     id: "livro-6",
-    title: "Be gay, do crime",
-    description: "Mary Nardini Gang",
-    image: "/trans-archives/beGayDoCrime.png",
-    url: "https://bibliotecaanarquista.org/library/be-gay-do-crime.pdf",
-  }
+    title: "Be gay, do crime!",
+    author: "Mary Nardini Gang",
+    image: "/trans-archives/be_gay_do_crime.png",
+    url: getAssetPath("/trans-resources/be_gay_do_crime-mary_nardini_gang.pdf"),
+  },
+  {
+    id: "livro-7",
+    title: "Transgeneridade, Decolonialidade e Anarquismo",
+    author: "Bruno Latini Pfeil & Cello Latini Pfeil",
+    image: "/trans-archives/transgeneridade_decolonialidade_e_anarquismo.png",
+    url: getAssetPath("/trans-resources/transgeneridade_decolonialidade_e_anarquismo-bruno_latini_pfeil-cello_latini_pfeil.pdf"),
+  },
 ];
 
 type SortOption = "padrao" | "titulo-asc" | "titulo-desc" | "random";
@@ -106,7 +114,7 @@ const Page = () => {
         transition={{ delay: 0.2, duration: 0.5 }}
         className="text-xl md:text-2xl mb-8 text-center"
       >
-        Clique para acessar os livros
+        Clique para ler os livros e textos
       </motion.h2>
 
       {/* Controls */}
@@ -129,11 +137,10 @@ const Page = () => {
                 setViewMode("tile");
               }}
               onMouseEnter={() => playButtonSelect()}
-              className={`p-2 rounded ${
-                viewMode === "tile"
+              className={`p-2 rounded ${viewMode === "tile"
                   ? "bg-accent1 text-background"
                   : "hover:bg-foreground/20"
-              }`}
+                }`}
               aria-label="Visualização em blocos"
             >
               <FaTh />
@@ -150,11 +157,10 @@ const Page = () => {
                 setViewMode("list");
               }}
               onMouseEnter={() => playButtonSelect()}
-              className={`p-2 rounded ${
-                viewMode === "list"
+              className={`p-2 rounded ${viewMode === "list"
                   ? "bg-accent1 text-background"
                   : "hover:bg-foreground/20"
-              }`}
+                }`}
               aria-label="Visualização em lista"
             >
               <FaList />
@@ -171,11 +177,10 @@ const Page = () => {
                 setViewMode("compact");
               }}
               onMouseEnter={() => playButtonSelect()}
-              className={`p-2 rounded ${
-                viewMode === "compact"
+              className={`p-2 rounded ${viewMode === "compact"
                   ? "bg-accent1 text-background"
                   : "hover:bg-foreground/20"
-              }`}
+                }`}
               aria-label="Visualização compacta"
             >
               <FaCompress />
@@ -192,11 +197,10 @@ const Page = () => {
                 setSortOption("padrao");
               }}
               onMouseEnter={() => playButtonSelect()}
-              className={`p-2 rounded ${
-                sortOption === "padrao"
+              className={`p-2 rounded ${sortOption === "padrao"
                   ? "bg-accent1 text-background"
                   : "hover:bg-foreground/20"
-              }`}
+                }`}
               aria-label="Ordenação padrão"
             >
               <FaSortAmountDown />
@@ -209,11 +213,10 @@ const Page = () => {
                 setSortOption("titulo-asc");
               }}
               onMouseEnter={() => playButtonSelect()}
-              className={`p-2 rounded ${
-                sortOption === "titulo-asc"
+              className={`p-2 rounded ${sortOption === "titulo-asc"
                   ? "bg-accent1 text-background"
                   : "hover:bg-foreground/20"
-              }`}
+                }`}
               aria-label="Ordenar A-Z"
             >
               <FaSortAlphaDown />
@@ -226,11 +229,10 @@ const Page = () => {
                 setSortOption("titulo-desc");
               }}
               onMouseEnter={() => playButtonSelect()}
-              className={`p-2 rounded ${
-                sortOption === "titulo-desc"
+              className={`p-2 rounded ${sortOption === "titulo-desc"
                   ? "bg-accent1 text-background"
                   : "hover:bg-foreground/20"
-              }`}
+                }`}
               aria-label="Ordenar Z-A"
             >
               <FaSortAlphaUp />
@@ -247,11 +249,10 @@ const Page = () => {
                 setSortOption("random");
               }}
               onMouseEnter={() => playButtonSelect()}
-              className={`p-2 rounded ${
-                sortOption === "random"
+              className={`p-2 rounded ${sortOption === "random"
                   ? "bg-accent1 text-background"
                   : "hover:bg-foreground/20"
-              }`}
+                }`}
               aria-label="Ordenação aleatória"
             >
               <FaRandom />
@@ -271,6 +272,7 @@ const Page = () => {
             key={book.id}
             id={book.id}
             title={book.title}
+            author={book.author}
             description={book.description}
             image={book.image}
             url={book.url}
