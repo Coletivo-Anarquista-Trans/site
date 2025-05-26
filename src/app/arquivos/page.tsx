@@ -20,7 +20,7 @@ import { getAssetPath } from "@/utils/assetPath";
 const books = [
   {
     id: "livro-1",
-    title: "Como Hackear: Um manual para derrubar o sistema",
+    title: "Como Hackear: Um manual para derrubar o Cistema",
     author: "i.n.i.a.r.i",
     image: "/trans-archives/como_hackear.jpg",
     url: "https://docs.google.com/document/d/1sBgqRi2aoBhSZ7qPE6PLyyEEyeac1ExmrprAc5O4OUQ/edit?tab=t.0#heading=h.40cqyoe39nq",
