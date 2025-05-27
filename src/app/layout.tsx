@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description: "Coletivo Anarquista Trans",
   icons: {
     icon: [
-      { url: "/favicon.ico" },
+      { url: "/cats.png", type: "image/png" },
       { url: "/cat-icon.svg", type: "image/svg+xml" },
       { url: "/cats.png", type: "image/png", sizes: "512x512" }
     ],
@@ -40,12 +40,10 @@ export default function RootLayout({
 }) {
   const isGitHubPages = process.env.GITHUB_ACTIONS === "true";
   const imagePreloadHref = isGitHubPages ? "/site/cats.png" : "/cats.png";
-  const faviconHref = isGitHubPages ? "/site/favicon.ico" : "/favicon.ico";
   
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href={faviconHref} />
         <link rel="preload" href={imagePreloadHref} as="image" />
       </head>
       <body>
