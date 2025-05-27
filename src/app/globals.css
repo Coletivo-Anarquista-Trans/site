@@ -120,6 +120,25 @@ body {
   transition: background 0.5s ease-in-out, color 0.3s ease-in-out;
 }
 
+/* Blockquote styles */
+blockquote {
+  border-left: 4px solid var(--accent-1);
+  padding-left: 1.5rem;
+  margin-left: 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+blockquote cite {
+  display: block;
+  text-align: right;
+  font-style: normal;
+  font-size: 0.9em;
+  margin-top: 1rem;
+  color: var(--accent-2);
+}
+
 /* Granular Noise Effect */
 .granular-effect {
   position: relative;
