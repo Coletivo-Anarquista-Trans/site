@@ -148,10 +148,9 @@ export const posts: BlogPost[] = [
       <h2>
         <b>Rumo ao transpunk - Prefácio</b>
       </h2>
-      <p>
+      <blockquote>
         <i>Transpunk: Um mundo pós escassez em que todos têm acesso aos meios de produção da própria existência e corpo e em que a autonomia corporal é absoluta tanto quanto a capacidade de modificação corporal.</i>
-      </p>
-      <br/>
+      </blockquote>
       <p>
         Então é isso, o controle é absoluto, os cybercapitalistas venceram, eles dominam as interfaces onde aprendemos a linguagem que interpretará o mundo. Todos nossos fluxos, conexões e desejos estão passando por aqueles vetores. Cada ação, cada impulso, cada parte de onde não controlamos de nós foi automatizado num ponto em que não há mais movimento que não saia da organicidade da produção da nossa existência.
       </p>
@@ -226,7 +225,7 @@ export const posts: BlogPost[] = [
       </p>
       <br/>
       <p>
-        oi lendo esse livro, e também em decorrência a tantas conversas sobre filosofia com a minha amiga - também historiadora, filósofa e escritora, que entendi que tudo isso se trata de uma disputa de linguagem, é através da linguagem que criamos os processos de subjetivação, isto é: o processo de se tornar sujeito, de adquirir uma subjetividade, de se tornar individual e único. é a construção do "eu". e é aí que a definição de semiótica entra também.
+        foi lendo esse livro, e também em decorrência a tantas conversas sobre filosofia com a minha amiga - também historiadora, filósofa e escritora, que entendi que tudo isso se trata de uma disputa de linguagem, é através da linguagem que criamos os processos de subjetivação, isto é: o processo de se tornar sujeito, de adquirir uma subjetividade, de se tornar individual e único. é a construção do "eu". e é aí que a definição de semiótica entra também.
       </p>
       <br/>
       <p>
