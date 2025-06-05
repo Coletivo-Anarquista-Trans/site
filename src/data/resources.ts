@@ -72,25 +72,25 @@ export const resourcesByCategory: Record<string, CyberResource[]> = {
      category: 'Coletivos',
      dateAdded: '2025-05-25',
     },
-  ],
-   Cyberhormônios: [
     {
       id: '8',
-      title: 'Piccrew - Criador de corpos-virtuais',
-      type: 'link',
-      url: 'https://picrew.me/en/search',
-      description: 'Ciberespaço para você projetar novos corpos-virtuais, escolha um dos templates e projete um corpo que você gostaria de ter!',
-      category: 'Hormonização',
-      dateAdded: '2025-03-28',
-    },
-    {
-      id: '9',
       title: 'Villain Era',
       type: 'link',
       url: "https://villain-era.carrd.co/#guerra",
       description: 'Coletivo de artistas trans de Juiz de Fora, com o objetivo de expor, enaltecer, e compartilhar a arte e a poética de seus alunos Trans... e dominar o mundo. Todo criador diverso de gênero é bem vindo.',
       category: 'Coletivos',
       dateAdded: '2025-06-03',
+    },
+  ],
+   Cyberhormônios: [
+    {
+      id: '9',
+      title: 'Piccrew - Criador de corpos-virtuais',
+      type: 'link',
+      url: 'https://picrew.me/en/search',
+      description: 'Ciberespaço para você projetar novos corpos-virtuais, escolha um dos templates e projete um corpo que você gostaria de ter!',
+      category: 'Hormonização',
+      dateAdded: '2025-03-28',
     },
   ]
 };
