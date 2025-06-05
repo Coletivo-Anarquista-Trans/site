@@ -77,7 +77,7 @@ export const resourcesByCategory: Record<string, CyberResource[]> = {
       title: 'Villain Era',
       type: 'link',
       url: "https://villain-era.carrd.co/#guerra",
-      description: 'Coletivo de artistas trans de Juiz de Fora, com o objetivo de expor, enaltecer, e compartilhar a arte e a poética de seus alunos Trans... e dominar o mundo. Todo criador diverso de gênero é bem vindo.',
+      description: 'Coletivo de artistas trans de Juiz de Fora (Minas Gerais), que tem o objetivo de expor, enaltecer, e compartilhar a arte e a poética de seus alunes Trans...e dominar o mundo. Todes criadores e suas diversidades de gênero são bem vindes.',
       category: 'Coletivos',
       dateAdded: '2025-06-03',
     },
