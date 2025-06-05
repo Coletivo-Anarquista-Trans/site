@@ -83,5 +83,14 @@ export const resourcesByCategory: Record<string, CyberResource[]> = {
       category: 'Hormonização',
       dateAdded: '2025-03-28',
     },
+    {
+      id: '9',
+      title: 'Villain Era',
+      type: 'link',
+      url: "https://villain-era.carrd.co/#guerra",
+      description: 'Coletivo de artistas trans de Juiz de Fora, com o objetivo de expor, enaltecer, e compartilhar a arte e a poética de seus alunos Trans... e dominar o mundo. Todo criador diverso de gênero é bem vindo.',
+      category: 'Coletivos',
+      dateAdded: '2025-06-03',
+    },
   ]
 };
