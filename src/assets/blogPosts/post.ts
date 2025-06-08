@@ -267,6 +267,44 @@ export const posts: BlogPost[] = [
       </blockquote>
     `,
   },
+    {
+    id: "post-6",
+    title: "Parada LGBT: (L)ucro, (G)anânica, (B)ancos e (T)raição",
+    description: "ini",
+    slug: "parada-lgbt-2025",
+    date: "2025-06-08",
+    image: "/trans-archives/bash_back.jpg",
+    content: `
+    <p>  
+    Se o seu protesto pode ser patrocinado, então não é um protesto, é branding, é marketing. Vamos ser diretos, esse papo de “tudo vira merchandising” é só conversinha para não sermos criativos e escaparmos da mercantilização dos nossos sonhos e lutas.
+    </p>
+    <p>
+    Em meio a ataques e perseguição mundo afora a pessoas trans, o maior protesto LGBT do mundo decidiu que a sua pauta será sobre “Envelhecer LGBT+". Nada contra o tema, até porque quem poderia ser contra? Talvez seja esse o problema. Enquanto pessoas trans são pisadas pelo cisfascismo americano e a obsessão patologizante do CFM, o movimento LGBT decide ignorar esse contexto e falar de algo que só um insensível seria contra. Que covardia esconderem-se atrás dos nossos ancestrais.
+    </p>
+    <p>
+    Com a capacidade de mobilizar milhões de pessoas, a parada se abstém de expor a situação das pessoas trans no mundo e no Brasil. Me pergunto por quê? Talvez falando diretamente de política assim não daria para encher o vídeo de divulgação da parada com todos os patrocinadores sedentos por ganhar mais dinheiro em cima da gente. Ou tem gente que acha ainda que as marcas realmente amam a liberdade sexual e pessoas queer?
+    </p>
+    Mas vamos ver o saldo de 2025 para ver se não estou delirando?
+    <p>
+    - Meta, Amazon, Microsoft, Zoom, Google, Disney, McDonalds, Ford, Walmart e outras empresas encerraram ou restringiram programas de diversidade e inclusão (Como o capitalismo ama as gays!).
+    - CFM aprovou a Resolução 2.427/2025 dificultando mais o acesso para pessoas trans a terem acesso aos procedimentos de afirmação de gênero.
+    - Registros de violência contra pessoas LGBT cresceram mais de 1000% nos últimos 10 anos.
+    - EUA está alterando o gênero de pessoas trans nos vistos.
+    - Meta e Twitter permitindo o uso de discurso de ódio contra pessoas LGBT.
+    - As mesmas big techs anti-LGBT estão treinando a extrema direita brasileira como usar Inteligência Artificial para manipular as redes sociais.
+    </p>
+    <p>
+    A lista é longa e eu só peguei alguns dos principais marcos num período de 6 meses em 2025. Como não estamos preocupades? Somos muito radicais por estarmos vendo um avanço contra nossa existência e chamando atenção para que façamos mais sobre isso? Ou o movimento LGBT se tornou radicalmente pró-capitalista ao ponto de não ter mais a coragem de brigar com as big techs, o CFM e os cishetero fascistas? Mais fácil decidir soltar a mão das pessoas trans?
+    </p>
+    <p>
+    Precisamos de menos patrocínios e mais mobilização relevante, de uma frente que enfrente o avanço tecnofascista sobre os corpos trans e queer. Queremos menos capitalismo colorido e mais libertação queer. Iremos lembrar todos que se qualquer um de nós cair, os próximos serão vocês, não achem que a assimilação lhes deixará seguros.
+    </p>
+    <p>
+    Bash back! 
+    Revide revide revide!
+    </p>
+    `,
+  },
   // Add more posts here
 ];
 
