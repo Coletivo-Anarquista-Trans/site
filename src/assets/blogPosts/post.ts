@@ -15,7 +15,7 @@ export const posts: BlogPost[] = [
     title: "II marcha transmasc de são paulo",
     description: "n3o",
     slug: "marcha-transmasc",
-    date: "03-30-2025",
+    date: "2025-03-30",
     image: "/trans-archives/marcha_transmasc.jpeg",
     content: `
       <p>
@@ -269,64 +269,53 @@ export const posts: BlogPost[] = [
   },
     {
     id: "post-6",
-    title: "Parada LGBT: (L)ucro, (G)anânica, (B)ancos e (T)raição",
+    title: "Parada LGBT: (L)ucro, (G)anância, (B)ancos e (T)raição",
     description: "ini",
     slug: "parada-lgbt-2025",
     date: "2025-06-08",
-    image: "/trans-archives/bash_back.jpg",
+    image: "/trans-archives/queer_liberation.jpg",
     content: `
     <p>  
-    Se o seu protesto pode ser patrocinado, então não é um protesto, é branding, é marketing. Vamos ser diretos, esse papo de “tudo vira merchandising” é só conversinha para não sermos criativos e escaparmos da mercantilização dos nossos sonhos e lutas.
+      Se o seu protesto pode ser patrocinado, então não é um protesto, é branding, é marketing. Vamos ser diretos, esse papo de <i>“tudo vira merchandising”</i> é só conversinha para não sermos criativos e escaparmos da mercantilização dos nossos sonhos e lutas.
     </p>
     <br/>
     <p>
-    Em meio a ataques e perseguição mundo afora às pessoas trans, o maior "protesto" LGBT do mundo decidiu que a sua pauta será sobre “Envelhecer LGBT+". Nada contra o tema, até porque quem poderia ser contra? Talvez seja esse o problema. Enquanto pessoas trans são pisadas pelo cisfascismo americano e a obsessão patologizante do CFM, o movimento LGBT decide ignorar esse contexto e falar de algo que só insensíveis seriam contra. Que covardia esconderem-se atrás dos nossos ancestrais.
+      Em meio a ataques e perseguição mundo afora às pessoas trans, o maior "protesto" LGBT do mundo decidiu que a sua pauta será sobre “Envelhecer LGBT+”. Nada contra o tema, até porque quem poderia ser contra? Talvez seja esse o problema. Enquanto pessoas trans são pisadas pelo cisfascismo americano e a obsessão patologizante do CFM, o movimento LGBT decide ignorar esse contexto e falar de algo que só insensíveis seriam contra. Que covardia esconderem-se atrás dos nossos ancestrais.
     </p>
     <br/>
     <p>
-    Com a capacidade de mobilizar milhões de pessoas, a Parada se abstém de expor a situação das pessoas trans no mundo e no Brasil. Me pergunto por quê? Falando diretamente de política assim não daria para encher o vídeo de divulgação da parada com todos os patrocinadores sedentos por ganhar mais dinheiro em cima da gente? Ou tem gente achando que as marcas amam nossas causas?
+      Com a capacidade de mobilizar milhões de pessoas, a Parada se abstém de expor a situação das pessoas trans no mundo e no Brasil. Me pergunto por quê? Falando diretamente de política assim não daria para encher o vídeo de divulgação da parada com todos os patrocinadores sedentos por ganhar mais dinheiro em cima da gente? Ou tem gente achando que as marcas amam nossas causas?
     </p>
     <br/>
     <p>
-    Mas vamos ver o saldo de 2025 para ver se não estou delirando?
+      Mas vamos ver o saldo de 2025 para ver se não estou delirando?
+    </p>
+    <br/>
+    <ul class="list-disc list-inside">
+      <li>Meta, Amazon, Microsoft, Zoom, Google, Disney, McDonalds, Ford, Walmart e outras empresas encerraram ou restringiram programas de diversidade e inclusão (Como o capitalismo ama as gays!)</li>
+      <li>CFM aprovou a Resolução 2.427/2025 dificultando mais o acesso para pessoas trans a terem acesso aos procedimentos de afirmação de gênero.</li>
+      <li>Registros de violência contra pessoas LGBT cresceram mais de 1000% nos últimos 10 anos.</li>
+      <li>EUA está alterando o gênero de pessoas trans nos vistos.</li>
+      <li>Meta e Twitter/X permitindo o uso de discurso de ódio contra pessoas LGBT.</li>
+    </ul>
+    <br/>
+    <p>
+      A lista é longa e eu só peguei alguns dos principais marcos num período de 6 meses em 2025. Como não estamos preocupades? Somos muito radicais por estarmos vendo um avanço contra nossa existência e chamando atenção para fazermos mais sobre isso? Ou o movimento LGBT se tornou radicalmente pró-capitalista ao ponto de não ter mais a coragem de brigar com as big techs, o CFM e os cishetero fascistas? Mais fácil soltarem a mão das pessoas trans, né?
     </p>
     <br/>
     <p>
-    - Meta, Amazon, Microsoft, Zoom, Google, Disney, McDonalds, Ford, Walmart e outras empresas encerraram ou restringiram programas de diversidade e inclusão (Como o capitalismo ama as gays!).
-    </p>
-    <p>
-    - CFM aprovou a Resolução 2.427/2025 dificultando mais o acesso para pessoas trans a terem acesso aos procedimentos de afirmação de gênero.
-    </p>
-    <p>
-    - Registros de violência contra pessoas LGBT cresceram mais de 1000% nos últimos 10 anos.
-    </p>
-    <p>
-    - EUA está alterando o gênero de pessoas trans nos vistos.
-    </p>
-    <p>
-    - Meta e Twitter permitindo o uso de discurso de ódio contra pessoas LGBT.
-    </p>
-    <p>
-    - As mesmas big techs anti-LGBT estão treinando a extrema direita brasileira como usar Inteligência Artificial para manipular as redes sociais.
+      Precisamos de menos patrocínios e mais mobilização relevante, uma frente para enfrentar o avanço tecnofascista sobre os corpos trans e queer. 
     </p>
     <br/>
     <p>
-    A lista é longa e eu só peguei alguns dos principais marcos num período de 6 meses em 2025. Como não estamos preocupades? Somos muito radicais por estarmos vendo um avanço contra nossa existência e chamando atenção para fazermos mais sobre isso? Ou o movimento LGBT se tornou radicalmente pró-capitalista ao ponto de não ter mais a coragem de brigar com as big techs, o CFM e os cishetero fascistas? Mais fácil soltarem a mão das pessoas trans. Né?
+      Queremos menos capitalismo colorido e mais libertação queer. Iremos lembrar todos que se qualquer um de nós cair, os próximos serão vocês, não achem que a assimilação lhes deixarão seguros.
     </p>
     <br/>
     <p>
-    Precisamos de menos patrocínios e mais mobilização relevante, uma frente para enfrentar o avanço tecnofascista sobre os corpos trans e queer. 
-    </p>
-    <br/>
-    <p>
-    Queremos menos capitalismo colorido e mais libertação queer. Iremos lembrar todos que se qualquer um de nós cair, os próximos serão vocês, não achem que a assimilação lhes deixarão seguros.
-    </p>
-    <br/>
-    <p>
-    Bash back! 
+      Bash back! 
     </p>
     <p>
-    Revide revide revide!
+      Revide revide revide!
     </p>
     `,
   },

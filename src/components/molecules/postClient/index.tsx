@@ -47,7 +47,7 @@ export default function PostContent({ post }: { post: Post }) {
         transition={{ delay: 0.2, duration: 0.5 }}
         className="text-foreground/60 mb-8"
       >
-        Publicado em {new Date(post.date).toLocaleDateString("pt-BR")}
+        Publicado em {new Date(post.date + 'T12:00:00').toLocaleDateString("pt-BR")}
       </motion.p>
       <motion.div
         initial={{ opacity: 0 }}
