@@ -71,7 +71,7 @@ const books = [
     id: "livro-8",
     title: "BASH BACK! Ultraviolência Queer",
     description: "Compilado de escritos por anarcoqueer insurgentes",
-    image: "/trans-archives/bash_back.jpg",
+    image: "/trans-archives/bash_back.jpeg",
     url: "https://drive.google.com/file/d/1us7D-6MPt_wBjhGxpwA69iguXO1tcj4-/view?usp=sharing",
   },
 ];
