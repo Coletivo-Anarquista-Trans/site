@@ -11,6 +11,7 @@ import {
   FolderIcon,
   HomeIcon,
   BlogIcon,
+  HealthIcon,
   ArchiveIcon,
   AboutIcon,
   HamburgerIcon,
@@ -242,19 +243,28 @@ export default function CyberSidebar() {
       </motion.div>
 
       <motion.div variants={itemVariants}>
-        <Link href="/blog" passHref >
+        <Link href="/arquivos" passHref >
           <CyberMiniButton className="flex items-center w-full hover:bg-accent1 hover:text-background">
-            <BlogIcon />
-            <span>blog</span>
+            <ArchiveIcon />
+            <span>arquivos</span>
           </CyberMiniButton>
         </Link>
       </motion.div>
 
       <motion.div variants={itemVariants}>
-        <Link href="/arquivos" passHref >
+        <Link href="/saude-trans" passHref >
           <CyberMiniButton className="flex items-center w-full hover:bg-accent1 hover:text-background">
-            <ArchiveIcon />
-            <span>arquivos</span>
+            <HealthIcon />
+            <span>saúde trans</span>
+          </CyberMiniButton>
+        </Link>
+      </motion.div>
+
+      <motion.div variants={itemVariants}>
+        <Link href="/blog" passHref >
+          <CyberMiniButton className="flex items-center w-full hover:bg-accent1 hover:text-background">
+            <BlogIcon />
+            <span>blog</span>
           </CyberMiniButton>
         </Link>
       </motion.div>
