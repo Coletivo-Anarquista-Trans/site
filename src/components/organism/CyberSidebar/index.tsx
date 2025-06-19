@@ -12,6 +12,7 @@ import {
   HomeIcon,
   BlogIcon,
   HealthIcon,
+  ResourcesIcon,
   ArchiveIcon,
   AboutIcon,
   HamburgerIcon,
@@ -236,7 +237,7 @@ export default function CyberSidebar() {
       <motion.div variants={itemVariants}>
         <Link href="/recursos" passHref >
           <CyberMiniButton className="flex items-center w-full hover:bg-accent1 hover:text-background">
-            <ArchiveIcon />
+            <ResourcesIcon />
             <span>recursos</span>
           </CyberMiniButton>
         </Link>

@@ -56,7 +56,7 @@ export const BlogIcon = ({ className = "" }: { className?: string }) => (
   </svg>
 );
 
-export const ArchiveIcon = ({ className = "" }: { className?: string }) => (
+export const ResourcesIcon = ({ className = "" }: { className?: string }) => (
   <svg
     width="16"
     height="16"
@@ -348,6 +348,31 @@ export const CustomizationIcon = ({
   >
     <path
       d="M8 2L10 6L14 7L11 10L11 14L8 12L5 14L5 10L2 7L6 6L8 2Z"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
+export const ArchiveIcon = ({ className = "" }: { className?: string }) => (
+  <svg
+    width="16"
+    height="16"
+    viewBox="0 0 16 16"
+    fill="none"
+    className={`mr-1 ${className}`}
+  >
+
+    <path
+      d="M3 2V14H13V5L10 2H3Z"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinejoin="round"
+    />
+
+    <path
+      d="M10 2V5H13"
       stroke="currentColor"
       strokeWidth="1.5"
       strokeLinejoin="round"
