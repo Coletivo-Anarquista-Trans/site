@@ -82,9 +82,9 @@ export default function Home() {
             transition={{ duration: 0.5 }}
             className="w-full"
           >
-            <Link href="/sobre" className="block w-full">
+            <Link href="/recursos" className="block w-full">
               <CyberBig
-                text="quem somos"
+                text="recursos"
                 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
               />
             </Link>
@@ -96,9 +96,9 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="w-full"
           >
-            <Link href="/recursos" className="block w-full" >
+            <Link href="/blog" className="block w-full" >
               <CyberBig
-                text="recursos"
+                text="blog"
                 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
               />
             </Link>
