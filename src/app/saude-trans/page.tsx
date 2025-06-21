@@ -45,7 +45,7 @@ export default function SaudeTrans() {
             <CyberContainer className="w-full max-w-4xl border border-accent1 p-1 crt-screen crt-curvature crt-reflection granular-effect">
                 <CyberContainer className="border border-accent1 p-6">
                     <CyberContainer className="text-2xl sm:text-3xl font-bold text-accent1 mb-6 text-center">
-                        /saude-trans/
+                        Saúde Trans
                     </CyberContainer>
 
                     <CyberContainer className="text-accent1 text-center mb-8">
