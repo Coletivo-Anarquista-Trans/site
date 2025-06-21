@@ -1,17 +1,23 @@
 "use client";
 
-import { useState } from "react";
+import { useState, ReactNode } from "react";
 import CyberContainer from "@/components/atoms/CyberContainer";
 import { CyberDropdownProps } from "@/types/dropdown";
+
+interface EnhancedCyberDropdownProps extends Omit<CyberDropdownProps, 'items'> {
+    items?: CyberDropdownProps['items'];
+    content?: ReactNode;
+}
 
 export default function CyberDropdown({
     title,
     items,
+    content,
     className = "",
     defaultOpen = false,
     maxHeight = "max-h-96",
     onToggle
-}: CyberDropdownProps) {
+}: EnhancedCyberDropdownProps) {
     const [isOpen, setIsOpen] = useState(defaultOpen);
 
     const toggleDropdown = () => {
@@ -45,7 +51,13 @@ export default function CyberDropdown({
                 {isOpen && (
                     <div className="border-t border-accent1 bg-background">
                         <div className={`p-4 space-y-3 overflow-y-auto ${maxHeight}`}>
-                            {items.map((item) => (
+                            {content && (
+                                <div className="text-accent1">
+                                    {content}
+                                </div>
+                            )}
+                            
+                            {items && items.map((item) => (
                                 <div
                                     key={item.id}
                                     className={`p-2 border-l-2 border-transparent transition-all duration-200 flex items-center gap-2 ${item.disabled
