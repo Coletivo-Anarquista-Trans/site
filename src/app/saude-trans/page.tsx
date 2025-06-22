@@ -23,16 +23,16 @@ export default function SaudeTrans() {
             description: "Serviços públicos de saúde com atendimento a pessoas trans"
         },
         {
-            id: "casas-acolhimento", 
+            id: "casas-acolhimento",
             name: "casas-acolhimento",
             path: "/saude-trans/casas-acolhimento",
             description: "Centros de acolhida LGBTQIAPN+"
         },
         {
             id: "cartilhas-manuais",
-            name: "cartilhas-manuais", 
+            name: "cartilhas-manuais",
             path: "/saude-trans/cartilhas-manuais",
-            description: "Guias, cartilhas e manuais sobre saúde, sobrevivência, direitos, etc."
+            description: "Guias, cartilhas e manuais sobre saúde, sobrevivência, direitos, etc"
         }
     ];
 
@@ -60,7 +60,7 @@ export default function SaudeTrans() {
                         <div className="text-accent1 mb-4 font-mono text-sm">
                             <span className="text-accent5">total {directories.length}</span>
                         </div>
-                        
+
                         <div className="space-y-2">
                             {directories.map((dir) => (
                                 <div
@@ -68,9 +68,9 @@ export default function SaudeTrans() {
                                     className="flex items-center p-3 hover:bg-accent1 hover:text-background cursor-pointer border border-transparent hover:border-accent1 transition-all duration-200"
                                     onClick={() => handleDirectoryClick(dir.path)}
                                 >
-                                    <FaFolder 
-                                        size={24} 
-                                        className="text-accent5 mr-4 flex-shrink-0" 
+                                    <FaFolder
+                                        size={24}
+                                        className="text-accent5 mr-4 flex-shrink-0"
                                     />
                                     <div className="flex-1">
                                         <div className="font-mono text-accent5 group-hover:text-background mb-1">
@@ -86,7 +86,7 @@ export default function SaudeTrans() {
                                 </div>
                             ))}
                         </div>
-                        
+
                         <div className="mt-4 pt-4 border-t border-accent1 text-accent3 text-xs font-mono">
                             <span>drwxr-xr-x 3 cats-coletivo-anarquista-trans 4096 {new Date().toLocaleDateString('pt-BR')}.</span>
                         </div>
