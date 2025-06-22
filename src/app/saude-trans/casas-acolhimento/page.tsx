@@ -8,7 +8,7 @@ export default function CasasAcolhimento() {
             <CyberContainer className="w-full max-w-4xl border border-accent1 p-1 crt-screen crt-curvature crt-reflection granular-effect">
                 <CyberContainer className="border border-accent1 p-6">
                     <CyberContainer className="text-2xl sm:text-3xl font-bold text-accent1 mb-6 text-center">
-                        Casas de acolhimento
+                        Casas de Acolhimento
                     </CyberContainer>
 
                     <CyberContainer className="text-accent1 space-y-6">
@@ -34,7 +34,7 @@ export default function CasasAcolhimento() {
                             </p>
                             <div className="space-y-2">
                                 <ul className="list-disc list-inside">
-                                    <li>Endereço: Rio de Janeiro - RJ</li>
+                                    <li>Endereço: Rio de Janeiro (não encontramos o endereço exato)</li>
                                     <li>Contato: (21) 96519-2569</li>
                                     <li>Instagram: @casanem_</li>
                                 </ul>
@@ -76,10 +76,24 @@ export default function CasasAcolhimento() {
                             </p>
                             <div className="space-y-2">
                                 <ul className="list-disc list-inside">
-                                    <li>Endereço: Rua Silva Ramos, 839 - Manaus, AM</li>
+                                    <li>Endereço: Rua Silva Ramos, 839 - Praca 14 de Janeiro, Manaus - AM</li>
                                     <li>Contato: contato@casamiga.org</li>
                                     <li>Instagram: @casamigalgbt</li>
                                     <li>Site: <a href="https://linktr.ee/casamigalgbt" target="_blank" rel="noopener noreferrer" className="text-accent1 hover:underline">linktr.ee/casamigalgbt</a></li>
+                                </ul>
+                            </div>
+                        </section>
+
+                        <section id="casa-5">
+                            <h2 className="text-xl font-bold text-accent5 mb-4">Casa Rosa</h2>
+                            <p className="text-accent1 mb-4">
+                                Casa de apoio ao público LGBTQIA+.
+                            </p>
+                            <div className="space-y-2">
+                                <ul className="list-disc list-inside">
+                                    <li>Endereço: Sobradinho - Quadra 17, Nº 45, Brasília - DF</li>
+                                    <li>Contato: fundacaocasarosa@gmail.com | (61) 99220-3745</li>
+                                    <li>Instagram: @casarosadf</li>
                                 </ul>
                             </div>
                         </section>

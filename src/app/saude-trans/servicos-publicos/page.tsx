@@ -5,6 +5,126 @@ import CyberResourceIcon from "@/components/atoms/CyberResourceIcon";
 import CyberDropdown from "@/components/molecules/CyberDropdown";
 
 export default function ServicosPublicos() {
+    // Acre services content
+    const acServicesContent = (
+        <div className="space-y-4">
+            <div className="border border-accent1 p-4">
+                <h3 className="text-lg font-bold text-accent5 mb-3">Centro de Referência LGBT do Acre</h3>
+                <ul className="list-disc list-inside space-y-1">
+                    <li>
+                        Endereço: Rua Francisco Mangabeira, 33 - Bosque, Rio Branco, AC
+                    </li>
+                    <li>
+                        Telefone: (68) 3215-2310
+                    </li>
+                    <li>
+                        E-mail: crsejudh@ac.gov.br
+                    </li>
+                </ul>
+            </div>
+        </div>
+    );
+
+    // Amazonas services content
+    const amServicesContent = (
+        <div className="space-y-4">
+            <div className="border border-accent1 p-4">
+                <h3 className="text-lg font-bold text-accent5 mb-3">Universidade Estadual do Amazonas - Ambulatório de Diversidade Sexual e Gênero</h3>
+                <ul className="list-disc list-inside space-y-1">
+                    <li>
+                        Endereço: Rua Codajás, 26, Cachoeirinha, AM
+                    </li>
+                    <li>
+                        Telefone: (92) 3612-4200 / 4208 / 4217
+                    </li>
+                    <li>
+                        E-mail: dirpam@policodajas.am.gov.br
+                    </li>
+                </ul>
+            </div>
+        </div>
+    );
+
+    // Ceará services content
+    const ceServicesContent = (
+        <div className="space-y-4">
+            <div className="border border-accent1 p-4">
+                <h3 className="text-lg font-bold text-accent5 mb-3">Ambulatório de Saúde Trans do Hospital de Saúde Mental Frota Pinto</h3>
+                <ul className="list-disc list-inside space-y-1">
+                    <li>
+                        Endereço: Rua Vicente Nobre Macêdo, s/n - Messejana, Fortaleza, CE
+                    </li>
+                    <li>
+                        Telefone: (85) 3101-4348
+                    </li>
+                </ul>
+            </div>
+        </div>
+    );
+
+    // Distrito Federal services content
+    const dfServicesContent = (
+        <div className="space-y-4">
+            <div className="border border-accent1 p-4">
+                <h3 className="text-lg font-bold text-accent5 mb-3">Distrito Federal Ambulatório Trans do Hospital Dia</h3>
+                <ul className="list-disc list-inside space-y-1">
+                    <li>
+                        Endereço: Asa Sul EQS 508/509 - Asa Sul, Brasília, DF
+                    </li>
+                    <li>
+                        Telefone: (61) 3445-7529 / 3445-7521
+                    </li>
+                </ul>
+            </div>
+        </div>
+    );
+
+    // Espírito Santo services content
+    const esServicesContent = (
+        <div className="space-y-4">
+            <div className="border border-accent1 p-4">
+                <h3 className="text-lg font-bold text-accent5 mb-3">Hospital Universitário Cassiano Antônio de Moraes</h3>
+                <ul className="list-disc list-inside space-y-1">
+                    <li>
+                        Endereço: Av. Mal. Campos, 1355 - Santos Dumont, Vitória, ES
+                    </li>
+                    <li>
+                        Telefone: (27) 3335-7100
+                    </li>
+                </ul>
+            </div>
+        </div>
+    );
+
+    // Goiás services content
+    const goServicesContent = (
+        <div className="space-y-4">
+            <div className="border border-accent1 p-4">
+                <h3 className="text-lg font-bold text-accent5 mb-3">Univ Fed. de Goiás – Hospital das Clínicas da Universidade Federal de Goiás</h3>
+                <ul className="list-disc list-inside space-y-1">
+                    <li>
+                        Endereço: 1ª Avenida, S/N - Setor Leste Universitário, Goiânia, GO
+                    </li>
+                    <li>
+                        Telefone: (62) 3269-8200
+                    </li>
+                </ul>
+            </div>
+
+            <div className="border border-accent1 p-4">
+                <h3 className="text-lg font-bold text-accent5 mb-3">Ambulatório de Transexualidade do Hospital Geral de Goiânia Alberto Rassi</h3>
+                <ul className="list-disc list-inside space-y-1">
+                    <li>
+                        Endereço: Av. Anhanguera, 6479 - St. Oeste, Goiânia, GO
+                    </li>
+                    <li>
+                        Telefone: (62) 3209-9800
+                    </li>
+                </ul>
+            </div>
+        </div>
+    );
+
     // Rio de Janeiro services content
     const rjServicesContent = (
         <div className="space-y-4">
@@ -12,7 +132,7 @@ export default function ServicosPublicos() {
                 <h3 className="text-lg font-bold text-accent5 mb-3">Amb. de Saúde Int. de Travestis e Transexuais João W. Nery</h3>
                 <ul className="list-disc list-inside space-y-1">
                     <li>Endereço: Av. Ernani do Amaral Peixoto, 169 - Centro, Niterói, RJ</li>
-                    <li>Contato: (21) 2717-8140</li>
+                    <li>Telefone: (21) 2717-8140</li>
                 </ul>
             </div>
         </div>
@@ -41,7 +161,7 @@ export default function ServicosPublicos() {
             <CyberContainer className="w-full max-w-4xl border border-accent1 p-1 crt-screen crt-curvature crt-reflection granular-effect">
                 <CyberContainer className="border border-accent1 p-6">
                     <CyberContainer className="text-2xl sm:text-3xl font-bold text-accent1 mb-6 text-center">
-                        Serviços públicos de saúde
+                        Serviços Públicos de Saúde
                     </CyberContainer>
 
                     <CyberContainer className="text-accent1 mb-6">
@@ -62,6 +182,49 @@ export default function ServicosPublicos() {
                     {/* Services by Region */}
                     <CyberContainer className="space-y-4">
                         <h2 className="text-xl font-bold text-accent5 mb-4">Serviços por região</h2>
+                        <span className="text-accent3 text-sm">Fonte: <a className="text-accent3 hover:underline" href="https://www.saudelgbtqia.com/assistenciaestadual" target="_blank" rel="noopener noreferrer">ambulatórios estaduais de saúde trans e centros de acolhimento LGBTQIA+</a></span>
+
+                        {/* Acre */}
+                        <CyberDropdown
+                            title="Acre"
+                            content={acServicesContent}
+                            className="w-full max-w-4xl"
+                        />
+
+                        {/* Amazonas */}
+                        <CyberDropdown
+                            title="Amazonas"
+                            content={amServicesContent}
+                            className="w-full max-w-4xl"
+                        />
+
+                        {/* Ceará */}
+                        <CyberDropdown
+                            title="Ceará"
+                            content={ceServicesContent}
+                            className="w-full max-w-4xl"
+                        />
+
+                        {/* Distrito Federal */}
+                        <CyberDropdown
+                            title="Distrito Federal"
+                            content={dfServicesContent}
+                            className="w-full max-w-4xl"
+                        />
+
+                        {/* Espírito Santo */}
+                        <CyberDropdown
+                            title="Espírito Santo"
+                            content={esServicesContent}
+                            className="w-full max-w-4xl"
+                        />
+
+                        {/* Goiás */}
+                        <CyberDropdown
+                            title="Goiás"
+                            content={goServicesContent}
+                            className="w-full max-w-4xl"
+                        />
 
                         {/* Rio de Janeiro */}
                         <CyberDropdown
