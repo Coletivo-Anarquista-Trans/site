@@ -334,6 +334,31 @@ export const HealthIcon = ({ className = "" }: { className?: string }) => (
   </svg>
 );
 
+export const ArchiveIcon = ({ className = "" }: { className?: string }) => (
+  <svg
+    width="16"
+    height="16"
+    viewBox="0 0 16 16"
+    fill="none"
+    className={`mr-1 ${className}`}
+  >
+
+    <path
+      d="M3 2V14H13V5L10 2H3Z"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinejoin="round"
+    />
+
+    <path
+      d="M10 2V5H13"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
 export const CustomizationIcon = ({
   className = "",
 }: {
@@ -355,7 +380,7 @@ export const CustomizationIcon = ({
   </svg>
 );
 
-export const ArchiveIcon = ({ className = "" }: { className?: string }) => (
+export const TransgenderIcon = ({ className = "" }: { className?: string }) => (
   <svg
     width="16"
     height="16"
@@ -363,18 +388,46 @@ export const ArchiveIcon = ({ className = "" }: { className?: string }) => (
     fill="none"
     className={`mr-1 ${className}`}
   >
+    <circle cx="8" cy="8" r="3" stroke="currentColor" strokeWidth="1.5" />
 
     <path
-      d="M3 2V14H13V5L10 2H3Z"
+      d="M11 5L13 3"
       stroke="currentColor"
       strokeWidth="1.5"
+      strokeLinecap="round"
+    />
+    <path
+      d="M11 3H13V5"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
       strokeLinejoin="round"
     />
 
     <path
-      d="M10 2V5H13"
+      d="M8 11V14"
       stroke="currentColor"
       strokeWidth="1.5"
+      strokeLinecap="round"
+    />
+    <path
+      d="M6 13H10"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+    />
+
+    <path
+      d="M5 5L3 3"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+    />
+    <path
+      d="M3 5V3H5"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
       strokeLinejoin="round"
     />
   </svg>
