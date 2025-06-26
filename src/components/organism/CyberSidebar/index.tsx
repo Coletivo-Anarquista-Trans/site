@@ -11,6 +11,7 @@ import {
   FolderIcon,
   HomeIcon,
   BlogIcon,
+  ResourcesIcon,
   ArchiveIcon,
   AboutIcon,
   HamburgerIcon,
@@ -79,6 +80,7 @@ interface CyberSection {
 
 type ExpandedNodes = {
   "manifesto-root": boolean;
+  "saude-trans-root": boolean;
 };
 
 const HARDCODED_SECTIONS = {
@@ -143,6 +145,11 @@ const HARDCODED_SECTIONS = {
       label: "3.7 - Pelo direito à reprodução queer",
     },
   ],
+  saudeTrans: [
+    { id: "servicos-publicos", parent: "saude-trans", label: "serviços públicos" },
+    { id: "casas-acolhimento", parent: "saude-trans", label: "casas de acolhimento" },
+    { id: "cartilhas-manuais", parent: "saude-trans", label: "cartilhas e manuais" },
+  ],
 };
 
 export default function CyberSidebar() {
@@ -154,23 +161,35 @@ export default function CyberSidebar() {
   const [open, setOpen] = useState(false);
   const [expandedNodes, setExpandedNodes] = useState<ExpandedNodes>({
     "manifesto-root": false,
+    "saude-trans-root": false,
   });
   const [manifestoSections, setManifestoSections] = useState<CyberSection[]>(
+    []
+  );
+  const [saudeTransSections, setSaudeTransSections] = useState<CyberSection[]>(
     []
   );
 
   useEffect(() => {
     if (cyberSections.length === 0) {
-      loadSections(HARDCODED_SECTIONS.manifesto);
+      loadSections([...HARDCODED_SECTIONS.manifesto, ...HARDCODED_SECTIONS.saudeTrans]);
       setManifestoSections(HARDCODED_SECTIONS.manifesto);
+      setSaudeTransSections(HARDCODED_SECTIONS.saudeTrans);
     } else {
       const manifestos = cyberSections.filter((s) => s.parent === "manifesto");
+      const saudeTranss = cyberSections.filter((s) => s.parent === "saude-trans");
       setManifestoSections(manifestos);
+      setSaudeTransSections(saudeTranss);
     }
   }, [cyberSections, loadSections]);
 
   const handleSectionClick = (id: string) => {
     router.push(`/manifesto#${id}`);
+    setOpen(false);
+  };
+
+  const handleSaudeTransSectionClick = (id: string) => {
+    router.push(`/saude-trans/${id}`);
     setOpen(false);
   };
 
@@ -235,17 +254,8 @@ export default function CyberSidebar() {
       <motion.div variants={itemVariants}>
         <Link href="/recursos" passHref >
           <CyberMiniButton className="flex items-center w-full hover:bg-accent1 hover:text-background">
-            <ArchiveIcon />
+            <ResourcesIcon />
             <span>recursos</span>
-          </CyberMiniButton>
-        </Link>
-      </motion.div>
-
-      <motion.div variants={itemVariants}>
-        <Link href="/blog" passHref >
-          <CyberMiniButton className="flex items-center w-full hover:bg-accent1 hover:text-background">
-            <BlogIcon />
-            <span>blog</span>
           </CyberMiniButton>
         </Link>
       </motion.div>
@@ -255,6 +265,65 @@ export default function CyberSidebar() {
           <CyberMiniButton className="flex items-center w-full hover:bg-accent1 hover:text-background">
             <ArchiveIcon />
             <span>arquivos</span>
+          </CyberMiniButton>
+        </Link>
+      </motion.div>
+
+      <motion.div variants={itemVariants} className="mb-1">
+        <div
+          className="flex items-center px-2 py-1 cursor-pointer hover:bg-accent1 hover:text-background"
+          onClick={() => toggleNode("saude-trans-root")}
+        >
+          <FolderIcon isOpen={expandedNodes["saude-trans-root"]} />
+          <span>saúde trans</span>
+        </div>
+
+        <AnimatePresence>
+          {expandedNodes["saude-trans-root"] && (
+            <motion.div
+              className="ml-6 pl-2 border-l border-accent1 overflow-hidden"
+              variants={subContainerVariants}
+              initial="hidden"
+              animate="visible"
+              exit="exit"
+            >
+              <motion.div
+                className="hover:bg-accent1 hover:text-background cursor-pointer px-2 py-1"
+                onClick={() => router.push("/saude-trans")}
+                variants={subItemVariants}
+              >
+                <div className="flex items-center">
+                  <span className="mr-1">---</span>
+                  <span className="ml-2 whitespace-nowrap overflow-hidden text-ellipsis max-w-[180px]">
+                    geral
+                  </span>
+                </div>
+              </motion.div>
+              {saudeTransSections.map((section) => (
+                <motion.div
+                  key={section.id}
+                  className="hover:bg-accent1 hover:text-background cursor-pointer px-2 py-1"
+                  onClick={() => handleSaudeTransSectionClick(section.id)}
+                  variants={subItemVariants}
+                >
+                  <div className="flex items-center">
+                    <span className="mr-1">---</span>
+                    <span className="ml-2 whitespace-nowrap overflow-hidden text-ellipsis max-w-[180px]">
+                      {section.label}
+                    </span>
+                  </div>
+                </motion.div>
+              ))}
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </motion.div>
+
+      <motion.div variants={itemVariants}>
+        <Link href="/blog" passHref >
+          <CyberMiniButton className="flex items-center w-full hover:bg-accent1 hover:text-background">
+            <BlogIcon />
+            <span>blog</span>
           </CyberMiniButton>
         </Link>
       </motion.div>

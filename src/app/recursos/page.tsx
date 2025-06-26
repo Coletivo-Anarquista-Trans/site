@@ -24,10 +24,8 @@ export default function Resources() {
           Recursos
         </CyberContainer>
 
-        <CyberContainer className="font-bold text-accent1 mb-6 text-center">
+        <CyberContainer className="text-accent1 mb-6 text-center">
           Recursos úteis de customização de personagem e informações gerais.
-          <br />
-          Em breve, mais recursos que não sejam sobre hormonios!
           <br />
           <span className="text-accent5">
             Tem algum recurso? Mande pra gente em: cats-trans@riseup.net
