@@ -15,6 +15,7 @@ import {
   ArchiveIcon,
   AboutIcon,
   HamburgerIcon,
+  TransgenderIcon,
   CloseIcon,
 } from "./CyberSidebarIcons";
 import CyberMiniButton from "@/components/atoms/CyberMiniButton";
@@ -329,10 +330,19 @@ export default function CyberSidebar() {
       </motion.div>
 
       <motion.div variants={itemVariants}>
+        <Link href="/coletivos" passHref >
+          <CyberMiniButton className="flex items-center w-full hover:bg-accent1 hover:text-background">
+            <TransgenderIcon />
+            <span>coletivos parceires</span>
+          </CyberMiniButton>
+        </Link>
+      </motion.div>
+
+      <motion.div variants={itemVariants}>
         <Link href="/sobre" passHref >
           <CyberMiniButton className="flex items-center w-full hover:bg-accent1 hover:text-background">
             <AboutIcon />
-            <span>sobre</span>
+            <span>sobre nós</span>
           </CyberMiniButton>
         </Link>
       </motion.div>
