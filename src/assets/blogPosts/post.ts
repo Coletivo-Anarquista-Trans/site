@@ -51,18 +51,18 @@ export const posts: BlogPost[] = [
       </p>
     `,
   },
-  {
-    id: "post-2",
-    title: "Miauzers o( ❛ᴗ❛ )o",
-    description: "mazrine",
-    slug: "introducao-ao-miauzers",
-    date: "2023-05-15",
-    image: "/trans-archives/miau.jpg",
-    content: `
-      <h2>O que é Miauzers?</h2>
-      <p>Miauzers é uma ferramenta de resistência...</p>
-    `,
-  },
+  // {
+  //   id: "post-2",
+  //   title: "Miauzers o( ❛ᴗ❛ )o",
+  //   description: "mazrine",
+  //   slug: "introducao-ao-miauzers",
+  //   date: "2023-05-15",
+  //   image: "/trans-archives/miau.jpg",
+  //   content: `
+  //     <h2>O que é Miauzers?</h2>
+  //     <p>Miauzers é uma ferramenta de resistência...</p>
+  //   `,
+  // },
   {
     id: "post-3",
     title: "foda-se o CFM",
@@ -143,7 +143,7 @@ export const posts: BlogPost[] = [
     description: "ini",
     slug: "rumo-ao-transpunk-prefacio",
     date: "2025-05-22",
-    image: "/trans-archives/t_punk.jpeg",
+    image: "/trans-archives/tpunk.png",
     content: `
       <h2>
         <b>Rumo ao transpunk - Prefácio</b>
@@ -198,7 +198,7 @@ export const posts: BlogPost[] = [
     description: "n3o",
     slug: "abjeto",
     date: "2025-05-26",
-    image: "/trans-archives/desejo_de_afeto.png",
+    image: "/trans-archives/abjeto.jpg",
     content: `
       <p>
         <i>desenho: desejo de afeto, devora-me (2019, eu acho)</i>
@@ -316,6 +316,119 @@ export const posts: BlogPost[] = [
     </p>
     <p>
       Revide revide revide!
+    </p>
+    `,
+  },
+  {
+    id: "post-7",
+    title: "CONTRA-PARADA LGBTQIAPN+",
+    description: "CATS y Revolta Anarcokuir",
+    slug: "contra-parada-lgbtqia",
+    date: "2025-07-01",
+    image: "/trans-archives/contraparada.png",
+    content: `
+    <p>
+      Na semana do orgulho, que em $P ocorre durante um feriado cristão, marcamos pontos estratégicos da cidade com nossas afirmações de revolta, como o histórico largo do Arouche, a rua Augusta e a avenida Paulista, local onde é realizado o megaevento. 
+    </p>
+    <br/>
+    <p>
+      Se a parada convocou a lembrarmos de nossas histórias e das velhices lgbt+, reivindicamos com nossas ações diretas as lutas e resistências que fizeram o orgulho brotar da revolta.
+    </p>
+    <br/>
+    <p>
+      No domingo, tomamos um espaço da av. pauli$ta onde pudemos abrir caminhos, afastadxs dos trios elétricos, da multidão e dos carrinhos de venda de bebidas e churrasco ou bugigangas com as cores do arco-íris e bandeiras com as cores da pátria. em meio ao barulho da festa patrocinada, andamos em silêncio, em contra-marcha.
+    </p>
+    <br/>
+    <p>
+      <b>“Memória, resistência e futuro”?</b> De quem? Para quem? Quais lgbtqiapn+ podem ter uma vida longeva no país onde mais matam pessoas trans e travestis em todo o mundo? Como será o passar dos anos para as crianças e xs jovens trans que tiveram sua saúde alvejada pelas armas dos polícias de jaleco branco? 
+    </p>
+    <br/>
+    <p>
+      Como resgatamos as histórias de nossas lutas, de nossxs ancestrais, se domesticamos e vendemos nosso orgulho? E, a cada edição desse megaevento, apagamos um pouco mais as revoltas que fizeram eclodir o orgulho. Onde está a revolta lgbtqiapn+? 
+    </p>
+    <br/>
+    <p>
+      Como a Parada não se voltou à luta contra a resolução do <b>Conselho Federal de Medicina</b>, assinada em abril deste ano? Isso é um desfile de escola de samba cujo tema deve ser decidido um ano antes, sem alterações? 
+    </p>
+    <br/>
+    <p>
+      Como resgatamos as histórias de nossas lutas, de nossxs ancestrais, se domesticamos e vendemos nosso orgulho? se, a cada edição desse megaevento, apagamos um pouco mais as revoltas que fizeram eclodir o orgulho. onde está a revolta lgbtqiapn+? 
+    </p>
+    </br>
+    <p>
+      Como a Parada não se voltou à luta contra a resolução do Conselho Federal de Medicina, assinada em abril deste ano? isso é um desfile de escola de samba cujo tema deve ser decidido um ano antes, sem alterações? 
+    </p>
+    <br/>
+    <p>
+      Esquadrinhar o que é assunto das velhices x das crianças e jovens não é reproduzir etarismos e mais individualismo burguês no movimento?
+    </p>
+    <br/>
+    <p>
+      Chega de falar de resistência como uma palavra vazia, reduzida a um apêndice identitário! as resistências são práticas, experiências de confronto contra a ordem, contra a sociedade. ninguém resiste dentro das normas, das leis, dos uniformes. isso é reformar. 
+    </p>
+    <br/>
+
+    <img src="/trans-archives/anarcotrans.png" alt="Faixa que diz: Anarcokuir, Anarcotrans, contra o estado e o capital!" class="w-full h-auto" />
+
+    <br/>
+    <p>
+      <b>O orgulho brotou da revolta!</b> 
+    </p>
+    <br/>
+    <p>
+      Orgulho sem revolta = exército do Estado de Israel, o 1º a ter soldados e soldadas trans
+    </p>
+    <br/>
+    <p>
+      Orgulho sem revolta = parada do orgulho de Los Angeles de 2025 ocorrer alheia às revoltas dxs estrangeirxs nos U$A
+    </p>
+    <br/>
+    <p>
+      Orgulho sem revolta = parada do orgulho lgbt de $ão Paulo, a maior e mais rentável do mundo, se calar diante da resolução do CFM
+    </p>
+    <br/>
+    <p>
+      Orgulho sem revolta = chorar por migalhas do Estado (o mesmo que promove e sempre promoveu a devastação ecológica, a matança dos povos originários e de suas culturas, o encarceramento e o massacre de pretxs e pobres)
+    </p>
+    <br/>
+    <p>
+      Orgulho sem revolta = desejar empregabilidade e patrocínio (que estão diminuindo… esperem com suas latinhas da Ambev e copões de Smirnoff, enquanto o efeito Meta nas políticas de diversidade e inclusão vai chegando aqui…)
+    </p>
+    <br/>
+    <p>
+      Orgulho sem revolta = lamber as botas da polícia e aplaudí-la na parada para não ter seus celulares furtados
+    </p>
+    <br/>
+    <p>
+      Orgulho sem revolta = aceitar dinheiro da prefeitura e do governo do estado de $P, responsáveis pelas violências contra pessoas em situação de rua, usuárixs de crack, pretxs e pobres, as árvores remanescentes na cidade de concreto
+    </p>
+    <br/>
+    <p>
+      Orgulho sem revolta = acatar e reproduzir o policiamento de gênero, se jogar na disputa entre as siglas, passar pano para as TERFs e suas alianças com os fachos
+    </p>
+    <br/>
+    <p>
+      Orgulho sem revolta = dar continuidade a esta ordem social, garantir o futuro dela às custas das nossas existências livres no presente
+    </p>
+    <br/>
+    <p>
+      Nossas existências kuir e trans anarquistas e todas as existências que se fazem contra ou fora dessa ordem religiosa, capitalista, estatal.
+    </p>
+    <br/>
+    <p>
+      Por isso rejeitamos seu orgulho higienizado e seguimos alimentando as chamas da revolta e cultivando sonhos que não cabem em sua ordem social.
+    </p>
+    <br/>
+    <p>
+      Evocamos a memória das lutas do passado e agimos no presente para romper com esse ativismo mercantilizado e abrir caminhos que nos levem para fora de suas disputas por reconhecimento e pela gestão desse Estado colonial. 
+    </p>
+    <br/>
+    <p>
+      Hoje e amanhã, seguimos combativxs e indomesticáveis.
+    </p>
+    <br/>
+    <p>
+      <b>Morte ao Estado e viva a anarquia!</b>
     </p>
     `,
   },
