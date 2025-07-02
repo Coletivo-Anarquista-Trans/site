@@ -323,7 +323,7 @@ export const posts: BlogPost[] = [
     id: "post-7",
     title: "CONTRA-PARADA LGBTQIAPN+",
     description: "CATS y Revolta Anarcokuir",
-    slug: "contra-parada-lgbtqia",
+    slug: "contra-parada-lgbtqiapn",
     date: "2025-07-01",
     image: "/trans-archives/contraparada.png",
     content: `
