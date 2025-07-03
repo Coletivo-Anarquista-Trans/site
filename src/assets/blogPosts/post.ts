@@ -362,11 +362,7 @@ export const posts: BlogPost[] = [
       Chega de falar de resistência como uma palavra vazia, reduzida a um apêndice identitário! As resistências são práticas, experiências de confronto contra a ordem, contra a sociedade. Ninguém resiste dentro das normas, das leis, dos uniformes. Isso é reformar.
     </p>
     <br/>
-
-    <img src="/trans-archives/anarcotrans.png" alt="Faixa que diz: Anarcokuir, Anarcotrans, contra o estado e o capital!" class="w-full h-auto" />
-
-    <br/>
-    <p class="text-lg">
+    <p class="text-md">
       <b>O orgulho brotou da revolta!</b> 
     </p>
     <br/>
