@@ -324,7 +324,7 @@ export const posts: BlogPost[] = [
     title: "CONTRA-PARADA LGBTQIAPN+",
     description: "CATS y Revolta Anarcokuir",
     slug: "contra-parada-lgbtqiapn",
-    date: "2025-07-01",
+    date: "2025-07-03",
     image: "/trans-archives/contraparada.png",
     content: `
     <blockquote class="text-sm text-accent2">
@@ -387,7 +387,7 @@ export const posts: BlogPost[] = [
         <u>orgulho sem revolta</u> = desejar empregabilidade e patrocínio (que estão diminuindo...esperem com suas latinhas da Ambev e copões de Smirnoff, enquanto o efeito Meta nas políticas de diversidade e inclusão vai chegando aqui...).
       </p>
       <p>
-        <u>orgulho sem revolta</u> = lamber as botas da polícia e aplaudí-la na parada para não ter seus celulares furtados
+        <u>orgulho sem revolta</u> = lamber as botas da polícia e aplaudí-la na parada para não ter seus celulares furtados.
       </p>
       <p>
         <u>orgulho sem revolta</u> = aceitar dinheiro da prefeitura e do governo do estado de $P, responsáveis pelas violências contra pessoas em situação de rua, usuárixs de crack, pretxs e pobres, as árvores remanescentes na cidade de concreto.
@@ -405,7 +405,7 @@ export const posts: BlogPost[] = [
     </p>
     <br/>
     <p>
-      Evocamos a memória das lutas do passado e agimos no presente para romper com esse ativismo mercantilizado e abrir caminhos que nos levem para fora de suas disputas por reconhecimento e pela gestão desse Estado colonial. 
+      Evocamos a memória das lutas do passado e agimos no presente para romper com esse ativismo mercantilizado e abrir caminhos que nos levem para fora de suas disputas por reconhecimento e pela gestão desse estado colonial.
     </p>
     <br/>
     <p>
