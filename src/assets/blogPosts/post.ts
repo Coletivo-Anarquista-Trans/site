@@ -267,7 +267,7 @@ export const posts: BlogPost[] = [
       </blockquote>
     `,
   },
-    {
+  {
     id: "post-6",
     title: "Parada LGBT: (L)ucro, (G)anância, (B)ancos e (T)raição",
     description: "ini",
@@ -327,36 +327,31 @@ export const posts: BlogPost[] = [
     date: "2025-07-01",
     image: "/trans-archives/contraparada.png",
     content: `
+    <blockquote class="text-sm text-accent2">
+      Texto construído e revisado coletivamente com <a href="https://anarkokuir.hotglue.me/" class="text-accent5 hover:underline" target="_blank">Revolta Anarcokuir</a>.
+    </blockquote>
     <p>
-      Na semana do orgulho, que em $P ocorre durante um feriado cristão, marcamos pontos estratégicos da cidade com nossas afirmações de revolta, como o histórico largo do Arouche, a rua Augusta e a avenida Paulista, local onde é realizado o megaevento. 
+      Na semana do orgulho, que em $P ocorre durante um feriado cristão, marcamos pontos estratégicos da cidade com nossas afirmações de revolta, como o histórico Largo do Arouche, a rua Augusta e a avenida Paulista, local onde é realizado o megaevento.
     </p>
     <br/>
     <p>
-      Se a parada convocou a lembrarmos de nossas histórias e das velhices lgbt+, reivindicamos com nossas ações diretas as lutas e resistências que fizeram o orgulho brotar da revolta.
+      Se a parada nos convoca a lembrarmos de nossas histórias e das velhices LGBT+, reivindicamos com nossas ações diretas as lutas e resistências que fizeram o orgulho brotar da revolta.
     </p>
     <br/>
     <p>
-      No domingo, tomamos um espaço da av. pauli$ta onde pudemos abrir caminhos, afastadxs dos trios elétricos, da multidão e dos carrinhos de venda de bebidas e churrasco ou bugigangas com as cores do arco-íris e bandeiras com as cores da pátria. em meio ao barulho da festa patrocinada, andamos em silêncio, em contra-marcha.
+      No domingo, tomamos um espaço da av. Paulista onde pudemos abrir caminhos, afastadxs dos trios elétricos, da multidão e dos carrinhos de venda de bebidas e churrasco ou bugigangas com as cores do arco-íris e bandeiras com as cores da pátria. Em meio ao barulho da festa patrocinada, andamos em silêncio, em contra-marcha.
     </p>
     <br/>
     <p>
-      <b>“Memória, resistência e futuro”?</b> De quem? Para quem? Quais lgbtqiapn+ podem ter uma vida longeva no país onde mais matam pessoas trans e travestis em todo o mundo? Como será o passar dos anos para as crianças e xs jovens trans que tiveram sua saúde alvejada pelas armas dos polícias de jaleco branco? 
+      <b>“Memória, resistência e futuro”</b>? De quem? Para quem? Quais LGBTQIAPN+ podem ter uma vida longeva no país onde mais matam pessoas trans e travestis em todo o mundo? Como será o passar dos anos para as crianças e xs jovens trans que tiveram sua saúde alvejada pelas armas dos polícias de jaleco branco?
     </p>
     <br/>
     <p>
-      Como resgatamos as histórias de nossas lutas, de nossxs ancestrais, se domesticamos e vendemos nosso orgulho? E, a cada edição desse megaevento, apagamos um pouco mais as revoltas que fizeram eclodir o orgulho. Onde está a revolta lgbtqiapn+? 
+      Como resgatamos as histórias de nossas lutas, de nossxs ancestrais, se domesticamos e vendemos nosso orgulho? E, a cada edição desse megaevento, apagamos um pouco mais as revoltas que fizeram eclodir o orgulho. Onde está a revolta LGBTQIAPN+? 
     </p>
     <br/>
     <p>
-      Como a Parada não se voltou à luta contra a resolução do <b>Conselho Federal de Medicina</b>, assinada em abril deste ano? Isso é um desfile de escola de samba cujo tema deve ser decidido um ano antes, sem alterações? 
-    </p>
-    <br/>
-    <p>
-      Como resgatamos as histórias de nossas lutas, de nossxs ancestrais, se domesticamos e vendemos nosso orgulho? se, a cada edição desse megaevento, apagamos um pouco mais as revoltas que fizeram eclodir o orgulho. onde está a revolta lgbtqiapn+? 
-    </p>
-    </br>
-    <p>
-      Como a Parada não se voltou à luta contra a resolução do Conselho Federal de Medicina, assinada em abril deste ano? isso é um desfile de escola de samba cujo tema deve ser decidido um ano antes, sem alterações? 
+      Como a parada não se voltou à luta contra a resolução do Conselho Federal de Medicina, assinada em abril deste ano? Isso é um desfile de escola de samba cujo tema deve ser decidido um ano antes, sem alterações?
     </p>
     <br/>
     <p>
@@ -364,56 +359,46 @@ export const posts: BlogPost[] = [
     </p>
     <br/>
     <p>
-      Chega de falar de resistência como uma palavra vazia, reduzida a um apêndice identitário! as resistências são práticas, experiências de confronto contra a ordem, contra a sociedade. ninguém resiste dentro das normas, das leis, dos uniformes. isso é reformar. 
+      Chega de falar de resistência como uma palavra vazia, reduzida a um apêndice identitário! As resistências são práticas, experiências de confronto contra a ordem, contra a sociedade. Ninguém resiste dentro das normas, das leis, dos uniformes. Isso é reformar.
     </p>
     <br/>
 
     <img src="/trans-archives/anarcotrans.png" alt="Faixa que diz: Anarcokuir, Anarcotrans, contra o estado e o capital!" class="w-full h-auto" />
 
     <br/>
-    <p>
+    <p class="text-lg">
       <b>O orgulho brotou da revolta!</b> 
     </p>
     <br/>
-    <p>
-      Orgulho sem revolta = exército do Estado de Israel, o 1º a ter soldados e soldadas trans
-    </p>
-    <br/>
-    <p>
-      Orgulho sem revolta = parada do orgulho de Los Angeles de 2025 ocorrer alheia às revoltas dxs estrangeirxs nos U$A
-    </p>
-    <br/>
-    <p>
-      Orgulho sem revolta = parada do orgulho lgbt de $ão Paulo, a maior e mais rentável do mundo, se calar diante da resolução do CFM
-    </p>
-    <br/>
-    <p>
-      Orgulho sem revolta = chorar por migalhas do Estado (o mesmo que promove e sempre promoveu a devastação ecológica, a matança dos povos originários e de suas culturas, o encarceramento e o massacre de pretxs e pobres)
-    </p>
-    <br/>
-    <p>
-      Orgulho sem revolta = desejar empregabilidade e patrocínio (que estão diminuindo… esperem com suas latinhas da Ambev e copões de Smirnoff, enquanto o efeito Meta nas políticas de diversidade e inclusão vai chegando aqui…)
-    </p>
-    <br/>
-    <p>
-      Orgulho sem revolta = lamber as botas da polícia e aplaudí-la na parada para não ter seus celulares furtados
-    </p>
-    <br/>
-    <p>
-      Orgulho sem revolta = aceitar dinheiro da prefeitura e do governo do estado de $P, responsáveis pelas violências contra pessoas em situação de rua, usuárixs de crack, pretxs e pobres, as árvores remanescentes na cidade de concreto
-    </p>
-    <br/>
-    <p>
-      Orgulho sem revolta = acatar e reproduzir o policiamento de gênero, se jogar na disputa entre as siglas, passar pano para as TERFs e suas alianças com os fachos
-    </p>
-    <br/>
-    <p>
-      Orgulho sem revolta = dar continuidade a esta ordem social, garantir o futuro dela às custas das nossas existências livres no presente
-    </p>
-    <br/>
-    <p>
-      Nossas existências kuir e trans anarquistas e todas as existências que se fazem contra ou fora dessa ordem religiosa, capitalista, estatal.
-    </p>
+    <div class="text-accent2 gap-3">
+      <p>
+        <u>orgulho sem revolta</u> = exército do estado de Israel, o 1º a ter soldados e soldadas trans.
+      </p>
+      <p>
+        <u>orgulho sem revolta</u> = parada do orgulho de Los Angeles de 2025 ocorrer alheia às revoltas dxs estrangeirxs nos U$A.
+      </p>
+      <p>
+        <u>orgulho sem revolta</u> = parada do orgulho LGBT+ de $ão Paulo, a maior e mais rentável do mundo, se calar diante da resolução do CFM.
+      </p>
+      <p>
+        <u>orgulho sem revolta</u> = chorar por migalhas do estado (o mesmo que promove e sempre promoveu a devastação ecológica, a matança dos povos originários e de suas culturas, o encarceramento e o massacre de pretxs e pobres).
+      </p>
+      <p>
+        <u>orgulho sem revolta</u> = desejar empregabilidade e patrocínio (que estão diminuindo...esperem com suas latinhas da Ambev e copões de Smirnoff, enquanto o efeito Meta nas políticas de diversidade e inclusão vai chegando aqui...).
+      </p>
+      <p>
+        <u>orgulho sem revolta</u> = lamber as botas da polícia e aplaudí-la na parada para não ter seus celulares furtados
+      </p>
+      <p>
+        <u>orgulho sem revolta</u> = aceitar dinheiro da prefeitura e do governo do estado de $P, responsáveis pelas violências contra pessoas em situação de rua, usuárixs de crack, pretxs e pobres, as árvores remanescentes na cidade de concreto.
+      </p>
+      <p>
+        <u>orgulho sem revolta</u> = acatar e reproduzir o policiamento de gênero, se jogar na disputa entre as siglas, passar pano para as TERFs e suas alianças com os fachos.
+      </p>
+      <p>
+        <u>orgulho sem revolta</u> = dar continuidade a esta ordem social, garantir o futuro dela às custas das nossas existências livres no presente, nossas existências kuir e trans anarquistas e todas as existências que se fazem contra ou fora dessa ordem religiosa, capitalista, estatal.
+      </p>
+    </div>
     <br/>
     <p>
       Por isso rejeitamos seu orgulho higienizado e seguimos alimentando as chamas da revolta e cultivando sonhos que não cabem em sua ordem social.
@@ -428,7 +413,7 @@ export const posts: BlogPost[] = [
     </p>
     <br/>
     <p>
-      <b>Morte ao Estado e viva a anarquia!</b>
+      <b>Morte ao estado e viva a anarquia!</b>
     </p>
     `,
   },

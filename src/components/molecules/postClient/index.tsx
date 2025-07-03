@@ -30,7 +30,7 @@ export default function PostContent({ post }: { post: Post }) {
         className="text-accent1 hover:underline flex items-center gap-2 mb-6"
         onClick={() => playButtonSelect()}
         onMouseEnter={() => playButtonSelect()}
-        >
+      >
         <FaArrowLeft /> Voltar ao blog
       </Link>
       <motion.h1
@@ -68,7 +68,7 @@ export default function PostContent({ post }: { post: Post }) {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.6, duration: 0.5 }}
-        className="prose prose-invert max-w-none"
+        className="prose prose-invert max-w-none tracking-wide"
         dangerouslySetInnerHTML={{ __html: post.content }}
       />
     </motion.div>
