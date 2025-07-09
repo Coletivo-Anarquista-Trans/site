@@ -16,7 +16,7 @@ export const posts: BlogPost[] = [
     description: "n3o",
     slug: "marcha-transmasc",
     date: "2025-03-30",
-    image: "/trans-archives/marcha_transmasc.jpeg",
+    image: "/trans-blog/images/marcha_transmasc.jpeg",
     content: `
       <p>
         ao perder o costume de escrever me vejo como criança: começo, apago, vejo e revejo, me repreendo, me anulo. engraçado, fui assim quando criança.
@@ -57,7 +57,7 @@ export const posts: BlogPost[] = [
   //   description: "mazrine",
   //   slug: "introducao-ao-miauzers",
   //   date: "2023-05-15",
-  //   image: "/trans-archives/miau.jpg",
+  //   image: "/trans-blog/images/miau.jpg",
   //   content: `
   //     <h2>O que é Miauzers?</h2>
   //     <p>Miauzers é uma ferramenta de resistência...</p>
@@ -69,7 +69,7 @@ export const posts: BlogPost[] = [
     description: "ini",
     slug: "foda-se-o-cfm",
     date: "2025-04-15",
-    image: "/trans-archives/bastard_doctors.png",
+    image: "/trans-blog/images/bastard_doctors.png",
     content: `
       <h2>
         <b>Sobre o CFM</b>
@@ -143,7 +143,7 @@ export const posts: BlogPost[] = [
     description: "ini",
     slug: "rumo-ao-transpunk-prefacio",
     date: "2025-05-22",
-    image: "/trans-archives/tpunk.png",
+    image: "/trans-blog/images/tpunk.png",
     content: `
       <h2>
         <b>Rumo ao transpunk - Prefácio</b>
@@ -198,7 +198,7 @@ export const posts: BlogPost[] = [
     description: "n3o",
     slug: "abjeto",
     date: "2025-05-26",
-    image: "/trans-archives/abjeto.jpg",
+    image: "/trans-blog/images/abjeto.jpg",
     content: `
       <p>
         <i>desenho: desejo de afeto, devora-me (2019, eu acho)</i>
@@ -273,7 +273,7 @@ export const posts: BlogPost[] = [
     description: "ini",
     slug: "parada-lgbt-2025",
     date: "2025-06-08",
-    image: "/trans-archives/queer_liberation.jpg",
+    image: "/trans-blog/images/queer_liberation.jpg",
     content: `
     <p>  
       Se o seu protesto pode ser patrocinado, então não é um protesto, é branding, é marketing. Vamos ser diretos, esse papo de <i>“tudo vira merchandising”</i> é só conversinha para não sermos criativos e escaparmos da mercantilização dos nossos sonhos e lutas.
@@ -325,7 +325,7 @@ export const posts: BlogPost[] = [
     description: "CATS y Revolta Anarcokuir",
     slug: "contra-parada-lgbtqiapn",
     date: "2025-07-03",
-    image: "/trans-archives/contraparada.png",
+    image: "/trans-blog/images/contraparada.png",
     content: `
     <blockquote class="text-sm text-accent2">
       Texto construído e revisado coletivamente com <a href="https://anarkokuir.hotglue.me/" class="text-accent5 hover:underline" target="_blank">Revolta Anarcokuir</a>.

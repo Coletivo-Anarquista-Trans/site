@@ -3,7 +3,7 @@
 import CyberContainer from "@/components/atoms/CyberContainer";
 import CyberResourceIcon from "@/components/atoms/CyberResourceIcon";
 import CyberDropdown from "@/components/molecules/CyberDropdown";
-import { servicesByState, legalFramework, ServiceLocation } from "@/data/services";
+import { servicesByState, legalFramework, ServiceLocation } from "@/data/saude-trans/services";
 
 export default function ServicosPublicos() {
     const renderServiceContent = (services: ServiceLocation[]) => (
