@@ -23,60 +23,16 @@ export default function ParaAsRuasPage() {
 
   const images: ImageItem[] = [
     {
-      id: "tpunk",
-      src: "/trans-archives/tpunk.png",
-      alt: "Trans Punk",
-      title: "Trans Punk",
-      description: "Resistência trans punk nas ruas"
+      id: "1",
+      src: "/trans-resources/images/revoga-cfm.png",
+      alt: "cartaz-revoga-cfm",
+      title: "Revoga CFM"
     },
     {
-      id: "contraparada",
-      src: "/trans-archives/contraparada.png",
-      alt: "Contraparada",
-      title: "Contraparada",
-      description: "Movimento de contraparada e resistência"
-    },
-    {
-      id: "anarcotrans",
-      src: "/trans-archives/anarcotrans.png",
-      alt: "Anarco Trans",
-      title: "Anarco Trans",
-      description: "Movimento anarquista trans"
-    },
-    {
-      id: "queer_liberation",
-      src: "/trans-archives/queer_liberation.jpg",
-      alt: "Queer Liberation",
-      title: "Queer Liberation",
-      description: "Liberação queer e luta por direitos"
-    },
-    {
-      id: "bash_back",
-      src: "/trans-archives/bash_back.jpeg",
-      alt: "Bash Back",
-      title: "Bash Back",
-      description: "Movimento de autodefesa queer"
-    },
-    {
-      id: "be_gay_do_crime",
-      src: "/trans-archives/be_gay_do_crime.png",
-      alt: "Be Gay Do Crime",
-      title: "Be Gay Do Crime",
-      description: "Slogan de resistência queer radical"
-    },
-    {
-      id: "marcha_transmasc",
-      src: "/trans-archives/marcha_transmasc.jpeg",
-      alt: "Marcha Transmasc",
-      title: "Marcha Transmasc",
-      description: "Marcha de pessoas trans masculinas"
-    },
-    {
-      id: "miau",
-      src: "/trans-archives/miau.jpg",
-      alt: "Miau",
-      title: "Miau",
-      description: "Arte de resistência felina"
+      id: "2",
+      src: "/trans-resources/images/bonekas-armadas.png",
+      alt: "cartaz-bonekas-armadas",
+      title: "Bonekas Armadas"
     }
   ];
 
@@ -94,7 +50,7 @@ export default function ParaAsRuasPage() {
     playButtonSelect();
     const link = document.createElement('a');
     link.href = getAssetPath(image.src);
-    link.download = `${image.title}.${image.src.split('.').pop()}`;
+    link.download = `${image.alt}.${image.src.split('.').pop()}`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -109,18 +65,10 @@ export default function ParaAsRuasPage() {
           </CyberContainer>
 
           <CyberContainer className="text-accent1 text-center mb-8">
-            Banco de imagens sobre resistência, ativismo e luta trans nas ruas. Clique nas imagens para visualizá-las em tamanho maior.
-            <br />
-            <span className="text-accent5">
-              Tem alguma imagem para contribuir? Mande pra gente em: cats-trans@riseup.net
-            </span>
+            Banco de imagens para serem utilizadas de forma livre. Clique nas imagens para visualizá-las em tamanho maior e baixá-las.
           </CyberContainer>
 
           <CyberContainer className="border border-accent1 p-4 bg-background">
-            <div className="text-accent1 mb-4 font-mono text-sm">
-              <span className="text-accent5">total {images.length} imagens</span>
-            </div>
-
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {images.map((image) => (
                 <motion.div
@@ -151,8 +99,8 @@ export default function ParaAsRuasPage() {
               ))}
             </div>
 
-            <div className="mt-4 pt-4 border-t border-accent1 text-accent3 text-xs font-mono">
-              <span>-rw-r--r-- 1 cats-coletivo-anarquista-trans {images.length} {new Date().toLocaleDateString('pt-BR')}.</span>
+            <div className="mt-12 pt-4 border-t border-accent1 text-accent3 text-xs font-mono">
+              <span>drwxr-xr-x {images.length} cats-coletivo-anarquista-trans {new Date().toLocaleDateString('pt-BR')}.</span>
             </div>
           </CyberContainer>
         </CyberContainer>
@@ -173,7 +121,7 @@ export default function ParaAsRuasPage() {
               onClick={handleCloseModal}
               aria-hidden="true"
             />
-            
+
             <div className="flex min-h-full items-center justify-center p-4">
               <motion.div
                 className="relative w-full max-w-5xl max-h-[90vh] transform overflow-hidden border border-accent1 bg-background text-left align-middle shadow-xl crt-screen crt-curvature crt-reflection granular-effect"
