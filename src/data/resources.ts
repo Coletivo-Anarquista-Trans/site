@@ -4,7 +4,7 @@ import { CyberResource } from "@/components/molecules/CyberResourceCard";
 export const resourcesByCategory: Record<string, CyberResource[]> = {
   Cyberhormônios: [
     {
-      id: '10',
+      id: '1',
       title: 'Piccrew - Criador de corpos-virtuais',
       type: 'link',
       url: 'https://picrew.me/en/search',

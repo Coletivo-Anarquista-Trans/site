@@ -1,7 +1,7 @@
 "use client";
 
 import CyberContainer from "@/components/atoms/CyberContainer";
-import { shelterHouses, ShelterHouse } from "@/data/shelters";
+import { shelterHouses, ShelterHouse } from "@/data/saude-trans/shelters";
 
 export default function CasasAcolhimento() {
     const renderShelterHouse = (shelter: ShelterHouse) => (
