@@ -93,7 +93,7 @@ export default function QuemSomosNos() {
               unevenBorders
               className="text-center text-xl md:text-2xl p-2 h-12 md:h-16 flex items-center justify-center"
             >
-              <b>iniari</b>
+              <b>1n1</b>
             </CyberContainer>
             {/* V container */}
             <CyberContainer

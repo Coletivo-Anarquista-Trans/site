@@ -134,10 +134,7 @@ export default function Home() {
               <CyberBig
                 text="forum"
                 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
-              />Estamos desenvolvendo um forum para ser
-                                utilizado pela comunidade trans. Para saber
-                                mais, entre em contato conosco... Ou aguarde
-                                notícias ;3
+              />
             </button>
           </motion.div>{" "}
           <div className="flex flex-row gap-4">
