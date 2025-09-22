@@ -17,7 +17,7 @@ export const resourcesByCategory: Record<string, CyberResource[]> = {
       title: 'Treinador de voz',
       type: 'link',
       url: 'https://acousticgender.space/',
-      description: 'Treinador de voz para aompanhar tom e ressonância da voz adequada ao gênero. Você pode usar seu microfone ou áudios gravados da sua voz.',
+      description: 'Treinador de voz para acompanhar tom e ressonância da voz adequada ao gênero. Você pode usar seu microfone ou áudios gravados da sua voz.',
       category: 'Treinamento de voz',
       dateAdded: '2025-09-22',
     },
