@@ -74,6 +74,13 @@ const books = [
     image: "/trans-archives/bash_back.jpeg",
     url: "https://drive.google.com/file/d/1us7D-6MPt_wBjhGxpwA69iguXO1tcj4-/view?usp=sharing",
   },
+    {
+    id: "livro-9",
+    title: "Anarcomorfia",
+    description: "Hackeando o pós-cyberpunk",
+    image: "/trans-archives/anarcomorfia.jpeg",
+    url: "https://docs.google.com/document/d/1R-CokVSmECnJfXv45hmTzMqrp2_geYEhu8EhSS2Gn2k/edit?tab=t.0",
+  },
 ];
 
 type SortOption = "padrao" | "titulo-asc" | "titulo-desc" | "random";
