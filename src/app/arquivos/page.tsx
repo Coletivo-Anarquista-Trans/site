@@ -20,14 +20,14 @@ const books = [
   {
     id: "livro-1",
     title: "Como Hackear: Um manual para derrubar o Cistema",
-    author: "i.n.i.a.r.i",
+    author: "iniari",
     image: "/trans-archives/como_hackear.jpg",
     url: "https://docs.google.com/document/d/1sBgqRi2aoBhSZ7qPE6PLyyEEyeac1ExmrprAc5O4OUQ/edit?tab=t.0#heading=h.40cqyoe39nq",
   },
   {
     id: "livro-2",
     title: "Diário de uma ciborgue",
-    author: "i.n.i.a.r.i",
+    author: "iniari",
     description: "O corpo virtual e material como espaço político numa visão ciberfeminista",
     image: "/trans-archives/diario_de_uma_ciborgue.jpg",
     url: "https://docs.google.com/document/d/1njyeH000ht7PCrGDaPXsVp53zJfAlRQgWipZJXpv5Pw/edit?tab=t.0#heading=h.sa0lg6ud6qbk",
@@ -77,8 +77,8 @@ const books = [
     {
     id: "livro-9",
     title: "Anarcomorfia",
-    description: "Hackeando o pós-cyberpunk",
-    image: "/trans-archives/anarcomorfia.jpeg",
+    description: "iniari",
+    image: "/trans-archives/anarcomorfia.jpg",
     url: "https://docs.google.com/document/d/1R-CokVSmECnJfXv45hmTzMqrp2_geYEhu8EhSS2Gn2k/edit?tab=t.0",
   },
 ];
