@@ -66,7 +66,7 @@ export const posts: BlogPost[] = [
   {
     id: "post-3",
     title: "foda-se o CFM",
-    description: "ini",
+    description: "1n1",
     slug: "foda-se-o-cfm",
     date: "2025-04-15",
     image: "/trans-archives/bastard_doctors.png",
@@ -140,7 +140,7 @@ export const posts: BlogPost[] = [
   {
     id: "post-4",
     title: "Rumo ao transpunk - Prefácio",
-    description: "ini",
+    description: "1n1",
     slug: "rumo-ao-transpunk-prefacio",
     date: "2025-05-22",
     image: "/trans-archives/tpunk.png",
@@ -270,7 +270,7 @@ export const posts: BlogPost[] = [
   {
     id: "post-6",
     title: "Parada LGBT: (L)ucro, (G)anância, (B)ancos e (T)raição",
-    description: "ini",
+    description: "1n1",
     slug: "parada-lgbt-2025",
     date: "2025-06-08",
     image: "/trans-archives/queer_liberation.jpg",
@@ -411,6 +411,118 @@ export const posts: BlogPost[] = [
     <p>
       <b>Morte ao estado e viva a anarquia!</b>
     </p>
+    `,
+  },
+  {
+    id: "post-9",
+    title: "Uma outra perspectiva de saúde mental: Você está sendo dopado",
+    description: "1n1",
+    slug: "voce-esta-sendo-dopado",
+    date: "2025-09-29",
+    image: "/trans-archives/chemical-imbalance.jpg",
+    content: `
+    <blockquote class="text-sm text-accent2">
+      <a href="https://news.un.org/pt/story/2025/09/1850854" class="text-accent5 hover:underline" target="_blank">Segundo a OMS</a>, 1 bilhão de pessoas vivem com algum transtorno mental, dentre eles, os mais comuns sendo depressão e ansiedade.
+    </blockquote>
+    <p>Tome suas pílulas e cápsulas, faça algumas sessões de terapia e volte a trabalhar, não faça muitas perguntas. Nem pense demais, isso pode te deixar depressive ou ansiose. Aliene-se. O que você pode fazer afinal? Você não tem nenhum controle sobre nada disso.</p>
+
+    <blockquote>“[…] isso reforça a característica do próprio sistema em direcionar seus impulsos a uma individualização exacerbada (se você não está bem é por conta das reações químicas do seu cérebro). […]” <cite>- Mark Fisher</cite></blockquote>
+
+    <p>
+    Eu gostaria de jogar sal na ferida. Por que estamos cada vez mais depressivos e ansiosos?
+    </p>
+    <p>
+    Uma hipótese para você: nossos corpos estão sendo acelerados em dinâmicas além do que eles podem suportar, não por culpa sua, mas pelo nosso modo de produzir nossa existência atualmente.
+    </p>
+    <br/>
+    <p>
+    Aceleração da informação, aceleração da produção, aceleração dos corpos.
+    </p>
+    <p>
+    Quanto vamos acelerar nossos corpos para produzir mais?
+    </p>
+    <br/>
+    <p>
+    <a href="https://www.instagram.com/p/DJUtBshOVbG/" class="text-accent5 hover:underline" target="_blank">Em maio deste ano (2025)</a>, um trabalhador morreu na linha lilás do metrô de São Paulo ao ficar preso entre o trem e a plataforma. A operação continuou funcionando normalmente após a tragédia. <a href="https://www1.folha.uol.com.br/cotidiano/2025/05/homem-coloca-fogo-no-proprio-corpo-na-estacao-sao-bento-em-sp.shtml" class="text-accent5 hover:underline" target="_blank">No mês seguinte na linha azul</a>, um idoso ateou fogo em seu próprio corpo, mas os fluxos continuaram.
+    </p>
+    <br/>
+    <p>
+    Isso é um sintoma de um mundo em que manter a velocidade do funcionamento dos fluxos está acima do cuidado com os corpos e a vida.
+    </p>
+    <br/>
+    <p>
+    A que se deve tanta pressa? Para onde vamos em tanta velocidade? Corpos e vidas já nos são descartáveis assim?
+    </p>
+    <br/>
+    <p>
+    A busca incessante do Capital pela eficiência é um acelerador de partículas, de <i>corpos-partículas</i>, que não pode parar. Na medida em que corpos não conseguem mais acompanhar a aceleração da produção, tornam-se disfuncionais: doentes na visão do Cistema.
+    </p>
+    <br/>
+    <p>
+    Negando os sintomas e causas sociais desse adoecimento, esse sistema te adoece e também vende a explicação biologizante para o adoecimento de bilhões de corpos em suas mentes: desbalanço químico.
+    </p>
+    <p>
+    <blockquote>“A ontologia hoje dominante nega a possibilidade de que enfermidades psicológicas tenham uma possível origem na <b>natureza social</b>. Obviamente, a “bio-quimicalização” dos distúrbios mentais é estritamente proporcional à sua despolitização. Considerá-los um problema químico e biológico individual é uma vantagem enorme para o capitalismo."  <cite>- Mark Fisher</cite></blockquote>
+    </p>
+    <p>
+    O Cistema é um acelerador e se você não acompanhar sua velocidade terá de ter seu corpo estimulado com próteses e fármacos. Esse é o futuro que você acorda todos os dias para construir.
+    </p>
+    <br/>
+    <p>
+    A indústria farmacêutica capitalista agradece. Ela cria um sistema de feedback positivo, utilizando os saberes científicos instrumentalizados para criar fármacos capazes de tornar você funcional para a aceleração e se adaptar à velocidade da produção até te descartar.
+    </p>
+    <br/>
+    <p>
+    Enquanto você é acelerado para produzir mais, o Capital lucra mais e quanto mais ele lucra, mais você adoece e precisa dos fármacos para prosseguir produzindo, se não é descartado.
+    </p>
+    <p>
+    Um circuito sofisticadamente elaborado para você.
+    </p>
+
+    <blockquote>“[…] em segundo lugar, cria um mercado enormemente lucrativo para multinacionais farmacêuticas desovarem seus produtos (podemos te curar com nossos inibidores seletivos de recaptação de serotonina)." <cite>- Mark Fisher</cite></blockquote>
+
+    <p>
+    Será, então, que o adoecimento vem da velocidade imposta pela obrigação da eficiência e expansão interminável? Ao mesmo tempo, o resultado disso tudo é escassez artificial e guerras.
+    </p>
+    <br/>
+    <p>
+    A pandemia de depressão e ansiedade está relacionada ao fato de vendermos todo nosso tempo de vida para produzir, através do nosso trabalho, a visão de mundo de bilionários numa dinâmica colonial atualizada para o século XXI ao invés de para nossas comunidades?
+    </p>
+    <br/>
+    <p>
+    Ainda temos nossas comunidades ou já destruíram todas? Para onde vai o resultado do nosso trabalho coletivo se não para nossas comunidades?
+    </p>
+    <br/>
+    <p>
+    A realidade adoecedora:
+    </p>
+    <ul class="list-disc list-inside">
+    <li>Escala 6x1;</li>
+    <li>Fluxos automatizados de corpos, onde os disfuncionais são descartados porque acidentalmente saíram dos fluxos, ou porque não suportam a aceleração deles;</li>
+    <li>Guerras e escassez como resultado do excedente da produção social;</li>
+    <li>Automatização eliminando trabalhos para aumentar lucros e não aumentar a qualidade de vida.</li>
+    </ul>
+    <br/>
+    <p>
+    Num mundo cyberpunk, a tecnologia só existe para servir a produção das corporações e o controle, não  as pessoas e qualidade de vida. Mas isso pode ser desviado.
+    </p>
+    <br/>
+    <p>
+    Seria a saúde mental possível ser discutida como só um problema individual e meramente biológico? Será possível os corpos não adoecerem nesse sistema? Ou já aceitamos abrir mão de nossos corpos para o realismo capitalista?
+    </p>
+    <p>
+    Se você já abriu mão do seu corpo, então não critique a nossa luta pela autonomia de nos produzirmos.
+    </p>
+    <blockquote>“Se é verdade que a depressão é constituída por baixos níveis de serotonina, o que ainda resta a ser explicado são as razões pelas quais indivíduos em específico apresentam tais níveis, o que requereria uma explicação político-social. A tarefa de politizar a saúde mental é urgente se a esquerda deseja desafiar o realismo capitalista.”
+    <cite>— Mark Fisher, *Realismo Capitalista*</cite></blockquote>
+    <p>Se ainda quer lutar pelo seu corpo, junte-se a quem luta pela autonomia de se produzir.</p>
+    <p>
+    Ciborguifique-se, quimerize-se, monstrifique-se. 
+    </p>
+    <p>
+    E revide!
+    </p>
+
     `,
   },
   // Add more posts here
