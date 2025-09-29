@@ -432,26 +432,26 @@ export const posts: BlogPost[] = [
     Eu gostaria de jogar sal na ferida. Por que estamos cada vez mais depressivos e ansiosos?
     </p>
     <p>
-    Uma hipótese para você: nossos corpos estão sendo acelerados em dinâmicas além do que eles podem suportar, não por culpa sua, mas pelo nosso modo de produzir nossa existência atualmente.
+    Uma hipótese para você: seu corpo está colocado em dinâmicas além do que ele pode suportar, não por culpa sua, mas pelo nosso modo de produzir nossa existência atualmente. Você está sendo acelerado.
     </p>
     <br/>
     <p>
-    Aceleração da informação, aceleração da produção, aceleração dos corpos.
+    Aceleração da informação, aceleração da produção, aceleração de fluxos, aceleração de corpos.
     </p>
     <p>
     Quanto vamos acelerar nossos corpos para produzir mais?
     </p>
     <br/>
     <p>
-    <a href="https://www.instagram.com/p/DJUtBshOVbG/" class="text-accent5 hover:underline" target="_blank">Em maio deste ano (2025)</a>, um trabalhador morreu na linha lilás do metrô de São Paulo ao ficar preso entre o trem e a plataforma. A operação continuou funcionando normalmente após a tragédia. <a href="https://www1.folha.uol.com.br/cotidiano/2025/05/homem-coloca-fogo-no-proprio-corpo-na-estacao-sao-bento-em-sp.shtml" class="text-accent5 hover:underline" target="_blank">No mês seguinte na linha azul</a>, um idoso ateou fogo em seu próprio corpo, mas os fluxos continuaram.
+    <a href="https://www.instagram.com/p/DJUtBshOVbG/" class="text-accent5 hover:underline" target="_blank">Em maio deste ano (2025)</a>, um trabalhador morreu na linha lilás do metrô de São Paulo ao ficar preso entre o trem e a plataforma. A operação continuou funcionando normalmente após a tragédia. <a href="https://www1.folha.uol.com.br/cotidiano/2025/05/homem-coloca-fogo-no-proprio-corpo-na-estacao-sao-bento-em-sp.shtml" class="text-accent5 hover:underline" target="_blank">No mês seguinte na linha azul</a>, um idoso ateou fogo em seu próprio corpo. Os fluxos continuaram seguindo.
     </p>
     <br/>
     <p>
-    Isso é um sintoma de um mundo em que manter a velocidade do funcionamento dos fluxos está acima do cuidado com os corpos e a vida.
+    Sintomas de um mundo em que manter a velocidade do funcionamento dos fluxos está acima do cuidado com os corpos e a vida.
     </p>
     <br/>
     <p>
-    A que se deve tanta pressa? Para onde vamos em tanta velocidade? Corpos e vidas já nos são descartáveis assim?
+    A que se deve tanta pressa? Para onde vamos em tanta velocidade? Corpos e vidas já nos são mais descartáveis do que o funcionamento dos fluxos?
     </p>
     <br/>
     <p>
@@ -459,7 +459,7 @@ export const posts: BlogPost[] = [
     </p>
     <br/>
     <p>
-    Negando os sintomas e causas sociais desse adoecimento, esse sistema te adoece e também vende a explicação biologizante para o adoecimento de bilhões de corpos em suas mentes: desbalanço químico.
+    Negando os sintomas e causas sociais desse adoecimento, esse sistema te adoece e também vende a solução biologizante para o adoecimento de bilhões de corpos em suas mentes: desbalanço químico.
     </p>
     <p>
     <blockquote>“A ontologia hoje dominante nega a possibilidade de que enfermidades psicológicas tenham uma possível origem na <b>natureza social</b>. Obviamente, a “bio-quimicalização” dos distúrbios mentais é estritamente proporcional à sua despolitização. Considerá-los um problema químico e biológico individual é uma vantagem enorme para o capitalismo."  <cite>- Mark Fisher</cite></blockquote>
@@ -469,7 +469,7 @@ export const posts: BlogPost[] = [
     </p>
     <br/>
     <p>
-    A indústria farmacêutica capitalista agradece. Ela cria um sistema de feedback positivo, utilizando os saberes científicos instrumentalizados para criar fármacos capazes de tornar você funcional para a aceleração e se adaptar à velocidade da produção até te descartar.
+    A indústria farmacêutica capitalista agradece. Ela produz um sistema cibernético de feedback positivo, utilizando os saberes científicos instrumentalizados para criar fármacos capazes de tornar você funcional para a aceleração e se adaptar à velocidade crescente da produção enquanto te torna dependente dela.. até te descartar.
     </p>
     <br/>
     <p>
@@ -482,11 +482,11 @@ export const posts: BlogPost[] = [
     <blockquote>“[…] em segundo lugar, cria um mercado enormemente lucrativo para multinacionais farmacêuticas desovarem seus produtos (podemos te curar com nossos inibidores seletivos de recaptação de serotonina)." <cite>- Mark Fisher</cite></blockquote>
 
     <p>
-    Será, então, que o adoecimento vem da velocidade imposta pela obrigação da eficiência e expansão interminável? Ao mesmo tempo, o resultado disso tudo é escassez artificial e guerras.
+    Façamos as perguntas certas: o adoecimento vem da velocidade imposta pela obrigação da eficiência e expansão interminável? A ansiedade e a depressão também são resultados dos ciclos econômicos para além da escassez artificial e guerras?
     </p>
     <br/>
     <p>
-    A pandemia de depressão e ansiedade está relacionada ao fato de vendermos todo nosso tempo de vida para produzir, através do nosso trabalho, a visão de mundo de bilionários numa dinâmica colonial atualizada para o século XXI ao invés de para nossas comunidades?
+    A pandemia de depressão e ansiedade está relacionada ao fato de você vender todo o seu tempo de vida para produzir a visão de mundo de bilionários como se fosse sua? Vivendo em dinâmicas coloniais atualizadas para o século XXI?
     </p>
     <br/>
     <p>
@@ -504,14 +504,17 @@ export const posts: BlogPost[] = [
     </ul>
     <br/>
     <p>
-    Num mundo cyberpunk, a tecnologia só existe para servir a produção das corporações e o controle, não  as pessoas e qualidade de vida. Mas isso pode ser desviado.
+    Num mundo cyberpunk, a tecnologia só existe para servir a produção das corporações e o controle, não  as pessoas, comunidades e qualidade de vida coletivamente.
     </p>
     <br/>
     <p>
-    Seria a saúde mental possível ser discutida como só um problema individual e meramente biológico? Será possível os corpos não adoecerem nesse sistema? Ou já aceitamos abrir mão de nossos corpos para o realismo capitalista?
+    Seria a saúde mental possível ser discutida como só um problema individual e meramente bio-químico? Será possível corpos não adoecerem mentalmente nesse sistema? 
     </p>
     <p>
-    Se você já abriu mão do seu corpo, então não critique a nossa luta pela autonomia de nos produzirmos.
+    Ou você já aceitou abrir mão de seu corpos para o realismo capitalista?
+    </p>
+    <p>
+    Se você abriu mão do seu corpo, então não critique nossa luta pela autonomia de nos produzirmos.
     </p>
     <blockquote>“Se é verdade que a depressão é constituída por baixos níveis de serotonina, o que ainda resta a ser explicado são as razões pelas quais indivíduos em específico apresentam tais níveis, o que requereria uma explicação político-social. A tarefa de politizar a saúde mental é urgente se a esquerda deseja desafiar o realismo capitalista.”
     <cite>— Mark Fisher, *Realismo Capitalista*</cite></blockquote>
@@ -520,7 +523,7 @@ export const posts: BlogPost[] = [
     Ciborguifique-se, quimerize-se, monstrifique-se. 
     </p>
     <p>
-    E revide!
+    Faça as perguntas certas. E revide!
     </p>
 
     `,
