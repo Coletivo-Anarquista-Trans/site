@@ -424,10 +424,16 @@ export const posts: BlogPost[] = [
     <blockquote class="text-sm text-accent2">
       <a href="https://news.un.org/pt/story/2025/09/1850854" class="text-accent5 hover:underline" target="_blank">Segundo a OMS</a>, 1 bilhão de pessoas vivem com algum transtorno mental, dentre eles, os mais comuns sendo depressão e ansiedade.
     </blockquote>
+    <p>
+    <blockquote>Antes de começar, vamos deixar claro: <a href="https://coletivo-anarquista-trans.github.io/site/manifesto#section-3.6" class="text-accent5 hover:underline" target="_blank">não somos contra o uso de fármacos</a>, podemos garantir autonomia corporal através deles, com nossos hormônios ou psicotrópicos realizamos nossas potências dissidentes. 
+    <p>
+    No entanto, queremos falar de como a indústria farmacêutica monopoliza essas tecnologias não para te dar autonomia, mas para te tornar funcional para o sistema.
+    </p>
+    </blockquote>
     <p>Tome suas pílulas e cápsulas, faça algumas sessões de terapia e volte a trabalhar, não faça muitas perguntas. Nem pense demais, isso pode te deixar depressive ou ansiose. Aliene-se. O que você pode fazer afinal? Você não tem nenhum controle sobre nada disso.</p>
 
     <blockquote>“[…] isso reforça a característica do próprio sistema em direcionar seus impulsos a uma individualização exacerbada (se você não está bem é por conta das reações químicas do seu cérebro). […]” <cite>- Mark Fisher</cite></blockquote>
-
+    
     <p>
     Eu gostaria de jogar sal na ferida. Por que estamos cada vez mais depressivos e ansiosos?
     </p>
