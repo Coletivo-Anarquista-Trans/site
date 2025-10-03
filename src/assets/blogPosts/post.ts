@@ -534,6 +534,95 @@ export const posts: BlogPost[] = [
 
     `,
   },
+  {
+    id: "post-10",
+    title: "A consequência da alienação às vezes é beber metanol",
+    description: "1n1",
+    slug: "alienacao-faz-beber-metanol",
+    date: "2025-10-03",
+    image: "/trans-archives/metanol.jpeg",
+    content: `
+    <blockquote class="text-sm text-accent2">
+      <a href="https://www.reddit.com/r/brasil/comments/1ntxd3e/segundo_estudo_da_usp_mais_de_um_ter%C3%A7o_dos/" class="text-accent5 hover:underline" target="_blank">Segundo a USP</a>, um terço dos destilados são falsos e o sistema de controle foi desativado em 2016 para as empresas se autofiscalizarem.
+    </blockquote>
+    <p>
+    Decidi que um dos meus objetivos no blog é documentar a distopia cyberpunk paulistana e, de quebra, falar das condições necessárias para as histórias distópicas que acontecem por aqui.
+    </p>
+    <br/>
+
+    <p>
+    Parece que a adulteração de bebidas é a nova preocupação do momento. Aproveitar o pouco tempo livre que ainda nos resta após vender boa parte dele para o enriquecimento alheio ficou mais difícil. 
+    </p>
+    <br/>
+
+    <p>
+    Mas o que paira sobre nós é a dúvida: como metanol chegou em nossas bebidas assim para nos intoxicar tão facilmente? Como é possível tal logística do envenenamento? O que isso tem a ver com o Cistema? (essa última dúvida é por minha conta)
+    </p>
+    <br/>
+
+    <p>
+    Vamos ser honestos, quanto as gente sabe sobre além do que tá bem debaixo do nosso nariz? Você sabe para o que é usado o resultado do seu trabalho vendido para seu patrão? O que o dono da sua empresa faz com o lucro? O que os investidores fazem?
+    </p>
+    <br/>
+
+    <p>
+    Se você faz parte de uma cadeia logística, quanto você sabe do que entrega? E o que é feito com o que é entregue? Se trabalha num setor de serviços, o que fazem com as informações e dados que gera?
+    </p>
+    <br/>
+
+    <p>
+    Somos todos alienados, não fazemos ideia do que estamos fazendo, mas fazemos. 
+    </p>
+    <br/>
+
+    <p>
+    Tudo que podemos ver é o resultado do excedente do nosso trabalho:
+    <ul class="list-disc list-inside">
+    <li>Escassez para muitos,</li>
+    <li>Tecnologias super sofisticadas para Estados fazerem guerra,</li>
+    <li>Um punhado de bilionários perseguindo minorias,</li>
+    <li>E claro, uma parcela minúscula do excedente para você ficar quietinho enquanto assiste o espetáculo, continua fazendo a roda girar e gastá-la tomando um drink adulterado no final do dia.</li>
+    </ul>
+    </p>
+    <br/>
+
+    <p>
+    A <b>logística do envenenamento</b> existe graças a essa alienação avassaladora do Cistema, em que o Capital transforma tudo em mercadoria e as coisas se apresentam a nós já prontas para serem consumidas, ocultando todo o processo por trás delas. O nome chique disso é “Fetichismo da Mercadoria”:
+    </p>
+
+    <blockquote>
+    É apenas uma relação social determinada entre os próprios homens que aqui assume, para eles, a <b>forma fantasmagórica</b> de uma relação entre coisas.[...] Aqui, 
+    <b>os produtos do cérebro humano parecem dotados de vida própria</b>, como figuras independentes que travam relação umas com as outras e com os homens. Assim se apresentam, no mundo das mercadorias, os produtos da mão humana. A isso eu chamo de fetichismo, que se cola aos produtos do trabalho tão logo eles são produzidos como mercadorias e que, por isso, é inseparável da produção de mercadorias.
+    <cite>— Karl Marx, <em>O Capital</em>, seção: O caráter fetichista da mercadoria e seu segredo</cite>
+    </blockquote>
+
+    <p>
+    Realmente, os fantasmas voltam para nos assombrar, e o fantasma da alienação agora é você não saber nem mesmo o que está colocando na boca. Viver numa sociedade em que tudo é mercadoria, incluindo você, tem seu preço.
+    </p>
+    <br/>
+
+    <p>
+    Nem eu, nem você podemos traçar onde o produto do nosso trabalho termina e para onde vai. <b>Isso é alienação</b>.
+    </p>
+    <br/>
+
+    <p>
+    Nosso modo de produzir nossa existência depende que você não se preocupe em como as coisas que você consome chegam até você. Caso contrário, você não poderia se tornar um trabalhador hiper especializado para enriquecer os acionistas e bilionários enquanto o Estado e agentes dos capitalistas se ocupam de organizar a vida pública no seu lugar.
+    </p>
+    <br/>
+
+    <p>
+    Mas calma! A tecnologia vai nos salvar, vivemos na era da informação, não é mesmo? Ou seria a era do ruído? Bom, só sei que nada sei. A única coisa que sei é:
+    </p>
+
+    <blockquote><b>O Cistema depende e recompensa a alienação.</b></blockquote>
+
+    <p>
+    Você é mais feliz quanto menos você sabe. A ignorância é uma benção não é? Até você dar um gole de metanol, claro.  
+    </p>
+
+  `,
+  },
   // Add more posts here
 ];
 
