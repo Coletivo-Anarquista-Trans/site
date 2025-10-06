@@ -42,22 +42,22 @@ const books = [
   {
     id: "livro-4",
     title: "Um manifesto hacker",
-    author: "Mckenzie Wark",
-    image: "/trans-archives/um_manifesto_hacker.jpg",
+    author: "McKenzie Wark",
+    image: "/trans-archives/manifesto_hacker.png",
     url: "https://drive.google.com/file/d/1fdAukJI2nQxfhYrtwk4Px-q55iynsQ9h/view?usp=sharing",
   },
   {
     id: "livro-5",
     title: "Um apartamento em Urano",
     author: "Paul B. Preciado",
-    image: "/trans-archives/apartamento_em_urano.jpg",
+    image: "/trans-archives/apartamento_em_urano.png",
     url: "https://drive.google.com/file/d/1GieRzIQVf0hbYyutkvFbHHg3Q2W10rti/view?usp=sharing",
   },
   {
     id: "livro-6",
     title: "Manifesto Contrassexual",
     author: "Paul B. Preciado",
-    image: "/trans-archives/manifesto_contrassexual.jpg",
+    image: "/trans-archives/manifesto_contrassexual.png",
     url: "https://drive.google.com/file/d/1sSlT-8WE_MOg4r48KT3PQFQT68E3netC/view?usp=sharing",
   },
   {
@@ -69,18 +69,25 @@ const books = [
   },
   {
     id: "livro-8",
-    title: "Transgeneridade, Decolonialidade e Anarquismo",
-    author: "Bruno Latini Pfeil & Cello Latini Pfeil",
-    image: "/trans-archives/transgeneridade_decolonialidade_e_anarquismo.png",
-    url: "https://drive.google.com/file/d/198d7eougTwfZ1Zs28fAatQk5tBgtY_Vg/view?usp=sharing",
+    title: "Trans-anarquia",
+    author: "Cello Latini Pfeil",
+    image: "/trans-archives/trans_anarquia.png",
+    url: "https://drive.google.com/file/d/1d4GioobGp6LZTunrluwja3VYJIqmUgax/view?usp=sharing",
   },
   {
     id: "livro-9",
     title: "BASH BACK! Ultraviolência Queer",
     description: "Compilado de escritos por anarcoqueer insurgentes",
-    image: "/trans-archives/bash_back.jpeg",
+    image: "/trans-archives/bash_back.png",
     url: "https://drive.google.com/file/d/1us7D-6MPt_wBjhGxpwA69iguXO1tcj4-/view?usp=sharing",
   },
+  // {
+  //   id: "livro-10",
+  //   title: "Revista trans-libertária, n. 1 (2024)",
+  //   author: "acervo digital trans-anarquista",
+  //   image: "/trans-archives/revista_trans-libertaria.png",
+  //   url: "https://drive.google.com/file/d/1blaO1wsF89fX6vVKbkaAIwOl4aenFBJI/view?usp=sharing",
+  // },
 ];
 
 type SortOption = "padrao" | "titulo-asc" | "titulo-desc" | "random";
@@ -151,8 +158,8 @@ const Page = () => {
               }}
               onMouseEnter={() => playButtonSelect()}
               className={`p-2 rounded ${viewMode === "tile"
-                  ? "bg-accent1 text-background"
-                  : "hover:bg-foreground/20"
+                ? "bg-accent1 text-background"
+                : "hover:bg-foreground/20"
                 }`}
               aria-label="Visualização em blocos"
             >
@@ -171,8 +178,8 @@ const Page = () => {
               }}
               onMouseEnter={() => playButtonSelect()}
               className={`p-2 rounded ${viewMode === "list"
-                  ? "bg-accent1 text-background"
-                  : "hover:bg-foreground/20"
+                ? "bg-accent1 text-background"
+                : "hover:bg-foreground/20"
                 }`}
               aria-label="Visualização em lista"
             >
@@ -191,8 +198,8 @@ const Page = () => {
               }}
               onMouseEnter={() => playButtonSelect()}
               className={`p-2 rounded ${viewMode === "compact"
-                  ? "bg-accent1 text-background"
-                  : "hover:bg-foreground/20"
+                ? "bg-accent1 text-background"
+                : "hover:bg-foreground/20"
                 }`}
               aria-label="Visualização compacta"
             >
@@ -211,8 +218,8 @@ const Page = () => {
               }}
               onMouseEnter={() => playButtonSelect()}
               className={`p-2 rounded ${sortOption === "padrao"
-                  ? "bg-accent1 text-background"
-                  : "hover:bg-foreground/20"
+                ? "bg-accent1 text-background"
+                : "hover:bg-foreground/20"
                 }`}
               aria-label="Ordenação padrão"
             >
@@ -227,8 +234,8 @@ const Page = () => {
               }}
               onMouseEnter={() => playButtonSelect()}
               className={`p-2 rounded ${sortOption === "titulo-asc"
-                  ? "bg-accent1 text-background"
-                  : "hover:bg-foreground/20"
+                ? "bg-accent1 text-background"
+                : "hover:bg-foreground/20"
                 }`}
               aria-label="Ordenar A-Z"
             >
@@ -243,8 +250,8 @@ const Page = () => {
               }}
               onMouseEnter={() => playButtonSelect()}
               className={`p-2 rounded ${sortOption === "titulo-desc"
-                  ? "bg-accent1 text-background"
-                  : "hover:bg-foreground/20"
+                ? "bg-accent1 text-background"
+                : "hover:bg-foreground/20"
                 }`}
               aria-label="Ordenar Z-A"
             >
@@ -263,8 +270,8 @@ const Page = () => {
               }}
               onMouseEnter={() => playButtonSelect()}
               className={`p-2 rounded ${sortOption === "random"
-                  ? "bg-accent1 text-background"
-                  : "hover:bg-foreground/20"
+                ? "bg-accent1 text-background"
+                : "hover:bg-foreground/20"
                 }`}
               aria-label="Ordenação aleatória"
             >
