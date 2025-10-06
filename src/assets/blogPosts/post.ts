@@ -16,7 +16,7 @@ export const posts: BlogPost[] = [
     description: "n3o",
     slug: "marcha-transmasc",
     date: "2025-03-30",
-    image: "/trans-archives/marcha_transmasc.jpeg",
+    image: "/trans-blog-posts/marcha_transmasc.jpeg",
     content: `
       <p>
         ao perder o costume de escrever me vejo como criança: começo, apago, vejo e revejo, me repreendo, me anulo. engraçado, fui assim quando criança.
@@ -69,7 +69,7 @@ export const posts: BlogPost[] = [
     description: "1n1",
     slug: "foda-se-o-cfm",
     date: "2025-04-15",
-    image: "/trans-archives/bastard_doctors.png",
+    image: "/trans-blog-posts/bastard_doctors.png",
     content: `
       <h2>
         <b>Sobre o CFM</b>
@@ -143,7 +143,7 @@ export const posts: BlogPost[] = [
     description: "1n1",
     slug: "rumo-ao-transpunk-prefacio",
     date: "2025-05-22",
-    image: "/trans-archives/tpunk.png",
+    image: "/trans-blog-posts/tpunk.png",
     content: `
       <h2>
         <b>Rumo ao transpunk - Prefácio</b>
@@ -198,7 +198,7 @@ export const posts: BlogPost[] = [
     description: "n3o",
     slug: "abjeto",
     date: "2025-05-26",
-    image: "/trans-archives/abjeto.jpg",
+    image: "/trans-blog-posts/abjeto.jpg",
     content: `
       <p>
         <i>desenho: desejo de afeto, devora-me (2019, eu acho)</i>
@@ -273,7 +273,7 @@ export const posts: BlogPost[] = [
     description: "1n1",
     slug: "parada-lgbt-2025",
     date: "2025-06-08",
-    image: "/trans-archives/queer_liberation.jpg",
+    image: "/trans-blog-posts/queer_liberation.jpg",
     content: `
     <p>  
       Se o seu protesto pode ser patrocinado, então não é um protesto, é branding, é marketing. Vamos ser diretos, esse papo de <i>“tudo vira merchandising”</i> é só conversinha para não sermos criativos e escaparmos da mercantilização dos nossos sonhos e lutas.
@@ -325,7 +325,7 @@ export const posts: BlogPost[] = [
     description: "CATS y Revolta Anarcokuir",
     slug: "contra-parada-lgbtqiapn",
     date: "2025-07-03",
-    image: "/trans-archives/contraparada.png",
+    image: "/trans-blog-posts/contraparada.png",
     content: `
     <blockquote class="text-sm text-accent2">
       Texto construído e revisado coletivamente com <a href="https://anarkokuir.hotglue.me/" class="text-accent5 hover:underline" target="_blank">Revolta Anarcokuir</a>.
@@ -419,7 +419,7 @@ export const posts: BlogPost[] = [
     description: "1n1",
     slug: "voce-esta-sendo-dopado",
     date: "2025-09-29",
-    image: "/trans-archives/chemical-imbalance.jpg",
+    image: "/trans-blog-posts/chemical-imbalance.jpg",
     content: `
     <blockquote class="text-sm text-accent2">
       <a href="https://news.un.org/pt/story/2025/09/1850854" class="text-accent5 hover:underline" target="_blank">Segundo a OMS</a>, 1 bilhão de pessoas vivem com algum transtorno mental, dentre eles, os mais comuns sendo depressão e ansiedade.
@@ -540,7 +540,7 @@ export const posts: BlogPost[] = [
     description: "1n1",
     slug: "alienacao-faz-beber-metanol",
     date: "2025-10-03",
-    image: "/trans-archives/metanol.jpeg",
+    image: "/trans-blog-posts/metanol.png",
     content: `
     <blockquote class="text-sm text-accent2">
       <a href="https://www.reddit.com/r/brasil/comments/1ntxd3e/segundo_estudo_da_usp_mais_de_um_ter%C3%A7o_dos/" class="text-accent5 hover:underline" target="_blank">Segundo a USP</a>, um terço dos destilados são falsos e o sistema de controle foi desativado em 2016 para as empresas se autofiscalizarem.
