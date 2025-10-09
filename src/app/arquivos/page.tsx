@@ -81,13 +81,21 @@ const books = [
     image: "/trans-archives/bash_back.png",
     url: "https://drive.google.com/file/d/1us7D-6MPt_wBjhGxpwA69iguXO1tcj4-/view?usp=sharing",
   },
-  // {
-  //   id: "livro-10",
-  //   title: "Revista trans-libertária, n. 1 (2024)",
-  //   author: "acervo digital trans-anarquista",
-  //   image: "/trans-archives/revista_trans-libertaria.png",
-  //   url: "https://drive.google.com/file/d/1blaO1wsF89fX6vVKbkaAIwOl4aenFBJI/view?usp=sharing",
-  // },
+  {
+    id: "livro-10",
+    title: "Revista trans-libertária, n. 1 (2024)",
+    author: "acervo digital trans-anarquista",
+    image: "/trans-archives/revista_trans_libertaria-acervo_trans_anarquista.png",
+    url: "https://drive.google.com/file/d/1blaO1wsF89fX6vVKbkaAIwOl4aenFBJI/view?usp=sharing",
+  },
+  {
+    id: "livro-11",
+    title: "A invenção das mulheres",
+    author: "Oyèrónkẹ Oyěwùmí",
+    description: "\"...percebi que a categoria 'mulher' - que é fundacional nos discursos de gênero ocidentais - simplesmente não existia na Iorubalândia antes do contato mantido com o Ocidente.\"",
+    image: "/trans-archives/a_invencao_das_mulheres.png",
+    url: "https://drive.google.com/file/d/1DJ7HRjnkO8APUEYP3PxgnIDmKDsAfrEc/view?usp=sharing",
+  }
 ];
 
 type SortOption = "padrao" | "titulo-asc" | "titulo-desc" | "random";
