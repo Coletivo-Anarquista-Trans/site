@@ -658,7 +658,7 @@ export const posts: BlogPost[] = [
     <br/>
 
     <p>
-    Também aceita o smartphone trocando de interface todo ano, paga por isso, mesmo numa cultura consumista insustentável.
+    Também aceita smartphones trocando de interface todo ano, paga por isso, mesmo numa cultura consumista insustentável.
     </p>
     <br/>
 
