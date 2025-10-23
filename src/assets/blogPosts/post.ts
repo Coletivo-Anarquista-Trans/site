@@ -653,17 +653,17 @@ export const posts: BlogPost[] = [
     Quanto <b>mais</b> velocidade, <b>menos</b> você entende.
     </p>
     <p>
-    Você aceita facilmente algoritmos cuspindo (<i>outputs</i>) para você informação pré-selecionada e filtrada sem saber como anúncios feitos das suas últimas conversas (<i>inputs</i>) chegaram até você.
+    Você aceita algoritmos cuspindo (<i>outputs</i>) informação pré-selecionada e filtrada sem saber como anúncios feitos das suas últimas conversas (<i>inputs</i>) chegaram até você.
     </p>
     <br/>
 
     <p>
-    Também aceita o smartphone trocando de interface todo ano, paga por isso, mesmo numa cultura consumista insustentável.
+    Também aceita smartphones trocando de interface todo ano, paga por isso, mesmo numa cultura consumista insustentável.
     </p>
     <br/>
 
     <p>
-    Mas quando corpos mudam a si, suas próprias interfaces, formas corporais, linguagens e modos de se relacionar você tenta entender e definir o processo nas suas limitadas compreensões.
+    Mas quando corpos mudam a si, suas próprias interfaces, formas corporais, linguagens e modos de se relacionar você tenta entender e definir o processo nas suas <b>limitadas compreensões</b>.
     </p>
     <br/>
 
