@@ -663,7 +663,7 @@ export const posts: BlogPost[] = [
     <br/>
 
     <p>
-    Mas quando corpos mudam a si, suas próprias interfaces, formas corporais, linguagens e modos de se relacionar você tenta entender e definir o processo nas suas limitadas compreensões.
+    Mas quando corpos mudam a si, suas próprias interfaces, formas corporais, linguagens e modos de se relacionar você tenta entender e definir o processo nas suas <b>limitadas compreensões</b>.
     </p>
     <br/>
 
