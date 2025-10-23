@@ -653,7 +653,7 @@ export const posts: BlogPost[] = [
     Quanto <b>mais</b> velocidade, <b>menos</b> você entende.
     </p>
     <p>
-    Você aceita facilmente algoritmos cuspindo (<i>outputs</i>) para você informação pré-selecionada e filtrada sem saber como anúncios feitos das suas últimas conversas (<i>inputs</i>) chegaram até você.
+    Você aceita algoritmos cuspindo (<i>outputs</i>) informação pré-selecionada e filtrada sem saber como anúncios feitos das suas últimas conversas (<i>inputs</i>) chegaram até você.
     </p>
     <br/>
 
