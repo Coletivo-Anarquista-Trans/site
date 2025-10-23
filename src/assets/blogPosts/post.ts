@@ -623,6 +623,87 @@ export const posts: BlogPost[] = [
 
   `,
   },
+  {
+    id: "post-11",
+    title: "No futuro você não entenderá nada..",
+    description: "1n1",
+    slug: "futuro-alienado",
+    date: "2025-10-2",
+    image: "/trans-blog-posts/future.jpg",
+    content: `
+    <p>
+    Eu quero te tirar o peso de um esforço desnecessário: entender as coisas. 
+    </p>
+    <p>
+    É em vão. Quer dizer, pode ser útil agora, mas a médio e longo prazo só vai te confundir mais.
+    </p>
+    <br/>
+
+    <p>
+    Talvez você não tenha entendido ainda. A dinâmica da nossa produção tem sido sobre velocidade: chegar mais rápido, fazer mais rápido o que precisa ser feito, entender mais rápido, comprar mais rápido, amar mais rápido.
+    </p>
+    <p>
+    Aceleração do tempo, dos transportes, da informação, da tecnologia, das mercadorias, da moda, dos memes, das relações, dos amores, do sexo, do afeto, do cuidado e, com isso, de corpos.
+    </p>
+    <br/>
+
+    <p>
+    Quanto maior a velocidade, menos você entende.
+    </p>
+    <p>
+    Você aceita facilmente algoritmos cuspindo (outputs) para você informação pré-selecionada e filtrada sem saber como anúncios feitos das suas últimas conversas (inputs) chegaram até você.
+    </p>
+    <br/>
+
+    <p>
+    Também aceita o smartphone trocando de interface todo ano, paga por isso, mesmo numa cultura consumista insustentável.
+    </p>
+    <br/>
+
+    <p>
+    Mas quando corpos mudam a si, suas próprias interfaces, formas corporais, linguagens e modos de se relacionar você tenta entender e definir o processo nas suas limitadas compreensões.
+    </p>
+    <br/>
+
+    <p>
+    Tão alienado pelas mercadorias e vetores informacionais mas tão curioso por corpos trans e queer.
+    </p>
+    <p>
+    Ou talvez negue nossa existência para poder se alienar nos mecanismos de recalcamento cisgênero.
+    </p>
+    <br/>
+
+    <p>
+    Não se preocupe. Corpos terão a mesma velocidade das mudanças e lançamentos das tecnologias, as regras de gênero ainda ficarão mais confusas e ininteligíveis para você.
+    </p>
+    <br/>
+
+    <p>
+    A limitada forma de definir tudo em 0 e 1 a partir de um genitalismo cairá por terra quanto mais rápido as tecnologias de modificação corporal chegarem. Você está preparado?
+    </p>
+    <br/>
+
+    <p>
+    Aceite não saber. Já não sabemos de nada. A alienação profunda de cada um de nós pode nos libertar se ao invés de tentarmos buscar razões para a diferença, abraçarmos a multiplicidade.
+    </p>
+    <br/>
+
+    <p>
+    Você está livre de entender para aceitar, porque você já aceita muito sem entender ou questionar.
+    </p>
+    <p>
+    Nossa agência não está em entendermos as coisas. Ela está nos fluxos em que decidimos nos colocar e para onde eles levam a nós e o que alimentam.
+    </p>
+    <br/>
+
+    <p>
+    Mas se me permite tentar entender algo, fica a pergunta: Por que aceita não entender algumas coisas mas quer tanto entender outras para aceitá-las? 
+    </p>
+    <p>
+    Talvez isso diga algo sobre você.
+    </p>
+  `,
+  },
   // Add more posts here
 ];
 
