@@ -628,7 +628,7 @@ export const posts: BlogPost[] = [
     title: "No futuro você não entenderá nada..",
     description: "1n1",
     slug: "futuro-alienado",
-    date: "2025-10-2",
+    date: "2025-10-22",
     image: "/trans-blog-posts/future.jpg",
     content: `
     <p>
@@ -640,18 +640,20 @@ export const posts: BlogPost[] = [
     <br/>
 
     <p>
-    Talvez você não tenha entendido ainda. A dinâmica da nossa produção tem sido sobre velocidade: chegar mais rápido, fazer mais rápido o que precisa ser feito, entender mais rápido, comprar mais rápido, amar mais rápido.
+    Talvez você não tenha entendido ainda. A dinâmica da nossa produção tem sido sobre <b>velocidade</b>: chegar mais rápido, fazer mais rápido o que precisa ser feito, entender mais rápido, comprar mais rápido, amar mais rápido.
     </p>
+    <br/>
+
     <p>
     Aceleração do tempo, dos transportes, da informação, da tecnologia, das mercadorias, da moda, dos memes, das relações, dos amores, do sexo, do afeto, do cuidado e, com isso, de corpos.
     </p>
     <br/>
 
     <p>
-    Quanto maior a velocidade, menos você entende.
+    Quanto <b>mais</b> velocidade, <b>menos</b> você entende.
     </p>
     <p>
-    Você aceita facilmente algoritmos cuspindo (outputs) para você informação pré-selecionada e filtrada sem saber como anúncios feitos das suas últimas conversas (inputs) chegaram até você.
+    Você aceita facilmente algoritmos cuspindo (<i>outputs</i>) para você informação pré-selecionada e filtrada sem saber como anúncios feitos das suas últimas conversas (<i>inputs</i>) chegaram até você.
     </p>
     <br/>
 
@@ -666,15 +668,15 @@ export const posts: BlogPost[] = [
     <br/>
 
     <p>
-    Tão alienado pelas mercadorias e vetores informacionais mas tão curioso por corpos trans e queer.
+    Tão <b>alienado</b> pelas mercadorias e vetores informacionais, mas tão <b>curioso</b> por corpos trans e queer.
     </p>
     <p>
-    Ou talvez negue nossa existência para poder se alienar nos mecanismos de recalcamento cisgênero.
+    Ou talvez negue nossa existência para poder se alienar nos mecanismos de <b>recalcamento</b> cisgênero.
     </p>
     <br/>
 
     <p>
-    Não se preocupe. Corpos terão a mesma velocidade das mudanças e lançamentos das tecnologias, as regras de gênero ainda ficarão mais confusas e ininteligíveis para você.
+    Não se preocupe. Corpos terão velocidade como das mudanças e lançamentos das tecnologias, as regras de gênero ficarão <b>mais confusas</b> e <b>ininteligíveis</b> para você até <b>inexistirem</b>.
     </p>
     <br/>
 
@@ -697,8 +699,9 @@ export const posts: BlogPost[] = [
     <br/>
 
     <p>
-    Mas se me permite tentar entender algo, fica a pergunta: Por que aceita não entender algumas coisas mas quer tanto entender outras para aceitá-las? 
+    Mas se me permite tentar entender algo, fica a pergunta: 
     </p>
+    <blockquote>Por que aceita não entender algumas coisas mas quer tanto entender outras para aceitá-las? </blockquote>
     <p>
     Talvez isso diga algo sobre você.
     </p>
