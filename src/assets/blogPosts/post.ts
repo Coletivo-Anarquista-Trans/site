@@ -715,51 +715,100 @@ export const posts: BlogPost[] = [
     date: "2025-11-02",
     image: "/trans-blog-posts/maquina_capital.jpg",
     content: `
-  <blockquote>“Recuperar uma agência política efetiva significa, em primeiro lugar, <b>reconhecer a nossa participação</b>, ao nível do desejo, no impiedoso <b>moedor de carne do capital</b>. [...]” <cite>"Realismo Capitalista", Mark Fisher</cite></blockquote>
+    <blockquote>“Recuperar uma agência política efetiva significa, em primeiro lugar, <b>reconhecer a nossa participação</b>, ao nível do desejo, no impiedoso <b>moedor de carne do capital</b>. [...]” <cite>"Realismo Capitalista", Mark Fisher</cite></blockquote>
 
-  <p>Sempre achei engraçado como inventamos o termo “Movimento político”, como se existissem movimentos que não fossem. <b>Todo movimento é político</b>.</p>
-  <br/>
+    <p>Sempre achei engraçado como inventamos o termo “Movimento político”, como se existissem movimentos que não fossem. <b>Todo movimento é político</b>.</p>
+    <br/>
 
-  <p>O Cistema não é ingênuo, mas te trata como se você fosse. </p>
-  <p>
-  Ele <b>te diz os seus movimentos</b> em circuito: acorde cedo, no horário, por 5 a 6 dias; descanso apenas depois, por um ou dois dias; entre nos <b>fluxos</b> da cidade — o encanamento de carne humana — bombeando pessoas para as células de trabalho e <b>produza</b>, enquanto não produz, <b>consuma</b>. Em nome do lucro.</p>
-  <br/>
+    <p>O Cistema não é ingênuo, mas te trata como se você fosse. </p>
+    <p>
+    Ele <b>te diz os seus movimentos</b> em circuito: acorde cedo, no horário, por 5 a 6 dias; descanso apenas depois, por um ou dois dias; entre nos <b>fluxos</b> da cidade — o encanamento de carne humana — bombeando pessoas para as células de trabalho e <b>produza</b>, enquanto não produz, <b>consuma</b>. Em nome do lucro.</p>
+    <br/>
 
-  <p><b>Você</b> - e eu também - <b>realiza todos esses movimentos</b> (políticos).</p>
-  <p>Enquanto você é mais uma hemoglobina - que ao invés de transportar oxigênio, transporta seu trabalho para bombear o coração do Capital - você assiste as ações do organismo em sua totalidade:</p>
-  <ul class="list-disc list-inside">
-    <li>Genocídios e chacinas das populações negra e palestina</li>
-    <li>Crise ambiental e climática</li>
-    <li>Miséria estrutural</li>
-  </ul>
-  <br/>
+    <p><b>Você</b> - e eu também - <b>realiza todos esses movimentos</b> (políticos).</p>
+    <p>Enquanto você é mais uma hemoglobina - que ao invés de transportar oxigênio, transporta seu trabalho para bombear o coração do Capital - você assiste as ações do organismo em sua totalidade:</p>
+    <ul class="list-disc list-inside">
+      <li>Genocídios e chacinas das populações negra e palestina</li>
+      <li>Crise ambiental e climática</li>
+      <li>Miséria estrutural</li>
+    </ul>
+    <br/>
 
-  <p>O <b>organismo</b> produziu a bomba atômica e inteligência artificial, mas não conseguiu acabar com as prisões, com a fome e a falta de abrigo.</p>
-  <br/>
+    <p>O <b>organismo</b> produziu a bomba atômica e inteligência artificial, mas não conseguiu acabar com as prisões, com a fome e a falta de abrigo.</p>
+    <br/>
 
-  <p>Mas você, como uma <b>célula saudável</b>, continua participando dos <b>fluxos</b> e <b>bombeando</b> seu trabalho para esse organismo. Sem parar.</p>
-  <br/>
+    <p>Mas você, como uma <b>célula saudável</b>, continua participando dos <b>fluxos</b> e <b>bombeando</b> seu trabalho para esse organismo. Sem parar.</p>
+    <br/>
 
-  <p>E quando vê os “movimentos políticos” das <b>células cancerígenas</b>, o que faz? </p>
-  <p> O que você faz quando o <b>organismo do capital ataca as células cancerígenas</b>?</p>
-  <br/>
+    <p>E quando vê os “movimentos políticos” das <b>células cancerígenas</b>, o que faz? </p>
+    <p> O que você faz quando o <b>organismo do capital ataca as células cancerígenas</b>?</p>
+    <br/>
 
-  <p><b>Vocês não se movem por causa alguma</b>, o único movimento que seus corpos fazem é em nome do Capital: acordar todo dia e continuar os fluxos de circulação do dinheiro, do lucro, do trabalho. 
-  <b>Esse é o seu movimento político.</b></p>
-  <br/>
+    <p><b>Vocês não se movem por causa alguma</b>, o único movimento que seus corpos fazem é em nome do Capital: acordar todo dia e continuar os fluxos de circulação do dinheiro, do lucro, do trabalho. 
+    <b>Esse é o seu movimento político.</b></p>
+    <br/>
 
-  <p>Você <b>vendeu suas crenças</b>, <b>entregou sua alma a esse organismo</b>, aceitou participar ou que não há saída alguma, a tal ponto que alguns até já aplaudem os resultados dessa distopia trágica e transformaram suas crenças nas do demônio-Capital.</p>
-  <br/>
+    <p>Você <b>vendeu suas crenças</b>, <b>entregou sua alma a esse organismo</b>, aceitou participar ou que não há saída alguma, a tal ponto que alguns até já aplaudem os resultados dessa distopia trágica e transformaram suas crenças nas do demônio-Capital.</p>
+    <br/>
 
-  <p>Não se sente sufocado por todos esses fluxos e circuitos tão orgânicos?<br/>
-  Te faço um convite então: ao invés de ser sufocado, <b>sufoque esse sistema</b>, desvie e obstrua os fluxos.</p>
-  <br/>
+    <p>Não se sente sufocado por todos esses fluxos e circuitos tão orgânicos?<br/>
+    Te faço um convite então: ao invés de ser sufocado, <b>sufoque esse sistema</b>, desvie e obstrua os fluxos.</p>
+    <br/>
 
-  <p><b>Seja vírus, seja ruído.</b><br/>
-  Retome seus movimentos e desvie-os em outra direção.</p>
+    <p><b>Seja vírus, seja ruído.</b><br/>
+    Retome seus movimentos e desvie-os em outra direção.</p>
 
-  <blockquote>“[...] O que está sendo denegado nesse repúdio ao mal e à ignorância, projetados nesse Outro fantasmático, é a nossa própria <b>cumplicidade</b> com as redes de opressão planetária. É preciso ter em mente que <b>o capitalismo é tanto uma estrutura impessoal hiper abstrata quanto algo que não poderia existir sem nossa colaboração.</b>”<cite>"Realismo Capitalista", Mark Fisher</cite></blockquote>
+    <blockquote>“[...] O que está sendo denegado nesse repúdio ao mal e à ignorância, projetados nesse Outro fantasmático, é a nossa própria <b>cumplicidade</b> com as redes de opressão planetária. É preciso ter em mente que <b>o capitalismo é tanto uma estrutura impessoal hiper abstrata quanto algo que não poderia existir sem nossa colaboração.</b>”<cite>"Realismo Capitalista", Mark Fisher</cite></blockquote>
   `,
+  },
+ {
+    id: "post-13",
+    title: "anarcokawaii",
+    description: "1n1",
+    slug: "o-cistema-nao-eh-fofo-owo",
+    date: "2025-11-17",
+    image: "/trans-blog-posts/anarcokawaii.jpeg",
+    content: `
+    <p>konichiwaaa, minna!! ^-^<br/>
+    ouvi dizer que você quer ser kawaii~ owo</p>
+    <br/>
+
+    <p>sugoiii!! quem sabe posso ajudar com algumas dicas :33<br/>
+    primeiro de tudo, <b>deuses e mestres não são moe moe uwu</b> … quer dizer, mestres só são legais quando são gentis. não é mesmo? >///< e <b>o capital não é gentil com a pessoas-fofss! òwó </b> … </p>
+    <br/>
+
+    <p>lutamos pelo <b>anarcokawaii</b>!! haaaai!<br/>
+    isso significa que não existe uma regra ou autoridade que diz o que deve ser fofo!! nya nya~</p>
+    <br/>
+
+    <p><b>você pode ser fofs da sua maneira!!</b> quantos jeitos kawaiis de ser existem por aí que ainda não conhecemos por ouvirmos demais do cistema como devemos ser e que devemos nos encaixar nos seus <b>sem graças 0 e 1??</b> uwu</p>
+    <br/>
+
+    <p>existem infinitas maneiras de devir-fofa, formas fofas de comer, formas fofas de se divertir, formas fofas de amar, escrever, lutar, revidar, <b>destruir o cistema!</b> kyaaah *--*</p>
+    <br/>
+
+    <p>g-gomenasai, me empolguei >///< … eh que no anarcokawaii, destruir o cistema é tão … tão…  based!!</p>
+    <br/>
+
+    <p>imagine quão kawaii desu as coisas podem ser se nós pudermos ser mais cringe hihi<br/>
+    mas o cistema, o capital, quer submeter a potência das fofuras em um único fluxo: do lucro! òwó</p>
+    <br/>
+
+    <p><b>não vamos aceitar a submissão da fofura ao cistema! </b>humpf.. uwu<br/>
+    ser cringe é ser punk, a sociedade tem vergonha de quem não se submete a sua desgraça coletiva e se sentem no direito de rir de nós… tsc tsc… mas você quer ser kawaii né? e o que eles querem? o que querem de você? eles parecem felizes com o mundo sem fofura vivendo em função das regras produtivas deles?</p>
+    <br/>
+
+    <p>sentem vergonha de você enquanto deixam o cistema destruir toooodes nós.. aff aff… <b>o cistema realmente não tem graça e não deveríamos deixá-lo ser nosso senpai</b>! uwu</p>
+    <br/>
+
+    <p>fora do cistema, no anarcokawaii,  a única regra é não ter um jeito certo de ser kawaii. Para ser fofs basta ser fofamente você do seu jeito, criando seu <b>kawaiismo anti-cistema</b> :3</p>
+    <br/>
+
+    <p>se te acham cringe por ser muito fofs, continue!! faremos o kawaiipunk, que <b>infinites kawaiis floresçam!</b></p>
+    <br/>
+
+    <p>te vejo por aí<br/>
+    bai baaaai! ^-^~</p>  `,
   },
   // Add more posts here
 ];
