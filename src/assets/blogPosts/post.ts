@@ -810,6 +810,69 @@ export const posts: BlogPost[] = [
     <p>te vejo por aí<br/>
     bai baaaai! ^-^~</p>  `,
   },
+  {
+    id: "post-14",
+    title: "Não era tecnologia, era tudo droga",
+    description: "1n1",
+    slug: "eh-tudo-droga",
+    date: "2025-12-05",
+    image: "/trans-blog-posts/realidade-nao-encontrada.jpg",
+    content: `
+    <p><blockquote>
+    “A fim de compreender como as novas relações de corpo-poder, prazer-conhecimento e pharmakon-subjetividades foram estabelecidas no Ocidente, devemos agora fazer um desvio indispensável às <b>relações entre o capitalismo e a destruição das nossas tradições enteogênicas.</b>” 
+    <cite>— Testo Junkie, Sexo, drogas e biopolítica na era farmacopornográfica, Paul Preciado</cite>
+    </blockquote></p>
+
+    <p>Enquanto caminho pelos fluxos da cidade cyberpunk, fico sempre admirada como todos se tornaram viciados em tecnologia. <i><b> Tech Junkies</b></i>.</p>
+    <br/>
+
+    <p>Que vivemos em telas já sabemos.</p>
+    <br/>
+
+    <p>Mas não só as telas nos viciam na tecnologia.<br/>
+    Preciado descrevia as cidades como “<i>[…] máquinas socioarquitetônicas capazes de produzir identidades</i>” <cite>(Um apartamento em Urano, Preciado)</cite>. <b>Viver na cidade é o vício nessa máquina</b>.</p>
+    <br/>
+
+    <p>Nossas identidades estão <b>simbioticamente ligadas a essa máquina</b>, essa tecnologia chamada cidade.<br/>
+    O meio urbano é o meio dos Tech Junkies, ou melhor, dos ciborgues.</p>
+    <br/>
+
+    <p>Nos envolvemos nas dinâmicas das <b>tecnologias de controle</b> e entropia populacional. Fluxos de transporte, câmeras de vigilância, semáforos coordenando o movimento do deslocamento automotivo, subterrâneos infestados de telas com propaganda do cybercapital.<br/>
+    Tudo conectado pelos cabos de rede e eletricidade extraindo a energia da biosfera e transformando-a na tecnosfera.</p>
+    <br/>
+
+    <p>Parece difícil para nós, que ainda nos chamamos de humanos, vermos dessa forma quando <b>naturalizamos tão facilmente essa máquina de gente</b> chamada cidade.</p>
+    <br/>
+
+    <p>Também, a <b>destruição das culturas enteogênicas</b> — substâncias psicoativas capazes de induzir outros estados de consciência, comuns  em rituais xamânicos — <b>pode nos fazer pensar como somos seres racionais em que a sobriedade não resultaria na produção de um mundo evocado por um transe ou possessão</b>, mas sim guiado pela racionalidade e técnica em nome de um progresso para todos.</p>
+    <br/>
+
+    <p>Ingênuo.</p>
+    <br/>
+
+    <p>Basta caminhar nos fluxos de São Paulo para ver <b>todos em transe ou possessão na sobriedade racional dos circuitos do Cistema nos intoxicando</b> rumo ao seu estado de consciência. </p>
+    <br/>
+
+    <p>Talvez, a diferenciação entre tecnologia e droga não exista para além do seu <b>apelo moral</b> em que as drogas são tecnologias abjetas capazes de <b>evocar outras formas de experienciar e criar sentido, outros transes e formas de perceber e produzir a realidade</b>.<br/>
+    Enquanto o que entendemos por <b>tecnologia</b> — também em suas relações simbióticas com o corpo — <b>são as drogas higienizadas evocando a possessão mística da razão produzindo a realidade desejada pela pseudosobriedade.</b></p>
+    <br/>
+
+    <p>Desejada por quem? Quem nos quer presos no transe dos <b>algoritmos capitalistas</b> das redes sociais, timelines, planilhas, tabelas e inteligência artificial das big techs? O que nos quer negligentes às dores da miséria na cidade enquanto seguimos nossos fluxos urbanos? <b>Quando vamos revidar contra isso?</b></p>
+    <br/>
+
+    <p>Nossos corpos seguem nessa <b>possessão da máquina de gente e do ciberespaço capitalista</b>, presos nas possessões das telas e dos circuitos do Cistema.</p>
+    <br/>
+
+    <p>Se as <b>drogas são o que nos possibilita ritualizar e produzir realidades</b> a partir das suas relações, então, talvez, desde o início não existiu tecnologia, era tudo droga.</p>
+    <br/>
+
+    <blockquote>
+    “Se a figura da sociedade da disciplina era do trabalhador presidiário, a figura da sociedade do controle é a do endividado viciado. <b>O capital do ciberespaço opera viciando seus usuários.</b>” 
+    <cite>— Realismo Capitalista, Mark Fisher</cite>
+    </blockquote>
+
+    `
+  },
   // Add more posts here
 ];
 
