@@ -1,36 +1,19 @@
 // app/layout.tsx
-import type { Metadata } from "next";
-import "./globals.css";
-import ErrorBoundary from "../components/atoms/ErrorBoundary";
-import { ThemeProvider } from "@/context/ThemeContext";
-import { CyberSectionProvider } from "@/context/CyberSectionsContext/CyberSections";
-import CyberSidebar from "@/components/organism/CyberSidebar";
-import { FontProvider } from "@/context/FontContext";
-import FontWrapper from "@/utils/FontWrapper";
-import { AudioContextProvider } from "@/context/AudioContext";
-import AudioConsentModal from "@/components/molecules/AudioConsentModal";
 import LoadingWrapper from "@/components/atoms/Loading/LoadingWrapper";
+import AudioConsentModal from "@/components/molecules/AudioConsentModal";
+import CyberSidebar from "@/components/organism/CyberSidebar";
+import { AudioContextProvider } from "@/context/AudioContext";
+import { CyberSectionProvider } from "@/context/CyberSectionsContext/CyberSections";
+import { FontProvider } from "@/context/FontContext";
+import { ThemeProvider } from "@/context/ThemeContext";
+import FontWrapper from "@/utils/FontWrapper";
+import { Metadata } from "next";
+import ErrorBoundary from "../components/atoms/ErrorBoundary";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "CATS",
   description: "Coletivo Anarquista Trans",
-  icons: {
-    icon: [
-      { url: "/favicon.ico", type: "image/x-icon" },
-      { url: "/cat-icon.svg", type: "image/svg+xml" },
-      { url: "/cats.png", type: "image/png", sizes: "512x512" }
-    ],
-    apple: [
-      { url: "/cats.png", sizes: "180x180" }
-    ],
-    other: [
-      {
-        rel: "mask-icon",
-        url: "/cat-icon.svg",
-        color: "#000000"
-      }
-    ]
-  },
 };
 
 export default function RootLayout({
@@ -40,12 +23,10 @@ export default function RootLayout({
 }) {
   const isGitHubPages = process.env.GITHUB_ACTIONS === "true";
   const imagePreloadHref = isGitHubPages ? "/site/cats.png" : "/cats.png";
-  const faviconHref = isGitHubPages ? "/site/favicon.ico" : "/favicon.ico";
 
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href={faviconHref} />
         <link rel="preload" href={imagePreloadHref} as="image" />
       </head>
       <body>
