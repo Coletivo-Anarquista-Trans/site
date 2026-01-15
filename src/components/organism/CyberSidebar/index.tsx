@@ -1,26 +1,25 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import classnames from "classnames";
-import CyberContainer from "../../atoms/CyberContainer";
-import Link from "next/link";
-import { useTheme } from "@/context/ThemeContext";
-import { useCyberSection } from "@/context/CyberSectionsContext/CyberSections";
-import { useRouter } from "next/navigation";
-import {
-  FolderIcon,
-  HomeIcon,
-  BlogIcon,
-  ResourcesIcon,
-  ArchiveIcon,
-  AboutIcon,
-  HamburgerIcon,
-  TransgenderIcon,
-  CloseIcon,
-} from "./CyberSidebarIcons";
 import CyberMiniButton from "@/components/atoms/CyberMiniButton";
-import { motion, AnimatePresence } from "framer-motion";
 import { useAudio } from "@/context/AudioContext";
+import { useCyberSection } from "@/context/CyberSectionsContext/CyberSections";
+import { useTheme } from "@/context/ThemeContext";
+import classnames from "classnames";
+import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
+import CyberContainer from "../../atoms/CyberContainer";
+import {
+  AboutIcon,
+  ArchiveIcon,
+  BlogIcon,
+  CloseIcon,
+  FolderIcon,
+  HamburgerIcon,
+  HomeIcon,
+  TransgenderIcon
+} from "./CyberSidebarIcons";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -82,6 +81,7 @@ interface CyberSection {
 type ExpandedNodes = {
   "manifesto-root": boolean;
   "saude-trans-root": boolean;
+  "use-e-compartilhe-root": boolean;
 };
 
 const HARDCODED_SECTIONS = {
@@ -152,6 +152,9 @@ const HARDCODED_SECTIONS = {
     { id: "cartilhas-manuais", parent: "saude-trans", label: "cartilhas e manuais" },
     { id: "saude-mental", parent: "saude-trans", label: "saúde mental" },
   ],
+  useECompartilhe: [
+    { id: "recursos", parent: "use-e-compartilhe", label: "recursos" },
+  ],
 };
 
 export default function CyberSidebar() {
@@ -164,6 +167,7 @@ export default function CyberSidebar() {
   const [expandedNodes, setExpandedNodes] = useState<ExpandedNodes>({
     "manifesto-root": false,
     "saude-trans-root": false,
+    "use-e-compartilhe-root": false,
   });
   const [manifestoSections, setManifestoSections] = useState<CyberSection[]>(
     []
@@ -171,17 +175,23 @@ export default function CyberSidebar() {
   const [saudeTransSections, setSaudeTransSections] = useState<CyberSection[]>(
     []
   );
+  const [useECompartilheSections, setUseECompartilheSections] = useState<CyberSection[]>(
+    []
+  );
 
   useEffect(() => {
     if (cyberSections.length === 0) {
-      loadSections([...HARDCODED_SECTIONS.manifesto, ...HARDCODED_SECTIONS.saudeTrans]);
+      loadSections([...HARDCODED_SECTIONS.manifesto, ...HARDCODED_SECTIONS.saudeTrans, ...HARDCODED_SECTIONS.useECompartilhe]);
       setManifestoSections(HARDCODED_SECTIONS.manifesto);
       setSaudeTransSections(HARDCODED_SECTIONS.saudeTrans);
+      setUseECompartilheSections(HARDCODED_SECTIONS.useECompartilhe);
     } else {
       const manifestos = cyberSections.filter((s) => s.parent === "manifesto");
       const saudeTranss = cyberSections.filter((s) => s.parent === "saude-trans");
+      const useECompartilhes = cyberSections.filter((s) => s.parent === "use-e-compartilhe");
       setManifestoSections(manifestos);
       setSaudeTransSections(saudeTranss);
+      setUseECompartilheSections(useECompartilhes);
     }
   }, [cyberSections, loadSections]);
 
@@ -194,6 +204,11 @@ export default function CyberSidebar() {
     router.push(`/saude-trans/${id}`);
     setOpen(false);
   };
+
+  const handleUseECompartilheSectionClick = (id: string) => {
+    router.push(`/use-e-compartilhe/${id}`);
+    setOpen(false);
+  }
 
   const toggleNode = (id: keyof ExpandedNodes) => {
     setExpandedNodes((prev) => ({ ...prev, [id]: !prev[id] }));
@@ -254,10 +269,10 @@ export default function CyberSidebar() {
       </motion.div>
 
       <motion.div variants={itemVariants}>
-        <Link href="/recursos" passHref >
+        <Link href="/blog" passHref >
           <CyberMiniButton className="flex items-center w-full hover:bg-accent1 hover:text-background">
-            <ResourcesIcon />
-            <span>recursos</span>
+            <BlogIcon />
+            <span>blog</span>
           </CyberMiniButton>
         </Link>
       </motion.div>
@@ -321,13 +336,54 @@ export default function CyberSidebar() {
         </AnimatePresence>
       </motion.div>
 
-      <motion.div variants={itemVariants}>
-        <Link href="/blog" passHref >
-          <CyberMiniButton className="flex items-center w-full hover:bg-accent1 hover:text-background">
-            <BlogIcon />
-            <span>blog</span>
-          </CyberMiniButton>
-        </Link>
+      <motion.div variants={itemVariants} className="mb-1">
+        <div
+          className="flex items-center px-2 py-1 cursor-pointer hover:bg-accent1 hover:text-background"
+          onClick={() => toggleNode("use-e-compartilhe-root")}
+        >
+          <FolderIcon isOpen={expandedNodes["use-e-compartilhe-root"]} />
+          <span>use e compartilhe</span>
+        </div>
+
+        <AnimatePresence>
+          {expandedNodes["use-e-compartilhe-root"] && (
+            <motion.div
+              className="ml-6 pl-2 border-l border-accent1 overflow-hidden"
+              variants={subContainerVariants}
+              initial="hidden"
+              animate="visible"
+              exit="exit"
+            >
+              <motion.div
+                className="hover:bg-accent1 hover:text-background cursor-pointer px-2 py-1"
+                onClick={() => router.push("/use-e-compartilhe")}
+                variants={subItemVariants}
+              >
+                <div className="flex items-center">
+                  <span className="mr-1">---</span>
+                  <span className="ml-2 whitespace-nowrap overflow-hidden text-ellipsis max-w-[180px]">
+                    geral
+                  </span>
+                </div>
+              </motion.div>
+              {useECompartilheSections.map((section) => (
+                <motion.div
+                  key={section.id}
+                  className="hover:bg-accent1 hover:text-background cursor-pointer px-2 py-1"
+                  onClick={() => handleUseECompartilheSectionClick(section.id)}
+                  variants={subItemVariants}
+                >
+                  <div className="flex items-center">
+                    <span className="mr-1">---</span>
+                    <span className="ml-2 whitespace-nowrap overflow-hidden text-ellipsis max-w-[180px]">
+                      {section.label}
+                    </span>
+                  </div>
+                </motion.div>
+              ))}
+            </motion.div>
+          )}
+        </AnimatePresence>
       </motion.div>
 
       <motion.div variants={itemVariants}>
