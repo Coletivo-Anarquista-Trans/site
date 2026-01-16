@@ -2,8 +2,8 @@
 "use client";
 
 import CyberContainer from "@/components/atoms/CyberContainer";
-import { FaFolder } from "react-icons/fa";
 import { useRouter } from "next/navigation";
+import { FaFolder } from "react-icons/fa";
 
 interface DirectoryItem {
     id: string;
@@ -20,13 +20,13 @@ export default function SaudeTrans() {
             id: "servicos-publicos",
             name: "servicos-publicos",
             path: "/saude-trans/servicos-publicos",
-            description: "Serviços públicos de saúde com atendimento a pessoas trans"
+            description: "Serviços públicos de saúde com atendimento a pessoas trans pelo Brasil"
         },
         {
             id: "casas-acolhimento",
             name: "casas-acolhimento",
             path: "/saude-trans/casas-acolhimento",
-            description: "Centros de acolhida LGBTQIAPN+"
+            description: "Centros de acolhida para pessoas LGBTQIAPN+ em situação de vulnerabilidade"
         },
         {
             id: "cartilhas-manuais",
@@ -94,7 +94,7 @@ export default function SaudeTrans() {
                         </div>
 
                         <div className="mt-4 pt-4 border-t border-accent1 text-accent3 text-xs font-mono">
-                            <span>drwxr-xr-x 3 cats-coletivo-anarquista-trans 4096 {new Date().toLocaleDateString('pt-BR')}.</span>
+                            <span>drwxr-xr-x {directories.length} cats-coletivo-anarquista-trans 1312 {new Date().toLocaleDateString('pt-BR')}.</span>
                         </div>
                     </CyberContainer>
                 </CyberContainer>

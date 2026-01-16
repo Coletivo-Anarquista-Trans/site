@@ -20,13 +20,13 @@ export default function UseECompartilhe() {
             id: "recursos",
             name: "recursos",
             path: "/use-e-compartilhe/recursos",
-            description: "Recursos úteis de customização de personagem e informações gerais."
+            description: "Recursos úteis de customização de personagem, autodefesa e informações gerais"
         },
         {
             id: "banco-de-imagens",
             name: "banco-de-imagens",
             path: "/use-e-compartilhe/banco-de-imagens",
-            description: "..."
+            description: "Banco de imagens para uso livre em projetos pessoais e coletivos"
         },
     ];
 
@@ -82,7 +82,7 @@ export default function UseECompartilhe() {
                         </div>
 
                         <div className="mt-4 pt-4 border-t border-accent1 text-accent3 text-xs font-mono">
-                            <span>drwxr-xr-x 3 cats-coletivo-anarquista-trans 4096 {new Date().toLocaleDateString('pt-BR')}.</span>
+                            <span>drwxr-xr-x {directories.length} cats-coletivo-anarquista-trans 1312 {new Date().toLocaleDateString('pt-BR')}.</span>
                         </div>
                     </CyberContainer>
                 </CyberContainer>

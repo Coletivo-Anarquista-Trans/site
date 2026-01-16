@@ -154,6 +154,7 @@ const HARDCODED_SECTIONS = {
   ],
   useECompartilhe: [
     { id: "recursos", parent: "use-e-compartilhe", label: "recursos" },
+    { id: "banco-de-imagens", parent: "use-e-compartilhe", label: "banco de imagens" },
   ],
 };
 
