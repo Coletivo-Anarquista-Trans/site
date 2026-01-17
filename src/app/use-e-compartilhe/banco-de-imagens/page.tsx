@@ -11,6 +11,15 @@ export default function BancoDeImagensPage() {
           Banco de Imagens
         </h1>
 
+        <CyberContainer className="text-accent1 mb-6 text-center">
+          Arquivos de imagens para uso livre, espalhe! (zines, cartazes, lambes,
+          adesivos, etc.)
+          <br />
+          <span className="text-accent5">
+            Quer contribuir com algum material? Mande em: cats-trans@riseup.net
+          </span>
+        </CyberContainer>
+
         <CyberImageGallery />
       </CyberContainer>
     </CyberContainer>
