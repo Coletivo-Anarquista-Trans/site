@@ -873,6 +873,164 @@ export const posts: BlogPost[] = [
 
     `
   },
+  {
+    id: "post-15",
+    title: "Contra o marxismo covarde",
+    description: "1n1",
+    slug: "marxismo-covarde",
+    date: "2026-04-05",
+    image: "/trans-blog-posts/marxismo-covarde.jpg",
+    content: `
+    <blockquote>
+    Esse texto é uma crítica ao texto "Contra nego bispo", escrito por Douglas Rodrigues Barros.
+    </blockquote>
+
+    <blockquote>
+    “Não é um problema ideológico, de desconhecimento e ilusão, mas um problema de desejo, e o desejo faz parte da infraestrutura.”
+    <cite>(O Anti-Édipo, Deleuze e Guattari)</cite>
+    </blockquote>
+
+    <p>
+    Críticas são teses ousadas, então vamos começar com esta: os revolucionários que dizem “só há uma forma de fazer revolução e é a do meu partido” desejam conservar em si parte do ego constituído na produção social capitalista.
+    Eles não estão dispostos a abrir mão de seus desejos de masculinidade, humanidade, cisgeneridade e controle dos afetos.
+    </p>
+    <br/>
+
+    <p>
+    Porém, estão sempre dispostos a colocar-se no papel de rejeitar vetores questionadores das bases de produção dessas subjetivações, interditando esses vetores para voltar para um lugar onde podem preservar as bases materiais de uma crítica materialista desatualizada — eu diria cansada — para não ter de estender a crítica a si próprios em seu papel na elaboração do atual momento de produção da nossa existência: o sistema capitalista.
+    </p>
+    <br/>
+
+    <p>
+    Esses “revolucionários” têm o discurso pronto: “idealismo”, “pensamento pequeno-burguês”, “cosmovisão identitarista”. Eles são os “detentores da ciência imortal do proletariado” e da “verdadeira análise materialista”. Esta, que curiosamente é incapaz de analisar a si mesma em termos críticos.
+    </p>
+    <br/>
+
+    <p>Vamos por partes.</p>
+    <p>
+    Tomemos a tese de Douglas sobre pensamentos dissidentes no texto <em>“Contra Nego Bispo”</em>:
+    </p>
+
+    <blockquote>
+      “A pseudorradicalidade dessa tendência de pensamento, que ressurgiu hoje, no século XXI, deixa de lado o mundo concreto, a necessidade da análise concreta, para erguer um mundo imaginário novo, radicalmente homogêneo e ultraidentitário, de acordo com a vontade do proponente — que imaginariamente buscará legitimidade numa tradição imaginária e mítica.”
+    </blockquote>
+
+    <p>Seu diagnóstico para esse efeito é:</p>
+
+    <blockquote>
+      “[...] a crise da sociabilidade que conduz à desconfiança em relação à razão, organizando respostas mítico-religiosas para impasses da realidade concreta.”
+    </blockquote>
+
+    <p>
+    O que está em jogo é definir uma razão crítica capaz de compreender as dinâmicas de produção do nosso mundo para sermos capazes de transformá-lo. Então vamos discuti-la.
+    </p>
+    <br/>
+
+    <p>
+    Nada pessoal, Douglas, suas intenções foram boas. De fato, há um uso das cosmovisões para produzir um identitarismo indisposto a falar de questões da produção da nossa existência no capitalismo, mas tomar o anticolonialismo para falar disso é uma péssima escolha.
+    </p>
+    <br/>
+
+    <p>
+    Na tentativa de fazer uma crítica que desmereça o pensamento de Nego Bispo, retorna-se à velha noção ortodoxa de um materialismo histórico incapaz de compreender a complexidade da mediação simbólica na produção material, como nas palavras de Douglas:
+    </p>
+
+    <blockquote>
+      “Essa cisão no ‘pensamento’ de Bispo — a separação do colonialismo de sua base material de produção — leva-o à recusa da análise material para aderir a uma noção de epistemologia como produtora de mundos. Trata-se da clássica inversão idealista: é a teoria do conhecimento que produziria o mundo material, e não o contrário.”
+    </blockquote>
+
+    <p>
+    Volta-se à antiga questão que ainda é um impeditivo para um pensamento marxista capaz de incorporar uma práxis anticolonial: a produção de nossa existência parte das relações materiais ou da epistemologia condutora das possibilidades e impossibilidades dos sujeitos de enunciar outros mundos?
+    </p>
+    <br/>
+
+    <p>
+    Essa questão é uma armadilha. Colocá-la como base da discussão é retornar a fronteiras já desfeitas, evocando um marxismo cansado e preguiçoso, incapaz de pensar estratégias revolucionárias para além de um contexto de mais de um século atrás.
+    </p>
+    <br/>
+
+    <p>
+    De fato, o mundo não é resultado somente de cosmovisões, isso seria tão ingênuo quanto afirmar que o campo simbólico não faz parte da materialidade da produção. O problema é que marxistas covardes aceitam a primeira mas se recusam a aceitar a segunda.
+    </p>
+    <br/>
+
+    <p>
+    O efeito dessa lógica é simples: refugiar-se na própria cosmovisão racionalista — sim, porque essa razão também é uma cosmovisão - para não colocar em perspectiva a si próprio como produtor dessa racionalidade.
+    </p>
+    <br/>
+
+    <p>
+    Ao rechaçar a crítica anticolonial dessa forma, não se permite discutir o que na teoria marxista e na academia há de colonial e altamente higienizado para a produção das dinâmicas capitalistas - e não seria o Capital a continuidade do empreendimento colonial?
+    </p>
+    <br/>
+
+    <p>
+    O que nas cosmovisões, capazes de provocar dissonância em como olhamos a realidade pelas narrativas já estabelecidas, causam tanto incômodo a essa racionalidade preguiçosa?
+    </p>
+    <br/>
+
+    <p>
+    Seria porque nos fazem refletir sobre oposições naturalizadas como público-privada e como alguns revolucionários privilegiam a discussão do público (“tomada do Estado”) como a grande questão para nossos problemas? Isso em detrimento das discussões das condições materiais e simbólicas para reprodução dessa vida material que sustentam as dinâmicas - majoritariamente cismasculinas - de gestão do público na sociedade tecnopatriarcal?
+    </p>
+    <br/>
+
+    <p>
+    Ou porque a recusa do tempo linear retira da narrativa marxista esse pensamento de projetar a revolução num futuro por vir, uma solução transcendental, tal qual uma providência divina cristã? É porque dissidentes propõem outras possibilidades no presente ao invés de esperarem a prometida Revolução que nunca chega?
+    </p>
+    <br/>
+
+    <p>
+    Há muitos questionamentos que visões decoloniais, dissidentes, fora do eixo da racionalidade ocidental podem trazer para as epistemologias das estratégias revolucionárias dominantes. Porém, isso exigiria uma dissolução do ego marxista de autopreservação subjetiva. Exigiria assumir possibilidades de revolução fora da (est)ética militarista, nacionalista e de um paizão para endeusarem em seu identitarismo leninista dependente de um estado - assim como o estado é necessário num projeto colonial.    </p>
+    <br/>
+
+    <p>
+    O que o anticolonialismo possibilita é abrir o debate para pensar em frentes para além da luta de classes - e não negá-la -, em que gênero, raça e neurodissidência têm papeis centrais no fim da nossa atual produção social.
+    </p>
+    <br/>
+
+    <p>
+    Tal operação exigiria questionar o quanto a própria subjetividade do sujeito revolucionário escolhido, o proletariado, estaria constituído e disciplinado não só para produzir o Capital mas também, para desejar a ordem que permite as condições necessárias para a produção do Capital. Ordem esta que exige sim a organização dos afetos em estruturas incorporadas pelo Capital com a finalidade de manter suas condições materiais através da família nuclear, a cisheterossexualidade, a monogamia, a temporalidade linear cristã etc.
+    </p>
+    <br/>
+
+    <p>
+    Há ainda muitas possibilidades não testadas de estressar os limites do capitalismo, potências que estão represadas por essa noção de que não há outras alternativas a não ser aderir ao Capital ou a já instituída e tradicional via revolucionária do partido leninista. Esta última também constituída sob essa dinâmica molecular eurocêntrica apropriada pelo próprio Capital para garantir sua produção e reprodução social, a qual a crítica anticolonial coloca em xeque - talvez seja aí onde mora o terror desses marxistas de assimilar essas críticas.
+    </p>
+    <br/>
+
+    <p>
+    Por exemplo, a abordagem desidentitarista Preciadiana sugere outras possibilidades de revolta: por que revolucionários não tomam fármacos e usam das tecnologias de modificação corporal para abrirem mão da reprodução da família edipiana e produzir outras subjetividades inconciliáveis com a produção do Capital?    </p>
+    <br/>
+
+    <p>
+    Por que não se juntam à revolução em curso da dissolução da cisbinariedade?
+    </p>
+    <p>
+    Por que não conspirar contra o corpo moldado para a produção e reprodução de Capital? 
+    </p>
+    <br/>
+
+    <p>
+    Eis aí uma - de inúmeras - via revolucionária ainda não testada, mas para isso seria necessário desfazer a subjetividade do ego colonial-capitalista atribuído a nós desde o início. Nas palavras do próprio Douglas:
+    </p>
+
+    <blockquote>
+      “Foram esses românticos — dentre os quais destaco Novalis — que organizaram um arcaico sonho na busca pela era perdida: uma nostalgia que procura no passado a grande realização de suas aspirações.”
+    </blockquote>
+
+    <p>
+    Não encontraremos as estratégias de transformação de nosso tempo na repetição de uma era perdida de um materialismo ultrapassado, mas num materialismo aberto ao futuro.
+    </p>
+    <br/>
+
+    <p>
+    Concedo, então, mais uma tese ousada de um materialismo dissidente: não há como abolir a sociedade sem a disposição de também abolir o ego construído sob as lógicas dela.
+    </p>
+    <br/>
+
+    <p><strong>Monstrifique-se.</strong></p>
+`
+  },
   // Add more posts here
 ];
 
