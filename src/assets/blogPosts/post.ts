@@ -879,7 +879,7 @@ export const posts: BlogPost[] = [
     description: "1n1",
     slug: "marxismo-covarde",
     date: "2026-04-05",
-    image: "/trans-blog-posts/marxismo-covarde.jpg",
+    image: "/trans-blog-posts/contra-marxismo-covarde.jpeg",
     content: `
     <blockquote>
     Esse texto é uma crítica ao texto "Contra nego bispo", escrito por Douglas Rodrigues Barros.
