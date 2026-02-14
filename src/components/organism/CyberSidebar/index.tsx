@@ -150,6 +150,7 @@ const HARDCODED_SECTIONS = {
     { id: "servicos-publicos", parent: "saude-trans", label: "serviços públicos" },
     { id: "casas-acolhimento", parent: "saude-trans", label: "casas de acolhimento" },
     { id: "cartilhas-manuais", parent: "saude-trans", label: "cartilhas e manuais" },
+    { id: "saude-mental", parent: "saude-trans", label: "saúde mental" },
   ],
 };
 
