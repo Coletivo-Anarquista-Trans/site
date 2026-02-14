@@ -33,6 +33,12 @@ export default function SaudeTrans() {
             name: "cartilhas-manuais",
             path: "/saude-trans/cartilhas-manuais",
             description: "Guias, cartilhas e manuais sobre saúde, sobrevivência, direitos, etc"
+        },
+        {
+            id: "saude-mental",
+            name: "saude-mental",
+            path: "/saude-trans/saude-mental",
+            description: "Listas de profissionais amigáveis com pessoas trans"
         }
     ];
 
