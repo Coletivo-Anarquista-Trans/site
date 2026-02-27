@@ -1033,9 +1033,9 @@ export const posts: BlogPost[] = [
   },
   {
     id: "post-16",
-    title: "Reflexões sobre conversas cisgêneras",
-    description: "1n1",
-    slug: "reflexoes-sobre-conversas-cisgeneras",
+    title: "Reflexões sobre uma conversa cisgênera",
+    description: "barbs",
+    slug: "reflexoes-sobre-uma-conversa-cisgenera",
     date: "2026-02-26",
     image: "/trans-blog-posts/reflexoes-conversas-cis.jpeg",
     content: `
