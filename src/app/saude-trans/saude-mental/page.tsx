@@ -20,6 +20,12 @@ export default function SaudeMental() {
                             </p>
                             <div className="flex items-center">
                                 <CyberResourceIcon type="link" className="text-accent1 mr-2" />
+                                <a href="https://docs.google.com/spreadsheets/d/13Rw6OZWqQbBNlX2HlZUPgh0isSKEZOHiQW0ySP7ZAr0/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer" className="text-accent1 hover:underline">
+                                    Psis ANP que atendem Online
+                                </a>
+                            </div>
+                            <div className="flex items-center">
+                                <CyberResourceIcon type="link" className="text-accent1 mr-2" />
                                 <a href="https://www.revistaestudostransviades.org/lista-de-profissionais" target="_blank" rel="noopener noreferrer" className="text-accent1 hover:underline">
                                     Lista de profissionais | Estudos Transviades
                                 </a>
