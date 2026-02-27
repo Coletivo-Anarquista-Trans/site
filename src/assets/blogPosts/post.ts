@@ -850,20 +850,20 @@ export const posts: BlogPost[] = [
     <p>Ingênuo.</p>
     <br/>
 
-    <p>Basta caminhar nos fluxos de São Paulo para ver <b>todos em transe ou possessão na sobriedade racional dos circuitos do Cistema nos intoxicando</b> rumo ao seu estado de consciência. </p>
+    <p>Basta caminhar nos fluxos de São Paulo para ver <b>todos em transe ou possessão da sobriedade racional dos circuitos do Cistema intoxicando-nos</b> para seu estado de consciência. </p>
     <br/>
 
-    <p>Talvez, a diferenciação entre tecnologia e droga não exista para além do seu <b>apelo moral</b> em que as drogas são tecnologias abjetas capazes de <b>evocar outras formas de experienciar e criar sentido, outros transes e formas de perceber e produzir a realidade</b>.<br/>
-    Enquanto o que entendemos por <b>tecnologia</b> — também em suas relações simbióticas com o corpo — <b>são as drogas higienizadas evocando a possessão mística da razão produzindo a realidade desejada pela pseudosobriedade.</b></p>
+    <p>Talvez, a diferenciação entre tecnologia e droga não exista para além do seu <b>apelo moral</b> em que drogas são tecnologias abjetas capazes de <b>evocar outras formas de experienciar e criar sentido, outros transes e formas de perceber e produzir a realidade</b>.<br/>
+    Enquanto o que entendemos por <b>tecnologia</b> — também em suas relações simbióticas com o corpo — <b>são drogas higienizadas evocando a possessão mística da razão produzindo a realidade desejada pela pseudosobriedade.</b></p>
     <br/>
 
-    <p>Desejada por quem? Quem nos quer presos no transe dos <b>algoritmos capitalistas</b> das redes sociais, timelines, planilhas, tabelas e inteligência artificial das big techs? O que nos quer negligentes às dores da miséria na cidade enquanto seguimos nossos fluxos urbanos? <b>Quando vamos revidar contra isso?</b></p>
+    <p>Desejada por quem? Quem nos quer presos no transe dos <b>algoritmos capitalistas</b> das redes sociais, timelines, planilhas, tabelas e inteligência artificial das big techs? O que nos quer negligentes às dores da miséria na cidade enquanto seguimos nossos fluxos urbanos? <b>Quanto vamos ficar nesse transe até revidar contra isso?</b></p>
     <br/>
 
-    <p>Nossos corpos seguem nessa <b>possessão da máquina de gente e do ciberespaço capitalista</b>, presos nas possessões das telas e dos circuitos do Cistema.</p>
+    <p>Nossos corpos seguem nessa <b>possessão da máquina de gente e do ciberespaço capitalista</b>, presos no transe das telas e dos circuitos do Cistema.</p>
     <br/>
 
-    <p>Se as <b>drogas são o que nos possibilita ritualizar e produzir realidades</b> a partir das suas relações, então, talvez, desde o início não existiu tecnologia, era tudo droga.</p>
+    <p>Se <b>drogas são o que nos possibilita produzir novas (ou repetidas) realidades e relações</b> a partir de seus efeitos, então, talvez, desde o início não existiu tecnologia, era tudo droga.</p>
     <br/>
 
     <blockquote>
@@ -878,7 +878,7 @@ export const posts: BlogPost[] = [
     title: "Contra o marxismo covarde",
     description: "1n1",
     slug: "marxismo-covarde",
-    date: "2026-04-05",
+    date: "2026-02-05",
     image: "/trans-blog-posts/contra-marxismo-covarde.jpeg",
     content: `
     <blockquote>
@@ -1030,6 +1030,162 @@ export const posts: BlogPost[] = [
 
     <p><strong>Monstrifique-se.</strong></p>
 `
+  },
+  {
+    id: "post-16",
+    title: "Reflexões sobre conversas cisgêneras",
+    description: "1n1",
+    slug: "reflexoes-sobre-conversas-cisgeneras",
+    date: "2026-02-26",
+    image: "/trans-blog-posts/reflexoes-conversas-cis.jpeg",
+    content: `
+    <blockquote>
+    Esse texto é um trecho do diário trans da Barbs, que pode ser lido <u><a href="https://coletivo-anarquista-trans.github.io/site/arquivos">clicando aqui</a></u>
+    </blockquote>
+    <p>
+    Na escola, hoje, tive que ouvir aquelas conversas sobre “ai, quero ter x filhos homens e x filhas mulheres”, e uma das garotas presentes começou a puxar a ideia de que, atualmente, a causa queer está induzindo a ideologia de gênero nas crianças.
+    </p>
+
+    <br/>
+
+    <p>
+    Porém, a cisgeneridade já é uma indução, disfarçada de neutralidade. A imposição do gênero a partir da criação dos corpos recém-formados é perfeitamente aceitável para todas as idades, então por que o questionar do gênero não é?
+    </p>
+
+    <br/>
+
+    <p>
+    E aí apelam também ao senso comum de “não é idade de fazer escolhas”, como se a transgeneridade significasse necessariamente uma rigidez permanente, muito associada ao que a sociedade interpreta de maneira reduzida ao processo de transição e à própria maneira de conceber a ideia de gênero.
+    </p>
+
+    <br/>
+
+    <p>
+    A cisheteronorma e sua noção de gênero rígida e permanente é uma forma de controle dos corpos que determina um limite de até onde a identidade pode ir.
+    </p>
+
+    <br/>
+
+    <p>
+    E quando dizemos sobre explorar, desconstruir, transicionar, é sobre criar, ao longo da nossa existência, uma nova forma de existir que foge dos padrões inseridos sobre nossos corpos.
+    </p>
+
+    <br/>
+
+    <p>
+    E aí a garota que puxou o assunto disse que faria de tudo para que a filha nem pensasse criticamente sobre quem ela é.
+    </p>
+
+    <br/>
+
+    <p>
+    E aqui não estou falando de mudar nome de crianças, injetar hormônios ou trocar seus genitais, estamos falando sobre questionamento e descoberta sendo totalmente inibidos, censurados e manipulados por uma mentalidade conservadora.
+    </p>
+
+    <br/>
+
+    <p>
+    Ela falando que seguiria totalmente a norma e todo o clichê associado ao feminino, e que só deixaria de fazer quando a filha fosse mais crescida, o que eu acho uma total idiotice.
+    </p>
+
+    <br/>
+
+    <p>
+    É preciso que, em certo limite, as crianças sejam livres para experimentar de forma segura, não forçadas a seguir um padrão pra depois, de adultas, pensarem sobre quem elas querem ser.
+    </p>
+
+    <br/>
+
+    <p>
+    O processo de transição é um processo de construção de um eu e não depende de alcançar uma idade específica; ele pode florescer a qualquer momento, basta aos adultos garantir que esse processo seja o melhor possível.
+    </p>
+
+    <br/>
+
+    <p>
+    Mas os pais, em sua maioria, querem controle, querem que seus filhos sejam o que foram projetados pra ser. As relações familiares também se constituem por expectativas de gênero que os pais reproduzem até antes de serem pais, como o caso das pessoas que pensam tanto em qual gênero querem que suas crianças tenham.
+    </p>
+
+    <br/>
+
+    <p>
+    Mas, prosseguindo na discussão, uma outra colega começou a dizer que o gênero tava ligado ao órgão, mas se é apenas um nome pra alguém que nasceu com uma genitália, por que fazem conversas extensas sobre as genitálias de seus bebês? Por que isso é uma questão a ser posta em xeque?
+    </p>
+
+    <br/>
+
+    <p>
+    Porque, se a lógica é pelo genital, eu posso ouvir suas conversas como: “quero ter três crianças com pau e duas com buceta”. Soa estranho, não soa? Qual o interesse dos héteros nas genitálias das crianças?<sup>1</sup>
+    </p>
+
+    <br/>
+
+    <p>
+    E continuou querendo falar sobre biologia, reforçando que eu sou homem “biologicamente”.
+    </p>
+
+    <br/>
+
+    <p>
+    E essa pessoa é tão ignorante que veio falar sobre biologia sem falar da existência de uma variabilidade cromossomo-sexual muito maior que 2, e ela disse que, em primeiro lugar, era algo raro e que ninguém conseguiria viver sendo interssexo. É uma total ignorante.
+    </p>
+
+    <br/>
+
+    <p>
+    E, sobre serem casos muito raros, temos que pensar que é impossível ter muitos casos de pessoas interssexo quando essas pessoas, assim que nascem, são majoritariamente submetidas a cirurgias de redesignação, e sobre essa cirurgia, que sim acontece em crianças, nenhum desses conservadores vê um problema moral.
+    </p>
+
+    <br/>
+
+    <p>
+    Ou seja, quando o órgão não atende às expectativas sociais, os pais e os médicos se sentem livres para fazerem operações forçadas em crianças, e o problema é nós defendermos que as crianças não têm que obedecer a normas impostas ao nascer?
+    </p>
+
+    <br/>
+
+    <p>
+    Somos atacadas por imensos pânicos morais por quem de fato comete as atrocidades que acusa; a sociedade conservadora é totalmente hipócrita.
+    </p>
+
+    <br/>
+
+    <p>
+    A garota queria incessantemente prosseguir com a lógica simplista pro seu argumento fazer sentido, e eu já cortei pelo postulado, e começaram as risadinhas, os olhares como se eu fosse uma negacionista que diz que vacinas causam autismo.
+    </p>
+
+    <br/>
+
+    <p>
+    No final, eu queria apontar o quanto a naturalidade e a suposta neutralidade do gênero cis é repleta de ideologia e tão impositiva quanto esse inimigo abstrato que elas dizem combater.
+    </p>
+
+    <br/>
+
+    <p>
+    Meu pai diz que, desde que vieram com o termo “mimimi”, qualquer aprofundamento em questões estruturais virou alvo de piada. Dizem pra mim: “a vida não precisa ser tão elaborada, as coisas são simples, it’s not that deep”, mas essa simplicidade é senso comum instrumentalizado para legitimar uma ordem política.
+    </p>
+
+    <br/>
+
+    <p>
+    Mas achar que playboyzinha que sempre viaja pros Estados Unidos e tem tudo do melhor vai querer pensar questões sociais estruturalizadas é muita inocência minha.
+    </p>
+
+    <br/>
+
+    <p>
+    Me sinto totalmente deslocada naquele ambiente, sendo alguém de realidade diferente e com uma visão de mundo quase antagônica.
+    </p>
+
+    <br/>
+
+    <hr/>
+
+    <p>
+    <sup>1</sup> A fala presente apresenta uma inversão irônica aos discursos de pânico moral que induzem a imagem de pessoas trans como obcecadas por crianças de maneira doentia, associando de maneira implícita pessoas trans à pedofilia.
+    </p>
+    `
   },
   // Add more posts here
 ];
