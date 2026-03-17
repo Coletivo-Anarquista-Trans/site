@@ -1187,6 +1187,101 @@ export const posts: BlogPost[] = [
     </p>
     `
   },
+  {
+    id: "post-17",
+    title: "Por que se orgulha de ser uma incubadora?",
+    description: "1n1",
+    slug: "incubadora-cringe",
+    date: "2026-03-13",
+    image: "/trans-blog-posts/mulher-incubadora.png",
+    content: `
+    <p>
+Nenhuma novidade: o <b>movimento identitário das mulheres cisgêneros anti-trans</b> deu mais um passo em direção à defesa do cispatriarcado.
+</p>
+
+<br/>
+
+<p>
+Recentemente, uma travesti foi nomeada para ocupar a cadeira da presidência da Comissão de Defesa dos Direitos da Mulher da Câmara no Brasil.
+</p>
+
+<br/>
+
+<p>
+Não demorou para que o cispatriarcado reagisse a essa <b>derrota</b>. Seus patéticos defensores saíram em defesa do regime sexo-gênero, responsável pelo <b>adestramento de corpos</b> nas lógicas cis-hétero-binárias e reduzir mulheres cis a <b>incubadoras da estrutura familiar edipiana</b>.
+</p>
+
+<br/>
+
+<p>
+É esperado que o cispatriarcado reaja à <b>desestabilização da ideia da mulher</b> como docilizada, domesticada, genitora e vigilante da prole humana. Afinal, esse papel é necessário para adequar os futuros trabalhadores a <b>reproduzir a ordem social cispatriarcal</b>.
+</p>
+
+<br/>
+
+<p>
+O ridículo fica por parte da quantidade de mulheres cis fazendo coro transfóbico com o cispatriarcado contra Erika Hilton sob a justificativa de que “mulheres biológicas são as mulheres com útero, capazes de gerar vida”.
+</p>
+
+<br/>
+
+<p>
+Por que tanto orgulho em <b>reduzir toda a potencialidade</b> dos seus corpos à função de ser <b>incubadora do cispatriarcado</b>?
+</p>
+
+<br/>
+
+<p>
+Enquanto esse debate raso se intensifica, <u><a href="https://g1.globo.com/politica/noticia/2026/01/20/brasil-registra-recorde-historicos-de-feminicidios-em-2025-quatro-mulheres-sao-assassinadas-por-dia-no-pais.ghtml">o Brasil segue registrando níveis alarmantes de feminicídio: em 2025, foram quatro mulheres assassinadas por dia</a></u>. Ainda assim, para <b>militantes anti-trans</b>, a presença de uma travesti em um espaço institucional <b>parece mais ameaçadora do que a própria estrutura que mata mulheres cotidianamente</b>.
+</p>
+
+<br/>
+
+<p>
+Diante disso, algumas dirão: “não são questões excludentes” ou até que “pessoas trans ameaçam os direitos das mulheres”. Essa inversão revela mais sobre o funcionamento do poder do que sobre a realidade. Ao direcionar a violência contra corpos dissidentes, <b>poupa-se o verdadeiro operador dessa estrutura: o próprio cispatriarcado</b>.
+</p>
+
+<br/>
+
+<p>
+Pessoas trans não estão destruindo as “mulheres”, mas sim uma noção de gênero em que <b>o corpo das mulheres são reduzidos a um papel de incubadoras do cispatriarcado</b> descartando-as ao tornarem-se inférteis. Discurso este que você reforça ao afirmar que seu valor está na sua fertilidade.
+</p>
+
+<br/>
+
+<p>
+Enquanto isso, você brada: “Sou uma incubadora e por isso não me representam!” enquanto nós dizemos: “Vamos acabar com a noção de que corpos devem ser reduzidos às funções reprodutivas, queremos ser mais!”.
+</p>
+
+<br/>
+
+<p>
+Seria cômico, se não fosse de dar pena, ver o desejo cisgênero pela <b>própria sujeição das suas potencialidades</b> para servir-se como incubadora de um Cistema usando essa capacidade produtiva e reprodutiva para fazer guerras e ser negligente com a fome enquanto <b>explora você</b> numa escala 6x1.
+</p>
+
+<br/>
+
+<p>
+Num contexto em que o cybercapitalismo está a fascistizar-se cada vez mais, <b>o que as mulheres vão decidir?</b> 
+</p>
+<p>
+Desejam se sujeitar ao pacto cisgênero e continuar <b>reduzindo sua subjetividade</b> a ser um útero disponível para um falo cismasculino?
+</p>
+<br/>
+<p>
+Ou vocês se juntarão à <b>revolução em curso</b> de desfazer e <b>destruir a lógica cis-hétero-binária</b>? 
+</p>
+<p>
+Em que <b>muitas outras possibilidades de corpos possam florescer</b> e que a capacidade reprodutiva exista para além da heterossexualidade, deixando de reduzir sua potência a mero aparelho reprodutivo da cis-hetero-masculinidade.
+</p>
+
+<br/>
+
+<p>
+<strong>Monstrifique-se.</strong>
+</p>
+    `
+  },
   // Add more posts here
 ];
 
