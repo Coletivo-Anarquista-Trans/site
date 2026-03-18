@@ -1,20 +1,17 @@
 "use client";
 
-import { useTheme } from "@/context/ThemeContext";
 import CyberContainer from "@/components/atoms/CyberContainer";
-import CyberTerminal from "@/components/atoms/CyberTerminal";
-import CyberDrone from "@/components/molecules/CyberDrone";
 import CyberPortrait from "@/components/atoms/CyberPortrait";
-import { motion, AnimatePresence } from "framer-motion";
-import CyberButton from "@/components/atoms/CyberButton";
+import CyberTerminal from "@/components/atoms/CyberTerminal";
+import CyberAudioControl from "@/components/molecules/CyberAudioControl";
 import CyberBig from "@/components/molecules/CyberBig";
+import CyberDrone from "@/components/molecules/CyberDrone";
+import { useAudio } from "@/context/AudioContext";
+import { useTheme } from "@/context/ThemeContext";
+import useIsMobile from "@/utils/useIsMobile";
+import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
-import CyberAudioControl from "@/components/molecules/CyberAudioControl";
-import { useAudio } from "@/context/AudioContext";
-import { useEffect } from "react";
-import useIsMobile from "@/utils/useIsMobile";
-
 
 export default function Home() {
   const { theme } = useTheme();
@@ -22,10 +19,7 @@ export default function Home() {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
   const { playButtonSelect } = useAudio();
 
-
   const isMobile = useIsMobile();
-
-
 
   return (
     <>
@@ -42,8 +36,7 @@ export default function Home() {
             {" "}
             {!isMobile && (
               <CyberContainer className="border border-accent1 p-1 fixed top-0 right-0">
-                <CyberContainer className="border border-accent1">
-                </CyberContainer>
+                <CyberContainer className="border border-accent1"></CyberContainer>
               </CyberContainer>
             )}
             <CyberPortrait
@@ -68,23 +61,9 @@ export default function Home() {
             transition={{ duration: 0.4 }}
             className="w-full"
           >
-            <Link href="/manifesto" className="block w-full" >
+            <Link href="/manifesto" className="block w-full">
               <CyberBig
                 text="manifesto"
-                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
-              />
-            </Link>
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, scale: 1, x: -200 }}
-            animate={{ opacity: 1, scale: 1, x: 0 }}
-            exit={{ opacity: 0, scale: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-            className="w-full"
-          >
-            <Link href="/recursos" className="block w-full">
-              <CyberBig
-                text="recursos"
                 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
               />
             </Link>
@@ -96,9 +75,23 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="w-full"
           >
-            <Link href="/blog" className="block w-full" >
+            <Link href="/blog" className="block w-full">
               <CyberBig
                 text="blog"
+                className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
+              />
+            </Link>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, scale: 1, x: -200 }}
+            animate={{ opacity: 1, scale: 1, x: 0 }}
+            exit={{ opacity: 0, scale: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            className="w-full"
+          >
+            <Link href="/use-e-compartilhe" className="block w-full">
+              <CyberBig
+                text="use e compartilhe"
                 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
               />
             </Link>
