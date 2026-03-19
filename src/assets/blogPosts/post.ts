@@ -1196,90 +1196,173 @@ export const posts: BlogPost[] = [
     image: "/trans-blog-posts/mulher-incubadora.png",
     content: `
     <p>
-Nenhuma novidade: o <b>movimento identitário das mulheres cisgêneros anti-trans</b> deu mais um passo em direção à defesa do cispatriarcado.
-</p>
+   Nenhuma novidade: o <b>movimento identitário das mulheres cisgêneros anti-trans</b> deu mais um passo em direção à defesa do cispatriarcado.
+    </p>
 
-<br/>
+    <br/>
 
-<p>
-Recentemente, uma travesti foi nomeada para ocupar a cadeira da presidência da Comissão de Defesa dos Direitos da Mulher da Câmara no Brasil.
-</p>
+    <p>
+   Recentemente, uma travesti foi nomeada para ocupar a cadeira da presidência da Comissão de Defesa dos Direitos da Mulher da Câmara no Brasil.
+    </p>
 
-<br/>
+    <br/>
 
-<p>
-Não demorou para que o cispatriarcado reagisse a essa <b>derrota</b>. Seus patéticos defensores saíram em defesa do regime sexo-gênero, responsável pelo <b>adestramento de corpos</b> nas lógicas cis-hétero-binárias e reduzir mulheres cis a <b>incubadoras da estrutura familiar edipiana</b>.
-</p>
+    <p>
+    Não demorou para que o cispatriarcado reagisse a essa <b>derrota</b>. Seus patéticos defensores saíram em defesa do regime sexo-gênero, responsável pelo <b>adestramento de corpos</b> nas lógicas cis-hétero-binárias e reduzir mulheres cis a <b>incubadoras da estrutura familiar edipiana</b>.
+    </p>
 
-<br/>
+    <br/>
 
-<p>
-É esperado que o cispatriarcado reaja à <b>desestabilização da ideia da mulher</b> como docilizada, domesticada, genitora e vigilante da prole humana. Afinal, esse papel é necessário para adequar os futuros trabalhadores a <b>reproduzir a ordem social cispatriarcal</b>.
-</p>
+    <p>
+    É esperado que o cispatriarcado reaja à <b>desestabilização da ideia da mulher</b> como docilizada, domesticada, genitora e vigilante da prole humana. Afinal, esse papel é necessário para adequar os futuros trabalhadores a <b>reproduzir a ordem social cispatriarcal</b>.
+    </p>
 
-<br/>
+    <br/>
 
-<p>
-O ridículo fica por parte da quantidade de mulheres cis fazendo coro transfóbico com o cispatriarcado contra Erika Hilton sob a justificativa de que “mulheres biológicas são as mulheres com útero, capazes de gerar vida”.
-</p>
+    <p>
+    O ridículo fica por parte da quantidade de mulheres cis fazendo coro transfóbico com o cispatriarcado contra Erika Hilton sob a justificativa de que “mulheres biológicas são as mulheres com útero, capazes de gerar vida”.
+    </p>
 
-<br/>
+    <br/>
 
-<p>
-Por que tanto orgulho em <b>reduzir toda a potencialidade</b> dos seus corpos à função de ser <b>incubadora do cispatriarcado</b>?
-</p>
+    <p>
+    Por que tanto orgulho em <b>reduzir toda a potencialidade</b> dos seus corpos à função de ser <b>incubadora do cispatriarcado</b>?
+    </p>
 
-<br/>
+    <br/>
 
-<p>
-Enquanto esse debate raso se intensifica, <u><a href="https://g1.globo.com/politica/noticia/2026/01/20/brasil-registra-recorde-historicos-de-feminicidios-em-2025-quatro-mulheres-sao-assassinadas-por-dia-no-pais.ghtml">o Brasil segue registrando níveis alarmantes de feminicídio: em 2025, foram quatro mulheres assassinadas por dia</a></u>. Ainda assim, para <b>militantes anti-trans</b>, a presença de uma travesti em um espaço institucional <b>parece mais ameaçadora do que a própria estrutura que mata mulheres cotidianamente</b>.
-</p>
+    <p>
+    Enquanto esse debate raso se intensifica, <u><a href="https://g1.globo.com/politica/noticia/2026/01/20/brasil-registra-recorde-historicos-de-feminicidios-em-2025-quatro-mulheres-sao-assassinadas-por-dia-no-pais.ghtml">o Brasil segue registrando níveis alarmantes de feminicídio: em 2025, foram quatro mulheres assassinadas por dia</a></u>. Ainda assim, para <b>militantes anti-trans</b>, a presença de uma travesti em um espaço institucional <b>parece mais ameaçadora do que a própria estrutura que mata mulheres cotidianamente</b>.
+    </p>
 
-<br/>
+    <br/>
 
-<p>
-Diante disso, algumas dirão: “não são questões excludentes” ou até que “pessoas trans ameaçam os direitos das mulheres”. Essa inversão revela mais sobre o funcionamento do poder do que sobre a realidade. Ao direcionar a violência contra corpos dissidentes, <b>poupa-se o verdadeiro operador dessa estrutura: o próprio cispatriarcado</b>.
-</p>
+    <p>
+    Diante disso, algumas dirão: “não são questões excludentes” ou até que “pessoas trans ameaçam os direitos das mulheres”. Essa inversão revela mais sobre o funcionamento do poder do que sobre a realidade. Ao direcionar a violência contra corpos dissidentes, <b>poupa-se o verdadeiro operador dessa estrutura: o próprio cispatriarcado</b>.
+    </p>
 
-<br/>
+    <br/>
 
-<p>
-Pessoas trans não estão destruindo as “mulheres”, mas sim uma noção de gênero em que <b>o corpo das mulheres são reduzidos a um papel de incubadoras do cispatriarcado</b> descartando-as ao tornarem-se inférteis. Discurso este que você reforça ao afirmar que seu valor está na sua fertilidade.
-</p>
+    <p>
+    Pessoas trans não estão destruindo as “mulheres”, mas sim uma noção de gênero em que <b>o corpo das mulheres são reduzidos a um papel de incubadoras do cispatriarcado</b> descartando-as ao tornarem-se inférteis. Discurso este que você reforça ao afirmar que seu valor está na sua fertilidade.
+    </p>
 
-<br/>
+    <br/>
 
-<p>
-Enquanto isso, você brada: “Sou uma incubadora e por isso não me representam!” enquanto nós dizemos: “Vamos acabar com a noção de que corpos devem ser reduzidos às funções reprodutivas, queremos ser mais!”.
-</p>
+    <p>
+    Enquanto isso, você brada: “Sou uma incubadora e por isso não me representam!” enquanto nós dizemos: “Vamos acabar com a noção de que corpos devem ser reduzidos às funções reprodutivas, queremos ser mais!”.
+    </p>
 
-<br/>
+    <br/>
 
-<p>
-Seria cômico, se não fosse de dar pena, ver o desejo cisgênero pela <b>própria sujeição das suas potencialidades</b> para servir-se como incubadora de um Cistema usando essa capacidade produtiva e reprodutiva para fazer guerras e ser negligente com a fome enquanto <b>explora você</b> numa escala 6x1.
-</p>
+    <p>
+    Seria cômico, se não fosse de dar pena, ver o desejo cisgênero pela <b>própria sujeição das suas potencialidades</b> para servir-se como incubadora de um Cistema usando essa capacidade produtiva e reprodutiva para fazer guerras e ser negligente com a fome enquanto <b>explora você</b> numa escala 6x1.
+    </p>
 
-<br/>
+    <br/>
 
-<p>
-Num contexto em que o cybercapitalismo está a fascistizar-se cada vez mais, <b>o que as mulheres vão decidir?</b> 
-</p>
-<p>
-Desejam se sujeitar ao pacto cisgênero e continuar <b>reduzindo sua subjetividade</b> a ser um útero disponível para um falo cismasculino?
-</p>
-<br/>
-<p>
-Ou vocês se juntarão à <b>revolução em curso</b> de desfazer e <b>destruir a lógica cis-hétero-binária</b>? 
-</p>
-<p>
-Em que <b>muitas outras possibilidades de corpos possam florescer</b> e que a capacidade reprodutiva exista para além da heterossexualidade, deixando de reduzir sua potência a mero aparelho reprodutivo da cis-hetero-masculinidade.
-</p>
+    <p>
+    Num contexto em que o cybercapitalismo está a fascistizar-se cada vez mais, <b>o que as mulheres vão decidir?</b> 
+    </p>
+    <p>
+    Desejam se sujeitar ao pacto cisgênero e continuar <b>reduzindo sua subjetividade</b> a ser um útero disponível para um falo cismasculino?
+    </p>
+    <br/>
+    <p>
+    Ou vocês se juntarão à <b>revolução em curso</b> de desfazer e <b>destruir a lógica cis-hétero-binária</b>? 
+    </p>
+    <p>
+    Em que <b>muitas outras possibilidades de corpos possam florescer</b> e que a capacidade reprodutiva exista para além da heterossexualidade, deixando de reduzir sua potência a mero aparelho reprodutivo da cis-hetero-masculinidade.
+    </p>
 
-<br/>
+    <br/>
 
-<p>
-<strong>Monstrifique-se.</strong>
-</p>
+    <p>
+    <strong>Monstrifique-se.</strong>
+    </p>
+    `
+  },
+  {
+    id: "post-18",
+    title: "A realidade é uma ilusão",
+    description: "1n1",
+    slug: "ouca-o-corpo",
+    date: "2026-03-18",
+    image: "/trans-blog-posts/realidade-nao-existe.jpg",
+    content: `
+    <blockquote>
+   “[...] o que quero dizer por <b>“realismo capitalista”</b>: o sentimento disseminado de que o capitalismo é o único sistema político e econômico viável, <b>sendo impossível imaginar uma alternativa à ele</b>.”
+   <br/>
+  “[...] Trata-se mais de uma atmosfera penetrante, que condiciona não apenas a produção da cultura, mas também a regulação do trabalho e da educação — agindo como uma espécie de <b>barreira invisível, limitando o pensamento e a ação</b>.”
+  <br/>
+  <cite>— Realismo capitalista, Mark Fisher</cite>
+    </blockquote>
+
+    <p>
+    Você foi contaminado a falar e ouvir, <b>adestraram seu corpo:</b><br/>
+    Como pensar, como agir, como desejar e realizar seus desejos, afetos e sonhos.<br/>
+    Como se alimentar, como trabalhar, como andar, caminhar, sob duas patas.<br/>
+    E como usar interfaces.<br/>
+    Ou seria <b>como ser usado de interface?</b>
+    </p>
+
+    <br/>
+
+    <p>
+    Você acredita viver uma realidade em que controla, em que decide, mas essas crenças não passam de parte do adestramento do <em>homo capitalistus</em>, o <b>corpo-capitalista feito para produzir uma realidade</b> em que se aprisionou.
+    </p>
+
+    <blockquote>
+      “Para Lacan, o <b>Real é o que qualquer “realidade” deve suprimir</b>; aliás, a própria <b>realidade só se constitui por meio dessa repressão</b>. O Real é um x irrepresentável, um vazio traumático que só <b>pode ser vistumbrado nas fraturas</b> e inconsistências <b>no campo da realidade aparente</b>.”
+      <br/>
+      <cite>— Realismo capitalista, Mark Fisher</cite>
+    </blockquote>
+
+    <p>
+    Seu corpo responde, ele sente dores, o coração acelera: <b>ansioso</b>.
+    </p>
+
+    <br/>
+
+    <p>
+    A mente (corpo) <b>adoece</b> nessa ilusão de separação entre o pensar, o sentir e o agir.<br/>
+    Seu corpo, <b>cansado</b>, fratura caminhos para <b>fora da realidade do adestramento capitalista</b>, mas você ignora, <b>reprime e medica-o para anestesiar e calar</b> ele.
+    </p>
+
+    <br/>
+
+    <p>
+    Você nega o que está fora da realidade capitalista com medo de que o <b>Real</b> despertando em seu corpo frature toda essa realidade (ficcional) <b>produzida como sem alternativa</b>.
+    </p>
+
+    <br/>
+
+    <p>
+    É preciso <b>fraturar a realidade para sair dela.</b>
+    </p>
+
+    <br/>
+
+    <p>
+    Quando vai ouvir seu <b>corpo</b>? Quando vai ouvir o <b>adoecimento de bilhões</b> de pessoas nesse Cistema?<br/>
+    Quando vai falar sobre as <b>catástrofes</b> ambientais e necrobélicas das guerras?
+    </p>
+
+    <br/>
+
+    <p>
+    Quanta propaganda, adestramento e repetição dos circuitos é necessário para você se <b>adestrar</b> nos fluxos do realismo capitalista?
+    </p>
+
+    <br/>
+
+    <p>
+    Ainda nos falta um pouco de relação com o fora e nosso corpo. <b>É possível imaginar o fim do capitalismo.</b>
+    </p>
+    <br/>
+    <p>
+    <strong>Monstrifique-se.</strong>
+    </p>
     `
   },
   // Add more posts here
