@@ -102,6 +102,20 @@ const books = [
     description: "\"...percebi que a categoria 'mulher' - que é fundacional nos discursos de gênero ocidentais - simplesmente não existia na Iorubalândia antes do contato mantido com o Ocidente.\"",
     image: "/trans-archives/a_invencao_das_mulheres.png",
     url: "https://drive.google.com/file/d/1DJ7HRjnkO8APUEYP3PxgnIDmKDsAfrEc/view?usp=sharing",
+  },
+  {
+    id: "livro-13",
+    title: "Anarquismo: Organização em diferentes níveis",
+    author: "Enrico Malatesta",
+    image: "/trans-archives/organizacao-anarquista.jpg",
+    url: "https://bibliotecaanarquista.org/library/errico-malatesta-a-organizacao",
+  },
+    {
+    id: "livro-14",
+    title: "Programa Anarquista",
+    author: "Enrico Malatesta",
+    image: "/trans-archives/programa-anarquista.jpg",
+    url: "https://bibliotecaanarquista.org/library/errico-malatesta-programa-anarquista",
   }
 ];
 
