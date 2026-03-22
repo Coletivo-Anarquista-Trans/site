@@ -1309,7 +1309,7 @@ export const posts: BlogPost[] = [
     <br/>
 
     <p>
-    Você acredita viver uma realidade em que controla, em que decide, mas essas crenças não passam de parte do adestramento do <em>homo capitalistus</em>, o <b>corpo-capitalista feito para produzir uma realidade</b> em que se aprisionou.
+    Você acredita viver uma realidade em que controla, em que decide, mas essas crenças não passam de parte do adestramento do Humano,  o <em>homo capitalistus</em>, o <b>corpo-capitalista feito para produzir uma realidade</b> em que se aprisionou.
     </p>
 
     <blockquote>
@@ -1326,13 +1326,13 @@ export const posts: BlogPost[] = [
 
     <p>
     A mente (corpo) <b>adoece</b> nessa ilusão de separação entre o pensar, o sentir e o agir.<br/>
-    Seu corpo, <b>cansado</b>, fratura caminhos para <b>fora da realidade do adestramento capitalista</b>, mas você ignora, <b>reprime e medica-o para anestesiar e calar</b> ele.
+    Seu corpo, <b>cansado</b> mas com dificuldade de dormir, fratura caminhos para <b>fora da realidade do adestramento capitalista</b>, mas você ignora, <b>reprime e medica-o para anestesiar e calar</b> ele.
     </p>
 
     <br/>
 
     <p>
-    Você nega o que está fora da realidade capitalista com medo de que o <b>Real</b> despertando em seu corpo frature toda essa realidade (ficcional) <b>produzida como sem alternativa</b>.
+    Você nega e oculta os desejos fora da realidade em que o Capital te ensinou a viver, com medo de que o <b>Real</b> despertando em seu corpo frature toda essa realidade (ficcional) <b>produzida como sem alternativa</b>.
     </p>
 
     <br/>
@@ -1344,24 +1344,34 @@ export const posts: BlogPost[] = [
     <br/>
 
     <p>
-    Quando vai ouvir seu <b>corpo</b>? Quando vai ouvir o <b>adoecimento de bilhões</b> de pessoas nesse Cistema?<br/>
-    Quando vai falar sobre as <b>catástrofes</b> ambientais e necrobélicas das guerras?
+    Quando ouvir seu <b>corpo</b>? Quando ouvir o <b>adoecimento de bilhões</b> de pessoas nesse Cistema?<br/>
+    Quando falar sobre as <b>catástrofes</b> ambientais e necrobélicas das guerras?
+    </p>
+    Por que tanto medo em a <b>economia quebrar</b> na redução da jornada de trabalho mas quando o centro decide atacar o Irã impactando a economia energética com guerras não se fala que <b>o império vai quebrar as suas economias?</b> ¹
+    </p>
+    <br/>
+    <p>Quanta mentira. o <b>Capital mente</b> em nossa frente e nós continuamos acreditando em sua realidade.</p>
+    <br/>
+
+    <p>
+    Quanta propaganda e repetição dos circuitos é necessário para ser <b>adestrado</b> nos fluxos do realismo capitalista?
     </p>
 
     <br/>
 
     <p>
-    Quanta propaganda, adestramento e repetição dos circuitos é necessário para você se <b>adestrar</b> nos fluxos do realismo capitalista?
+    Ainda nos falta um pouco de <b>relação com o fora</b> e nosso corpo. 
     </p>
-
-    <br/>
-
-    <p>
-    Ainda nos falta um pouco de relação com o fora e nosso corpo. <b>É possível imaginar o fim do capitalismo.</b>
+    <p><b>É possível imaginar o fim do capitalismo.</b>
     </p>
     <br/>
     <p>
     <strong>Monstrifique-se.</strong>
+    </p>
+    
+    <p><blockquote>
+    <sup>1</sup> <u><a href="http://archive.today/2026.03.13-192025/https://www.wsj.com/economy/is-war-good-for-the-economy-afd9db1a">O artigo do jornal americano <b>War</b> Street Journal colocou em discussão que a guerra pode ter consequências imprevisíveis mas poderia ser boa para a economia ao mesmo tempo. Criando uma possível justificativa para as guerras serem sua possibilidade de melhorar a economia.
+    </blockquote>
     </p>
     `
   },
