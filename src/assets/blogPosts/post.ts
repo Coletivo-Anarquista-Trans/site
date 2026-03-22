@@ -1309,7 +1309,7 @@ export const posts: BlogPost[] = [
     <br/>
 
     <p>
-    Você acredita viver uma realidade em que controla, em que decide, mas essas crenças não passam de parte do adestramento do Homem,  o <em>homo capitalistus</em>, o <b>corpo-capitalista feito para produzir uma realidade</b> em que se aprisionou.
+    Você acredita viver uma realidade em que controla, em que decide, mas essas crenças não passam de parte do adestramento do Humano,  o <em>homo capitalistus</em>, o <b>corpo-capitalista feito para produzir uma realidade</b> em que se aprisionou.
     </p>
 
     <blockquote>
