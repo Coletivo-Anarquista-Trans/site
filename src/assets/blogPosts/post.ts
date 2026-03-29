@@ -149,47 +149,84 @@ export const posts: BlogPost[] = [
         <b>Rumo ao transpunk - Prefácio</b>
       </h2>
       <blockquote>
-        <i>Transpunk: Um mundo pós escassez em que todos têm acesso aos meios de produção da própria existência e corpo e em que a autonomia corporal é absoluta tanto quanto a capacidade de modificação corporal.</i>
+        <i>Transpunk: Um mundo <b>pós escassez</b> em que todos têm acesso aos meios de produção da <b>própria existência</b> e <b>corpo</b> e em que a <b>autonomia corporal</b> é absoluta tanto quanto a capacidade de <b>modificação corporal.</b></i>
       </blockquote>
       <p>
-        Então é isso, o controle é absoluto, os cybercapitalistas venceram, eles dominam as interfaces onde aprendemos a linguagem que interpretará o mundo. Todos nossos fluxos, conexões e desejos estão passando por aqueles vetores. Cada ação, cada impulso, cada parte de onde não controlamos de nós foi automatizado num ponto em que não há mais movimento que não saia da organicidade da produção da nossa existência.
+        Então é isso, o controle é absoluto, os cybercapitalistas venceram, eles dominam as <b>interfaces</b> onde aprendemos a linguagem que interpretará o mundo. 
+      </p>
+      <br/>
+      <p>  
+        Todos os <b>fluxos</b>, <b>conexões</b> e <b>desejos</b> estão passando por aqueles vetores. 
+      </p>
+      <p>
+        Cada ação, cada impulso, cada parte de onde não controlamos de nós foi <b>automatizado</b> num ponto em que não há mais movimento que não saia do <b>organismo da produção da nossa existência</b>.
       </p>
       <br/>
       <p>
-        Eis aí que essa utopia se desfaz, porque a utopia é só a distopia idealizada de quem deseja o controle, ou vice-versa. Onde vimos distopia, eles viram utopia, e o contrário também é verdade. É semiótica. É a linguagem sendo interpretada nas suas variâncias de onde vem cada multiplicidade de quem nós somos.
+        Eis aí que essa utopia se desfaz.
+      </p>
+      <p>
+        Porque a <b>utopia é a distopia idealizada</b> de quem deseja o controle, ou vice-versa. Onde vimos distopia, eles viram utopia, e o contrário também é verdade. 
+      É a linguagem sendo interpretada nas suas variâncias de onde vem cada multiplicidade de nossas singularidades.
       </p>
       <br/>
       <p>
-        Mas o controle também é finito. Ele também falha. Ele tem vieses humanos, vieses orgânicos, tem propriedades desterritorializantes das linhas de fuga, onde a multiplicidade escapa de todo o agenciamento maquínico para conectar os nossos desejos aos posts, memes, tiktoks, likes, fármacos e toda matriz de entretenimento e prazer.
+        Mas o controle também é finito. Ele também <b>falha</b>. 
+      </p>
+      <p>
+        Ele tem vieses humanos, vieses orgânicos, tem <b>linhas de fuga</b>, onde a multiplicidade escapa de todo o agenciamento maquinando a conexão dos desejos aos posts, timelines, likes, fármacos e toda matriz de entretenimento e prazer.
       </p>
       <br/>
       <p>
-        Nessas brechas surge algo. Onde a produção tecnológica da linguagem e da existência produz seus bugs, glitches, suas não-binariedades, aparecem aqueles que desejam que sua existência não seja destruída só porque ela não se conforma ao organismo maquinado.
+        Nessas <b>brechas</b> surge algo. 
+      </p>
+      <p>  
+        Onde a produção tecnológica da linguagem e da existência produz seus <b>bugs</b>, <b>glitches</b>, suas <b>não-binariedades</b>, aparecem <b>aqueles desejando que sua existência não seja destruída só porque ela não se conforma ao organismo maquinado</b>.
       </p>
       <br/>
       <p>
-        O organismo cyberpunk tenta consumi-la, uma vez, outra vez, mas ela permanece. Ela brota como as folhas brotam em meio a uma tecnosfera abandonada pelo trabalho humano. O controle não consegue impedir o nascimento da dissidência. E ela se faz, e se faz, e se impõe, aprende a hackear, a viver nas brechas, a construir nas brechas, a se conectar nas brechas, a se proliferar nas brechas, a florescer nas brechas.
+        O organismo cyberpunk tenta consumi-la, uma vez, outra vez, mas ela <b>permanece</b>. 
+      </p>
+      <p>  
+        Ela brota como as folhas brotam em meio a uma tecnosfera abandonada pelo trabalho humano. 
       </p>
       <br/>
       <p>
-        E então todo aquele agenciamento maquínico se depara com um maquínico agenciamento, uma inversão da sua lógica a tal ponto que o impulso de controlar tudo vira o impulso de descontrolar tudo.
+        <b>O controle não consegue impedir o nascimento da dissidência</b>. E ela se faz, e se faz, e se impõe, aprende a hackear, a viver nas brechas, a construir nas brechas, a se conectar nas brechas, a se proliferar nas brechas, a florescer nas <b>brechas</b>.
       </p>
       <br/>
       <p>
-        Os corpos que nascem dali são todos diferentes entre si e estão juntos pela possibilidade de serem diferentes, aprenderam algo sobre a potência da diferenciação que o maquinário de zeros e uns não aprendeu, ele só sabia repetir. Aqueles corpos tinham nascido daquele maquinário, aprendido com ele e criado sem ele, os corpos que ali se faziam, se faziam, e não eram feitos. Estava tudo invertido.
+        Todo aquele agenciamento maquínico se depara com um maquínico agenciamento, uma inversão da sua lógica a tal ponto que o impulso de controlar tudo vira o impulso de descontrolar tudo.
       </p>
       <br/>
       <p>
-        As tecnologias confluem com a formação corporal. O corpo produzia a tecnologia e não a tecnologia produzia o corpo, eram todos anarcomórficos. Algo nunca antes visto saiu dali e dali se expressou aquilo que a organicidade não aprendia: conter os corpos é conter as potências, o corpo sem órgãos deleuziano é potência, a tal ponto que leva tudo consigo.
+        Corpos que nascem dali são todos diferentes entre si e estão <b>juntos pela possibilidade de serem diferentes</b>. Aprenderam algo sobre a <b>potência da diferenciação</b> que o maquinário de <b>zeros e uns</b> não aprendeu, <b>ele só sabia repetir</b>. 
       </p>
       <br/>
-      <p>E então o cyberpunk se inverteu.</p>
+      <p>Aqueles corpos tinham nascido daquele maquinário, aprendido com ele e criado sem ele, os corpos que ali se faziam, se faziam, e não eram feitos. Estava tudo invertido.
+      </p>
+      <br/>
+      <p>
+        As tecnologias confluem com a formação corporal. O corpo produzia a tecnologia e não a tecnologia produzia o corpo, eram todos anarcomórficos.
+      </p>
+      <br/>  
+      <p>Algo nunca antes visto saiu dali e dali se expressou aquilo que o organismo não aprendia: <b>conter os corpos é conter as potências</b>, o corpo sem órgãos é potência, a tal ponto que leva tudo consigo.
+      </p>
+      <br/>
+      <p>Então o cyberpunk se inverteu.</p>
       </br>
       <p>
-        E chegamos ao pós-cyberpunk, um mundo em que a observação do outro - o panóptico - não significava controle mas potência. Em que as conexões mostram o quão mais longe podemos ir e não o quão menos longe devemos ir. O Transpunk é a vitória dos ciborgues, monstros e quimeras, é o lugar onde os corpos podem existir sem restrição alguma, com exceção de nunca responder: <i>“o que deve ser um corpo ou partícula se não apenas movimento, transição?”</i>
+        E chegamos ao pós-cyberpunk, um mundo em que a observação da diferença do outro não significava controle mas potência.
       </p>
       <br/>
-      <p>Imagine quantos punks saíram dali...t-punk e q-punk e cuirpunk e rizopunk e... e... e...</p>
+      <p>  Em que as conexões mostram o quão mais longe podemos ir e não o quão menos longe devemos ir. 
+      </p>
+      <br/>
+      <p>
+        O Transpunk é a vitória de ciborgues, monstros, terrores cósmicos, mutantes e quimeras, é o lugar onde corpos podem <b>existir sem restrição</b> alguma, com exceção de nunca responder: 
+      <blockquote><i>“O que deve ser um corpo ou partícula se não apenas <b>movimento</b>, transição?”</i></blockquote>
+      </p>
+      <p>Imagine quantos punks saíram dali...t-punk e cuirpunk e rizopunk e... e... e...</p>
     `,
   },
   {
