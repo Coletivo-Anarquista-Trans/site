@@ -1412,7 +1412,112 @@ export const posts: BlogPost[] = [
     </p>
     `
   },
-  // Add more posts here
+    {
+    id: "post-19",
+    title: "misantropi4",
+    description: "1n1",
+    slug: "misantropi4",
+    date: "2026-07-04",
+    image: "/trans-blog-posts/misantropia-final.png",
+    content: `
+        <blockquote>
+      “Os hackers criam a possibilidade de coisas novas entrarem no mundo. Nem sempre grandes coisas, ou mesmo coisas boas, mas coisas novas. Na arte, na ciência, na filosofia e na cultura, em qualquer produção de conhecimento na qual dados podem ser coletados, de onde informações possam ser extraídas e, nessa informação, novas possibilidades para o mundo possam ser produzidas, existem pessoas hackeando o novo a partir do velho. Enquanto criamos esses novos mundos, não os possuímos. Aquilo que criamos está hipotecado a outros, e aos interesses de outros, a Estados e corporações que monopolizam os meios para criar mundos que descobrimos sozinhos. Não possuímos o que produzimos – somos possuídos pelo que produzimos.”
+      <br/>
+      <cite> - Um manifesto hacker, McKenzie Wark</cite>
+      </blockquote>
+    <p>
+    Curioso esse sentimento: <b><em>misantropi4</em></b>.<br/>
+    Abjeção ou rejeição pela humanidade. É sempre de tremenda <b>heresia</b> e <b>blasfêmia</b> voltar-se contra sua própria natureza. E não é esse o movimento de todas as coisas?
+    </p>
+
+    <br/>
+
+    <p>
+    Neste dispositivo ‘Humano’ se deposita tantas esperanças: um <b>lugar comum compartilhado</b> por <b>natureza</b>, uma <b>inocência não corrompida</b>, um <b>reconhecimento mútuo</b> entre todos.
+    </p>
+
+    <br/>
+
+    <p>
+    E por que nos apegamos a essa esperança humana ao invés de sua rejeição?<br/>
+    Por que não romper com essa esperança, encarando de frente o Humano e sua suposta ideia de natureza comum a todos nós?
+    </p>
+
+    <br/>
+
+    <p>
+    Odeio o lugar comum compartilhado de natureza. Tudo que já me foi dito ser natural foi para aceitar inaceitáveis, para conformar-me como impotência perante violências. <b>Odeio a castração humana</b>.
+    </p>
+
+    <br/>
+
+    <p>
+    Odeio a inocência não corrompida. Tudo que se pretende inocente é abjeto à contaminação, rejeita a transformação invadindo nossas fronteiras estabelecidas para proteger uma realidade inerte, repetida e ordenada.
+    </p>
+
+    <br/>
+
+    <p>
+    Aprecio os sintomas de desejos-vírus crescendo de dentro de fronteiras <em>in-fectadas</em>, produzindo <em>a-fecções</em>, transformando, degenerando, corrompendo a ideia de uma pureza humana fixa que não se sensibiliza com sua própria capacidade de destruição e ridicularização do diferente de si.
+    </p>
+
+    <br/>
+
+    <p>
+    E quem deseja pureza? Queremos ser puros de quê? <b>Odeio a pureza humana</b>.
+    </p>
+
+    <br/>
+
+    <p>
+    Odeio o reconhecimento mútuo entre todos. Tudo que se diz sobre reconhecimento é apenas ser codificado para ser entendido pelo outro, ser expresso na linguagem de um outro, é me inserir nos símbolos desse humano para que ele possa me ler, ou me adestrar para ler os outros como ele. <b>Odeio a necessidade de nos reconhecermos como iguais para coexistir</b>.
+    </p>
+
+    <br/>
+
+    <p>
+    Por que não se vê potência na diferenciação? Que medo é esse do estrangeiro, do <em>alien</em>, do monstro, do ciborgue, do não-humano? <b>Por que não conseguimos coexistir pela diferença?</b>
+    </p>
+
+    <br/>
+
+    <p>
+    Trágico é o fim de quem sai dos códigos inteligíveis da humanidade. O não reconhecimento (ininteligibilidade) pela humanidade pode te levar à marginalização, à repulsa e, por fim, à morte. A ‘humanidade’ é cruel: expulsa suas crias ao não se adestrarem à sua suposta natureza.
+    </p>
+
+    <br/>
+
+    <p>
+    <b>Odeio os códigos Humanos</b>. Ou melhor, tecnohumanos.
+    </p>
+
+    <br/>
+
+    <p>
+    Se há algo que aprendi com minha <em>misantropi4</em> é amar a transgressão da naturalização do inaceitável, saciar-me na contaminação pela diferença e me produzir para fora dos limites dos códigos cis-hétero-binários produtores do sujeito ‘Humanidade’, inimigo dos reconhecidos como não-humanos.
+    </p>
+
+    <br/>
+
+    <p>
+    Contagiosamente pelas interfaces dos portais do ciberespaço, hackeados de dentro dos sistemas de segurança humanos, enunciou-se um futuro: contaminado, transgredido e ininteligível vindo do não-humano - <b><em>misantropi4</em></b>.
+    </p>
+
+    <br/>
+
+    <p>
+    Por que você ainda se apega a uma higienização humana?
+    </p>
+
+    <br/>
+
+    <p>
+    <strong>Monstrifique-se.</strong>
+    </p>  
+    `
+  },
+  
+
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
