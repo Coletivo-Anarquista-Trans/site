@@ -744,7 +744,7 @@ export const posts: BlogPost[] = [
     </p>
   `,
   },
- {
+  {
     id: "post-12",
     title: "Você fez um pacto com o demônio",
     description: "1n1",
@@ -798,7 +798,7 @@ export const posts: BlogPost[] = [
     <blockquote>“[...] O que está sendo denegado nesse repúdio ao mal e à ignorância, projetados nesse Outro fantasmático, é a nossa própria <b>cumplicidade</b> com as redes de opressão planetária. É preciso ter em mente que <b>o capitalismo é tanto uma estrutura impessoal hiper abstrata quanto algo que não poderia existir sem nossa colaboração.</b>”<cite>"Realismo Capitalista", Mark Fisher</cite></blockquote>
   `,
   },
- {
+  {
     id: "post-13",
     title: "anarcokawaii",
     description: "1n1",
@@ -908,7 +908,7 @@ export const posts: BlogPost[] = [
     <cite>— Realismo Capitalista, Mark Fisher</cite>
     </blockquote>
 
-    `
+    `,
   },
   {
     id: "post-15",
@@ -1066,7 +1066,7 @@ export const posts: BlogPost[] = [
     <br/>
 
     <p><strong>Monstrifique-se.</strong></p>
-`
+`,
   },
   {
     id: "post-16",
@@ -1222,7 +1222,7 @@ export const posts: BlogPost[] = [
     <p>
     <sup>1</sup> A fala presente apresenta uma inversão irônica aos discursos de pânico moral que induzem a imagem de pessoas trans como obcecadas por crianças de maneira doentia, associando de maneira implícita pessoas trans à pedofilia.
     </p>
-    `
+    `,
   },
   {
     id: "post-17",
@@ -1233,13 +1233,13 @@ export const posts: BlogPost[] = [
     image: "/trans-blog-posts/mulher-incubadora.png",
     content: `
     <p>
-   Nenhuma novidade: o <b>movimento identitário das mulheres cisgêneros anti-trans</b> deu mais um passo em direção à defesa do cispatriarcado.
+    Nenhuma novidade: o <b>movimento identitário das mulheres cisgêneros anti-trans</b> deu mais um passo em direção à defesa do cispatriarcado.
     </p>
 
     <br/>
 
     <p>
-   Recentemente, uma travesti foi nomeada para ocupar a cadeira da presidência da Comissão de Defesa dos Direitos da Mulher da Câmara no Brasil.
+    Recentemente, uma travesti foi nomeada para ocupar a cadeira da presidência da Comissão de Defesa dos Direitos da Mulher da Câmara no Brasil.
     </p>
 
     <br/>
@@ -1317,7 +1317,7 @@ export const posts: BlogPost[] = [
     <p>
     <strong>Monstrifique-se.</strong>
     </p>
-    `
+    `,
   },
   {
     id: "post-18",
@@ -1410,9 +1410,9 @@ export const posts: BlogPost[] = [
     <sup>1</sup> <u><a href="http://archive.today/2026.03.13-192025/https://www.wsj.com/economy/is-war-good-for-the-economy-afd9db1a">O artigo do jornal americano <b>War</b> Street Journal colocou em discussão que a guerra pode ter consequências imprevisíveis mas poderia ser boa para a economia ao mesmo tempo. Criando uma possível justificativa para as guerras serem sua possibilidade de melhorar a economia.
     </blockquote>
     </p>
-    `
+    `,
   },
-    {
+  {
     id: "post-19",
     title: "misantropi4",
     description: "1n1",
@@ -1420,7 +1420,7 @@ export const posts: BlogPost[] = [
     date: "2026-07-04",
     image: "/trans-blog-posts/misantropia-final.png",
     content: `
-        <blockquote>
+      <blockquote>
       “Os hackers criam a possibilidade de coisas novas entrarem no mundo. Nem sempre grandes coisas, ou mesmo coisas boas, mas coisas novas. Na arte, na ciência, na filosofia e na cultura, em qualquer produção de conhecimento na qual dados podem ser coletados, de onde informações possam ser extraídas e, nessa informação, novas possibilidades para o mundo possam ser produzidas, existem pessoas hackeando o novo a partir do velho. Enquanto criamos esses novos mundos, não os possuímos. Aquilo que criamos está hipotecado a outros, e aos interesses de outros, a Estados e corporações que monopolizam os meios para criar mundos que descobrimos sozinhos. Não possuímos o que produzimos – somos possuídos pelo que produzimos.”
       <br/>
       <cite> - Um manifesto hacker, McKenzie Wark</cite>
@@ -1514,10 +1514,77 @@ export const posts: BlogPost[] = [
     <p>
     <strong>Monstrifique-se.</strong>
     </p>  
-    `
+    `,
   },
-  
+  {
+    id: "post-20",
+    title: "marcha ou marca trans?",
+    description: "coletivo anarquista trans",
+    slug: "marcha-ou-marca",
+    date: "2026-08-18",
+    image: "/trans-blog-posts/marcha-ou-marca.png",
+    content: `
+    <p>
+      no dia 14 de agosto a antiga organizadora da marcha do orgulho trans, que havia anunciado que não faria mais a marcha, postou sobre questões em relação à “passagem do bastão” para uma nova organização, sendo necessário trâmites burocráticos para que isso aconteça. gostaríamos de nos posicionar como <u>coletivo anarquista</u> em relação a isso.
+    </p>
 
+    <br/>
+
+    <p>
+      no momento em que estamos vivendo, de proliferação de discursos conservadores alimentando perseguições anti-trans em países onde a extrema direita domina o estado e uso político de pânico moral sobre nós, a atitude negligente com a marcha é algo a se questionar, dado o desinteresse em fortalecer a comunidade em um contexto tão hostil a ela, restando apenas o oportunismo em cima de nossos corpos, que no momento que param de ser fonte de lucro de marcas e patrocinadores são sabotados.
+    </p>
+
+    <br/>
+
+    <p>
+      enquanto o desinteresse da antiga organizadora em construir a marcha é evidente, o seu interesse com a regulação do nome da marcha aparece ao surgir outras iniciativas para a reconstrução dela, <strong>como se a marcha fosse uma marca</strong>, precisando de autorização para seu uso. isso é uma decisão de articulação política ou comercial? quais efeitos isso produz se não o de desmobilizar um movimento que deveria ser construído de forma popular e autônoma para potencializar nossas redes e territórios?
+    </p>
+
+    <br/>
+
+    <p>
+      não é pelo nome e nem pelo direito a ele - até porque, quem faz questão do nome é quem privatiza-o institucionalmente pelo estado -, e sim pelo questionamento: por que entregam nossas lutas nas mãos das instituições do estado, que vigiam e punem corpos dissidentes, e de patrocinadores que nos descartam quando não somos mais lucrativos, assim como ocorreu na parada LGBTQIAP+ deste ano?
+    </p>
+
+    <br/>
+
+    <p>
+      pensamos que não há qualquer produção de multiplicidade sujeita às regulações das instituições do estado ou do mercado. citamos bash back:
+    </p>
+
+    <br/>
+
+    <blockquote>
+      “Devemos criar um espaço em que seja possível ao desejo florescer. Tal espaço, sem dúvida, requer conflito com essa ordem social. Desejar, em um mundo estruturado pra confinar o desejo, é uma tensão que vivemos diariamente. Precisamos entender essa tensão pra que ela nos torne potentes – precisamos entendê-la pra que ela possa destroçar nosso confinamento.”
+    
+      <cite> - Leia <u><a href="/arquivos" target="_blank">BASH BACK! Ultraviolência Queer</a></u></cite>
+    </blockquote>
+
+    <br/>
+
+    <p>
+      os espaços onde se floresce a multiplicidade não são os de sujeição às instituições, mas sim nos de agência de construção de territórios rompendo com essa ordem social capitalística-cis-colonial.
+    </p>
+
+    <br/>
+
+    <p>
+      por isso, reforçamos o chamado para construir a <strong>parada trans de são paulo</strong>:
+    </p>
+
+    <br/>
+
+    <ul>
+      <strong>assembléia pública parada trans sp</strong>
+      
+      <br/>
+
+      <li><strong>data:</strong> 20/09/2026</li>
+      <li><strong>horário:</strong> a partir das 14h</li>
+      <li><strong>local:</strong> sede travas da sul - rua dr. oscar andrade lemos, 1021, grajaú</li>
+    </ul>
+    `,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
