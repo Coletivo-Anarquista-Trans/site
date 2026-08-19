@@ -8,9 +8,6 @@ const nextConfig: import('next').NextConfig = {
   trailingSlash: true,
   basePath: isGithubPages ? "/site" : "",
   assetPrefix: isGithubPages ? "/site" : "",
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
 };
 
 module.exports = nextConfig;
