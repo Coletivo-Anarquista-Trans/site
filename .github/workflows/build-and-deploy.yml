@@ -34,7 +34,7 @@ jobs:
           deno-version: v2.x
 
       - name: 🧪 Cache Deno modules
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: |
             ~/.cache/deno
@@ -46,9 +46,9 @@ jobs:
           static_site_generator: next
 
       - name: Install Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
 
       - name: Install dependencies
         run: npm install
