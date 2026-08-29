@@ -1,4 +1,4 @@
-// app/saude-trans/page.tsx
+// app/use-e-compartilhe/page.tsx
 "use client";
 
 import CyberContainer from "@/components/atoms/CyberContainer";
@@ -12,35 +12,25 @@ interface DirectoryItem {
   description: string;
 }
 
-export default function SaudeTrans() {
+export default function UseECompartilhe() {
   const router = useRouter();
 
-    const directories: DirectoryItem[] = [
-        {
-            id: "servicos-publicos",
-            name: "servicos-publicos",
-            path: "/saude-trans/servicos-publicos",
-            description: "Serviços públicos de saúde com atendimento a pessoas trans pelo Brasil"
-        },
-        {
-            id: "casas-acolhimento",
-            name: "casas-acolhimento",
-            path: "/saude-trans/casas-acolhimento",
-            description: "Centros de acolhida para pessoas LGBTQIAPN+ em situação de vulnerabilidade"
-        },
-        {
-            id: "cartilhas-manuais",
-            name: "cartilhas-manuais",
-            path: "/saude-trans/cartilhas-manuais",
-            description: "Guias, cartilhas e manuais sobre saúde, sobrevivência, direitos, etc"
-        },
-        {
-            id: "saude-mental",
-            name: "saude-mental",
-            path: "/saude-trans/saude-mental",
-            description: "Listas de profissionais amigáveis com pessoas trans"
-        }
-    ];
+  const directories: DirectoryItem[] = [
+    {
+      id: "recursos",
+      name: "recursos",
+      path: "/use-e-compartilhe/recursos",
+      description:
+        "Recursos úteis de customização de personagem, autodefesa e informações gerais",
+    },
+    {
+      id: "banco-de-imagens",
+      name: "banco-de-imagens",
+      path: "/use-e-compartilhe/banco-de-imagens",
+      description:
+        "Arquivos de imagens para uso livre, espalhe! (zines, cartazes, lambes, adesivos, etc.)",
+    },
+  ];
 
   const handleDirectoryClick = (path: string) => {
     router.push(path);
@@ -51,17 +41,14 @@ export default function SaudeTrans() {
       <CyberContainer className="w-full max-w-4xl border border-accent1 p-1 crt-screen crt-curvature crt-reflection granular-effect">
         <CyberContainer className="border border-accent1 p-6">
           <CyberContainer className="text-2xl sm:text-3xl font-bold text-accent1 mb-6 text-center">
-            Saúde Trans
+            Use e Compartilhe!
           </CyberContainer>
 
           <CyberContainer className="text-accent1 text-center mb-8">
-            Recursos e informações sobre a nossa saúde, incluindo cartilhas,
-            manuais, informações sobre nossos direitos e quais são os serviços
-            públicos de saúde que nos atendem e como acessá-los
+            Hackear é garantir que a informação seja livre, espalhe os vírus-dissidente para derrubar o cistema!
             <br />
             <span className="text-accent5">
-              Tem algum recurso sobre saúde trans? Mande em:
-              cats-trans@riseup.net
+              Quer contribuir com algum material? Mande em: cats-trans@riseup.net
             </span>
           </CyberContainer>
 

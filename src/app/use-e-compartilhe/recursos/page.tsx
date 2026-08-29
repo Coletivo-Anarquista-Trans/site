@@ -1,10 +1,9 @@
-// app/recursos/page.tsx
 "use client";
 
-import { resourcesByCategory } from "@/data/resources";
-import CyberCategorySection from "@/components/organism/CyberCategorySection";
 import CyberContainer from "@/components/atoms/CyberContainer";
+import CyberCategorySection from "@/components/organism/CyberCategorySection";
 import { useCyberSection } from "@/context/CyberSectionsContext/CyberSections";
+import { resourcesByCategory } from "@/data/resources";
 import { useEffect } from "react";
 
 export default function Resources() {
@@ -25,10 +24,10 @@ export default function Resources() {
         </CyberContainer>
 
         <CyberContainer className="text-accent1 mb-6 text-center">
-          Recursos úteis de customização de personagem e informações gerais.
+          Recursos úteis de customização de personagem e informações gerais
           <br />
           <span className="text-accent5">
-            Tem algum recurso? Mande pra gente em: cats-trans@riseup.net
+            Tem algum recurso? Mande em: cats-trans@riseup.net
           </span>
         </CyberContainer>
 
