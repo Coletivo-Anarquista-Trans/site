@@ -1,4 +1,43 @@
-# This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app)
+```
+             _____                                        _____             
+            /####\\                                      //####\            
+           |#######\                                    /#######|           
+           |#########\                                /#########|           
+           |###|^\#####\                            /#####/^|###|           
+           |###|   \####\                          /####/   |###|           
+           |###| ## \#####\                      /#####/ ## |###|           
+           |###| ###__\#####\________  ________/#####/__### |###|           
+           |###|  /##########||#####/  \#####||##########\  |###|           
+           |###|/############||####|    |####||############\|###|           
+           |#################//####|    |####\\#################|           
+           |################YY####/      \#####77###############|           
+           |###########\\===\\###|   /\   |###//===//###########|           
+           |############\\#######|  |##|  |#######//############|           
+           /########\####YY#####/   |##|   \######77###/########\           
+          |##########\\##\\####|   |####|   |####//##//##########|          
+          |###########\´^^\\###|   |####|   |###//^^´/###########|          
+          |###########| oo |###/   /####\   \###| oo |###########|          
+          |###/|#######\__/###|   |######|   |###\__/#######|\###|          
+          |##| |##´\##########|   |######|   |##########/´##| |##|          
+          |##| |### ^#########/   /######\   \#########^ ###| |##|          
+          |###\ \#####|^|####|   |########|   |####|^|#####/ /###|          
+          |####\________|####|   |########|   |####|________/####|          
+  /#/_____|#################/    /########\    \#################|_____\#\  
+ 4##########################|   |##########|   |##########################7 
+  \#\      \################|    \########/    |################/      /#/  
+         __ |###############/      \####/      \###############| __  __     
+   /#/   \#\_\#############|    |\_  \/  _/|    |#############/_/#/  \#\    
+   \#######################|    |##\_  _/##|    |#######################\   
+    \#\    \#\ \###########/   /#####\/#####\   \###########/ /#/   /_#/    
+                \#########|   |##############|   |#########/                
+               ___/#######|   |##############|   |#######\___               
+              /#####/_´\#/    /##############\    \#/´_\#####\              
+               /#####/        \##############/        \#####\               
+              /==/               \########/               \==\               
+
+```
+
+
 
 ## Getting Started
 
@@ -10,9 +49,30 @@
 
 &nbsp;
 
-First, make sure your machine has deno 2 and use the command
+In the terminal, clone the repository into your machine and enter the created directory:
 
 ```bash
+git clone https://github.com/Coletivo-Anarquista-Trans/site CATS-site
+cd CATS-site
+```
+
+### NixOS or Nix Package Manager
+
+Nix allows for repeatable behaviour in development while making it simple to set everything up:
+
+```bash
+# If flakes are enabled (recommended), use
+nix develop
+
+# Otherwise, use
+nix-shell
+```
+
+### Other systems
+
+First, make sure your machine has deno 2 and use the command
+
+```bashIf you don't
 deno install
 ```
 
@@ -31,8 +91,9 @@ bun dev
 # or
 deno task dev
 ```
+________________________________________________________
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Once the development server is running, open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
