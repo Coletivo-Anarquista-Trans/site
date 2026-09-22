@@ -37,8 +37,8 @@ export default function Manifesto() {
                 .
               </b>
             </div>
-            Construímos um mundo onde toda pessoa está livre para produzir e
-            viver seu corpo desejado. 
+            Construímos um mundo onde toda pessoa pode produzir e
+            viver seu corpo desejado.
             <br />  
             <br />
             Desejamos o domínio e livre acesso à
