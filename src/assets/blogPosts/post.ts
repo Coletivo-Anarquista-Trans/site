@@ -13,7 +13,7 @@ export const posts: BlogPost[] = [
   {
     id: "post-1",
     title: "II marcha transmasc de são paulo",
-    description: "n3o",
+    description: "pavor",
     slug: "marcha-transmasc",
     date: "2025-03-30",
     image: "/trans-blog-posts/marcha_transmasc.jpeg",
@@ -232,7 +232,7 @@ export const posts: BlogPost[] = [
   {
     id: "post-5",
     title: "abjeto",
-    description: "n3o",
+    description: "pavor",
     slug: "abjeto",
     date: "2025-05-26",
     image: "/trans-blog-posts/abjeto.jpg",

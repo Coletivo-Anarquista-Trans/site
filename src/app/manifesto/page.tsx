@@ -29,33 +29,39 @@ export default function Manifesto() {
                 O corpo é político, quem não lutar por ele irá perdê-lo para o{" "}
                 {""}
                 <Tooltip
-                  content="Sistema de opressão que combina capitalismo, binarismo, estado e controle de informação"
+                  content="Sistema de opressão que combina capitalismo, binarismo, racismo, estado e controle da informação"
                   position="top"
                 >
-                  <span className="text-accent5 cursor-help">Cistema</span>
+                  <span className="text-accent5 cursor-help">Cistema*</span>
                 </Tooltip>
                 .
               </b>
             </div>
-            Construiremos um mundo onde toda pessoa será livre para construir e
-            viver o seu corpo desejado. Desejamos o domínio e livre acesso à
-            produção e uso das tecnologias de afirmação do corpo e da mente.
+            Construímos um mundo onde toda pessoa está livre para produzir e
+            viver seu corpo desejado. 
+            <br />  
+            <br />
+            Desejamos o domínio e livre acesso à
+            produção e uso das tecnologias de afirmação de corpo-mente.
             Colocaremos tudo que precisamos para construir nossos corpos nas
-            mãos dos trabalhadores, pessoas trans, queer, não-brancas,
-            neurodivergentes e pessoas com deficiência.
+            mãos de trabalhadores, pessoas trans, queer, não-brancas,
+            neurodivergentes e com deficiência.
+            <br />
             <b>
               {" "}
-              As farmácias, a ciência, a internet e seus resultados devem servir
-              a todos, não a lógica de lucro.
+              As farmácias, a ciência, a internet, a tecnologia e seus resultados devem servir
+              a todes, não à lógica de lucro.
             </b>
             <br />
             <br />
-            Liberdade é ter acesso ao básico para poder viver. Um corpo com fome
-            e sem moradia não tem autonomia até essas necessidades serem
+            Liberdade começa do acesso ao básico para poder viver.
+            <br />
+            Um corpo com fome
+            e sem moradia pouco tem autonomia até essas necessidades serem
             atendidas. Enquanto isso, nosso mundo produz{" "}
             <b>excesso para poucos bilionários</b> através da{" "}
             <b>escassez induzida para a maioria</b>. Essa é a contradição do{" "}
-            <b>Cistema</b>* em que vivemos.
+            <b>Cistema</b> em que vivemos.
             <br />
             <br />
             Excesso para{" "}
@@ -65,7 +71,10 @@ export default function Manifesto() {
             </b>{" "}
             e técnicas para podermos <b>afirmar o corpo desejado</b> e uma
             <b> internet livre incentivando a colaboração</b> ao invés do
-            consumo. Nossos corpos são atravessados por essa contradição, sendo
+            consumo. 
+            <br />
+            <br />
+            Nossos corpos são atravessados por essa contradição, sendo
             corpos trans, com deficiência, neurodivergentes e racializados alvos
             da marginalização do Cistema, que garante o excesso para os
             bilionários, acionistas majoritários, e o domínio das tecnologias de
@@ -73,10 +82,10 @@ export default function Manifesto() {
             brancos.
             <br />
             <br />É da necessidade causada pela{" "}
-            <b>escassez induzida pela classe dominante</b> que garante que 1%
+            <b>escassez induzida pelo Cistema e a classe dominante</b>, que garante que 1%
             tenha em excesso explorando 99%, provocando a falta de acesso a
             hormônios, cirurgias, remédios, produtos de higiene, roupas para
-            nossa identidade, mas também falta da comida, da moradia e
+            nossos corpos, mas também falta da comida, da moradia e
             comunidade para sermos livres, em resumo,{" "}
             <b>
               das faltas das necessidades básicas atendidas por essa sociedade,
@@ -143,7 +152,7 @@ export default function Manifesto() {
             <br />
             <br />
             Líderes tem a função de tornarem-se dispensáveis a longo prazo,
-            empoderando o coletivo para não depender deles.
+            potencializando o coletivo para não depender deles.
           </CyberContainer>
 
           {/* Section 2.2 */}
@@ -159,11 +168,14 @@ export default function Manifesto() {
             tempo e capacidades, <b>precisamos antes sobreviver para lutar.</b>
             <br />
             <br />O voluntarismo permite recuos estratégicos, avanços engajados,
-            dedicação naquilo que amamos e manifestação da diversidade de
-            habilidades e desejos. Isso não significa autonomismo, que é a
+            dedicação naquilo que amamos e manifestação da multiplicidade de
+            habilidades e desejos. 
+            Isso não significa autonomismo, que é a
             atuação individual dividida.
-            <b> Construímos em coletivo</b>. Acreditamos que a cooperação
-            organizada com habilidades distintas nos leva mais longe.
+            <br />
+            <br />
+            <b> Construímos em coletivo</b>. Acreditamos na cooperação construindo
+            comum com habilidades distintas nos leva mais longe.
           </CyberContainer>
 
           {/* Section 2.3 */}
@@ -172,7 +184,7 @@ export default function Manifesto() {
               id="section-2.3"
               className="text-center text-2xl p-4 mb-6 w-full max-w-xs sm:max-w-md md:max-w-2xl mx-auto border-b-2 border-b-accent1"
             >
-              2.3 - Construímos comunidade
+              2.3 - Construímos comunidades
             </CyberContainer>
             <b>&quot;Para cada um de acordo com a sua necessidade&quot;</b>.
             Trabalhamos coletivamente para fortalecer nossa comunidade como base
@@ -184,9 +196,11 @@ export default function Manifesto() {
               das decisões e colham os frutos delas ao mesmo tempo que a
               constroem juntos.{" "}
             </b>
-            Faremos ação direta, usando nosso trabalho para contribuir com a
-            comunidade sem depender do mercado e do estado que há tempos tem
-            abandonado nossa comunidade.
+            <br />
+            <br />
+            Faremos ação direta, usando nosso trabalho para contribuir com 
+            comunidades sem depender do mercado e do estado, que há tempos tem
+            abandonado comunidades dissidentes.
           </CyberContainer>
 
           {/* Section 2.4 */}
@@ -199,8 +213,10 @@ export default function Manifesto() {
             </CyberContainer>
             Somos hackers. &quot;Hackear é abstrair. Abstrair é produzir o plano
             sobre o qual coisas diferentes podem entrar em relação&quot;
-            (McKenzie Wark). <b>Nossa arte produz relações</b>. Sabemos que
-            grande parte da nossa comunidade vive nas ruas, e uma das formas de
+            (McKenzie Wark). <b>Nossa arte produz relações</b>. 
+            <br />
+            <br />
+            Sabemos que grande parte da nossa comunidade vive nas ruas, e uma das formas de
             resistir e persistir a presença dos nossos corpos nas ruas é criando
             a nossa própria cultura, linguagem e formas de expressão.
             <br />
@@ -210,8 +226,9 @@ export default function Manifesto() {
               Ela é capaz de produzir memória, ancestralidade e perspectivas de
               novos mundos.
             </b>
-            Enquanto coletivo, produziremos arte política e educacional que
-            converse diretamente com a nossa comunidade (zines, lambes e o que
+            <br />
+            <br /> Enquanto coletivo, produziremos arte política
+            conversando diretamente com nossas comunidades (zines, lambes e o que
             mais der na telha), e iremos incentivar as ocupações e movimentações
             queer culturais e marginais diversas pela cidade.
             <br />
@@ -251,6 +268,7 @@ export default function Manifesto() {
               limitadas pela falta de domínio às técnicas de modificação
               corporal e pela obrigação imposta de gerar filhos.{" "}
             </b>
+            <br />
             Queremos libertar essas potências para além do binário e do gênero
             como limitantes.
             <br />
@@ -259,6 +277,8 @@ export default function Manifesto() {
             <b>libertar nossos afetos para além da cisheterossexualidade</b> que
             existe para servir à reprodução compulsória de mão-de-obra para o
             capitalismo.
+            <br />
+            <br /> 
             <b>
               {" "}
               Precisamos parar de falar da revolução em termos de futuro, esse

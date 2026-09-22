@@ -27,12 +27,12 @@ export default function QuemSomosNos() {
             >
               <p>
                 Somos um coletivo buscando garantir a liberdade e{" "}
-                <b>autonomia dos corpos e mentes marginalizades</b>.
+                <b>autonomia de corpos-mentes marginalizades</b>.
               </p>
               <br />
               <p>
                 Todas as pessoas devem{" "}
-                <b>dominar a produção do próprio corpo</b>, sem as restrições
+                <b>dominar a produção do próprio corpo</b>, sem restrições
                 impostas pelo cistema.
               </p>
               <br />
@@ -43,9 +43,9 @@ export default function QuemSomosNos() {
               </p>
               <br />
               <p>
-                Acesso a tecnologias de afirmação corporal, saúde, moradia e
-                alimentação para todos, especialmente para aqueles que são mais
-                marginalizados pela sociedade é nosso objetivo.
+                Desejamos acesso a tecnologias de afirmação corporal, saúde, moradia e
+                alimentação para todos, especialmente para aqueles produzindo 
+                existências dissidentes e são marginalizados pela sociedade.
               </p>
               <br />
               <p>
@@ -62,68 +62,6 @@ export default function QuemSomosNos() {
             </CyberContainer>
           </div>
 
-          {/* Integrantes container */}
-          <div className="w-full p-2 md:p-4">
-            <CyberContainer
-              unevenBorders
-              className="text-center text-3xl md:text-4xl p-2 my-4 w-full"
-            >
-              <b>Integrantes</b>
-            </CyberContainer>
-          </div>
-
-          {/* Members grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 p-2 md:p-4 w-full">
-            {/* Mazrine container */}
-            <CyberContainer
-              unevenBorders
-              className="text-center text-xl md:text-2xl p-2 h-12 md:h-16 flex items-center justify-center"
-            >
-              <b>Mazrine</b>
-            </CyberContainer>
-            {/* Lynx container */}
-            <CyberContainer
-              unevenBorders
-              className="text-center text-xl md:text-2xl p-2 h-12 md:h-16 flex items-center justify-center"
-            >
-              <b>Lynx</b>
-            </CyberContainer>
-            {/* Ini container */}
-            <CyberContainer
-              unevenBorders
-              className="text-center text-xl md:text-2xl p-2 h-12 md:h-16 flex items-center justify-center"
-            >
-              <b>1n1</b>
-            </CyberContainer>
-            {/* V container */}
-            <CyberContainer
-              unevenBorders
-              className="text-center text-xl md:text-2xl p-2 h-12 md:h-16 flex items-center justify-center"
-            >
-              <b>V</b>
-            </CyberContainer>
-            {/* n3o container */}
-            <CyberContainer
-              unevenBorders
-              className="text-center text-xl md:text-2xl p-2 h-12 md:h-16 flex items-center justify-center"
-            >
-              <b>n3o</b>
-            </CyberContainer>
-            {/* Yu container */}
-            <CyberContainer
-              unevenBorders
-              className="text-center text-xl md:text-2xl p-2 h-12 md:h-16 flex items-center justify-center"
-            >
-              <b>Yu</b>
-            </CyberContainer>
-            {/* Kia container */}
-            <CyberContainer
-              unevenBorders
-              className="text-center text-xl md:text-2xl p-2 h-12 md:h-16 flex items-center justify-center"
-            >
-              <b>Kia</b>
-            </CyberContainer>
-          </div>
         </CyberContainer>
       </CyberContainer>
     </>
