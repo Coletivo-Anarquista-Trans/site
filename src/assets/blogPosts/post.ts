@@ -1585,6 +1585,123 @@ export const posts: BlogPost[] = [
     </ul>
     `,
   },
+  {
+    id: "post-21",
+    title: "(trans)fobia social: e as crianças trans?",
+    description: "1n1",
+    slug: "transfobia-social",
+    date: "2026-10-28",
+    image: "/trans-blog-posts/error.jpg",
+    content: `
+    <blockquote>
+    Esse texto é uma resposta <u><a href="hhttps://www.youtube.com/watch?v=x3JpSdy4b-I">ao vídeo do felca sobre fobia social.</a></u>
+    </blockquote>
+    <blockquote>
+    “A criança é um artefato biopolítico que garante a normalização do adulto. A polícia de gênero vigia o berço dos seres que estão por nascer, para transformá-los em crianças heterossexuais. A norma ronda os corpos meigos. Se você não é heterossexual, é a morte o que te espera”
+    <cite>— Quem defende a criança queer?, <em>Um apartamento em Urano</em>, Paul B. Preciado.</cite>
+    </blockquote>
+
+    <p>
+    A dor de ressentir o passado inúmeras vezes em nosso corpo-e-mente, revivendo momentos ou sentindo que desperdiçamos a vida, é uma dor muito real. Sentimos isso na pele, no peito. Nossos corpos são afetados por ela.
+    </p>
+
+    <br/>
+
+    <p>
+    O isolamento como fuga da necessidade de enfrentar socializações que nos assustam - “O que vão pensar de mim?”, “Será que estão me julgando?” - e tantas outras formas de nos tornarmos <b>nossos próprios policiais</b> é cansativo e doloroso.
+    </p>
+
+    <br/>
+
+    <p>
+    Toda pessoa esquisita - ou seja, que escapa às normas sociais - já esteve aí. Reconheço esses sentimentos e o quanto são tão vivos que parecem roubar de nós a nossa potência de vida.
+    </p>
+
+    <br/>
+
+    <p>
+    Falar de bullying e exclusão desde a infância é, infelizmente, um tema comum para quem é uma <b>pessoa não normativa </b>(LGBTIAP+, queer e/ou trans), em um mundo que ainda julga e violenta tanto a diferença.
+    </p>
+
+    <br/>
+
+    <p>
+    Por isso, gostaria de perguntar: <b>e as crianças trans e queer?</b>
+    </p>
+
+    <br/>
+
+    <p>
+    Diante dos ataques da extrema-direita ao redor do mundo, de suas <b>agendas reacionárias antitrans</b> - mobilizadas como estratégia de promoção política e de <b>desresponsabilização</b> dos poderosos pela crise -, questiono: como será o futuro das crianças trans e queer?
+    </p>
+
+    <br/>
+
+    <p>
+    É possível falar sobre bullying, exclusão e ressentimento <b>sem falar de sua política</b>? Sem falar de <b>normatividade</b>?
+    </p>
+
+    <br/>
+
+    <p>
+    Você, Felca, abre seu vídeo descrevendo uma de suas primeiras lembranças de dor causada pelo bullying: a menina de quem você gostava o tratava como abjeto. Temos algo em <strong>comum</strong>: corpos vistos como <strong>abjetos</strong>.
+    </p>
+
+    <br/>
+
+    <p>
+    As dores que você sentiu no passado e ainda sente no presente passam pelos efeitos de <b>normas sociais impostas</b> às crianças desde cedo: a heterossexualidade compulsória, a cisgeneridade presumida como destino, o binarismo de gênero e padronizações que definem o corpo “perfeito”, e consequentemente, também o <strong>corpo desejável</strong>.
+    </p>
+
+    <br/>
+
+    <p>
+    Como manter silêncio sobre as agendas políticas que <b>conservam e reforçam</b> essas normas enquanto falamos sobre bullying?
+    </p>
+
+    <br/>
+
+    <p>
+    Como ensinar as crianças a <b>pararem de rejeitar a abjeção</b>? Não seria, primeiramente, <b>preciso que os adultos parassem de odiá-la</b>? Que deixassem de tratar como abjetos corpos que escapam às normas de gênero?
+    </p>
+
+    <br/>
+
+    <p>
+    Tudo isso é tão político quanto o bullying sofrido na infância. O ódio à diferença alimenta tanto a <b>violência escolar</b> quanto a <b>máquina de destruição fascista</b>.
+    </p>
+
+    <br/>
+
+    <p>
+    Porém, muitas das pessoas assistindo ao seu vídeo irão se comover com sua história <b>mas se calarão</b> sobre nossas crianças trans e queers. Tampouco se importarão com o que acontece conosco na vida adulta.
+    </p>
+
+    <br/>
+
+    <p>
+    O que fazer, então, diante da <b>(trans)fobia social</b>? Como transformar uma sociedade violenta contra a diferença que lhe é abjeta?
+    </p>
+
+    <br/>
+
+    <p>
+    Há uma alegria própria do desapego a essas normas, da <b>potência de se recriar</b> fora de tantas regras criadas por uma sociedade avessa à potência de ir além do que ela quer de você e da sua sujeição.
+    </p>
+
+    <br/>
+
+     <p>
+    <strong>Monstrifique-se.</strong>
+    </p>
+
+    <blockquote>
+      “Minha vida fora do regime da diferença sexual é mais bela do que qualquer coisa que as senhoras e os senhores poderiam me prometer como recompensa por aderir à norma.”
+      <br/>
+      <cite>— <em>Eu sou o monstro que vos fala</em>, Paul B. Preciado</cite>
+    </blockquote>
+    `,
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
