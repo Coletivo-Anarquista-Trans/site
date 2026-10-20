@@ -1686,7 +1686,7 @@ export const posts: BlogPost[] = [
     <br/>
 
     <p>
-    Por sorte, há uma alegria própria do desapego às normas, da <b>potência de se recriar</b> fora de tantas regras produzidas por uma sociedade avessa à potência de ir além do que ela exige de você e da sua sujeição.
+    Por sorte, há uma alegria própria do desapego às normas, da <b>potência de se recriar</b> fora de tantas regras produzidas por uma sociedade avessa à potência de ir além do que ela exige de você e da sua sujeição. Algo que só dissidentes experimentam.
     </p>
 
     <br/>
